@@ -8,6 +8,12 @@
   "adsTxt": "",
   "googleSiteVerification": "",
   "partners": [
-    { "headline": "Invoicing every month?", "text": "Accounting software can send invoices automatically, take card payments and chase late payers for you.", "cta": "Compare options", "url": "" }
-  ]
+    {
+      "headline": "Invoicing every month?",
+      "text": "Accounting software can send invoices automatically, take card payments and chase late payers for you.",
+      "cta": "Compare options",
+      "url": ""
+    }
+  ],
+  "indexNowKey": "47f40954b4664668ae3242c9c04c5836"
 }

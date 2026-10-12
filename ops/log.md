@@ -10,3 +10,10 @@
 - Shipped: guide /guides/invoice-vs-receipt/ (~980 words). Build + check pass (39 pages).
 - Metrics: none available (no analytics yet). gh issue list unavailable (GraphQL blocked); no owner info found, config.json unchanged.
 - Next: guide "first invoice as a freelancer", then receipt/PAID mode in product.
+
+## 2026-10-12 (daily run 2)
+- Research: freelance-invoice guides (Remote, Wise, FreshBooks, Ruul) agree on the same core checklist; wedding-photo invoices commonly use deposit + milestone payments (vendor sources, unverified figures). Sources: https://remote.com/blog/how-to-invoice-as-a-freelancer , https://www.freshbooks.com/hub/pages/invoice-as-freelancer , https://invoicebloom.io/blog/how-to-invoice-for-photography
+- Shipped: guide https://ziro0914.github.io/free-invoice-maker/guides/first-freelance-invoice/ (~925 words); IndexNow key file wired into build.mjs (config indexNowKey) + check.mjs. Build+check pass (40 pages).
+- Metrics: none (no analytics). Open issues: none found via GitHub MCP; gh unavailable.
+- IndexNow: see status line below.
+- Next: receipt/PAID + estimate mode toggle; guide "what is a proforma invoice".

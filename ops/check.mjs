@@ -24,7 +24,7 @@ for (const f of fs.existsSync(gdir) ? fs.readdirSync(gdir).filter(f => f.endsWit
   if (!fs.existsSync(path.join(ROOT, 'docs/guides', g.slug, 'index.html'))) fail.push(`not built: guide ${g.slug}`);
 }
 
-for (const f of ['index.html', 'sitemap.xml', 'robots.txt', 'assets/app.js', 'assets/style.css'])
+for (const f of ['index.html', 'sitemap.xml', 'robots.txt', 'assets/app.js', 'assets/style.css', '47f40954b4664668ae3242c9c04c5836.txt'])
   if (!fs.existsSync(path.join(ROOT, 'docs', f))) fail.push(`missing docs/${f}`);
 
 if (fail.length) { console.error('CHECK FAILED\n' + fail.join('\n')); process.exit(1); }
