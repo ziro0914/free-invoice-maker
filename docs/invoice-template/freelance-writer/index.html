@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Freelance Writer Invoice Template | Free Invoice Maker</title>
+<meta name="description" content="Freelance writer invoice template with per-word, per-article and revision fees prefilled. Edit online and download a free PDF. No signup required.">
+<link rel="canonical" href="https://ziro0914.github.io/free-invoice-maker/invoice-template/freelance-writer/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Freelance Writer Invoice Template | Free Invoice Maker">
+<meta property="og:description" content="Freelance writer invoice template with per-word, per-article and revision fees prefilled. Edit online and download a free PDF. No signup required.">
+<meta property="og:url" content="https://ziro0914.github.io/free-invoice-maker/invoice-template/freelance-writer/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/free-invoice-maker/assets/style.css?v=2026-10-12">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Freelance Writer Invoice Generator","url":"https://ziro0914.github.io/free-invoice-maker/invoice-template/freelance-writer/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should I bill per word or per article?","acceptedAnswer":{"@type":"Answer","text":"Per-word rates are common in magazines and publishing, while marketing clients often prefer a flat per-article fee because it is easier to budget. If you bill per word, state whether the count is based on the assigned or the delivered length. A flat fee should still reference the expected word range so scope stays clear."}},{"@type":"Question","name":"When should a freelance writer send the invoice?","acceptedAnswer":{"@type":"Answer","text":"Check the client's process first. Some publications pay on acceptance, others on publication, which can be weeks later. Content agencies and marketing teams usually prefer a single monthly invoice covering everything delivered that month. Ask up front and record the agreed trigger, such as acceptance of the final draft, in your payment terms."}},{"@type":"Question","name":"How do I invoice a kill fee?","acceptedAnswer":{"@type":"Answer","text":"Issue an invoice with a single line describing the commissioned piece, the original fee and the agreed kill percentage, for example 30% of a $600 article. Reference the date the piece was cancelled and the commissioning email. In most cases the rights to the unpublished work stay with you, so you can pitch it elsewhere."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Invoice templates","item":"https://ziro0914.github.io/free-invoice-maker/invoice-templates/"},{"@type":"ListItem","position":2,"name":"Freelance Writer invoice template","item":"https://ziro0914.github.io/free-invoice-maker/invoice-template/freelance-writer/"}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/free-invoice-maker/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/free-invoice-maker/invoice-templates/">Templates</a><a href="/free-invoice-maker/guides/">Guides</a></nav>
+</div></header>
+<main><section class="wrap hero">
+  <h1>Free Freelance Writer Invoice Template</h1>
+  <p>Writers get paid in many ways: per word, per article, per hour or on a monthly content retainer. Whatever model you use, the invoice should name each piece by title or brief so an editor can match it to what was published. Publications that process dozens of contributor invoices a month often pay faster when yours includes the article title, word count, purchase order number and the editor who commissioned it.</p>
+  <div class="badges"><span>Pre-filled for freelance writers</span><span>Download as PDF</span><span>No sign-up</span></div>
+</section>
+<script>window.FIM_PREFILL={"slug":"freelance-writer","items":[{"desc":"Long-form blog post (approx. 2,000 words)","qty":2,"rate":400},{"desc":"Newsletter feature (per word)","qty":800,"rate":0.2},{"desc":"Keyword research and outline (per brief)","qty":2,"rate":50}],"payment_terms":"Payment due within 30 days of acceptance of final draft. Kill fee of 30% applies to cancelled commissions."};</script>
+<section class="wrap tool">
+<form id="invoice-form" class="card" autocomplete="on" onsubmit="return false">
+  <fieldset><legend>From (your business)</legend>
+    <div class="grid2">
+      <label>Business / your name<input name="biz_name" placeholder="Jane Doe Studio"></label>
+      <label>Email<input name="biz_email" type="email" placeholder="you@example.com"></label>
+      <label>Phone<input name="biz_phone" placeholder="+1 555 0100"></label>
+      <label>Logo (optional)<input name="logo" type="file" accept="image/png,image/jpeg"></label>
+    </div>
+    <label>Address<textarea name="biz_address" rows="2" placeholder="123 Main St&#10;Austin, TX 78701"></textarea></label>
+    <button type="button" id="logo-clear" class="btn" style="margin-top:6px;padding:4px 10px;font-size:13px">Remove logo</button>
+  </fieldset>
+  <fieldset><legend>Bill to (client)</legend>
+    <div class="grid2">
+      <label>Client name<input name="client_name" placeholder="Acme Inc."></label>
+      <label>Client email<input name="client_email" type="email" placeholder="billing@acme.com"></label>
+    </div>
+    <label>Client address<textarea name="client_address" rows="2"></textarea></label>
+  </fieldset>
+  <fieldset><legend>Invoice details</legend>
+    <div class="grid2">
+      <label>Invoice #<input name="number"></label>
+      <label>Currency<select name="currency"></select></label>
+      <label>Issue date<input name="issued" type="date"></label>
+      <label>Due date<input name="due" type="date"></label>
+    </div>
+  </fieldset>
+  <fieldset><legend>Line items</legend>
+    <div class="item-head"><span>Description</span><span>Qty</span><span>Rate</span><span style="text-align:right">Amount</span><span></span></div>
+    <div id="items"></div>
+    <button type="button" id="add-item" class="btn" style="margin-top:4px">+ Add line</button>
+  </fieldset>
+  <fieldset>
+    <div class="grid2">
+      <label>Tax rate (%)<input name="tax" type="number" step="any" min="0"></label>
+      <label>Discount (amount)<input name="discount" type="number" step="any" min="0"></label>
+    </div>
+    <label>Notes &amp; payment terms<textarea name="notes" rows="3"></textarea></label>
+  </fieldset>
+  <p class="small">Saved automatically in this browser only. Nothing is uploaded.</p>
+</form>
+<div class="sticky">
+  <div class="actions no-print" style="margin-bottom:10px">
+    <button type="button" id="download" class="btn primary">Download PDF</button>
+    <button type="button" id="print" class="btn">Print</button>
+    <button type="button" id="reset" class="btn">New invoice</button>
+  </div>
+  <div id="preview" aria-live="polite"></div>
+</div>
+</section>
+<article class="wrap content">
+  <p>This version is set up for a typical content client: two long-form blog posts billed per article, a newsletter piece billed by word count, and research for upcoming briefs. If a piece was killed after you delivered a draft, add a kill fee line rather than leaving it off entirely. Mention in the notes which rights you are granting, such as first publication or full ownership on payment.</p>
+  
+  <h2>Invoicing tips for freelance writers</h2>
+  <ul><li>Put the article title and publish date or URL on each line so editors and accounts teams can match the invoice without emailing you.</li><li>Agree on a kill fee in advance, often 25-50% of the fee, for commissioned pieces that are cancelled after you start.</li><li>Note which rights you are licensing, such as first serial rights or full transfer, so reuse in other publications is clear.</li><li>Ask whether the client needs a purchase order number or vendor setup before you invoice, because missing paperwork is a common cause of delayed payment.</li></ul>
+  <h2>Typical line items</h2>
+  <ul><li>Long-form blog post (approx. 2,000 words)</li><li>Newsletter feature (per word)</li><li>Keyword research and outline (per brief)</li></ul>
+  <p class="small">Rates shown are examples only — edit them to match your pricing.</p>
+  <h2>FAQ</h2><div class="faq"><details><summary>Should I bill per word or per article?</summary><p>Per-word rates are common in magazines and publishing, while marketing clients often prefer a flat per-article fee because it is easier to budget. If you bill per word, state whether the count is based on the assigned or the delivered length. A flat fee should still reference the expected word range so scope stays clear.</p></details><details><summary>When should a freelance writer send the invoice?</summary><p>Check the client's process first. Some publications pay on acceptance, others on publication, which can be weeks later. Content agencies and marketing teams usually prefer a single monthly invoice covering everything delivered that month. Ask up front and record the agreed trigger, such as acceptance of the final draft, in your payment terms.</p></details><details><summary>How do I invoice a kill fee?</summary><p>Issue an invoice with a single line describing the commissioned piece, the original fee and the agreed kill percentage, for example 30% of a $600 article. Reference the date the piece was cancelled and the commissioning email. In most cases the rights to the unpublished work stay with you, so you can pitch it elsewhere.</p></details></div>
+  <h2>More invoice templates</h2>
+  <ul class="links"><li><a href="/free-invoice-maker/invoice-template/photographer/">Photographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/graphic-designer/">Graphic Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/web-developer/">Web Developer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/copywriter/">Copywriter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/videographer/">Videographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/video-editor/">Video Editor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/consultant/">Consultant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/tutor/">Tutor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/house-cleaner/">House Cleaner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/handyman/">Handyman invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/contractor/">Contractor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/electrician/">Electrician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/plumber/">Plumber invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/landscaper/">Landscaper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/painter/">Painter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/personal-trainer/">Personal Trainer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/makeup-artist/">Makeup Artist invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dj/">DJ invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/translator/">Translator invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/virtual-assistant/">Virtual Assistant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/social-media-manager/">Social Media Manager invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/bookkeeper/">Bookkeeper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/musician/">Musician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/interior-designer/">Interior Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/event-planner/">Event Planner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dog-walker/">Dog Walker invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/babysitter/">Babysitter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/mechanic/">Mechanic invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/truck-driver/">Truck Driver invoice template</a></li></ul>
+</article></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/free-invoice-maker/">Invoice generator</a><a href="/free-invoice-maker/invoice-templates/">Invoice templates</a><a href="/free-invoice-maker/guides/">Guides</a><a href="/free-invoice-maker/about/">About</a><a href="/free-invoice-maker/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<script src="/free-invoice-maker/assets/app.js?v=2026-10-12" defer></script>
+</body>
+</html>

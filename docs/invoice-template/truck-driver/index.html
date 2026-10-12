@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Trucking Invoice Template | Free Invoice Maker</title>
+<meta name="description" content="Trucking invoice template for owner-operators: linehaul, fuel surcharge, detention and stops. Edit online and download a free PDF. No signup required.">
+<link rel="canonical" href="https://ziro0914.github.io/free-invoice-maker/invoice-template/truck-driver/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Trucking Invoice Template | Free Invoice Maker">
+<meta property="og:description" content="Trucking invoice template for owner-operators: linehaul, fuel surcharge, detention and stops. Edit online and download a free PDF. No signup required.">
+<meta property="og:url" content="https://ziro0914.github.io/free-invoice-maker/invoice-template/truck-driver/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/free-invoice-maker/assets/style.css?v=2026-10-12">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Truck Driver Invoice Generator","url":"https://ziro0914.github.io/free-invoice-maker/invoice-template/truck-driver/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What documents should I send with a trucking invoice?","acceptedAnswer":{"@type":"Answer","text":"Typically the signed bill of lading or proof of delivery, the rate confirmation, and receipts for accessorials like lumper fees or scale tickets. Brokers often won't process payment without the POD. Scan clear copies, label them with the load number and send them with the invoice in one email or upload."}},{"@type":"Question","name":"How do I bill detention time?","acceptedAnswer":{"@type":"Answer","text":"Check your rate confirmation for the detention terms, often a set hourly rate after two free hours at the shipper or receiver. Record arrival and departure times, ideally with check-in and check-out signatures or ELD data. Add detention as a separate line with the hours and rate, and notify the broker promptly when it starts."}},{"@type":"Question","name":"Should I invoice per mile or per load?","acceptedAnswer":{"@type":"Answer","text":"Follow whatever the rate confirmation says. Brokered freight is usually quoted as a flat rate per load, sometimes with fuel surcharge broken out, while dedicated or contract work might pay per mile. Your invoice should mirror the agreed structure exactly, since any mismatch is likely to delay payment or trigger a short-pay."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Invoice templates","item":"https://ziro0914.github.io/free-invoice-maker/invoice-templates/"},{"@type":"ListItem","position":2,"name":"Truck Driver invoice template","item":"https://ziro0914.github.io/free-invoice-maker/invoice-template/truck-driver/"}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/free-invoice-maker/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/free-invoice-maker/invoice-templates/">Templates</a><a href="/free-invoice-maker/guides/">Guides</a></nav>
+</div></header>
+<main><section class="wrap hero">
+  <h1>Free Truck Driver Invoice Template</h1>
+  <p>For owner-operators and small fleets, the invoice is what turns a delivered load into cash, and brokers and shippers won't pay without the right details. Include the load or confirmation number, pickup and delivery locations and dates, and attach the signed bill of lading and rate confirmation. Missing paperwork is one of the most common reasons freight invoices are delayed or short-paid.</p>
+  <div class="badges"><span>Pre-filled for truck drivers</span><span>Download as PDF</span><span>No sign-up</span></div>
+</section>
+<script>window.FIM_PREFILL={"slug":"truck-driver","items":[{"desc":"Linehaul: Dallas, TX to Atlanta, GA (Load #48213)","qty":1,"rate":2100},{"desc":"Fuel surcharge (per mile)","qty":780,"rate":0.45},{"desc":"Detention at receiver (per hour after 2 free hours)","qty":3,"rate":50},{"desc":"Additional stop","qty":1,"rate":100}],"payment_terms":"Net 30 from receipt of invoice and signed BOL. Detention billed at $50/hour after 2 free hours per rate confirmation."};</script>
+<section class="wrap tool">
+<form id="invoice-form" class="card" autocomplete="on" onsubmit="return false">
+  <fieldset><legend>From (your business)</legend>
+    <div class="grid2">
+      <label>Business / your name<input name="biz_name" placeholder="Jane Doe Studio"></label>
+      <label>Email<input name="biz_email" type="email" placeholder="you@example.com"></label>
+      <label>Phone<input name="biz_phone" placeholder="+1 555 0100"></label>
+      <label>Logo (optional)<input name="logo" type="file" accept="image/png,image/jpeg"></label>
+    </div>
+    <label>Address<textarea name="biz_address" rows="2" placeholder="123 Main St&#10;Austin, TX 78701"></textarea></label>
+    <button type="button" id="logo-clear" class="btn" style="margin-top:6px;padding:4px 10px;font-size:13px">Remove logo</button>
+  </fieldset>
+  <fieldset><legend>Bill to (client)</legend>
+    <div class="grid2">
+      <label>Client name<input name="client_name" placeholder="Acme Inc."></label>
+      <label>Client email<input name="client_email" type="email" placeholder="billing@acme.com"></label>
+    </div>
+    <label>Client address<textarea name="client_address" rows="2"></textarea></label>
+  </fieldset>
+  <fieldset><legend>Invoice details</legend>
+    <div class="grid2">
+      <label>Invoice #<input name="number"></label>
+      <label>Currency<select name="currency"></select></label>
+      <label>Issue date<input name="issued" type="date"></label>
+      <label>Due date<input name="due" type="date"></label>
+    </div>
+  </fieldset>
+  <fieldset><legend>Line items</legend>
+    <div class="item-head"><span>Description</span><span>Qty</span><span>Rate</span><span style="text-align:right">Amount</span><span></span></div>
+    <div id="items"></div>
+    <button type="button" id="add-item" class="btn" style="margin-top:4px">+ Add line</button>
+  </fieldset>
+  <fieldset>
+    <div class="grid2">
+      <label>Tax rate (%)<input name="tax" type="number" step="any" min="0"></label>
+      <label>Discount (amount)<input name="discount" type="number" step="any" min="0"></label>
+    </div>
+    <label>Notes &amp; payment terms<textarea name="notes" rows="3"></textarea></label>
+  </fieldset>
+  <p class="small">Saved automatically in this browser only. Nothing is uploaded.</p>
+</form>
+<div class="sticky">
+  <div class="actions no-print" style="margin-bottom:10px">
+    <button type="button" id="download" class="btn primary">Download PDF</button>
+    <button type="button" id="print" class="btn">Print</button>
+    <button type="button" id="reset" class="btn">New invoice</button>
+  </div>
+  <div id="preview" aria-live="polite"></div>
+</div>
+</section>
+<article class="wrap content">
+  <p>The sample shows a single load: linehaul rate, fuel surcharge per mile, detention time at the receiver and an extra stop. Adjust units to per-mile or flat rate as shown on your rate confirmation. If you use a factoring company, add their remittance details as your agreement instructs. Accessorials like lumper fees, layovers and TONU should match what the broker approved, ideally with supporting receipts.</p>
+  
+  <h2>Invoicing tips for truck drivers</h2>
+  <ul><li>Put the load number, rate confirmation number and pickup and delivery dates on every invoice, and attach the signed BOL.</li><li>Bill accessorials such as detention, layover, lumper fees and TONU as separate lines, with timestamps or receipts.</li><li>Invoice as soon as the load delivers; brokers often pay on 30-day terms, and quick-pay programs or factoring can speed this up for a fee.</li><li>If you factor invoices, make sure the remittance details match your factoring agreement so payments aren't misdirected.</li></ul>
+  <h2>Typical line items</h2>
+  <ul><li>Linehaul: Dallas, TX to Atlanta, GA (Load #48213)</li><li>Fuel surcharge (per mile)</li><li>Detention at receiver (per hour after 2 free hours)</li><li>Additional stop</li></ul>
+  <p class="small">Rates shown are examples only — edit them to match your pricing.</p>
+  <h2>FAQ</h2><div class="faq"><details><summary>What documents should I send with a trucking invoice?</summary><p>Typically the signed bill of lading or proof of delivery, the rate confirmation, and receipts for accessorials like lumper fees or scale tickets. Brokers often won't process payment without the POD. Scan clear copies, label them with the load number and send them with the invoice in one email or upload.</p></details><details><summary>How do I bill detention time?</summary><p>Check your rate confirmation for the detention terms, often a set hourly rate after two free hours at the shipper or receiver. Record arrival and departure times, ideally with check-in and check-out signatures or ELD data. Add detention as a separate line with the hours and rate, and notify the broker promptly when it starts.</p></details><details><summary>Should I invoice per mile or per load?</summary><p>Follow whatever the rate confirmation says. Brokered freight is usually quoted as a flat rate per load, sometimes with fuel surcharge broken out, while dedicated or contract work might pay per mile. Your invoice should mirror the agreed structure exactly, since any mismatch is likely to delay payment or trigger a short-pay.</p></details></div>
+  <h2>More invoice templates</h2>
+  <ul class="links"><li><a href="/free-invoice-maker/invoice-template/photographer/">Photographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/graphic-designer/">Graphic Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/web-developer/">Web Developer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/freelance-writer/">Freelance Writer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/copywriter/">Copywriter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/videographer/">Videographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/video-editor/">Video Editor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/consultant/">Consultant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/tutor/">Tutor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/house-cleaner/">House Cleaner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/handyman/">Handyman invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/contractor/">Contractor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/electrician/">Electrician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/plumber/">Plumber invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/landscaper/">Landscaper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/painter/">Painter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/personal-trainer/">Personal Trainer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/makeup-artist/">Makeup Artist invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dj/">DJ invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/translator/">Translator invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/virtual-assistant/">Virtual Assistant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/social-media-manager/">Social Media Manager invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/bookkeeper/">Bookkeeper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/musician/">Musician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/interior-designer/">Interior Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/event-planner/">Event Planner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dog-walker/">Dog Walker invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/babysitter/">Babysitter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/mechanic/">Mechanic invoice template</a></li></ul>
+</article></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/free-invoice-maker/">Invoice generator</a><a href="/free-invoice-maker/invoice-templates/">Invoice templates</a><a href="/free-invoice-maker/guides/">Guides</a><a href="/free-invoice-maker/about/">About</a><a href="/free-invoice-maker/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<script src="/free-invoice-maker/assets/app.js?v=2026-10-12" defer></script>
+</body>
+</html>

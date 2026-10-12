@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Makeup Artist Invoice Template | Free Invoice Maker</title>
+<meta name="description" content="Makeup artist invoice template for bridal, events and shoots, with travel and trials. Edit online and download a free PDF. No signup required.">
+<link rel="canonical" href="https://ziro0914.github.io/free-invoice-maker/invoice-template/makeup-artist/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Makeup Artist Invoice Template | Free Invoice Maker">
+<meta property="og:description" content="Makeup artist invoice template for bridal, events and shoots, with travel and trials. Edit online and download a free PDF. No signup required.">
+<meta property="og:url" content="https://ziro0914.github.io/free-invoice-maker/invoice-template/makeup-artist/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/free-invoice-maker/assets/style.css?v=2026-10-12">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Makeup Artist Invoice Generator","url":"https://ziro0914.github.io/free-invoice-maker/invoice-template/makeup-artist/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should I take a deposit for bridal makeup bookings?","acceptedAnswer":{"@type":"Answer","text":"Yes, most artists require a non-refundable deposit or retainer, often 30-50%, to secure a wedding date, since you'll turn away other work for that day. Record the deposit on the final invoice and set the balance due on or before the wedding morning. Spell out what happens if the party size changes."}},{"@type":"Question","name":"How do I invoice a commercial or editorial shoot?","acceptedAnswer":{"@type":"Answer","text":"Commercial and editorial work is usually billed at a half-day or full-day rate rather than per face, with overtime charged hourly after the agreed time. Add kit fees, assistant fees and travel as separate lines. Production companies often require an invoice with their job number and may pay net 30, so ask early."}},{"@type":"Question","name":"Can I charge for a makeup trial separately?","acceptedAnswer":{"@type":"Answer","text":"Yes. Many artists bill trials as a separate service on their own invoice, or include them in a bridal package. If paid separately, note the trial date on the final invoice for reference. Charging for trials values your time, product and planning, and it filters out clients who are only shopping for ideas."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Invoice templates","item":"https://ziro0914.github.io/free-invoice-maker/invoice-templates/"},{"@type":"ListItem","position":2,"name":"Makeup Artist invoice template","item":"https://ziro0914.github.io/free-invoice-maker/invoice-template/makeup-artist/"}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/free-invoice-maker/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/free-invoice-maker/invoice-templates/">Templates</a><a href="/free-invoice-maker/guides/">Guides</a></nav>
+</div></header>
+<main><section class="wrap hero">
+  <h1>Free Makeup Artist Invoice Template</h1>
+  <p>Makeup artists often bill several people on one booking, especially for weddings, where the bride, bridesmaids and family members each have different services. A clear invoice lists every person or service, the trial, early-morning call fees, travel and any assistant artists, so the person paying knows exactly what the total covers. That matters when costs are being split between family members or between the couple and a planner.</p>
+  <div class="badges"><span>Pre-filled for makeup artists</span><span>Download as PDF</span><span>No sign-up</span></div>
+</section>
+<script>window.FIM_PREFILL={"slug":"makeup-artist","items":[{"desc":"Bridal makeup (lashes included)","qty":1,"rate":250},{"desc":"Bridal party makeup (per person)","qty":5,"rate":120},{"desc":"Bridal trial session","qty":1,"rate":150},{"desc":"On-location travel fee","qty":1,"rate":75}],"payment_terms":"Non-refundable 30% booking fee due to reserve the date. Balance due 7 days before the event."};</script>
+<section class="wrap tool">
+<form id="invoice-form" class="card" autocomplete="on" onsubmit="return false">
+  <fieldset><legend>From (your business)</legend>
+    <div class="grid2">
+      <label>Business / your name<input name="biz_name" placeholder="Jane Doe Studio"></label>
+      <label>Email<input name="biz_email" type="email" placeholder="you@example.com"></label>
+      <label>Phone<input name="biz_phone" placeholder="+1 555 0100"></label>
+      <label>Logo (optional)<input name="logo" type="file" accept="image/png,image/jpeg"></label>
+    </div>
+    <label>Address<textarea name="biz_address" rows="2" placeholder="123 Main St&#10;Austin, TX 78701"></textarea></label>
+    <button type="button" id="logo-clear" class="btn" style="margin-top:6px;padding:4px 10px;font-size:13px">Remove logo</button>
+  </fieldset>
+  <fieldset><legend>Bill to (client)</legend>
+    <div class="grid2">
+      <label>Client name<input name="client_name" placeholder="Acme Inc."></label>
+      <label>Client email<input name="client_email" type="email" placeholder="billing@acme.com"></label>
+    </div>
+    <label>Client address<textarea name="client_address" rows="2"></textarea></label>
+  </fieldset>
+  <fieldset><legend>Invoice details</legend>
+    <div class="grid2">
+      <label>Invoice #<input name="number"></label>
+      <label>Currency<select name="currency"></select></label>
+      <label>Issue date<input name="issued" type="date"></label>
+      <label>Due date<input name="due" type="date"></label>
+    </div>
+  </fieldset>
+  <fieldset><legend>Line items</legend>
+    <div class="item-head"><span>Description</span><span>Qty</span><span>Rate</span><span style="text-align:right">Amount</span><span></span></div>
+    <div id="items"></div>
+    <button type="button" id="add-item" class="btn" style="margin-top:4px">+ Add line</button>
+  </fieldset>
+  <fieldset>
+    <div class="grid2">
+      <label>Tax rate (%)<input name="tax" type="number" step="any" min="0"></label>
+      <label>Discount (amount)<input name="discount" type="number" step="any" min="0"></label>
+    </div>
+    <label>Notes &amp; payment terms<textarea name="notes" rows="3"></textarea></label>
+  </fieldset>
+  <p class="small">Saved automatically in this browser only. Nothing is uploaded.</p>
+</form>
+<div class="sticky">
+  <div class="actions no-print" style="margin-bottom:10px">
+    <button type="button" id="download" class="btn primary">Download PDF</button>
+    <button type="button" id="print" class="btn">Print</button>
+    <button type="button" id="reset" class="btn">New invoice</button>
+  </div>
+  <div id="preview" aria-live="polite"></div>
+</div>
+</section>
+<article class="wrap content">
+  <p>The template is set up for a wedding morning: bridal makeup, bridal party makeup per person, a trial run held earlier and a travel fee. For editorial or commercial shoots, swap these for a day or half-day rate and note any kit fees. Include your deposit amount and the date it was paid so the balance is clear, and add an early-start surcharge if you begin before 7am.</p>
+  
+  <h2>Invoicing tips for makeup artists</h2>
+  <ul><li>Take a non-refundable booking fee to reserve the date and show it as received on the final invoice.</li><li>Charge early-start fees for call times before a set hour, such as 7am, and list them separately.</li><li>Bill on-location travel by distance or zone, and include parking or tolls if applicable.</li><li>For large bridal parties, list each service per person so costs can be split easily.</li></ul>
+  <h2>Typical line items</h2>
+  <ul><li>Bridal makeup (lashes included)</li><li>Bridal party makeup (per person)</li><li>Bridal trial session</li><li>On-location travel fee</li></ul>
+  <p class="small">Rates shown are examples only — edit them to match your pricing.</p>
+  <h2>FAQ</h2><div class="faq"><details><summary>Should I take a deposit for bridal makeup bookings?</summary><p>Yes, most artists require a non-refundable deposit or retainer, often 30-50%, to secure a wedding date, since you'll turn away other work for that day. Record the deposit on the final invoice and set the balance due on or before the wedding morning. Spell out what happens if the party size changes.</p></details><details><summary>How do I invoice a commercial or editorial shoot?</summary><p>Commercial and editorial work is usually billed at a half-day or full-day rate rather than per face, with overtime charged hourly after the agreed time. Add kit fees, assistant fees and travel as separate lines. Production companies often require an invoice with their job number and may pay net 30, so ask early.</p></details><details><summary>Can I charge for a makeup trial separately?</summary><p>Yes. Many artists bill trials as a separate service on their own invoice, or include them in a bridal package. If paid separately, note the trial date on the final invoice for reference. Charging for trials values your time, product and planning, and it filters out clients who are only shopping for ideas.</p></details></div>
+  <h2>More invoice templates</h2>
+  <ul class="links"><li><a href="/free-invoice-maker/invoice-template/photographer/">Photographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/graphic-designer/">Graphic Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/web-developer/">Web Developer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/freelance-writer/">Freelance Writer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/copywriter/">Copywriter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/videographer/">Videographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/video-editor/">Video Editor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/consultant/">Consultant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/tutor/">Tutor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/house-cleaner/">House Cleaner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/handyman/">Handyman invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/contractor/">Contractor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/electrician/">Electrician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/plumber/">Plumber invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/landscaper/">Landscaper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/painter/">Painter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/personal-trainer/">Personal Trainer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dj/">DJ invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/translator/">Translator invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/virtual-assistant/">Virtual Assistant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/social-media-manager/">Social Media Manager invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/bookkeeper/">Bookkeeper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/musician/">Musician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/interior-designer/">Interior Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/event-planner/">Event Planner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dog-walker/">Dog Walker invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/babysitter/">Babysitter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/mechanic/">Mechanic invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/truck-driver/">Truck Driver invoice template</a></li></ul>
+</article></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/free-invoice-maker/">Invoice generator</a><a href="/free-invoice-maker/invoice-templates/">Invoice templates</a><a href="/free-invoice-maker/guides/">Guides</a><a href="/free-invoice-maker/about/">About</a><a href="/free-invoice-maker/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<script src="/free-invoice-maker/assets/app.js?v=2026-10-12" defer></script>
+</body>
+</html>

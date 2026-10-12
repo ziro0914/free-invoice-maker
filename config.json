@@ -1,0 +1,13 @@
+{
+  "siteUrl": "https://ziro0914.github.io",
+  "base": "/free-invoice-maker/",
+  "repo": "ziro0914/free-invoice-maker",
+  "contactEmail": "",
+  "gaId": "",
+  "adsenseClient": "",
+  "adsTxt": "",
+  "googleSiteVerification": "",
+  "partners": [
+    { "headline": "Invoicing every month?", "text": "Accounting software can send invoices automatically, take card payments and chase late payers for you.", "cta": "Compare options", "url": "" }
+  ]
+}

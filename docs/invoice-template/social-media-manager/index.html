@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Social Media Manager Invoice Template (PDF)</title>
+<meta name="description" content="Social media manager invoice template with content creation, management and ad spend lines. Edit online and download a free PDF. No signup required.">
+<link rel="canonical" href="https://ziro0914.github.io/free-invoice-maker/invoice-template/social-media-manager/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Social Media Manager Invoice Template (PDF)">
+<meta property="og:description" content="Social media manager invoice template with content creation, management and ad spend lines. Edit online and download a free PDF. No signup required.">
+<meta property="og:url" content="https://ziro0914.github.io/free-invoice-maker/invoice-template/social-media-manager/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/free-invoice-maker/assets/style.css?v=2026-10-12">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Social Media Manager Invoice Generator","url":"https://ziro0914.github.io/free-invoice-maker/invoice-template/social-media-manager/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should ad spend be on my invoice?","acceptedAnswer":{"@type":"Answer","text":"Only if you pay the platforms yourself. In that case, list ad spend as a pass-through at cost, separate from your management fee, and keep platform receipts. Many managers prefer clients to add their own payment method to ad accounts, which avoids fronting large sums and keeps budgets transparent for everyone involved."}},{"@type":"Question","name":"How do social media managers usually price?","acceptedAnswer":{"@type":"Answer","text":"Most charge a monthly retainer based on platforms, post volume, content production and community management hours. Paid ads are often managed for a flat fee or a percentage of spend. Hourly billing is less common, but useful for audits or one-off strategy sessions. Show deliverables on the invoice either way."}},{"@type":"Question","name":"Should I charge for content creation separately?","acceptedAnswer":{"@type":"Answer","text":"If you shoot photos, edit videos or design graphics, it's sensible to price that separately or define it clearly within a package, since production takes more time than scheduling. Listing it on the invoice shows clients the effort behind each post and makes it easier to scale up or down."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Invoice templates","item":"https://ziro0914.github.io/free-invoice-maker/invoice-templates/"},{"@type":"ListItem","position":2,"name":"Social Media Manager invoice template","item":"https://ziro0914.github.io/free-invoice-maker/invoice-template/social-media-manager/"}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/free-invoice-maker/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/free-invoice-maker/invoice-templates/">Templates</a><a href="/free-invoice-maker/guides/">Guides</a></nav>
+</div></header>
+<main><section class="wrap hero">
+  <h1>Free Social Media Manager Invoice Template</h1>
+  <p>Social media management blends ongoing community work with production. A monthly invoice that separates strategy, content creation, scheduling, community management and reporting helps clients understand that posts don't just appear. It is equally important to keep ad spend apart from your management fee: clients should see exactly what went to Meta, TikTok or LinkedIn and what they paid for your expertise in running those campaigns.</p>
+  <div class="badges"><span>Pre-filled for social media managers</span><span>Download as PDF</span><span>No sign-up</span></div>
+</section>
+<script>window.FIM_PREFILL={"slug":"social-media-manager","items":[{"desc":"Monthly management: Instagram and Facebook (12 posts, community)","qty":1,"rate":1200},{"desc":"Short-form video creation (Reels/TikTok)","qty":4,"rate":150},{"desc":"Paid social campaign management","qty":1,"rate":400},{"desc":"Ad spend (pass-through at cost)","qty":1,"rate":1000}],"payment_terms":"Monthly retainer invoiced in advance, due by the 1st of the service month. Ad spend billed at cost with receipts."};</script>
+<section class="wrap tool">
+<form id="invoice-form" class="card" autocomplete="on" onsubmit="return false">
+  <fieldset><legend>From (your business)</legend>
+    <div class="grid2">
+      <label>Business / your name<input name="biz_name" placeholder="Jane Doe Studio"></label>
+      <label>Email<input name="biz_email" type="email" placeholder="you@example.com"></label>
+      <label>Phone<input name="biz_phone" placeholder="+1 555 0100"></label>
+      <label>Logo (optional)<input name="logo" type="file" accept="image/png,image/jpeg"></label>
+    </div>
+    <label>Address<textarea name="biz_address" rows="2" placeholder="123 Main St&#10;Austin, TX 78701"></textarea></label>
+    <button type="button" id="logo-clear" class="btn" style="margin-top:6px;padding:4px 10px;font-size:13px">Remove logo</button>
+  </fieldset>
+  <fieldset><legend>Bill to (client)</legend>
+    <div class="grid2">
+      <label>Client name<input name="client_name" placeholder="Acme Inc."></label>
+      <label>Client email<input name="client_email" type="email" placeholder="billing@acme.com"></label>
+    </div>
+    <label>Client address<textarea name="client_address" rows="2"></textarea></label>
+  </fieldset>
+  <fieldset><legend>Invoice details</legend>
+    <div class="grid2">
+      <label>Invoice #<input name="number"></label>
+      <label>Currency<select name="currency"></select></label>
+      <label>Issue date<input name="issued" type="date"></label>
+      <label>Due date<input name="due" type="date"></label>
+    </div>
+  </fieldset>
+  <fieldset><legend>Line items</legend>
+    <div class="item-head"><span>Description</span><span>Qty</span><span>Rate</span><span style="text-align:right">Amount</span><span></span></div>
+    <div id="items"></div>
+    <button type="button" id="add-item" class="btn" style="margin-top:4px">+ Add line</button>
+  </fieldset>
+  <fieldset>
+    <div class="grid2">
+      <label>Tax rate (%)<input name="tax" type="number" step="any" min="0"></label>
+      <label>Discount (amount)<input name="discount" type="number" step="any" min="0"></label>
+    </div>
+    <label>Notes &amp; payment terms<textarea name="notes" rows="3"></textarea></label>
+  </fieldset>
+  <p class="small">Saved automatically in this browser only. Nothing is uploaded.</p>
+</form>
+<div class="sticky">
+  <div class="actions no-print" style="margin-bottom:10px">
+    <button type="button" id="download" class="btn primary">Download PDF</button>
+    <button type="button" id="print" class="btn">Print</button>
+    <button type="button" id="reset" class="btn">New invoice</button>
+  </div>
+  <div id="preview" aria-live="polite"></div>
+</div>
+</section>
+<article class="wrap content">
+  <p>The sample covers a monthly package for two platforms, a batch of short-form videos, paid ad management and an ad budget passed through at cost. Tweak platforms, post counts and deliverables to your retainer. If the client pays platforms directly with their own card, remove the ad spend line and note the budget you managed instead, which keeps responsibility clear.</p>
+  
+  <h2>Invoicing tips for social media managers</h2>
+  <ul><li>Separate your management fee from ad spend; ideally have the client's own card on ad accounts so budgets don't run through your business.</li><li>List post counts and platforms per month so the client can compare the invoice with the content calendar.</li><li>Bill extra content, rush posts or event coverage outside the package as add-on lines.</li><li>Invoice monthly retainers in advance so content isn't produced before payment arrives.</li></ul>
+  <h2>Typical line items</h2>
+  <ul><li>Monthly management: Instagram and Facebook (12 posts, community)</li><li>Short-form video creation (Reels/TikTok)</li><li>Paid social campaign management</li><li>Ad spend (pass-through at cost)</li></ul>
+  <p class="small">Rates shown are examples only — edit them to match your pricing.</p>
+  <h2>FAQ</h2><div class="faq"><details><summary>Should ad spend be on my invoice?</summary><p>Only if you pay the platforms yourself. In that case, list ad spend as a pass-through at cost, separate from your management fee, and keep platform receipts. Many managers prefer clients to add their own payment method to ad accounts, which avoids fronting large sums and keeps budgets transparent for everyone involved.</p></details><details><summary>How do social media managers usually price?</summary><p>Most charge a monthly retainer based on platforms, post volume, content production and community management hours. Paid ads are often managed for a flat fee or a percentage of spend. Hourly billing is less common, but useful for audits or one-off strategy sessions. Show deliverables on the invoice either way.</p></details><details><summary>Should I charge for content creation separately?</summary><p>If you shoot photos, edit videos or design graphics, it's sensible to price that separately or define it clearly within a package, since production takes more time than scheduling. Listing it on the invoice shows clients the effort behind each post and makes it easier to scale up or down.</p></details></div>
+  <h2>More invoice templates</h2>
+  <ul class="links"><li><a href="/free-invoice-maker/invoice-template/photographer/">Photographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/graphic-designer/">Graphic Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/web-developer/">Web Developer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/freelance-writer/">Freelance Writer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/copywriter/">Copywriter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/videographer/">Videographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/video-editor/">Video Editor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/consultant/">Consultant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/tutor/">Tutor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/house-cleaner/">House Cleaner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/handyman/">Handyman invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/contractor/">Contractor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/electrician/">Electrician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/plumber/">Plumber invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/landscaper/">Landscaper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/painter/">Painter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/personal-trainer/">Personal Trainer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/makeup-artist/">Makeup Artist invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dj/">DJ invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/translator/">Translator invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/virtual-assistant/">Virtual Assistant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/bookkeeper/">Bookkeeper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/musician/">Musician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/interior-designer/">Interior Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/event-planner/">Event Planner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dog-walker/">Dog Walker invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/babysitter/">Babysitter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/mechanic/">Mechanic invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/truck-driver/">Truck Driver invoice template</a></li></ul>
+</article></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/free-invoice-maker/">Invoice generator</a><a href="/free-invoice-maker/invoice-templates/">Invoice templates</a><a href="/free-invoice-maker/guides/">Guides</a><a href="/free-invoice-maker/about/">About</a><a href="/free-invoice-maker/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<script src="/free-invoice-maker/assets/app.js?v=2026-10-12" defer></script>
+</body>
+</html>

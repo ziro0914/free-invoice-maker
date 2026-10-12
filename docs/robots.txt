@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ziro0914.github.io/free-invoice-maker/sitemap.xml

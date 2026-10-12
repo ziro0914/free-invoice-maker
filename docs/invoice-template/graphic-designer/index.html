@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Graphic Design Invoice Template | Free Invoice Maker</title>
+<meta name="description" content="Graphic design invoice template with design hours, revision rounds and file handoff lines. Edit online and download a free PDF. No signup required.">
+<link rel="canonical" href="https://ziro0914.github.io/free-invoice-maker/invoice-template/graphic-designer/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Graphic Design Invoice Template | Free Invoice Maker">
+<meta property="og:description" content="Graphic design invoice template with design hours, revision rounds and file handoff lines. Edit online and download a free PDF. No signup required.">
+<meta property="og:url" content="https://ziro0914.github.io/free-invoice-maker/invoice-template/graphic-designer/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/free-invoice-maker/assets/style.css?v=2026-10-12">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Graphic Designer Invoice Generator","url":"https://ziro0914.github.io/free-invoice-maker/invoice-template/graphic-designer/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should I charge hourly or per project as a graphic designer?","acceptedAnswer":{"@type":"Answer","text":"Both work, but project pricing tends to suit defined deliverables like logos or brochures, while hourly billing fits open-ended retainers and ongoing production work. Whichever you choose, list hours or deliverables on the invoice so clients can compare it with your quote. Many designers quote per project and track hours privately to check profitability."}},{"@type":"Question","name":"How do I bill for font and stock image licenses?","acceptedAnswer":{"@type":"Answer","text":"Add each license as its own line with the quantity and cost, and note who holds the license. Some fonts and stock images must be licensed in the client's name, in which case you can invoice the cost as a reimbursable expense. Keep receipts in case the client's finance team asks for proof."}},{"@type":"Question","name":"When should I send final design files?","acceptedAnswer":{"@type":"Answer","text":"Many designers share low-resolution or watermarked proofs for approval, then release editable source files and print-ready exports after the final invoice is paid. State this in your payment terms and contract before work begins so the client isn't surprised. It protects you from unpaid work while still letting the client review everything."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Invoice templates","item":"https://ziro0914.github.io/free-invoice-maker/invoice-templates/"},{"@type":"ListItem","position":2,"name":"Graphic Designer invoice template","item":"https://ziro0914.github.io/free-invoice-maker/invoice-template/graphic-designer/"}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/free-invoice-maker/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/free-invoice-maker/invoice-templates/">Templates</a><a href="/free-invoice-maker/guides/">Guides</a></nav>
+</div></header>
+<main><section class="wrap hero">
+  <h1>Free Graphic Designer Invoice Template</h1>
+  <p>Design clients often struggle to see the work behind a finished logo, so a clear invoice is part of how you justify your fee. Breaking a project into concept development, revision rounds and final file preparation shows where the hours went and makes it obvious when a client has gone beyond the agreed scope. It also gives you a paper trail if a brand identity later needs to be extended to packaging or signage.</p>
+  <div class="badges"><span>Pre-filled for graphic designers</span><span>Download as PDF</span><span>No sign-up</span></div>
+</section>
+<script>window.FIM_PREFILL={"slug":"graphic-designer","items":[{"desc":"Logo design - 3 initial concepts","qty":1,"rate":900},{"desc":"Additional revision round (beyond 2 included)","qty":2,"rate":120},{"desc":"Brand style guide (12 pages)","qty":1,"rate":650},{"desc":"Stock imagery license (pass-through at cost)","qty":3,"rate":15}],"payment_terms":"50% deposit due before work begins. Balance due within 14 days of final approval; source files released on payment."};</script>
+<section class="wrap tool">
+<form id="invoice-form" class="card" autocomplete="on" onsubmit="return false">
+  <fieldset><legend>From (your business)</legend>
+    <div class="grid2">
+      <label>Business / your name<input name="biz_name" placeholder="Jane Doe Studio"></label>
+      <label>Email<input name="biz_email" type="email" placeholder="you@example.com"></label>
+      <label>Phone<input name="biz_phone" placeholder="+1 555 0100"></label>
+      <label>Logo (optional)<input name="logo" type="file" accept="image/png,image/jpeg"></label>
+    </div>
+    <label>Address<textarea name="biz_address" rows="2" placeholder="123 Main St&#10;Austin, TX 78701"></textarea></label>
+    <button type="button" id="logo-clear" class="btn" style="margin-top:6px;padding:4px 10px;font-size:13px">Remove logo</button>
+  </fieldset>
+  <fieldset><legend>Bill to (client)</legend>
+    <div class="grid2">
+      <label>Client name<input name="client_name" placeholder="Acme Inc."></label>
+      <label>Client email<input name="client_email" type="email" placeholder="billing@acme.com"></label>
+    </div>
+    <label>Client address<textarea name="client_address" rows="2"></textarea></label>
+  </fieldset>
+  <fieldset><legend>Invoice details</legend>
+    <div class="grid2">
+      <label>Invoice #<input name="number"></label>
+      <label>Currency<select name="currency"></select></label>
+      <label>Issue date<input name="issued" type="date"></label>
+      <label>Due date<input name="due" type="date"></label>
+    </div>
+  </fieldset>
+  <fieldset><legend>Line items</legend>
+    <div class="item-head"><span>Description</span><span>Qty</span><span>Rate</span><span style="text-align:right">Amount</span><span></span></div>
+    <div id="items"></div>
+    <button type="button" id="add-item" class="btn" style="margin-top:4px">+ Add line</button>
+  </fieldset>
+  <fieldset>
+    <div class="grid2">
+      <label>Tax rate (%)<input name="tax" type="number" step="any" min="0"></label>
+      <label>Discount (amount)<input name="discount" type="number" step="any" min="0"></label>
+    </div>
+    <label>Notes &amp; payment terms<textarea name="notes" rows="3"></textarea></label>
+  </fieldset>
+  <p class="small">Saved automatically in this browser only. Nothing is uploaded.</p>
+</form>
+<div class="sticky">
+  <div class="actions no-print" style="margin-bottom:10px">
+    <button type="button" id="download" class="btn primary">Download PDF</button>
+    <button type="button" id="print" class="btn">Print</button>
+    <button type="button" id="reset" class="btn">New invoice</button>
+  </div>
+  <div id="preview" aria-live="polite"></div>
+</div>
+</section>
+<article class="wrap content">
+  <p>The prefilled lines cover a typical branding job: logo concepts, extra revision rounds billed beyond the included two, a brand style guide, and stock asset licenses passed through at cost. Edit the descriptions to match your proposal wording so the client's accounts team can tie the invoice to the approved quote. If you transfer copyright on payment, say so in the notes field rather than leaving ownership ambiguous.</p>
+  
+  <h2>Invoicing tips for graphic designers</h2>
+  <ul><li>Specify how many revision rounds your fee includes and bill extra rounds as their own line item so scope creep is visible.</li><li>State that copyright or full usage rights transfer only once the invoice is paid in full.</li><li>Pass through stock photos, fonts and print costs as separate lines, with or without a handling markup, so clients see third-party expenses clearly.</li><li>For larger projects, invoice 50% upfront and the balance on delivery of final files instead of waiting until the very end.</li></ul>
+  <h2>Typical line items</h2>
+  <ul><li>Logo design - 3 initial concepts</li><li>Additional revision round (beyond 2 included)</li><li>Brand style guide (12 pages)</li><li>Stock imagery license (pass-through at cost)</li></ul>
+  <p class="small">Rates shown are examples only — edit them to match your pricing.</p>
+  <h2>FAQ</h2><div class="faq"><details><summary>Should I charge hourly or per project as a graphic designer?</summary><p>Both work, but project pricing tends to suit defined deliverables like logos or brochures, while hourly billing fits open-ended retainers and ongoing production work. Whichever you choose, list hours or deliverables on the invoice so clients can compare it with your quote. Many designers quote per project and track hours privately to check profitability.</p></details><details><summary>How do I bill for font and stock image licenses?</summary><p>Add each license as its own line with the quantity and cost, and note who holds the license. Some fonts and stock images must be licensed in the client's name, in which case you can invoice the cost as a reimbursable expense. Keep receipts in case the client's finance team asks for proof.</p></details><details><summary>When should I send final design files?</summary><p>Many designers share low-resolution or watermarked proofs for approval, then release editable source files and print-ready exports after the final invoice is paid. State this in your payment terms and contract before work begins so the client isn't surprised. It protects you from unpaid work while still letting the client review everything.</p></details></div>
+  <h2>More invoice templates</h2>
+  <ul class="links"><li><a href="/free-invoice-maker/invoice-template/photographer/">Photographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/web-developer/">Web Developer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/freelance-writer/">Freelance Writer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/copywriter/">Copywriter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/videographer/">Videographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/video-editor/">Video Editor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/consultant/">Consultant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/tutor/">Tutor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/house-cleaner/">House Cleaner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/handyman/">Handyman invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/contractor/">Contractor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/electrician/">Electrician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/plumber/">Plumber invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/landscaper/">Landscaper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/painter/">Painter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/personal-trainer/">Personal Trainer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/makeup-artist/">Makeup Artist invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dj/">DJ invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/translator/">Translator invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/virtual-assistant/">Virtual Assistant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/social-media-manager/">Social Media Manager invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/bookkeeper/">Bookkeeper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/musician/">Musician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/interior-designer/">Interior Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/event-planner/">Event Planner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dog-walker/">Dog Walker invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/babysitter/">Babysitter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/mechanic/">Mechanic invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/truck-driver/">Truck Driver invoice template</a></li></ul>
+</article></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/free-invoice-maker/">Invoice generator</a><a href="/free-invoice-maker/invoice-templates/">Invoice templates</a><a href="/free-invoice-maker/guides/">Guides</a><a href="/free-invoice-maker/about/">About</a><a href="/free-invoice-maker/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<script src="/free-invoice-maker/assets/app.js?v=2026-10-12" defer></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Cleaning Invoice Template | Free Invoice Maker</title>
+<meta name="description" content="Cleaning invoice template for house cleaners, with standard, deep clean and add-on lines. Edit online and download a free PDF. No signup required.">
+<link rel="canonical" href="https://ziro0914.github.io/free-invoice-maker/invoice-template/house-cleaner/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Cleaning Invoice Template | Free Invoice Maker">
+<meta property="og:description" content="Cleaning invoice template for house cleaners, with standard, deep clean and add-on lines. Edit online and download a free PDF. No signup required.">
+<meta property="og:url" content="https://ziro0914.github.io/free-invoice-maker/invoice-template/house-cleaner/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/free-invoice-maker/assets/style.css?v=2026-10-12">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"House Cleaner Invoice Generator","url":"https://ziro0914.github.io/free-invoice-maker/invoice-template/house-cleaner/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should I invoice cleaning clients weekly or monthly?","acceptedAnswer":{"@type":"Answer","text":"For weekly or biweekly clients, monthly invoicing with each visit listed reduces admin, though some cleaners prefer payment at each visit to protect cash flow. One-off deep cleans and move-out cleans are usually paid on completion. Whatever you choose, keep the visit dates on the invoice so clients can confirm each service."}},{"@type":"Question","name":"Do I charge extra if I bring my own supplies?","acceptedAnswer":{"@type":"Answer","text":"Many cleaners build supplies into their rate, while others add a small flat supplies fee per visit. If a client requests specific eco-friendly or specialty products, it's reasonable to bill them at cost or with a small markup. If you use the client's own products, note that on the invoice for clarity."}},{"@type":"Question","name":"How do I price a deep clean on an invoice?","acceptedAnswer":{"@type":"Answer","text":"Quote deep cleans as a flat job price based on home size and condition, or by the hour with an estimated range. On the invoice, describe the scope, such as baseboards, inside cabinets and appliances, so clients understand why it costs more than a standard visit. This also sets expectations for future maintenance cleans."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Invoice templates","item":"https://ziro0914.github.io/free-invoice-maker/invoice-templates/"},{"@type":"ListItem","position":2,"name":"House Cleaner invoice template","item":"https://ziro0914.github.io/free-invoice-maker/invoice-template/house-cleaner/"}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/free-invoice-maker/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/free-invoice-maker/invoice-templates/">Templates</a><a href="/free-invoice-maker/guides/">Guides</a></nav>
+</div></header>
+<main><section class="wrap hero">
+  <h1>Free House Cleaner Invoice Template</h1>
+  <p>Residential cleaning clients often book a recurring service and forget the details, so an invoice listing the visit date, service type and any add-ons heads off questions before they start. Deep cleans, move-out cleans and extras like inside the oven, inside the fridge or interior windows take much longer than a standard visit, and itemizing them keeps your recurring rate from creeping upward through unpaid extras.</p>
+  <div class="badges"><span>Pre-filled for house cleaners</span><span>Download as PDF</span><span>No sign-up</span></div>
+</section>
+<script>window.FIM_PREFILL={"slug":"house-cleaner","items":[{"desc":"Standard home clean (3 bed, 2 bath)","qty":4,"rate":140},{"desc":"Add-on: inside oven and refrigerator","qty":1,"rate":60},{"desc":"Interior window cleaning","qty":1,"rate":50},{"desc":"Cleaning supplies and consumables","qty":1,"rate":20}],"payment_terms":"Payment due on the day of service or within 7 days of invoice. Same-day cancellations or lockouts billed at 50%."};</script>
+<section class="wrap tool">
+<form id="invoice-form" class="card" autocomplete="on" onsubmit="return false">
+  <fieldset><legend>From (your business)</legend>
+    <div class="grid2">
+      <label>Business / your name<input name="biz_name" placeholder="Jane Doe Studio"></label>
+      <label>Email<input name="biz_email" type="email" placeholder="you@example.com"></label>
+      <label>Phone<input name="biz_phone" placeholder="+1 555 0100"></label>
+      <label>Logo (optional)<input name="logo" type="file" accept="image/png,image/jpeg"></label>
+    </div>
+    <label>Address<textarea name="biz_address" rows="2" placeholder="123 Main St&#10;Austin, TX 78701"></textarea></label>
+    <button type="button" id="logo-clear" class="btn" style="margin-top:6px;padding:4px 10px;font-size:13px">Remove logo</button>
+  </fieldset>
+  <fieldset><legend>Bill to (client)</legend>
+    <div class="grid2">
+      <label>Client name<input name="client_name" placeholder="Acme Inc."></label>
+      <label>Client email<input name="client_email" type="email" placeholder="billing@acme.com"></label>
+    </div>
+    <label>Client address<textarea name="client_address" rows="2"></textarea></label>
+  </fieldset>
+  <fieldset><legend>Invoice details</legend>
+    <div class="grid2">
+      <label>Invoice #<input name="number"></label>
+      <label>Currency<select name="currency"></select></label>
+      <label>Issue date<input name="issued" type="date"></label>
+      <label>Due date<input name="due" type="date"></label>
+    </div>
+  </fieldset>
+  <fieldset><legend>Line items</legend>
+    <div class="item-head"><span>Description</span><span>Qty</span><span>Rate</span><span style="text-align:right">Amount</span><span></span></div>
+    <div id="items"></div>
+    <button type="button" id="add-item" class="btn" style="margin-top:4px">+ Add line</button>
+  </fieldset>
+  <fieldset>
+    <div class="grid2">
+      <label>Tax rate (%)<input name="tax" type="number" step="any" min="0"></label>
+      <label>Discount (amount)<input name="discount" type="number" step="any" min="0"></label>
+    </div>
+    <label>Notes &amp; payment terms<textarea name="notes" rows="3"></textarea></label>
+  </fieldset>
+  <p class="small">Saved automatically in this browser only. Nothing is uploaded.</p>
+</form>
+<div class="sticky">
+  <div class="actions no-print" style="margin-bottom:10px">
+    <button type="button" id="download" class="btn primary">Download PDF</button>
+    <button type="button" id="print" class="btn">Print</button>
+    <button type="button" id="reset" class="btn">New invoice</button>
+  </div>
+  <div id="preview" aria-live="polite"></div>
+</div>
+</section>
+<article class="wrap content">
+  <p>The sample reflects one month for a weekly client: four standard visits, a one-off oven and fridge add-on, interior windows and a supplies charge. If you bill per hour instead, change the quantities to hours and the description to show the number of cleaners. Note your lockout or same-day cancellation fee in the terms, since arriving to a locked house costs you a booking.</p>
+  
+  <h2>Invoicing tips for house cleaners</h2>
+  <ul><li>Price add-ons such as inside appliances, laundry or interior windows separately so recurring clients see when a visit exceeded the standard scope.</li><li>Charge a lockout or late-cancellation fee, often a portion of the visit price, and state it on every invoice.</li><li>Bill move-out and post-construction cleans as their own job type with a higher rate, since they take far longer than maintenance cleans.</li><li>Offer card-on-file or automatic payment for weekly clients to avoid chasing small invoices every week.</li></ul>
+  <h2>Typical line items</h2>
+  <ul><li>Standard home clean (3 bed, 2 bath)</li><li>Add-on: inside oven and refrigerator</li><li>Interior window cleaning</li><li>Cleaning supplies and consumables</li></ul>
+  <p class="small">Rates shown are examples only — edit them to match your pricing.</p>
+  <h2>FAQ</h2><div class="faq"><details><summary>Should I invoice cleaning clients weekly or monthly?</summary><p>For weekly or biweekly clients, monthly invoicing with each visit listed reduces admin, though some cleaners prefer payment at each visit to protect cash flow. One-off deep cleans and move-out cleans are usually paid on completion. Whatever you choose, keep the visit dates on the invoice so clients can confirm each service.</p></details><details><summary>Do I charge extra if I bring my own supplies?</summary><p>Many cleaners build supplies into their rate, while others add a small flat supplies fee per visit. If a client requests specific eco-friendly or specialty products, it's reasonable to bill them at cost or with a small markup. If you use the client's own products, note that on the invoice for clarity.</p></details><details><summary>How do I price a deep clean on an invoice?</summary><p>Quote deep cleans as a flat job price based on home size and condition, or by the hour with an estimated range. On the invoice, describe the scope, such as baseboards, inside cabinets and appliances, so clients understand why it costs more than a standard visit. This also sets expectations for future maintenance cleans.</p></details></div>
+  <h2>More invoice templates</h2>
+  <ul class="links"><li><a href="/free-invoice-maker/invoice-template/photographer/">Photographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/graphic-designer/">Graphic Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/web-developer/">Web Developer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/freelance-writer/">Freelance Writer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/copywriter/">Copywriter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/videographer/">Videographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/video-editor/">Video Editor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/consultant/">Consultant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/tutor/">Tutor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/handyman/">Handyman invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/contractor/">Contractor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/electrician/">Electrician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/plumber/">Plumber invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/landscaper/">Landscaper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/painter/">Painter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/personal-trainer/">Personal Trainer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/makeup-artist/">Makeup Artist invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dj/">DJ invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/translator/">Translator invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/virtual-assistant/">Virtual Assistant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/social-media-manager/">Social Media Manager invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/bookkeeper/">Bookkeeper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/musician/">Musician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/interior-designer/">Interior Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/event-planner/">Event Planner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dog-walker/">Dog Walker invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/babysitter/">Babysitter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/mechanic/">Mechanic invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/truck-driver/">Truck Driver invoice template</a></li></ul>
+</article></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/free-invoice-maker/">Invoice generator</a><a href="/free-invoice-maker/invoice-templates/">Invoice templates</a><a href="/free-invoice-maker/guides/">Guides</a><a href="/free-invoice-maker/about/">About</a><a href="/free-invoice-maker/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<script src="/free-invoice-maker/assets/app.js?v=2026-10-12" defer></script>
+</body>
+</html>

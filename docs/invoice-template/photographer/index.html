@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Photography Invoice Template | Free Invoice Maker</title>
+<meta name="description" content="Create a photography invoice in seconds. Prefilled with session fees, editing and print rights. Add your logo, download a PDF, and send it free—no signup.">
+<link rel="canonical" href="https://ziro0914.github.io/free-invoice-maker/invoice-template/photographer/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Photography Invoice Template | Free Invoice Maker">
+<meta property="og:description" content="Create a photography invoice in seconds. Prefilled with session fees, editing and print rights. Add your logo, download a PDF, and send it free—no signup.">
+<meta property="og:url" content="https://ziro0914.github.io/free-invoice-maker/invoice-template/photographer/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/free-invoice-maker/assets/style.css?v=2026-10-12">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Photographer Invoice Generator","url":"https://ziro0914.github.io/free-invoice-maker/invoice-template/photographer/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should I charge sales tax on photography invoices?","acceptedAnswer":{"@type":"Answer","text":"It depends on where you work. Some US states treat prints, digital image deliveries or both as taxable, while others tax only physical products; in the UK, Canada and Australia, registration usually depends on your turnover. Check local rules or ask an accountant, then add the tax rate in the generator if it applies to you."}},{"@type":"Question","name":"How do I invoice for a wedding paid in installments?","acceptedAnswer":{"@type":"Answer","text":"Issue one invoice per payment milestone, each referencing the same contract and showing the total package price, amounts already received and the remaining balance. A common schedule is a retainer at booking, a second payment a few months out, and the final balance two to four weeks before the wedding so nothing is outstanding on the day."}},{"@type":"Question","name":"Do I need to list every edited image?","acceptedAnswer":{"@type":"Answer","text":"No. One line showing the number of edited images and the per-image rate is clearer than dozens of rows. Itemize only when pricing differs, such as standard edits versus advanced retouching, or when a client ordered specific frames from a proofing gallery and needs the invoice to match their selection."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Invoice templates","item":"https://ziro0914.github.io/free-invoice-maker/invoice-templates/"},{"@type":"ListItem","position":2,"name":"Photographer invoice template","item":"https://ziro0914.github.io/free-invoice-maker/invoice-template/photographer/"}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/free-invoice-maker/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/free-invoice-maker/invoice-templates/">Templates</a><a href="/free-invoice-maker/guides/">Guides</a></nav>
+</div></header>
+<main><section class="wrap hero">
+  <h1>Free Photographer Invoice Template</h1>
+  <p>Photography invoices do more than request payment: they document what the client actually bought. A wedding package, a half-day headshot session and a product shoot for an online store all bill differently, and listing session time, editing, deliverables and image licensing as separate lines prevents the classic dispute over whether retouching or extra downloads were included. Clients who see the breakdown are also far less likely to haggle over the total.</p>
+  <div class="badges"><span>Pre-filled for photographers</span><span>Download as PDF</span><span>No sign-up</span></div>
+</section>
+<script>window.FIM_PREFILL={"slug":"photographer","items":[{"desc":"Portrait session (2 hours, on location)","qty":1,"rate":350},{"desc":"Professional editing and retouching (per image)","qty":25,"rate":15},{"desc":"Commercial usage license (1 year, web and social)","qty":1,"rate":400},{"desc":"Travel (per mile)","qty":40,"rate":0.7}],"payment_terms":"Non-refundable 30% retainer due at booking. Balance due within 14 days of the session; final images delivered on payment."};</script>
+<section class="wrap tool">
+<form id="invoice-form" class="card" autocomplete="on" onsubmit="return false">
+  <fieldset><legend>From (your business)</legend>
+    <div class="grid2">
+      <label>Business / your name<input name="biz_name" placeholder="Jane Doe Studio"></label>
+      <label>Email<input name="biz_email" type="email" placeholder="you@example.com"></label>
+      <label>Phone<input name="biz_phone" placeholder="+1 555 0100"></label>
+      <label>Logo (optional)<input name="logo" type="file" accept="image/png,image/jpeg"></label>
+    </div>
+    <label>Address<textarea name="biz_address" rows="2" placeholder="123 Main St&#10;Austin, TX 78701"></textarea></label>
+    <button type="button" id="logo-clear" class="btn" style="margin-top:6px;padding:4px 10px;font-size:13px">Remove logo</button>
+  </fieldset>
+  <fieldset><legend>Bill to (client)</legend>
+    <div class="grid2">
+      <label>Client name<input name="client_name" placeholder="Acme Inc."></label>
+      <label>Client email<input name="client_email" type="email" placeholder="billing@acme.com"></label>
+    </div>
+    <label>Client address<textarea name="client_address" rows="2"></textarea></label>
+  </fieldset>
+  <fieldset><legend>Invoice details</legend>
+    <div class="grid2">
+      <label>Invoice #<input name="number"></label>
+      <label>Currency<select name="currency"></select></label>
+      <label>Issue date<input name="issued" type="date"></label>
+      <label>Due date<input name="due" type="date"></label>
+    </div>
+  </fieldset>
+  <fieldset><legend>Line items</legend>
+    <div class="item-head"><span>Description</span><span>Qty</span><span>Rate</span><span style="text-align:right">Amount</span><span></span></div>
+    <div id="items"></div>
+    <button type="button" id="add-item" class="btn" style="margin-top:4px">+ Add line</button>
+  </fieldset>
+  <fieldset>
+    <div class="grid2">
+      <label>Tax rate (%)<input name="tax" type="number" step="any" min="0"></label>
+      <label>Discount (amount)<input name="discount" type="number" step="any" min="0"></label>
+    </div>
+    <label>Notes &amp; payment terms<textarea name="notes" rows="3"></textarea></label>
+  </fieldset>
+  <p class="small">Saved automatically in this browser only. Nothing is uploaded.</p>
+</form>
+<div class="sticky">
+  <div class="actions no-print" style="margin-bottom:10px">
+    <button type="button" id="download" class="btn primary">Download PDF</button>
+    <button type="button" id="print" class="btn">Print</button>
+    <button type="button" id="reset" class="btn">New invoice</button>
+  </div>
+  <div id="preview" aria-live="polite"></div>
+</div>
+</section>
+<article class="wrap content">
+  <p>This template starts with the lines most working photographers use: a session or coverage fee, post-production per edited image, a usage license for commercial clients, and travel. Change the quantities, swap in your own rates, and add a note referencing your contract or booking date. If you took a retainer at booking, list it as a negative line or mention it in the notes so the balance due is unmistakable.</p>
+  
+  <h2>Invoicing tips for photographers</h2>
+  <ul><li>State the image usage rights on the invoice itself (medium, territory, duration) so the license is documented alongside the payment record.</li><li>Collect a non-refundable retainer, typically 25-50%, to hold the date, and show it as already paid when you issue the final invoice.</li><li>Bill rush delivery, extra retouching rounds and additional images as separate lines rather than folding them into the session fee.</li><li>Release full-resolution or unwatermarked files only after the balance clears, and say so in your payment terms.</li></ul>
+  <h2>Typical line items</h2>
+  <ul><li>Portrait session (2 hours, on location)</li><li>Professional editing and retouching (per image)</li><li>Commercial usage license (1 year, web and social)</li><li>Travel (per mile)</li></ul>
+  <p class="small">Rates shown are examples only — edit them to match your pricing.</p>
+  <h2>FAQ</h2><div class="faq"><details><summary>Should I charge sales tax on photography invoices?</summary><p>It depends on where you work. Some US states treat prints, digital image deliveries or both as taxable, while others tax only physical products; in the UK, Canada and Australia, registration usually depends on your turnover. Check local rules or ask an accountant, then add the tax rate in the generator if it applies to you.</p></details><details><summary>How do I invoice for a wedding paid in installments?</summary><p>Issue one invoice per payment milestone, each referencing the same contract and showing the total package price, amounts already received and the remaining balance. A common schedule is a retainer at booking, a second payment a few months out, and the final balance two to four weeks before the wedding so nothing is outstanding on the day.</p></details><details><summary>Do I need to list every edited image?</summary><p>No. One line showing the number of edited images and the per-image rate is clearer than dozens of rows. Itemize only when pricing differs, such as standard edits versus advanced retouching, or when a client ordered specific frames from a proofing gallery and needs the invoice to match their selection.</p></details></div>
+  <h2>More invoice templates</h2>
+  <ul class="links"><li><a href="/free-invoice-maker/invoice-template/graphic-designer/">Graphic Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/web-developer/">Web Developer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/freelance-writer/">Freelance Writer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/copywriter/">Copywriter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/videographer/">Videographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/video-editor/">Video Editor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/consultant/">Consultant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/tutor/">Tutor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/house-cleaner/">House Cleaner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/handyman/">Handyman invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/contractor/">Contractor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/electrician/">Electrician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/plumber/">Plumber invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/landscaper/">Landscaper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/painter/">Painter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/personal-trainer/">Personal Trainer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/makeup-artist/">Makeup Artist invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dj/">DJ invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/translator/">Translator invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/virtual-assistant/">Virtual Assistant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/social-media-manager/">Social Media Manager invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/bookkeeper/">Bookkeeper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/musician/">Musician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/interior-designer/">Interior Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/event-planner/">Event Planner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dog-walker/">Dog Walker invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/babysitter/">Babysitter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/mechanic/">Mechanic invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/truck-driver/">Truck Driver invoice template</a></li></ul>
+</article></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/free-invoice-maker/">Invoice generator</a><a href="/free-invoice-maker/invoice-templates/">Invoice templates</a><a href="/free-invoice-maker/guides/">Guides</a><a href="/free-invoice-maker/about/">About</a><a href="/free-invoice-maker/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<script src="/free-invoice-maker/assets/app.js?v=2026-10-12" defer></script>
+</body>
+</html>

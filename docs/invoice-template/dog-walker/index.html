@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Dog Walking Invoice Template | Free Invoice Maker</title>
+<meta name="description" content="Dog walking invoice template for walks, extra dogs, drop-ins and pet sitting visits. Add your logo, download a PDF, and send it free—no signup.">
+<link rel="canonical" href="https://ziro0914.github.io/free-invoice-maker/invoice-template/dog-walker/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Dog Walking Invoice Template | Free Invoice Maker">
+<meta property="og:description" content="Dog walking invoice template for walks, extra dogs, drop-ins and pet sitting visits. Add your logo, download a PDF, and send it free—no signup.">
+<meta property="og:url" content="https://ziro0914.github.io/free-invoice-maker/invoice-template/dog-walker/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/free-invoice-maker/assets/style.css?v=2026-10-12">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Dog Walker Invoice Generator","url":"https://ziro0914.github.io/free-invoice-maker/invoice-template/dog-walker/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should dog walkers bill weekly or monthly?","acceptedAnswer":{"@type":"Answer","text":"Either works; weekly suits new clients and irregular schedules, while monthly reduces admin for steady routines. Billing in advance secures the time slot and protects you from last-minute cancellations. Adjust the next invoice for any canceled or extra walks, and keep a cancellation window, like 24 hours, so short-notice cancellations are still paid."}},{"@type":"Question","name":"How much extra should I charge for additional dogs?","acceptedAnswer":{"@type":"Answer","text":"Many walkers add a flat per-walk fee for each additional dog from the same household rather than charging a full second walk. The amount depends on local rates and how much extra handling the dogs need. Show it as its own line so owners understand exactly how the total was calculated."}},{"@type":"Question","name":"What should I include for pet sitting and overnights?","acceptedAnswer":{"@type":"Answer","text":"Bill overnights as a separate service with dates, the number of nights and any extra walks or medication visits. Note key handover, emergency contact details and any vet visits you made, with receipts for costs you paid. Holiday overnights often carry a premium, which should be listed separately."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Invoice templates","item":"https://ziro0914.github.io/free-invoice-maker/invoice-templates/"},{"@type":"ListItem","position":2,"name":"Dog Walker invoice template","item":"https://ziro0914.github.io/free-invoice-maker/invoice-template/dog-walker/"}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/free-invoice-maker/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/free-invoice-maker/invoice-templates/">Templates</a><a href="/free-invoice-maker/guides/">Guides</a></nav>
+</div></header>
+<main><section class="wrap hero">
+  <h1>Free Dog Walker Invoice Template</h1>
+  <p>Dog walking clients usually book a recurring weekly schedule, then add the occasional extra walk, a holiday drop-in or an overnight stay. A weekly or monthly invoice that lists each walk by date, duration and dog gives owners a quick way to confirm visits while they were at work. It also shows clearly when extra dogs, longer walks or weekend visits were charged at a different rate.</p>
+  <div class="badges"><span>Pre-filled for dog walkers</span><span>Download as PDF</span><span>No sign-up</span></div>
+</section>
+<script>window.FIM_PREFILL={"slug":"dog-walker","items":[{"desc":"30-minute solo walk (weekdays)","qty":20,"rate":22},{"desc":"Additional dog, same household (per walk)","qty":20,"rate":8},{"desc":"Pet drop-in visit (feed, water, play)","qty":2,"rate":25},{"desc":"Holiday surcharge","qty":1,"rate":15}],"payment_terms":"Regular walks billed weekly in advance, due before the first walk. Cancellations with less than 24 hours' notice are charged."};</script>
+<section class="wrap tool">
+<form id="invoice-form" class="card" autocomplete="on" onsubmit="return false">
+  <fieldset><legend>From (your business)</legend>
+    <div class="grid2">
+      <label>Business / your name<input name="biz_name" placeholder="Jane Doe Studio"></label>
+      <label>Email<input name="biz_email" type="email" placeholder="you@example.com"></label>
+      <label>Phone<input name="biz_phone" placeholder="+1 555 0100"></label>
+      <label>Logo (optional)<input name="logo" type="file" accept="image/png,image/jpeg"></label>
+    </div>
+    <label>Address<textarea name="biz_address" rows="2" placeholder="123 Main St&#10;Austin, TX 78701"></textarea></label>
+    <button type="button" id="logo-clear" class="btn" style="margin-top:6px;padding:4px 10px;font-size:13px">Remove logo</button>
+  </fieldset>
+  <fieldset><legend>Bill to (client)</legend>
+    <div class="grid2">
+      <label>Client name<input name="client_name" placeholder="Acme Inc."></label>
+      <label>Client email<input name="client_email" type="email" placeholder="billing@acme.com"></label>
+    </div>
+    <label>Client address<textarea name="client_address" rows="2"></textarea></label>
+  </fieldset>
+  <fieldset><legend>Invoice details</legend>
+    <div class="grid2">
+      <label>Invoice #<input name="number"></label>
+      <label>Currency<select name="currency"></select></label>
+      <label>Issue date<input name="issued" type="date"></label>
+      <label>Due date<input name="due" type="date"></label>
+    </div>
+  </fieldset>
+  <fieldset><legend>Line items</legend>
+    <div class="item-head"><span>Description</span><span>Qty</span><span>Rate</span><span style="text-align:right">Amount</span><span></span></div>
+    <div id="items"></div>
+    <button type="button" id="add-item" class="btn" style="margin-top:4px">+ Add line</button>
+  </fieldset>
+  <fieldset>
+    <div class="grid2">
+      <label>Tax rate (%)<input name="tax" type="number" step="any" min="0"></label>
+      <label>Discount (amount)<input name="discount" type="number" step="any" min="0"></label>
+    </div>
+    <label>Notes &amp; payment terms<textarea name="notes" rows="3"></textarea></label>
+  </fieldset>
+  <p class="small">Saved automatically in this browser only. Nothing is uploaded.</p>
+</form>
+<div class="sticky">
+  <div class="actions no-print" style="margin-bottom:10px">
+    <button type="button" id="download" class="btn primary">Download PDF</button>
+    <button type="button" id="print" class="btn">Print</button>
+    <button type="button" id="reset" class="btn">New invoice</button>
+  </div>
+  <div id="preview" aria-live="polite"></div>
+</div>
+</section>
+<article class="wrap content">
+  <p>The template includes 30-minute weekday walks, an additional-dog fee, two pet drop-in visits and a holiday surcharge. Adjust it for group walks, solo walks or puppy visits, and add key pickup or lockbox details in your notes if needed. Many walkers bill regular clients weekly or monthly in advance, which secures the time slot and keeps you from chasing small amounts.</p>
+  
+  <h2>Invoicing tips for dog walkers</h2>
+  <ul><li>List each walk with date and duration so owners can check visits against your app or text updates.</li><li>Charge an additional-dog fee per walk rather than doubling the rate, and state it on the invoice.</li><li>Apply holiday and short-notice surcharges as separate lines so regular pricing stays clear.</li><li>Bill regular clients in advance for the coming week or month to secure their slot and reduce late payments.</li></ul>
+  <h2>Typical line items</h2>
+  <ul><li>30-minute solo walk (weekdays)</li><li>Additional dog, same household (per walk)</li><li>Pet drop-in visit (feed, water, play)</li><li>Holiday surcharge</li></ul>
+  <p class="small">Rates shown are examples only — edit them to match your pricing.</p>
+  <h2>FAQ</h2><div class="faq"><details><summary>Should dog walkers bill weekly or monthly?</summary><p>Either works; weekly suits new clients and irregular schedules, while monthly reduces admin for steady routines. Billing in advance secures the time slot and protects you from last-minute cancellations. Adjust the next invoice for any canceled or extra walks, and keep a cancellation window, like 24 hours, so short-notice cancellations are still paid.</p></details><details><summary>How much extra should I charge for additional dogs?</summary><p>Many walkers add a flat per-walk fee for each additional dog from the same household rather than charging a full second walk. The amount depends on local rates and how much extra handling the dogs need. Show it as its own line so owners understand exactly how the total was calculated.</p></details><details><summary>What should I include for pet sitting and overnights?</summary><p>Bill overnights as a separate service with dates, the number of nights and any extra walks or medication visits. Note key handover, emergency contact details and any vet visits you made, with receipts for costs you paid. Holiday overnights often carry a premium, which should be listed separately.</p></details></div>
+  <h2>More invoice templates</h2>
+  <ul class="links"><li><a href="/free-invoice-maker/invoice-template/photographer/">Photographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/graphic-designer/">Graphic Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/web-developer/">Web Developer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/freelance-writer/">Freelance Writer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/copywriter/">Copywriter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/videographer/">Videographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/video-editor/">Video Editor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/consultant/">Consultant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/tutor/">Tutor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/house-cleaner/">House Cleaner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/handyman/">Handyman invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/contractor/">Contractor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/electrician/">Electrician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/plumber/">Plumber invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/landscaper/">Landscaper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/painter/">Painter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/personal-trainer/">Personal Trainer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/makeup-artist/">Makeup Artist invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dj/">DJ invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/translator/">Translator invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/virtual-assistant/">Virtual Assistant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/social-media-manager/">Social Media Manager invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/bookkeeper/">Bookkeeper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/musician/">Musician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/interior-designer/">Interior Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/event-planner/">Event Planner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/babysitter/">Babysitter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/mechanic/">Mechanic invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/truck-driver/">Truck Driver invoice template</a></li></ul>
+</article></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/free-invoice-maker/">Invoice generator</a><a href="/free-invoice-maker/invoice-templates/">Invoice templates</a><a href="/free-invoice-maker/guides/">Guides</a><a href="/free-invoice-maker/about/">About</a><a href="/free-invoice-maker/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<script src="/free-invoice-maker/assets/app.js?v=2026-10-12" defer></script>
+</body>
+</html>

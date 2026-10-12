@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Auto Repair Invoice Template | Free Invoice Maker</title>
+<meta name="description" content="Auto repair invoice template for mechanics with parts, labor hours, VIN and mileage. Edit online and download a free PDF. No signup required.">
+<link rel="canonical" href="https://ziro0914.github.io/free-invoice-maker/invoice-template/mechanic/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Auto Repair Invoice Template | Free Invoice Maker">
+<meta property="og:description" content="Auto repair invoice template for mechanics with parts, labor hours, VIN and mileage. Edit online and download a free PDF. No signup required.">
+<meta property="og:url" content="https://ziro0914.github.io/free-invoice-maker/invoice-template/mechanic/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/free-invoice-maker/assets/style.css?v=2026-10-12">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Mechanic Invoice Generator","url":"https://ziro0914.github.io/free-invoice-maker/invoice-template/mechanic/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What should an auto repair invoice include?","acceptedAnswer":{"@type":"Answer","text":"Include your shop details, customer name, vehicle year, make, model, VIN and odometer reading, then each repair with parts, part numbers and labor. Add shop fees, disposal and any warranty information. Some states and provinces require specific wording or written estimates before work begins, so check local rules for your area."}},{"@type":"Question","name":"Should mechanics charge book time or actual time?","acceptedAnswer":{"@type":"Answer","text":"Many shops bill flat-rate book hours from labor guides, so customers pay a predictable amount regardless of how quickly the technician works. Others bill actual time, which suits unusual or diagnostic work. Either way, state the labor rate and hours per job on the invoice so the customer can compare it with the estimate."}},{"@type":"Question","name":"Can I charge a diagnostic fee if the customer declines the repair?","acceptedAnswer":{"@type":"Answer","text":"Yes, diagnostic time is real work, and most shops charge for it whether or not the repair goes ahead. Some credit the fee toward the repair if the customer proceeds. Explain the policy before starting diagnostics and show it as a separate line so the customer knows exactly what they are paying for."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Invoice templates","item":"https://ziro0914.github.io/free-invoice-maker/invoice-templates/"},{"@type":"ListItem","position":2,"name":"Mechanic invoice template","item":"https://ziro0914.github.io/free-invoice-maker/invoice-template/mechanic/"}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/free-invoice-maker/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/free-invoice-maker/invoice-templates/">Templates</a><a href="/free-invoice-maker/guides/">Guides</a></nav>
+</div></header>
+<main><section class="wrap hero">
+  <h1>Free Mechanic Invoice Template</h1>
+  <p>An auto repair invoice is part of the vehicle's service history, so it should include the year, make, model, VIN and odometer reading alongside the work performed. Customers use those records for warranty claims, resale and future diagnostics, and fleet managers need them to track maintenance across vehicles. Itemizing parts with part numbers and labor by job makes it easy to see what was done and why it cost what it did.</p>
+  <div class="badges"><span>Pre-filled for mechanics</span><span>Download as PDF</span><span>No sign-up</span></div>
+</section>
+<script>window.FIM_PREFILL={"slug":"mechanic","items":[{"desc":"Diagnostic inspection fee","qty":1,"rate":95},{"desc":"Front brake pads and rotors (parts)","qty":1,"rate":240},{"desc":"Labor: replace front pads and rotors (book hours)","qty":2,"rate":120},{"desc":"Shop supplies and fluid disposal","qty":1,"rate":25}],"payment_terms":"Payment due on vehicle pickup. Fleet accounts net 30. Parts covered by manufacturer warranty; labor warranted for 12 months or 12,000 miles."};</script>
+<section class="wrap tool">
+<form id="invoice-form" class="card" autocomplete="on" onsubmit="return false">
+  <fieldset><legend>From (your business)</legend>
+    <div class="grid2">
+      <label>Business / your name<input name="biz_name" placeholder="Jane Doe Studio"></label>
+      <label>Email<input name="biz_email" type="email" placeholder="you@example.com"></label>
+      <label>Phone<input name="biz_phone" placeholder="+1 555 0100"></label>
+      <label>Logo (optional)<input name="logo" type="file" accept="image/png,image/jpeg"></label>
+    </div>
+    <label>Address<textarea name="biz_address" rows="2" placeholder="123 Main St&#10;Austin, TX 78701"></textarea></label>
+    <button type="button" id="logo-clear" class="btn" style="margin-top:6px;padding:4px 10px;font-size:13px">Remove logo</button>
+  </fieldset>
+  <fieldset><legend>Bill to (client)</legend>
+    <div class="grid2">
+      <label>Client name<input name="client_name" placeholder="Acme Inc."></label>
+      <label>Client email<input name="client_email" type="email" placeholder="billing@acme.com"></label>
+    </div>
+    <label>Client address<textarea name="client_address" rows="2"></textarea></label>
+  </fieldset>
+  <fieldset><legend>Invoice details</legend>
+    <div class="grid2">
+      <label>Invoice #<input name="number"></label>
+      <label>Currency<select name="currency"></select></label>
+      <label>Issue date<input name="issued" type="date"></label>
+      <label>Due date<input name="due" type="date"></label>
+    </div>
+  </fieldset>
+  <fieldset><legend>Line items</legend>
+    <div class="item-head"><span>Description</span><span>Qty</span><span>Rate</span><span style="text-align:right">Amount</span><span></span></div>
+    <div id="items"></div>
+    <button type="button" id="add-item" class="btn" style="margin-top:4px">+ Add line</button>
+  </fieldset>
+  <fieldset>
+    <div class="grid2">
+      <label>Tax rate (%)<input name="tax" type="number" step="any" min="0"></label>
+      <label>Discount (amount)<input name="discount" type="number" step="any" min="0"></label>
+    </div>
+    <label>Notes &amp; payment terms<textarea name="notes" rows="3"></textarea></label>
+  </fieldset>
+  <p class="small">Saved automatically in this browser only. Nothing is uploaded.</p>
+</form>
+<div class="sticky">
+  <div class="actions no-print" style="margin-bottom:10px">
+    <button type="button" id="download" class="btn primary">Download PDF</button>
+    <button type="button" id="print" class="btn">Print</button>
+    <button type="button" id="reset" class="btn">New invoice</button>
+  </div>
+  <div id="preview" aria-live="polite"></div>
+</div>
+</section>
+<article class="wrap content">
+  <p>The template is set up for a brake job: diagnostic fee, front pads and rotors, labor at book hours, and shop supplies with fluid disposal. Add the vehicle details in the notes section and record any recommended future repairs the customer declined. Some jurisdictions have specific requirements for auto repair invoices, such as identifying used or rebuilt parts, so check local rules.</p>
+  
+  <h2>Invoicing tips for mechanics</h2>
+  <ul><li>Record year, make, model, VIN and mileage on every invoice; it becomes part of the vehicle's service history.</li><li>List parts with part numbers and note whether they are new OEM, aftermarket, used or rebuilt.</li><li>Bill labor by job using book times or actual hours, and be consistent so customers can compare estimates with invoices.</li><li>Document recommended repairs the customer declined, which protects you if a related issue appears later.</li></ul>
+  <h2>Typical line items</h2>
+  <ul><li>Diagnostic inspection fee</li><li>Front brake pads and rotors (parts)</li><li>Labor: replace front pads and rotors (book hours)</li><li>Shop supplies and fluid disposal</li></ul>
+  <p class="small">Rates shown are examples only — edit them to match your pricing.</p>
+  <h2>FAQ</h2><div class="faq"><details><summary>What should an auto repair invoice include?</summary><p>Include your shop details, customer name, vehicle year, make, model, VIN and odometer reading, then each repair with parts, part numbers and labor. Add shop fees, disposal and any warranty information. Some states and provinces require specific wording or written estimates before work begins, so check local rules for your area.</p></details><details><summary>Should mechanics charge book time or actual time?</summary><p>Many shops bill flat-rate book hours from labor guides, so customers pay a predictable amount regardless of how quickly the technician works. Others bill actual time, which suits unusual or diagnostic work. Either way, state the labor rate and hours per job on the invoice so the customer can compare it with the estimate.</p></details><details><summary>Can I charge a diagnostic fee if the customer declines the repair?</summary><p>Yes, diagnostic time is real work, and most shops charge for it whether or not the repair goes ahead. Some credit the fee toward the repair if the customer proceeds. Explain the policy before starting diagnostics and show it as a separate line so the customer knows exactly what they are paying for.</p></details></div>
+  <h2>More invoice templates</h2>
+  <ul class="links"><li><a href="/free-invoice-maker/invoice-template/photographer/">Photographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/graphic-designer/">Graphic Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/web-developer/">Web Developer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/freelance-writer/">Freelance Writer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/copywriter/">Copywriter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/videographer/">Videographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/video-editor/">Video Editor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/consultant/">Consultant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/tutor/">Tutor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/house-cleaner/">House Cleaner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/handyman/">Handyman invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/contractor/">Contractor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/electrician/">Electrician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/plumber/">Plumber invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/landscaper/">Landscaper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/painter/">Painter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/personal-trainer/">Personal Trainer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/makeup-artist/">Makeup Artist invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dj/">DJ invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/translator/">Translator invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/virtual-assistant/">Virtual Assistant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/social-media-manager/">Social Media Manager invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/bookkeeper/">Bookkeeper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/musician/">Musician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/interior-designer/">Interior Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/event-planner/">Event Planner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dog-walker/">Dog Walker invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/babysitter/">Babysitter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/truck-driver/">Truck Driver invoice template</a></li></ul>
+</article></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/free-invoice-maker/">Invoice generator</a><a href="/free-invoice-maker/invoice-templates/">Invoice templates</a><a href="/free-invoice-maker/guides/">Guides</a><a href="/free-invoice-maker/about/">About</a><a href="/free-invoice-maker/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<script src="/free-invoice-maker/assets/app.js?v=2026-10-12" defer></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Electrical Invoice Template | Free Invoice Maker</title>
+<meta name="description" content="Electrical invoice template for electricians: labor, parts, permits and call-out fees. Edit online and download a free PDF. No signup required.">
+<link rel="canonical" href="https://ziro0914.github.io/free-invoice-maker/invoice-template/electrician/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Electrical Invoice Template | Free Invoice Maker">
+<meta property="og:description" content="Electrical invoice template for electricians: labor, parts, permits and call-out fees. Edit online and download a free PDF. No signup required.">
+<meta property="og:url" content="https://ziro0914.github.io/free-invoice-maker/invoice-template/electrician/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/free-invoice-maker/assets/style.css?v=2026-10-12">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Electrician Invoice Generator","url":"https://ziro0914.github.io/free-invoice-maker/invoice-template/electrician/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should electricians charge a call-out fee?","acceptedAnswer":{"@type":"Answer","text":"Many do, especially for residential service calls. A call-out or diagnostic fee covers travel and the first portion of troubleshooting, and is sometimes credited toward the repair if the customer goes ahead. Make the policy clear when booking and show the fee as its own line so customers know it is not hidden labor."}},{"@type":"Question","name":"How should I bill emergency electrical work?","acceptedAnswer":{"@type":"Answer","text":"Use a separate emergency or after-hours rate, often higher than your standard hourly rate, and state the time you arrived and left. Customers calling at night generally expect a premium, but listing the hours and rate avoids disputes when the invoice arrives. Parts are billed the same way as on normal jobs."}},{"@type":"Question","name":"Do I list permit fees on the invoice?","acceptedAnswer":{"@type":"Answer","text":"Yes. Show permit and inspection fees as their own lines, ideally at cost with the permit number in the description. It lets customers see which charges go to the local authority and which are yours. Whether a permit is needed depends on the job and jurisdiction, so check local rules."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Invoice templates","item":"https://ziro0914.github.io/free-invoice-maker/invoice-templates/"},{"@type":"ListItem","position":2,"name":"Electrician invoice template","item":"https://ziro0914.github.io/free-invoice-maker/invoice-template/electrician/"}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/free-invoice-maker/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/free-invoice-maker/invoice-templates/">Templates</a><a href="/free-invoice-maker/guides/">Guides</a></nav>
+</div></header>
+<main><section class="wrap hero">
+  <h1>Free Electrician Invoice Template</h1>
+  <p>Electrical work is regulated, so your invoice often doubles as part of the job record. Listing the work performed, circuits affected, parts installed and any permit or inspection fees gives the homeowner something to show an insurer, buyer or inspector later. It also separates your labor from parts like breakers, wire and fixtures, whose prices fluctuate and which clients sometimes try to source themselves.</p>
+  <div class="badges"><span>Pre-filled for electricians</span><span>Download as PDF</span><span>No sign-up</span></div>
+</section>
+<script>window.FIM_PREFILL={"slug":"electrician","items":[{"desc":"Service call / diagnostic fee","qty":1,"rate":95},{"desc":"Labor: install dedicated 20A circuit and outlets (hourly)","qty":5,"rate":110},{"desc":"Parts: breaker, 12/2 wire, boxes, GFCI receptacles","qty":1,"rate":185},{"desc":"Electrical permit (pass-through at cost)","qty":1,"rate":120}],"payment_terms":"Payment due on completion for residential service calls. Commercial accounts net 30. After-hours work billed at 1.5x standard rate."};</script>
+<section class="wrap tool">
+<form id="invoice-form" class="card" autocomplete="on" onsubmit="return false">
+  <fieldset><legend>From (your business)</legend>
+    <div class="grid2">
+      <label>Business / your name<input name="biz_name" placeholder="Jane Doe Studio"></label>
+      <label>Email<input name="biz_email" type="email" placeholder="you@example.com"></label>
+      <label>Phone<input name="biz_phone" placeholder="+1 555 0100"></label>
+      <label>Logo (optional)<input name="logo" type="file" accept="image/png,image/jpeg"></label>
+    </div>
+    <label>Address<textarea name="biz_address" rows="2" placeholder="123 Main St&#10;Austin, TX 78701"></textarea></label>
+    <button type="button" id="logo-clear" class="btn" style="margin-top:6px;padding:4px 10px;font-size:13px">Remove logo</button>
+  </fieldset>
+  <fieldset><legend>Bill to (client)</legend>
+    <div class="grid2">
+      <label>Client name<input name="client_name" placeholder="Acme Inc."></label>
+      <label>Client email<input name="client_email" type="email" placeholder="billing@acme.com"></label>
+    </div>
+    <label>Client address<textarea name="client_address" rows="2"></textarea></label>
+  </fieldset>
+  <fieldset><legend>Invoice details</legend>
+    <div class="grid2">
+      <label>Invoice #<input name="number"></label>
+      <label>Currency<select name="currency"></select></label>
+      <label>Issue date<input name="issued" type="date"></label>
+      <label>Due date<input name="due" type="date"></label>
+    </div>
+  </fieldset>
+  <fieldset><legend>Line items</legend>
+    <div class="item-head"><span>Description</span><span>Qty</span><span>Rate</span><span style="text-align:right">Amount</span><span></span></div>
+    <div id="items"></div>
+    <button type="button" id="add-item" class="btn" style="margin-top:4px">+ Add line</button>
+  </fieldset>
+  <fieldset>
+    <div class="grid2">
+      <label>Tax rate (%)<input name="tax" type="number" step="any" min="0"></label>
+      <label>Discount (amount)<input name="discount" type="number" step="any" min="0"></label>
+    </div>
+    <label>Notes &amp; payment terms<textarea name="notes" rows="3"></textarea></label>
+  </fieldset>
+  <p class="small">Saved automatically in this browser only. Nothing is uploaded.</p>
+</form>
+<div class="sticky">
+  <div class="actions no-print" style="margin-bottom:10px">
+    <button type="button" id="download" class="btn primary">Download PDF</button>
+    <button type="button" id="print" class="btn">Print</button>
+    <button type="button" id="reset" class="btn">New invoice</button>
+  </div>
+  <div id="preview" aria-live="polite"></div>
+</div>
+</section>
+<article class="wrap content">
+  <p>This template includes a service call fee, hourly labor for adding a dedicated circuit, parts and a permit fee passed through to the client. Adjust the descriptions to name the specific work, such as installing a 20A circuit for a kitchen appliance or upgrading a panel. Add your license number in the business details if your jurisdiction expects it on invoices; requirements vary, so check local rules.</p>
+  
+  <h2>Invoicing tips for electricians</h2>
+  <ul><li>Describe the work in specific terms, such as circuits added or panel replaced, so the invoice serves as a lasting record for the property.</li><li>List permit and inspection fees as pass-through costs separate from labor.</li><li>Charge a clear after-hours or emergency rate and show it as its own line when it applies.</li><li>Include your license number on the invoice where your jurisdiction expects it, and check local rules on what else must appear.</li></ul>
+  <h2>Typical line items</h2>
+  <ul><li>Service call / diagnostic fee</li><li>Labor: install dedicated 20A circuit and outlets (hourly)</li><li>Parts: breaker, 12/2 wire, boxes, GFCI receptacles</li><li>Electrical permit (pass-through at cost)</li></ul>
+  <p class="small">Rates shown are examples only — edit them to match your pricing.</p>
+  <h2>FAQ</h2><div class="faq"><details><summary>Should electricians charge a call-out fee?</summary><p>Many do, especially for residential service calls. A call-out or diagnostic fee covers travel and the first portion of troubleshooting, and is sometimes credited toward the repair if the customer goes ahead. Make the policy clear when booking and show the fee as its own line so customers know it is not hidden labor.</p></details><details><summary>How should I bill emergency electrical work?</summary><p>Use a separate emergency or after-hours rate, often higher than your standard hourly rate, and state the time you arrived and left. Customers calling at night generally expect a premium, but listing the hours and rate avoids disputes when the invoice arrives. Parts are billed the same way as on normal jobs.</p></details><details><summary>Do I list permit fees on the invoice?</summary><p>Yes. Show permit and inspection fees as their own lines, ideally at cost with the permit number in the description. It lets customers see which charges go to the local authority and which are yours. Whether a permit is needed depends on the job and jurisdiction, so check local rules.</p></details></div>
+  <h2>More invoice templates</h2>
+  <ul class="links"><li><a href="/free-invoice-maker/invoice-template/photographer/">Photographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/graphic-designer/">Graphic Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/web-developer/">Web Developer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/freelance-writer/">Freelance Writer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/copywriter/">Copywriter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/videographer/">Videographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/video-editor/">Video Editor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/consultant/">Consultant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/tutor/">Tutor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/house-cleaner/">House Cleaner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/handyman/">Handyman invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/contractor/">Contractor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/plumber/">Plumber invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/landscaper/">Landscaper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/painter/">Painter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/personal-trainer/">Personal Trainer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/makeup-artist/">Makeup Artist invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dj/">DJ invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/translator/">Translator invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/virtual-assistant/">Virtual Assistant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/social-media-manager/">Social Media Manager invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/bookkeeper/">Bookkeeper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/musician/">Musician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/interior-designer/">Interior Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/event-planner/">Event Planner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dog-walker/">Dog Walker invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/babysitter/">Babysitter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/mechanic/">Mechanic invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/truck-driver/">Truck Driver invoice template</a></li></ul>
+</article></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/free-invoice-maker/">Invoice generator</a><a href="/free-invoice-maker/invoice-templates/">Invoice templates</a><a href="/free-invoice-maker/guides/">Guides</a><a href="/free-invoice-maker/about/">About</a><a href="/free-invoice-maker/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<script src="/free-invoice-maker/assets/app.js?v=2026-10-12" defer></script>
+</body>
+</html>

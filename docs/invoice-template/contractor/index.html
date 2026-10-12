@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Contractor Invoice Template | Free Invoice Maker</title>
+<meta name="description" content="Contractor invoice template with labor, materials, progress billing and retainage. Add your logo, download a PDF, and send it free—no signup.">
+<link rel="canonical" href="https://ziro0914.github.io/free-invoice-maker/invoice-template/contractor/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Contractor Invoice Template | Free Invoice Maker">
+<meta property="og:description" content="Contractor invoice template with labor, materials, progress billing and retainage. Add your logo, download a PDF, and send it free—no signup.">
+<meta property="og:url" content="https://ziro0914.github.io/free-invoice-maker/invoice-template/contractor/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/free-invoice-maker/assets/style.css?v=2026-10-12">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Contractor Invoice Generator","url":"https://ziro0914.github.io/free-invoice-maker/invoice-template/contractor/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is progress billing for contractors?","acceptedAnswer":{"@type":"Answer","text":"Progress billing means invoicing for completed portions of a project rather than waiting for the end. You might bill after demolition, rough-in, drywall and final completion, each as a percentage of the contract. It keeps cash flowing to pay crews and suppliers and gives clients clear checkpoints to inspect before releasing payment."}},{"@type":"Question","name":"How do I show a change order on an invoice?","acceptedAnswer":{"@type":"Answer","text":"Add a separate line describing the change order, its number, the date it was signed and the agreed price. Do not merge it into an existing phase. Your updated contract total should include all approved change orders, so the client can see how the original price moved and why it changed."}},{"@type":"Question","name":"Can I charge a deposit before starting work?","acceptedAnswer":{"@type":"Answer","text":"Usually, but some jurisdictions limit how much a home improvement contractor can collect upfront, and others set rules on how deposits must be handled. Check local rules for your state, province or territory. Where permitted, a deposit covering initial materials and scheduling is standard and should appear as a credit on later invoices."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Invoice templates","item":"https://ziro0914.github.io/free-invoice-maker/invoice-templates/"},{"@type":"ListItem","position":2,"name":"Contractor invoice template","item":"https://ziro0914.github.io/free-invoice-maker/invoice-template/contractor/"}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/free-invoice-maker/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/free-invoice-maker/invoice-templates/">Templates</a><a href="/free-invoice-maker/guides/">Guides</a></nav>
+</div></header>
+<main><section class="wrap hero">
+  <h1>Free Contractor Invoice Template</h1>
+  <p>General contractors and remodelers rarely bill a project in one go. Kitchen remodels, additions and roof replacements are typically invoiced in stages, with a deposit, progress payments as milestones are reached and a final invoice after the punch list. Each invoice should reference the contract total, previous payments and the remaining balance so the homeowner or lender can see exactly where the project stands.</p>
+  <div class="badges"><span>Pre-filled for contractors</span><span>Download as PDF</span><span>No sign-up</span></div>
+</section>
+<script>window.FIM_PREFILL={"slug":"contractor","items":[{"desc":"Phase 2: demolition and framing","qty":1,"rate":3200},{"desc":"Plumbing rough-in (subcontractor)","qty":1,"rate":1850},{"desc":"Materials: tile, backer board, fixtures","qty":1,"rate":2400},{"desc":"Change order #1: upgraded vanity","qty":1,"rate":650}],"payment_terms":"Progress payments due within 7 days of each milestone invoice per contract schedule. Final payment due on completion of punch list."};</script>
+<section class="wrap tool">
+<form id="invoice-form" class="card" autocomplete="on" onsubmit="return false">
+  <fieldset><legend>From (your business)</legend>
+    <div class="grid2">
+      <label>Business / your name<input name="biz_name" placeholder="Jane Doe Studio"></label>
+      <label>Email<input name="biz_email" type="email" placeholder="you@example.com"></label>
+      <label>Phone<input name="biz_phone" placeholder="+1 555 0100"></label>
+      <label>Logo (optional)<input name="logo" type="file" accept="image/png,image/jpeg"></label>
+    </div>
+    <label>Address<textarea name="biz_address" rows="2" placeholder="123 Main St&#10;Austin, TX 78701"></textarea></label>
+    <button type="button" id="logo-clear" class="btn" style="margin-top:6px;padding:4px 10px;font-size:13px">Remove logo</button>
+  </fieldset>
+  <fieldset><legend>Bill to (client)</legend>
+    <div class="grid2">
+      <label>Client name<input name="client_name" placeholder="Acme Inc."></label>
+      <label>Client email<input name="client_email" type="email" placeholder="billing@acme.com"></label>
+    </div>
+    <label>Client address<textarea name="client_address" rows="2"></textarea></label>
+  </fieldset>
+  <fieldset><legend>Invoice details</legend>
+    <div class="grid2">
+      <label>Invoice #<input name="number"></label>
+      <label>Currency<select name="currency"></select></label>
+      <label>Issue date<input name="issued" type="date"></label>
+      <label>Due date<input name="due" type="date"></label>
+    </div>
+  </fieldset>
+  <fieldset><legend>Line items</legend>
+    <div class="item-head"><span>Description</span><span>Qty</span><span>Rate</span><span style="text-align:right">Amount</span><span></span></div>
+    <div id="items"></div>
+    <button type="button" id="add-item" class="btn" style="margin-top:4px">+ Add line</button>
+  </fieldset>
+  <fieldset>
+    <div class="grid2">
+      <label>Tax rate (%)<input name="tax" type="number" step="any" min="0"></label>
+      <label>Discount (amount)<input name="discount" type="number" step="any" min="0"></label>
+    </div>
+    <label>Notes &amp; payment terms<textarea name="notes" rows="3"></textarea></label>
+  </fieldset>
+  <p class="small">Saved automatically in this browser only. Nothing is uploaded.</p>
+</form>
+<div class="sticky">
+  <div class="actions no-print" style="margin-bottom:10px">
+    <button type="button" id="download" class="btn primary">Download PDF</button>
+    <button type="button" id="print" class="btn">Print</button>
+    <button type="button" id="reset" class="btn">New invoice</button>
+  </div>
+  <div id="preview" aria-live="polite"></div>
+</div>
+</section>
+<article class="wrap content">
+  <p>The sample is a progress invoice for a bathroom remodel: demolition and framing, plumbing rough-in by a subcontractor, materials and a change order for an upgraded vanity. Adapt the phase names to your contract schedule. Change orders should always appear as separate, dated lines matching a signed document. Lien waivers, retainage and deposit limits vary by state and province, so check local rules before setting terms.</p>
+  
+  <h2>Invoicing tips for contractors</h2>
+  <ul><li>Use progress billing tied to clear milestones, and show the contract total, amount previously billed and balance remaining on every invoice.</li><li>Put each signed change order on its own line with its number and date so it matches your paperwork.</li><li>Check local rules on maximum deposits, retainage and lien waivers before setting your payment schedule.</li><li>Separate subcontractor costs from your own labor so clients and lenders can follow where the money goes.</li></ul>
+  <h2>Typical line items</h2>
+  <ul><li>Phase 2: demolition and framing</li><li>Plumbing rough-in (subcontractor)</li><li>Materials: tile, backer board, fixtures</li><li>Change order #1: upgraded vanity</li></ul>
+  <p class="small">Rates shown are examples only — edit them to match your pricing.</p>
+  <h2>FAQ</h2><div class="faq"><details><summary>What is progress billing for contractors?</summary><p>Progress billing means invoicing for completed portions of a project rather than waiting for the end. You might bill after demolition, rough-in, drywall and final completion, each as a percentage of the contract. It keeps cash flowing to pay crews and suppliers and gives clients clear checkpoints to inspect before releasing payment.</p></details><details><summary>How do I show a change order on an invoice?</summary><p>Add a separate line describing the change order, its number, the date it was signed and the agreed price. Do not merge it into an existing phase. Your updated contract total should include all approved change orders, so the client can see how the original price moved and why it changed.</p></details><details><summary>Can I charge a deposit before starting work?</summary><p>Usually, but some jurisdictions limit how much a home improvement contractor can collect upfront, and others set rules on how deposits must be handled. Check local rules for your state, province or territory. Where permitted, a deposit covering initial materials and scheduling is standard and should appear as a credit on later invoices.</p></details></div>
+  <h2>More invoice templates</h2>
+  <ul class="links"><li><a href="/free-invoice-maker/invoice-template/photographer/">Photographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/graphic-designer/">Graphic Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/web-developer/">Web Developer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/freelance-writer/">Freelance Writer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/copywriter/">Copywriter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/videographer/">Videographer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/video-editor/">Video Editor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/consultant/">Consultant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/tutor/">Tutor invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/house-cleaner/">House Cleaner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/handyman/">Handyman invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/electrician/">Electrician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/plumber/">Plumber invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/landscaper/">Landscaper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/painter/">Painter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/personal-trainer/">Personal Trainer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/makeup-artist/">Makeup Artist invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dj/">DJ invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/translator/">Translator invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/virtual-assistant/">Virtual Assistant invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/social-media-manager/">Social Media Manager invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/bookkeeper/">Bookkeeper invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/musician/">Musician invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/interior-designer/">Interior Designer invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/event-planner/">Event Planner invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/dog-walker/">Dog Walker invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/babysitter/">Babysitter invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/mechanic/">Mechanic invoice template</a></li><li><a href="/free-invoice-maker/invoice-template/truck-driver/">Truck Driver invoice template</a></li></ul>
+</article></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/free-invoice-maker/">Invoice generator</a><a href="/free-invoice-maker/invoice-templates/">Invoice templates</a><a href="/free-invoice-maker/guides/">Guides</a><a href="/free-invoice-maker/about/">About</a><a href="/free-invoice-maker/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<script src="/free-invoice-maker/assets/app.js?v=2026-10-12" defer></script>
+</body>
+</html>
