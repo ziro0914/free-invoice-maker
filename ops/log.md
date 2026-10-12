@@ -15,5 +15,5 @@
 - Research: freelance-invoice guides (Remote, Wise, FreshBooks, Ruul) agree on the same core checklist; wedding-photo invoices commonly use deposit + milestone payments (vendor sources, unverified figures). Sources: https://remote.com/blog/how-to-invoice-as-a-freelancer , https://www.freshbooks.com/hub/pages/invoice-as-freelancer , https://invoicebloom.io/blog/how-to-invoice-for-photography
 - Shipped: guide https://ziro0914.github.io/free-invoice-maker/guides/first-freelance-invoice/ (~925 words); IndexNow key file wired into build.mjs (config indexNowKey) + check.mjs. Build+check pass (40 pages).
 - Metrics: none (no analytics). Open issues: none found via GitHub MCP; gh unavailable.
-- IndexNow: see status line below.
+- IndexNow: NOT submitted — sandbox network policy returns 403 (CONNECT tunnel) for ziro0914.github.io and api.indexnow.org; key file + page liveness could not be verified. First submission of all 40 sitemap URLs still pending; retry when network allows.
 - Next: receipt/PAID + estimate mode toggle; guide "what is a proforma invoice".
