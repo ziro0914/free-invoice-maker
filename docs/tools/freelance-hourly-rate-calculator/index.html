@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Freelance Hourly Rate Calculator: What Should I Charge? | Free</title>
+<meta name="description" content="Free freelance rate calculator. Enter the income you want, your costs, tax and time off to get your minimum hourly, day and monthly rate.">
+<link rel="canonical" href="https://sendinvoicefree.com/tools/freelance-hourly-rate-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Freelance Hourly Rate Calculator: What Should I Charge? | Free">
+<meta property="og:description" content="Free freelance rate calculator. Enter the income you want, your costs, tax and time off to get your minimum hourly, day and monthly rate.">
+<meta property="og:url" content="https://sendinvoicefree.com/tools/freelance-hourly-rate-calculator/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css?v=2026-10-13">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate my freelance hourly rate?","acceptedAnswer":{"@type":"Answer","text":"Add the take-home pay you want to your yearly business costs, gross it up for tax, then divide by the hours you can actually bill in a year: weeks worked × hours per week × your billable share."}},{"@type":"Question","name":"Why is the billable share so low?","acceptedAnswer":{"@type":"Answer","text":"Most freelancers spend 30-40% of their time on sales, admin, invoicing and learning. Those hours earn nothing directly, so your rate on billable hours has to cover them."}}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/invoice-templates/">Templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a></nav>
+</div></header>
+<main><section class="wrap hero"><h1>Freelance Hourly Rate Calculator</h1><p>Work out the minimum hourly rate that pays your salary, business costs and taxes, after holidays and unbilled admin time. Free, no sign-up.</p></section>
+<section class="wrap tool" style="margin:18px auto 40px">
+<form class="card" id="calc" onsubmit="return false"><fieldset><legend>Your numbers</legend><div class="grid2"><label>Take-home pay you want per year<input data-k="income" type="number" inputmode="decimal" min="0" step="100" value="60000"></label><label>Business costs per year (software, gear, insurance)<input data-k="costs" type="number" inputmode="decimal" min="0" step="100" value="4000"></label><label>Tax rate % (income + self-employment)<input data-k="tax" type="number" inputmode="decimal" min="0" step="1" value="25"></label><label>Weeks off per year (holiday, sick)<input data-k="weeks" type="number" inputmode="decimal" min="0" step="1" value="6"></label><label>Hours worked per week<input data-k="hours" type="number" inputmode="decimal" min="0" step="1" value="40"></label><label>Billable share of your hours %<input data-k="bill" type="number" inputmode="decimal" min="0" step="1" value="65"></label></div></fieldset></form>
+<div class="card" id="out" aria-live="polite"></div>
+</section>
+<article class="wrap content">
+<aside class="partner product"><strong>Want quotes and scenarios too?</strong> The Freelance Rate &amp; Pricing Calculator spreadsheet adds a project quote builder, side-by-side scenarios and a raise-your-rates simulator. Excel + Google Sheets. <a href="https://ziroflux4.gumroad.com/l/rate-calculator" rel="noopener" target="_blank">Get it ($7) →</a></aside>
+<h2>How do I calculate my freelance hourly rate?</h2><p>Add the take-home pay you want to your yearly business costs, gross it up for tax, then divide by the hours you can actually bill in a year: weeks worked × hours per week × your billable share.</p><h2>Why is the billable share so low?</h2><p>Most freelancers spend 30-40% of their time on sales, admin, invoicing and learning. Those hours earn nothing directly, so your rate on billable hours has to cover them.</p>
+<p class="small">Estimates only. Not tax, legal or financial advice. <a href="/tools/">More free tools</a></p>
+</article>
+<script>
+(function(){
+function m(x){return (x<0?'-':'')+'$'+Math.abs(x).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function calc(v){var gross=(v.income+v.costs)/Math.max(.01,1-v.tax/100),hrs=(52-v.weeks)*v.hours*v.bill/100,h=hrs?gross/hrs:0;
+return [['Revenue you need per year',m(gross)],['Billable hours per year',hrs.toFixed(0)],['Minimum hourly rate',m(h),1],['Day rate (8h)',m(h*8)],['Monthly retainer equivalent',m(gross/12)]];}
+function run(){var v={};document.querySelectorAll('#calc [data-k]').forEach(function(e){v[e.dataset.k]=parseFloat(e.value)||0});
+ document.getElementById('out').innerHTML='<h2 style="margin-top:0">Result</h2><table style="width:100%">'+calc(v).map(function(r){
+  return '<tr><td>'+(r[2]?'<b>'+r[0]+'</b>':r[0])+'</td><td style="text-align:right'+(r[2]?';font-size:1.3em':'')+'">'+(r[2]?'<b>'+r[1]+'</b>':r[1])+'</td></tr>'}).join('')+'</table>';}
+document.getElementById('calc').addEventListener('input',run);run();
+})();
+</script></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/">Invoice generator</a><a href="/invoice-templates/">Invoice templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/tools/etsy-fee-calculator/">Etsy fee calculator</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+
+</body>
+</html>

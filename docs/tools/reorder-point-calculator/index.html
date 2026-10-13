@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reorder Point Calculator for Small Shops: When to Reorder | Free</title>
+<meta name="description" content="Free reorder point calculator. Enter daily sales, supplier lead time and safety stock to see when to reorder and how many units to order.">
+<link rel="canonical" href="https://sendinvoicefree.com/tools/reorder-point-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Reorder Point Calculator for Small Shops: When to Reorder | Free">
+<meta property="og:description" content="Free reorder point calculator. Enter daily sales, supplier lead time and safety stock to see when to reorder and how many units to order.">
+<meta property="og:url" content="https://sendinvoicefree.com/tools/reorder-point-calculator/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css?v=2026-10-13">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a reorder point?","acceptedAnswer":{"@type":"Answer","text":"The stock level that tells you to place a new order. It equals average daily sales × (supplier lead time + safety days). When stock falls to it, the new order arrives just before you run out."}},{"@type":"Question","name":"How much safety stock do I need?","acceptedAnswer":{"@type":"Answer","text":"A common start is one to two weeks of sales. Use more if your supplier is unreliable or sales swing a lot, less for slow or cheap items."}}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/invoice-templates/">Templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a></nav>
+</div></header>
+<main><section class="wrap hero"><h1>Reorder Point Calculator</h1><p>Find the stock level at which you should reorder, so you never run out of your best sellers while waiting for the supplier. Free, no sign-up.</p></section>
+<section class="wrap tool" style="margin:18px auto 40px">
+<form class="card" id="calc" onsubmit="return false"><fieldset><legend>Your numbers</legend><div class="grid2"><label>Units sold in the last 30 days<input data-k="sold" type="number" inputmode="decimal" min="0" step="1" value="90"></label><label>Supplier lead time (days)<input data-k="lead" type="number" inputmode="decimal" min="0" step="1" value="14"></label><label>Safety stock (days of sales)<input data-k="safety" type="number" inputmode="decimal" min="0" step="1" value="7"></label><label>Units on hand now<input data-k="onhand" type="number" inputmode="decimal" min="0" step="1" value="60"></label><label>Days of stock each order should cover<input data-k="cover" type="number" inputmode="decimal" min="0" step="1" value="30"></label><label>Unit cost<input data-k="cost" type="number" inputmode="decimal" min="0" step="0.01" value="4.5"></label></div></fieldset></form>
+<div class="card" id="out" aria-live="polite"></div>
+</section>
+<article class="wrap content">
+<aside class="partner product"><strong>Tracking more than a few products?</strong> The Small Business Inventory &amp; Stock Tracker spreadsheet does this for up to 300 SKUs from your sales log, with automatic reorder alerts, a reorder list and a stock value dashboard. Excel + Google Sheets. <a href="https://ziroflux4.gumroad.com/l/inventory-tracker" rel="noopener" target="_blank">Get it ($12) →</a></aside>
+<h2>What is a reorder point?</h2><p>The stock level that tells you to place a new order. It equals average daily sales × (supplier lead time + safety days). When stock falls to it, the new order arrives just before you run out.</p><h2>How much safety stock do I need?</h2><p>A common start is one to two weeks of sales. Use more if your supplier is unreliable or sales swing a lot, less for slow or cheap items.</p>
+<p class="small">Estimates only. Not tax, legal or financial advice. <a href="/tools/">More free tools</a></p>
+</article>
+<script>
+(function(){
+function m(x){return (x<0?'-':'')+'$'+Math.abs(x).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function calc(v){var d=v.sold/30,rop=Math.ceil(d*(v.lead+v.safety)),qty=Math.ceil(d*v.cover),left=d?(v.onhand-rop)/d:0;
+return [['Average daily sales',d.toFixed(1)],['Reorder point (units)',rop,1],[v.onhand<=rop?'Status':'Days until you need to reorder',v.onhand<=rop?'REORDER NOW':left.toFixed(0)+' days',1],['Suggested order quantity',qty],['Order cost',m(qty*v.cost)]];}
+function run(){var v={};document.querySelectorAll('#calc [data-k]').forEach(function(e){v[e.dataset.k]=parseFloat(e.value)||0});
+ document.getElementById('out').innerHTML='<h2 style="margin-top:0">Result</h2><table style="width:100%">'+calc(v).map(function(r){
+  return '<tr><td>'+(r[2]?'<b>'+r[0]+'</b>':r[0])+'</td><td style="text-align:right'+(r[2]?';font-size:1.3em':'')+'">'+(r[2]?'<b>'+r[1]+'</b>':r[1])+'</td></tr>'}).join('')+'</table>';}
+document.getElementById('calc').addEventListener('input',run);run();
+})();
+</script></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/">Invoice generator</a><a href="/invoice-templates/">Invoice templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/tools/etsy-fee-calculator/">Etsy fee calculator</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+
+</body>
+</html>

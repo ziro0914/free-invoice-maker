@@ -79,11 +79,11 @@ ${analytics()}
 <body>
 <header class="site"><div class="wrap">
   <a class="brand" href="${url('')}">Free<b>Invoice</b>Maker</a>
-  <nav><a href="${url('invoice-templates/')}">Templates</a><a href="${url('guides/')}">Guides</a><a href="${url('tools/etsy-fee-calculator/')}">Etsy fees</a></nav>
+  <nav><a href="${url('invoice-templates/')}">Templates</a><a href="${url('guides/')}">Guides</a><a href="${url('tools/')}">Free tools</a></nav>
 </div></header>
 <main>${body}</main>
 <footer class="site"><div class="wrap">
-  <p><a href="${url('')}">Invoice generator</a><a href="${url('invoice-templates/')}">Invoice templates</a><a href="${url('guides/')}">Guides</a><a href="${url('tools/etsy-fee-calculator/')}">Etsy fee calculator</a><a href="${url('about/')}">About</a><a href="${url('privacy/')}">Privacy</a></p>
+  <p><a href="${url('')}">Invoice generator</a><a href="${url('invoice-templates/')}">Invoice templates</a><a href="${url('guides/')}">Guides</a><a href="${url('tools/')}">Free tools</a><a href="${url('tools/etsy-fee-calculator/')}">Etsy fee calculator</a><a href="${url('about/')}">About</a><a href="${url('privacy/')}">Privacy</a></p>
   <p>© ${new Date().getFullYear()} Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
 </div></footer>
 ${tool ? `<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
@@ -325,6 +325,77 @@ document.getElementById('etsy').addEventListener('input',run);run();
   }));
 }
 
+// Free calculators that each lead to one paid spreadsheet. compute(v) runs in the browser and returns [[label, value, bold?], ...].
+const CALCS = [
+  {
+    slug: 'freelance-hourly-rate-calculator', name: 'Freelance hourly rate calculator',
+    title: 'Freelance Hourly Rate Calculator: What Should I Charge? | Free',
+    description: 'Free freelance rate calculator. Enter the income you want, your costs, tax and time off to get your minimum hourly, day and monthly rate.',
+    h1: 'Freelance Hourly Rate Calculator', intro: 'Work out the minimum hourly rate that pays your salary, business costs and taxes, after holidays and unbilled admin time.',
+    fields: [['income', 'Take-home pay you want per year', 60000, '100'], ['costs', 'Business costs per year (software, gear, insurance)', 4000, '100'],
+      ['tax', 'Tax rate % (income + self-employment)', 25, '1'], ['weeks', 'Weeks off per year (holiday, sick)', 6, '1'],
+      ['hours', 'Hours worked per week', 40, '1'], ['bill', 'Billable share of your hours %', 65, '1']],
+    compute: `var gross=(v.income+v.costs)/Math.max(.01,1-v.tax/100),hrs=(52-v.weeks)*v.hours*v.bill/100,h=hrs?gross/hrs:0;
+return [['Revenue you need per year',m(gross)],['Billable hours per year',hrs.toFixed(0)],['Minimum hourly rate',m(h),1],['Day rate (8h)',m(h*8)],['Monthly retainer equivalent',m(gross/12)]];`,
+    cta: ['Want quotes and scenarios too?', 'The Freelance Rate & Pricing Calculator spreadsheet adds a project quote builder, side-by-side scenarios and a raise-your-rates simulator. Excel + Google Sheets.', 'Get it ($7)', 'https://ziroflux4.gumroad.com/l/rate-calculator'],
+    faq: [['How do I calculate my freelance hourly rate?', 'Add the take-home pay you want to your yearly business costs, gross it up for tax, then divide by the hours you can actually bill in a year: weeks worked × hours per week × your billable share.'],
+      ['Why is the billable share so low?', 'Most freelancers spend 30-40% of their time on sales, admin, invoicing and learning. Those hours earn nothing directly, so your rate on billable hours has to cover them.']],
+  },
+  {
+    slug: 'reorder-point-calculator', name: 'Reorder point calculator',
+    title: 'Reorder Point Calculator for Small Shops: When to Reorder | Free',
+    description: 'Free reorder point calculator. Enter daily sales, supplier lead time and safety stock to see when to reorder and how many units to order.',
+    h1: 'Reorder Point Calculator', intro: 'Find the stock level at which you should reorder, so you never run out of your best sellers while waiting for the supplier.',
+    fields: [['sold', 'Units sold in the last 30 days', 90, '1'], ['lead', 'Supplier lead time (days)', 14, '1'], ['safety', 'Safety stock (days of sales)', 7, '1'],
+      ['onhand', 'Units on hand now', 60, '1'], ['cover', 'Days of stock each order should cover', 30, '1'], ['cost', 'Unit cost', 4.5, '0.01']],
+    compute: `var d=v.sold/30,rop=Math.ceil(d*(v.lead+v.safety)),qty=Math.ceil(d*v.cover),left=d?(v.onhand-rop)/d:0;
+return [['Average daily sales',d.toFixed(1)],['Reorder point (units)',rop,1],[v.onhand<=rop?'Status':'Days until you need to reorder',v.onhand<=rop?'REORDER NOW':left.toFixed(0)+' days',1],['Suggested order quantity',qty],['Order cost',m(qty*v.cost)]];`,
+    cta: ['Tracking more than a few products?', 'The Small Business Inventory & Stock Tracker spreadsheet does this for up to 300 SKUs from your sales log, with automatic reorder alerts, a reorder list and a stock value dashboard. Excel + Google Sheets.', 'Get it ($12)', 'https://ziroflux4.gumroad.com/l/inventory-tracker'],
+    faq: [['What is a reorder point?', 'The stock level that tells you to place a new order. It equals average daily sales × (supplier lead time + safety days). When stock falls to it, the new order arrives just before you run out.'],
+      ['How much safety stock do I need?', 'A common start is one to two weeks of sales. Use more if your supplier is unreliable or sales swing a lot, less for slow or cheap items.']],
+  },
+];
+
+function buildCalcs() {
+  for (const c of CALCS) {
+    const rel = `tools/${c.slug}/`;
+    const fields = c.fields.map(([id, label, val, step]) => `<label>${esc(label)}<input data-k="${id}" type="number" inputmode="decimal" min="0" step="${step}" value="${val}"></label>`).join('');
+    write(`${rel}index.html`, layout({
+      title: c.title, description: c.description, rel,
+      jsonld: [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: c.faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }],
+      body: `<section class="wrap hero"><h1>${esc(c.h1)}</h1><p>${esc(c.intro)} Free, no sign-up.</p></section>
+<section class="wrap tool" style="margin:18px auto 40px">
+<form class="card" id="calc" onsubmit="return false"><fieldset><legend>Your numbers</legend><div class="grid2">${fields}</div></fieldset></form>
+<div class="card" id="out" aria-live="polite"></div>
+</section>
+<article class="wrap content">
+<aside class="partner product"><strong>${esc(c.cta[0])}</strong> ${esc(c.cta[1])} <a href="${c.cta[3]}" rel="noopener" target="_blank">${esc(c.cta[2])} →</a></aside>
+${c.faq.map(([q, a]) => `<h2>${esc(q)}</h2><p>${esc(a)}</p>`).join('')}
+<p class="small">Estimates only. Not tax, legal or financial advice. <a href="${url('tools/')}">More free tools</a></p>
+</article>
+<script>
+(function(){
+function m(x){return (x<0?'-':'')+'$'+Math.abs(x).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function calc(v){${c.compute}}
+function run(){var v={};document.querySelectorAll('#calc [data-k]').forEach(function(e){v[e.dataset.k]=parseFloat(e.value)||0});
+ document.getElementById('out').innerHTML='<h2 style="margin-top:0">Result</h2><table style="width:100%">'+calc(v).map(function(r){
+  return '<tr><td>'+(r[2]?'<b>'+r[0]+'</b>':r[0])+'</td><td style="text-align:right'+(r[2]?';font-size:1.3em':'')+'">'+(r[2]?'<b>'+r[1]+'</b>':r[1])+'</td></tr>'}).join('')+'</table>';}
+document.getElementById('calc').addEventListener('input',run);run();
+})();
+</script>`
+    }));
+  }
+  const all = [['etsy-fee-calculator', 'Etsy fee calculator', 'Every Etsy fee on a sale, your profit and the price you need.'],
+    ...CALCS.map(c => [c.slug, c.name, c.intro])];
+  write('tools/index.html', layout({
+    title: 'Free Calculators for Freelancers & Small Shops | Free Invoice Maker',
+    description: 'Free calculators for freelancers and small online shops: Etsy fees, freelance hourly rate, reorder point. No sign-up.',
+    rel: 'tools/',
+    body: `<section class="wrap hero"><h1>Free tools</h1><p>Quick calculators for freelancers and small shops. No sign-up, nothing stored.</p></section>
+<article class="wrap content"><ul><li><a href="${url('')}">Free invoice generator</a>: make a PDF invoice in your browser.</li>${all.map(([s, n, d]) => `<li><a href="${url(`tools/${s}/`)}">${esc(n)}</a>: ${esc(d)}</li>`).join('')}</ul></article>`
+  }));
+}
+
 function buildStatic() {
   write('about/index.html', layout({
     title: 'About | Free Invoice Maker', description: 'Free Invoice Maker is a free, private, browser-based invoice generator for freelancers and small businesses.', rel: 'about/',
@@ -348,7 +419,7 @@ function buildStatic() {
 }
 
 function buildMeta() {
-  const pages = ['', 'invoice-templates/', 'guides/', 'tools/etsy-fee-calculator/', 'about/', 'privacy/',
+  const pages = ['', 'invoice-templates/', 'guides/', 'tools/', 'tools/etsy-fee-calculator/', ...CALCS.map(c => `tools/${c.slug}/`), 'about/', 'privacy/',
     ...professions.map(p => `invoice-template/${p.slug}/`), ...guides.map(g => `guides/${g.slug}/`)];
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -372,6 +443,7 @@ professions.forEach(buildProfession);
 buildHub();
 buildGuides();
 buildTools();
+buildCalcs();
 buildStatic();
 const n = buildMeta();
 console.log(`Built ${n} pages (${professions.length} professions, ${guides.length} guides) -> docs/`);
