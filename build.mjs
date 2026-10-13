@@ -289,6 +289,7 @@ ${pages.map(p => `<url><loc>${abs(p)}</loc><lastmod>${BUILD_DATE}</lastmod></url
 `);
   write('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${abs('sitemap.xml')}\n`);
   if (cfg.indexNowKey) write(`${cfg.indexNowKey}.txt`, cfg.indexNowKey);
+  if (cfg.customDomain) write('CNAME', cfg.customDomain + '\n');
   if (cfg.adsTxt) write('ads.txt', cfg.adsTxt + '\n');
   write('.nojekyll', '');
   fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });

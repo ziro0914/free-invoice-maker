@@ -1,6 +1,6 @@
 {
-  "siteUrl": "https://ziro0914.github.io",
-  "base": "/free-invoice-maker/",
+  "siteUrl": "https://sendinvoicefree.com",
+  "base": "/",
   "repo": "ziro0914/free-invoice-maker",
   "contactEmail": "",
   "gaId": "",
@@ -15,5 +15,6 @@
       "url": ""
     }
   ],
-  "indexNowKey": "47f40954b4664668ae3242c9c04c5836"
+  "indexNowKey": "47f40954b4664668ae3242c9c04c5836",
+  "customDomain": "sendinvoicefree.com"
 }
