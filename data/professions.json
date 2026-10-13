@@ -11,10 +11,26 @@
       "This template starts with the lines most working photographers use: a session or coverage fee, post-production per edited image, a usage license for commercial clients, and travel. Change the quantities, swap in your own rates, and add a note referencing your contract or booking date. If you took a retainer at booking, list it as a negative line or mention it in the notes so the balance due is unmistakable."
     ],
     "items": [
-      {"desc": "Portrait session (2 hours, on location)", "qty": 1, "rate": 350},
-      {"desc": "Professional editing and retouching (per image)", "qty": 25, "rate": 15},
-      {"desc": "Commercial usage license (1 year, web and social)", "qty": 1, "rate": 400},
-      {"desc": "Travel (per mile)", "qty": 40, "rate": 0.7}
+      {
+        "desc": "Portrait session (2 hours, on location)",
+        "qty": 1,
+        "rate": 350
+      },
+      {
+        "desc": "Professional editing and retouching (per image)",
+        "qty": 25,
+        "rate": 15
+      },
+      {
+        "desc": "Commercial usage license (1 year, web and social)",
+        "qty": 1,
+        "rate": 400
+      },
+      {
+        "desc": "Travel (per mile)",
+        "qty": 40,
+        "rate": 0.7
+      }
     ],
     "tips": [
       "State the image usage rights on the invoice itself (medium, territory, duration) so the license is documented alongside the payment record.",
@@ -23,9 +39,18 @@
       "Release full-resolution or unwatermarked files only after the balance clears, and say so in your payment terms."
     ],
     "faq": [
-      {"q": "Should I charge sales tax on photography invoices?", "a": "It depends on where you work. Some US states treat prints, digital image deliveries or both as taxable, while others tax only physical products; in the UK, Canada and Australia, registration usually depends on your turnover. Check local rules or ask an accountant, then add the tax rate in the generator if it applies to you."},
-      {"q": "How do I invoice for a wedding paid in installments?", "a": "Issue one invoice per payment milestone, each referencing the same contract and showing the total package price, amounts already received and the remaining balance. A common schedule is a retainer at booking, a second payment a few months out, and the final balance two to four weeks before the wedding so nothing is outstanding on the day."},
-      {"q": "Do I need to list every edited image?", "a": "No. One line showing the number of edited images and the per-image rate is clearer than dozens of rows. Itemize only when pricing differs, such as standard edits versus advanced retouching, or when a client ordered specific frames from a proofing gallery and needs the invoice to match their selection."}
+      {
+        "q": "Should I charge sales tax on photography invoices?",
+        "a": "It depends on where you work. Some US states treat prints, digital image deliveries or both as taxable, while others tax only physical products; in the UK, Canada and Australia, registration usually depends on your turnover. Check local rules or ask an accountant, then add the tax rate in the generator if it applies to you."
+      },
+      {
+        "q": "How do I invoice for a wedding paid in installments?",
+        "a": "Issue one invoice per payment milestone, each referencing the same contract and showing the total package price, amounts already received and the remaining balance. A common schedule is a retainer at booking, a second payment a few months out, and the final balance two to four weeks before the wedding so nothing is outstanding on the day."
+      },
+      {
+        "q": "Do I need to list every edited image?",
+        "a": "No. One line showing the number of edited images and the per-image rate is clearer than dozens of rows. Itemize only when pricing differs, such as standard edits versus advanced retouching, or when a client ordered specific frames from a proofing gallery and needs the invoice to match their selection."
+      }
     ],
     "payment_terms": "Non-refundable 30% retainer due at booking. Balance due within 14 days of the session; final images delivered on payment."
   },
@@ -41,10 +66,26 @@
       "The prefilled lines cover a typical branding job: logo concepts, extra revision rounds billed beyond the included two, a brand style guide, and stock asset licenses passed through at cost. Edit the descriptions to match your proposal wording so the client's accounts team can tie the invoice to the approved quote. If you transfer copyright on payment, say so in the notes field rather than leaving ownership ambiguous."
     ],
     "items": [
-      {"desc": "Logo design - 3 initial concepts", "qty": 1, "rate": 900},
-      {"desc": "Additional revision round (beyond 2 included)", "qty": 2, "rate": 120},
-      {"desc": "Brand style guide (12 pages)", "qty": 1, "rate": 650},
-      {"desc": "Stock imagery license (pass-through at cost)", "qty": 3, "rate": 15}
+      {
+        "desc": "Logo design - 3 initial concepts",
+        "qty": 1,
+        "rate": 900
+      },
+      {
+        "desc": "Additional revision round (beyond 2 included)",
+        "qty": 2,
+        "rate": 120
+      },
+      {
+        "desc": "Brand style guide (12 pages)",
+        "qty": 1,
+        "rate": 650
+      },
+      {
+        "desc": "Stock imagery license (pass-through at cost)",
+        "qty": 3,
+        "rate": 15
+      }
     ],
     "tips": [
       "Specify how many revision rounds your fee includes and bill extra rounds as their own line item so scope creep is visible.",
@@ -53,9 +94,18 @@
       "For larger projects, invoice 50% upfront and the balance on delivery of final files instead of waiting until the very end."
     ],
     "faq": [
-      {"q": "Should I charge hourly or per project as a graphic designer?", "a": "Both work, but project pricing tends to suit defined deliverables like logos or brochures, while hourly billing fits open-ended retainers and ongoing production work. Whichever you choose, list hours or deliverables on the invoice so clients can compare it with your quote. Many designers quote per project and track hours privately to check profitability."},
-      {"q": "How do I bill for font and stock image licenses?", "a": "Add each license as its own line with the quantity and cost, and note who holds the license. Some fonts and stock images must be licensed in the client's name, in which case you can invoice the cost as a reimbursable expense. Keep receipts in case the client's finance team asks for proof."},
-      {"q": "When should I send final design files?", "a": "Many designers share low-resolution or watermarked proofs for approval, then release editable source files and print-ready exports after the final invoice is paid. State this in your payment terms and contract before work begins so the client isn't surprised. It protects you from unpaid work while still letting the client review everything."}
+      {
+        "q": "Should I charge hourly or per project as a graphic designer?",
+        "a": "Both work, but project pricing tends to suit defined deliverables like logos or brochures, while hourly billing fits open-ended retainers and ongoing production work. Whichever you choose, list hours or deliverables on the invoice so clients can compare it with your quote. Many designers quote per project and track hours privately to check profitability."
+      },
+      {
+        "q": "How do I bill for font and stock image licenses?",
+        "a": "Add each license as its own line with the quantity and cost, and note who holds the license. Some fonts and stock images must be licensed in the client's name, in which case you can invoice the cost as a reimbursable expense. Keep receipts in case the client's finance team asks for proof."
+      },
+      {
+        "q": "When should I send final design files?",
+        "a": "Many designers share low-resolution or watermarked proofs for approval, then release editable source files and print-ready exports after the final invoice is paid. State this in your payment terms and contract before work begins so the client isn't surprised. It protects you from unpaid work while still letting the client review everything."
+      }
     ],
     "payment_terms": "50% deposit due before work begins. Balance due within 14 days of final approval; source files released on payment."
   },
@@ -71,10 +121,26 @@
       "The sample lines reflect a milestone-based build: a front-end development phase, CMS integration, hourly change requests after sign-off, and a monthly maintenance plan. Replace them with your own sprint or milestone names, and reference the repository, staging URL or statement of work in the notes. For retainer clients, duplicate the invoice each month and update only the hours and dates."
     ],
     "items": [
-      {"desc": "Milestone 2: responsive front-end build", "qty": 1, "rate": 2400},
-      {"desc": "CMS setup and content migration", "qty": 1, "rate": 800},
-      {"desc": "Change requests after sign-off (hourly)", "qty": 6, "rate": 95},
-      {"desc": "Monthly maintenance and security updates", "qty": 1, "rate": 150}
+      {
+        "desc": "Milestone 2: responsive front-end build",
+        "qty": 1,
+        "rate": 2400
+      },
+      {
+        "desc": "CMS setup and content migration",
+        "qty": 1,
+        "rate": 800
+      },
+      {
+        "desc": "Change requests after sign-off (hourly)",
+        "qty": 6,
+        "rate": 95
+      },
+      {
+        "desc": "Monthly maintenance and security updates",
+        "qty": 1,
+        "rate": 150
+      }
     ],
     "tips": [
       "Tie each invoice to a named milestone in your statement of work so milestone approval and payment happen together.",
@@ -83,9 +149,18 @@
       "Consider holding production deployment or domain transfer until final payment, and state this in your contract."
     ],
     "faq": [
-      {"q": "How should I structure payments for a website project?", "a": "A common approach is a deposit of 30-50% to start, one or two milestone payments tied to design approval and development completion, and a final payment before launch or handover. Milestone billing keeps cash flowing on long projects and reduces the risk of building an entire site and then chasing the full fee afterward."},
-      {"q": "Should hosting be on the same invoice as development?", "a": "You can include it, but list it separately and mark whether it is a one-time setup fee or a recurring charge. Many developers move hosting and maintenance onto a separate monthly invoice once the site launches, which keeps project accounting clean and makes it easy for the client to cancel or renew independently."},
-      {"q": "What if the client keeps requesting changes after launch?", "a": "Refer back to the scope and acceptance criteria you agreed on. Anything outside them is new work, so quote it or bill it hourly as a change request. Showing these as separate dated lines on the invoice makes the extra effort visible and gives clients a reason to batch requests instead of sending them one at a time."}
+      {
+        "q": "How should I structure payments for a website project?",
+        "a": "A common approach is a deposit of 30-50% to start, one or two milestone payments tied to design approval and development completion, and a final payment before launch or handover. Milestone billing keeps cash flowing on long projects and reduces the risk of building an entire site and then chasing the full fee afterward."
+      },
+      {
+        "q": "Should hosting be on the same invoice as development?",
+        "a": "You can include it, but list it separately and mark whether it is a one-time setup fee or a recurring charge. Many developers move hosting and maintenance onto a separate monthly invoice once the site launches, which keeps project accounting clean and makes it easy for the client to cancel or renew independently."
+      },
+      {
+        "q": "What if the client keeps requesting changes after launch?",
+        "a": "Refer back to the scope and acceptance criteria you agreed on. Anything outside them is new work, so quote it or bill it hourly as a change request. Showing these as separate dated lines on the invoice makes the extra effort visible and gives clients a reason to batch requests instead of sending them one at a time."
+      }
     ],
     "payment_terms": "40% deposit to begin, 40% on staging approval, 20% before launch. Each invoice due within 14 days."
   },
@@ -101,9 +176,21 @@
       "This version is set up for a typical content client: two long-form blog posts billed per article, a newsletter piece billed by word count, and research for upcoming briefs. If a piece was killed after you delivered a draft, add a kill fee line rather than leaving it off entirely. Mention in the notes which rights you are granting, such as first publication or full ownership on payment."
     ],
     "items": [
-      {"desc": "Long-form blog post (approx. 2,000 words)", "qty": 2, "rate": 400},
-      {"desc": "Newsletter feature (per word)", "qty": 800, "rate": 0.2},
-      {"desc": "Keyword research and outline (per brief)", "qty": 2, "rate": 50}
+      {
+        "desc": "Long-form blog post (approx. 2,000 words)",
+        "qty": 2,
+        "rate": 400
+      },
+      {
+        "desc": "Newsletter feature (per word)",
+        "qty": 800,
+        "rate": 0.2
+      },
+      {
+        "desc": "Keyword research and outline (per brief)",
+        "qty": 2,
+        "rate": 50
+      }
     ],
     "tips": [
       "Put the article title and publish date or URL on each line so editors and accounts teams can match the invoice without emailing you.",
@@ -112,9 +199,18 @@
       "Ask whether the client needs a purchase order number or vendor setup before you invoice, because missing paperwork is a common cause of delayed payment."
     ],
     "faq": [
-      {"q": "Should I bill per word or per article?", "a": "Per-word rates are common in magazines and publishing, while marketing clients often prefer a flat per-article fee because it is easier to budget. If you bill per word, state whether the count is based on the assigned or the delivered length. A flat fee should still reference the expected word range so scope stays clear."},
-      {"q": "When should a freelance writer send the invoice?", "a": "Check the client's process first. Some publications pay on acceptance, others on publication, which can be weeks later. Content agencies and marketing teams usually prefer a single monthly invoice covering everything delivered that month. Ask up front and record the agreed trigger, such as acceptance of the final draft, in your payment terms."},
-      {"q": "How do I invoice a kill fee?", "a": "Issue an invoice with a single line describing the commissioned piece, the original fee and the agreed kill percentage, for example 30% of a $600 article. Reference the date the piece was cancelled and the commissioning email. In most cases the rights to the unpublished work stay with you, so you can pitch it elsewhere."}
+      {
+        "q": "Should I bill per word or per article?",
+        "a": "Per-word rates are common in magazines and publishing, while marketing clients often prefer a flat per-article fee because it is easier to budget. If you bill per word, state whether the count is based on the assigned or the delivered length. A flat fee should still reference the expected word range so scope stays clear."
+      },
+      {
+        "q": "When should a freelance writer send the invoice?",
+        "a": "Check the client's process first. Some publications pay on acceptance, others on publication, which can be weeks later. Content agencies and marketing teams usually prefer a single monthly invoice covering everything delivered that month. Ask up front and record the agreed trigger, such as acceptance of the final draft, in your payment terms."
+      },
+      {
+        "q": "How do I invoice a kill fee?",
+        "a": "Issue an invoice with a single line describing the commissioned piece, the original fee and the agreed kill percentage, for example 30% of a $600 article. Reference the date the piece was cancelled and the commissioning email. In most cases the rights to the unpublished work stay with you, so you can pitch it elsewhere."
+      }
     ],
     "payment_terms": "Payment due within 30 days of acceptance of final draft. Kill fee of 30% applies to cancelled commissions."
   },
@@ -130,10 +226,26 @@
       "The template includes a messaging strategy session, a landing page, an email sequence and a batch of ad variations. Rename them to match your packages and include the number of revision rounds each fee covers. If the client is an agency billing its own customer, they may ask you to avoid mentioning the end brand, so check before naming the project on the invoice."
     ],
     "items": [
-      {"desc": "Messaging strategy session and creative brief", "qty": 1, "rate": 350},
-      {"desc": "Long-form landing page copy (2 revision rounds)", "qty": 1, "rate": 1200},
-      {"desc": "Welcome email sequence (5 emails)", "qty": 1, "rate": 900},
-      {"desc": "Ad copy variations (Meta and Google)", "qty": 10, "rate": 40}
+      {
+        "desc": "Messaging strategy session and creative brief",
+        "qty": 1,
+        "rate": 350
+      },
+      {
+        "desc": "Long-form landing page copy (2 revision rounds)",
+        "qty": 1,
+        "rate": 1200
+      },
+      {
+        "desc": "Welcome email sequence (5 emails)",
+        "qty": 1,
+        "rate": 900
+      },
+      {
+        "desc": "Ad copy variations (Meta and Google)",
+        "qty": 10,
+        "rate": 40
+      }
     ],
     "tips": [
       "Price and invoice by deliverable rather than by word so clients compare value, not word counts.",
@@ -142,9 +254,18 @@
       "For agency subcontracting, confirm white-label requirements and whether they pay you before or after their own client pays."
     ],
     "faq": [
-      {"q": "How is a copywriting invoice different from a freelance writing invoice?", "a": "Copywriting invoices typically bill conversion-focused deliverables such as sales pages, emails and ads, often as packages with strategy included. Editorial writing is more often billed per article or per word. The practical difference is that copywriting lines describe the asset and its purpose, which supports higher, value-based pricing rather than a rate tied to length."},
-      {"q": "Should I charge a deposit for copywriting projects?", "a": "Yes, many copywriters require 50% before starting research, because the strategy and discovery work happens early and can't be returned if a client cancels. For smaller jobs, some ask for full payment up front. Show the deposit as received on the final invoice so the remaining balance is clear to the client's finance team."},
-      {"q": "Can I charge royalties or performance bonuses?", "a": "You can, if it is agreed in writing beforehand. Some direct-response copywriters negotiate a bonus tied to sales or leads generated by their copy. Bill the flat fee as usual, then issue a separate invoice for the bonus once the agreed results period ends, referencing the metric and the data source the client shared."}
+      {
+        "q": "How is a copywriting invoice different from a freelance writing invoice?",
+        "a": "Copywriting invoices typically bill conversion-focused deliverables such as sales pages, emails and ads, often as packages with strategy included. Editorial writing is more often billed per article or per word. The practical difference is that copywriting lines describe the asset and its purpose, which supports higher, value-based pricing rather than a rate tied to length."
+      },
+      {
+        "q": "Should I charge a deposit for copywriting projects?",
+        "a": "Yes, many copywriters require 50% before starting research, because the strategy and discovery work happens early and can't be returned if a client cancels. For smaller jobs, some ask for full payment up front. Show the deposit as received on the final invoice so the remaining balance is clear to the client's finance team."
+      },
+      {
+        "q": "Can I charge royalties or performance bonuses?",
+        "a": "You can, if it is agreed in writing beforehand. Some direct-response copywriters negotiate a bonus tied to sales or leads generated by their copy. Bill the flat fee as usual, then issue a separate invoice for the bonus once the agreed results period ends, referencing the metric and the data source the client shared."
+      }
     ],
     "payment_terms": "50% due before research begins. Balance due within 14 days of delivery of final copy."
   },
@@ -160,10 +281,26 @@
       "The sample covers a one-day corporate or event shoot with two camera operators, a lighting and audio kit, and editing hours. Adjust the line items to match half-day or multi-day bookings, and add drone footage, music licensing or color grading as separate lines if you offer them. Reference the project name and delivery format so the client knows exactly what files to expect."
     ],
     "items": [
-      {"desc": "Full-day shoot (10 hours, lead operator)", "qty": 1, "rate": 1200},
-      {"desc": "Second camera operator (full day)", "qty": 1, "rate": 600},
-      {"desc": "Lighting and audio kit (per day)", "qty": 1, "rate": 250},
-      {"desc": "Editing and color correction (hourly)", "qty": 12, "rate": 85}
+      {
+        "desc": "Full-day shoot (10 hours, lead operator)",
+        "qty": 1,
+        "rate": 1200
+      },
+      {
+        "desc": "Second camera operator (full day)",
+        "qty": 1,
+        "rate": 600
+      },
+      {
+        "desc": "Lighting and audio kit (per day)",
+        "qty": 1,
+        "rate": 250
+      },
+      {
+        "desc": "Editing and color correction (hourly)",
+        "qty": 12,
+        "rate": 85
+      }
     ],
     "tips": [
       "Define a shoot day in hours and bill overtime per hour or half-day so long events don't eat into your margin.",
@@ -172,9 +309,18 @@
       "Deliver watermarked or low-resolution previews for approval and release masters once the final payment clears."
     ],
     "faq": [
-      {"q": "Should I charge for equipment if I own it?", "a": "Yes. Cameras, lenses, lighting, audio gear and drones depreciate and need insurance and maintenance. Many videographers charge a daily kit fee loosely based on local rental prices. Showing it as a separate line helps clients understand the total and makes it easy to adjust when a project needs more or less equipment."},
-      {"q": "How do I invoice for revisions to a video edit?", "a": "Include a set number of revision rounds in the editing fee, commonly two, and state that in your quote. Bill additional rounds or major structural changes hourly, as a dated line on the invoice. Distinguish between small tweaks like caption fixes and new requests like re-cutting the story, which are effectively new edits."},
-      {"q": "Do I need to mention usage rights for video?", "a": "For commercial work it is wise. Note where the client can use the footage, such as web, social, broadcast or paid ads, and for how long. Broadcast and paid advertising usage often justifies a higher fee. If raw footage is not included, say so to prevent requests for unedited files later."}
+      {
+        "q": "Should I charge for equipment if I own it?",
+        "a": "Yes. Cameras, lenses, lighting, audio gear and drones depreciate and need insurance and maintenance. Many videographers charge a daily kit fee loosely based on local rental prices. Showing it as a separate line helps clients understand the total and makes it easy to adjust when a project needs more or less equipment."
+      },
+      {
+        "q": "How do I invoice for revisions to a video edit?",
+        "a": "Include a set number of revision rounds in the editing fee, commonly two, and state that in your quote. Bill additional rounds or major structural changes hourly, as a dated line on the invoice. Distinguish between small tweaks like caption fixes and new requests like re-cutting the story, which are effectively new edits."
+      },
+      {
+        "q": "Do I need to mention usage rights for video?",
+        "a": "For commercial work it is wise. Note where the client can use the footage, such as web, social, broadcast or paid ads, and for how long. Broadcast and paid advertising usage often justifies a higher fee. If raw footage is not included, say so to prevent requests for unedited files later."
+      }
     ],
     "payment_terms": "50% deposit due to confirm the shoot date. Balance due within 14 days of final video delivery."
   },
@@ -190,10 +336,26 @@
       "The sample is built for a creator or brand client: a per-video edit for 10-15 minute uploads, color grading, audio cleanup and captions. For ongoing channels, invoice monthly with one line per video and its publish date. Add rush fees as a separate line if you turned something around within 24-48 hours, and note in the terms whether project files are included."
     ],
     "items": [
-      {"desc": "YouTube video edit (10-15 min runtime)", "qty": 4, "rate": 250},
-      {"desc": "Color grading (per video)", "qty": 4, "rate": 60},
-      {"desc": "Audio cleanup and mix (per video)", "qty": 4, "rate": 40},
-      {"desc": "Burned-in captions (per video)", "qty": 4, "rate": 25}
+      {
+        "desc": "YouTube video edit (10-15 min runtime)",
+        "qty": 4,
+        "rate": 250
+      },
+      {
+        "desc": "Color grading (per video)",
+        "qty": 4,
+        "rate": 60
+      },
+      {
+        "desc": "Audio cleanup and mix (per video)",
+        "qty": 4,
+        "rate": 40
+      },
+      {
+        "desc": "Burned-in captions (per video)",
+        "qty": 4,
+        "rate": 25
+      }
     ],
     "tips": [
       "Quote per video for recurring creator work and per hour for documentaries or footage-heavy projects where scope is uncertain.",
@@ -202,9 +364,18 @@
       "List stock footage, music or plugin purchases made for the project as reimbursable expenses."
     ],
     "faq": [
-      {"q": "How much should a video editor charge per video?", "a": "It varies widely with length, complexity and footage volume. Short social clips may be billed per piece at a modest rate, while a heavily edited 15-minute YouTube video with graphics can command several hundred dollars. Track your actual hours for a few projects, then set a per-video price that reflects your target hourly rate."},
-      {"q": "Should I invoice per video or monthly?", "a": "For one-off projects, invoice per delivery. For recurring creators or brands, a monthly invoice listing each video, its title and delivery date is easier for both sides and reduces admin. Some editors bill a monthly retainer in advance for a set number of videos, which gives predictable income and priority scheduling."},
-      {"q": "Do I need to give clients my project files?", "a": "Not unless you agreed to. Project files contain your organization, presets and workflow, and many editors treat them as a separate deliverable with its own fee. Clarify this in your terms before starting, and if the client wants them, add a project file handover line to the invoice with an agreed price."}
+      {
+        "q": "How much should a video editor charge per video?",
+        "a": "It varies widely with length, complexity and footage volume. Short social clips may be billed per piece at a modest rate, while a heavily edited 15-minute YouTube video with graphics can command several hundred dollars. Track your actual hours for a few projects, then set a per-video price that reflects your target hourly rate."
+      },
+      {
+        "q": "Should I invoice per video or monthly?",
+        "a": "For one-off projects, invoice per delivery. For recurring creators or brands, a monthly invoice listing each video, its title and delivery date is easier for both sides and reduces admin. Some editors bill a monthly retainer in advance for a set number of videos, which gives predictable income and priority scheduling."
+      },
+      {
+        "q": "Do I need to give clients my project files?",
+        "a": "Not unless you agreed to. Project files contain your organization, presets and workflow, and many editors treat them as a separate deliverable with its own fee. Clarify this in your terms before starting, and if the client wants them, add a project file handover line to the invoice with an agreed price."
+      }
     ],
     "payment_terms": "Payment due within 7 days of invoice. Monthly retainer clients invoiced on the 1st, due by the 10th."
   },
@@ -220,10 +391,26 @@
       "This template is set up for a mix of advisory work: a monthly retainer, a strategy workshop day, hourly analysis and reimbursable travel. Change the billing period in the description lines and add the PO number in the notes. If you bill on a fixed-fee engagement, replace these with phase names and percentages from your statement of work so finance can track remaining budget."
     ],
     "items": [
-      {"desc": "Monthly advisory retainer", "qty": 1, "rate": 3000},
-      {"desc": "Strategy workshop (full day, on-site)", "qty": 1, "rate": 1800},
-      {"desc": "Data analysis and reporting (hourly)", "qty": 8, "rate": 150},
-      {"desc": "Travel expenses (reimbursable, receipts attached)", "qty": 1, "rate": 420}
+      {
+        "desc": "Monthly advisory retainer",
+        "qty": 1,
+        "rate": 3000
+      },
+      {
+        "desc": "Strategy workshop (full day, on-site)",
+        "qty": 1,
+        "rate": 1800
+      },
+      {
+        "desc": "Data analysis and reporting (hourly)",
+        "qty": 8,
+        "rate": 150
+      },
+      {
+        "desc": "Travel expenses (reimbursable, receipts attached)",
+        "qty": 1,
+        "rate": 420
+      }
     ],
     "tips": [
       "Include the client's PO number and engagement name on every invoice; many companies cannot process invoices without them.",
@@ -232,9 +419,18 @@
       "Ask about vendor onboarding forms, tax documentation and payment cycles before your first invoice, since net-30 or longer terms are common in corporate settings."
     ],
     "faq": [
-      {"q": "Should consultants bill hourly or by value?", "a": "Hourly billing is simple and suits open-ended advisory work, but it caps your income and invites scrutiny of every hour. Fixed-fee or value-based pricing ties your fee to outcomes and suits well-defined projects. Many consultants combine them: a fixed fee for the core scope and an hourly rate for anything beyond it."},
-      {"q": "How do I invoice a consulting retainer?", "a": "Issue the retainer invoice at the start of each month or quarter, describing the period and what the retainer covers, such as up to 15 hours of advisory time. If the client exceeds that, bill the overage on the next invoice. State whether unused hours roll over, since this is a frequent source of disagreement."},
-      {"q": "Can I charge for travel time?", "a": "Many consultants do, often at a reduced rate such as 50% of their hourly fee, while others absorb it into the day rate. Whatever you decide, agree on it in the engagement letter and show travel time as its own line. Airfare, lodging and meals are usually billed separately as reimbursable expenses."}
+      {
+        "q": "Should consultants bill hourly or by value?",
+        "a": "Hourly billing is simple and suits open-ended advisory work, but it caps your income and invites scrutiny of every hour. Fixed-fee or value-based pricing ties your fee to outcomes and suits well-defined projects. Many consultants combine them: a fixed fee for the core scope and an hourly rate for anything beyond it."
+      },
+      {
+        "q": "How do I invoice a consulting retainer?",
+        "a": "Issue the retainer invoice at the start of each month or quarter, describing the period and what the retainer covers, such as up to 15 hours of advisory time. If the client exceeds that, bill the overage on the next invoice. State whether unused hours roll over, since this is a frequent source of disagreement."
+      },
+      {
+        "q": "Can I charge for travel time?",
+        "a": "Many consultants do, often at a reduced rate such as 50% of their hourly fee, while others absorb it into the day rate. Whatever you decide, agree on it in the engagement letter and show travel time as its own line. Airfare, lodging and meals are usually billed separately as reimbursable expenses."
+      }
     ],
     "payment_terms": "Net 30. Retainer billed in advance on the 1st of each month; additional hours and expenses billed in arrears."
   },
@@ -250,9 +446,21 @@
       "The prefilled lines show a typical month: weekly one-hour sessions in a core subject, SAT prep sessions and marking of a full practice test. Swap in your own subjects and rates, or bill a prepaid package of sessions instead. Use the notes field for your cancellation policy, for example that sessions cancelled with less than 24 hours' notice are charged in full."
     ],
     "items": [
-      {"desc": "One-to-one math tutoring (1 hour)", "qty": 4, "rate": 60},
-      {"desc": "SAT prep session (90 minutes)", "qty": 2, "rate": 95},
-      {"desc": "Practice test marking and written feedback", "qty": 1, "rate": 40}
+      {
+        "desc": "One-to-one math tutoring (1 hour)",
+        "qty": 4,
+        "rate": 60
+      },
+      {
+        "desc": "SAT prep session (90 minutes)",
+        "qty": 2,
+        "rate": 95
+      },
+      {
+        "desc": "Practice test marking and written feedback",
+        "qty": 1,
+        "rate": 40
+      }
     ],
     "tips": [
       "Bill monthly with each session dated, or sell prepaid packages of 5-10 sessions to smooth out income and reduce no-shows.",
@@ -261,9 +469,18 @@
       "Keep group session pricing per student and list each student on the invoice when families share a session."
     ],
     "faq": [
-      {"q": "Should tutors bill before or after sessions?", "a": "Both are common. Billing in advance for a month or a prepaid package reduces late payments and last-minute cancellations, while billing after sessions suits occasional or irregular students. Many tutors require prepayment for exam-prep packages and bill weekly regulars monthly in arrears. Choose one approach and state it clearly in your terms."},
-      {"q": "How do I handle missed tutoring sessions on an invoice?", "a": "If your policy charges for late cancellations or no-shows, include the session as a normal line with a note such as late cancellation. Being transparent keeps the relationship positive. Some tutors waive the first missed session as goodwill, and you can show that as a zero-priced line to signal the policy still applies."},
-      {"q": "Can parents use a tutoring invoice for reimbursement?", "a": "Sometimes. Employers, school districts or education savings programs may reimburse tutoring if the invoice shows dates, subjects, hours, the student's name and your details. Requirements differ by program and country, so ask the parent what their provider needs and check local rules before describing the service in a particular way."}
+      {
+        "q": "Should tutors bill before or after sessions?",
+        "a": "Both are common. Billing in advance for a month or a prepaid package reduces late payments and last-minute cancellations, while billing after sessions suits occasional or irregular students. Many tutors require prepayment for exam-prep packages and bill weekly regulars monthly in arrears. Choose one approach and state it clearly in your terms."
+      },
+      {
+        "q": "How do I handle missed tutoring sessions on an invoice?",
+        "a": "If your policy charges for late cancellations or no-shows, include the session as a normal line with a note such as late cancellation. Being transparent keeps the relationship positive. Some tutors waive the first missed session as goodwill, and you can show that as a zero-priced line to signal the policy still applies."
+      },
+      {
+        "q": "Can parents use a tutoring invoice for reimbursement?",
+        "a": "Sometimes. Employers, school districts or education savings programs may reimburse tutoring if the invoice shows dates, subjects, hours, the student's name and your details. Requirements differ by program and country, so ask the parent what their provider needs and check local rules before describing the service in a particular way."
+      }
     ],
     "payment_terms": "Due within 7 days of invoice. Sessions cancelled with less than 24 hours' notice are billed in full."
   },
@@ -279,10 +496,26 @@
       "The sample reflects one month for a weekly client: four standard visits, a one-off oven and fridge add-on, interior windows and a supplies charge. If you bill per hour instead, change the quantities to hours and the description to show the number of cleaners. Note your lockout or same-day cancellation fee in the terms, since arriving to a locked house costs you a booking."
     ],
     "items": [
-      {"desc": "Standard home clean (3 bed, 2 bath)", "qty": 4, "rate": 140},
-      {"desc": "Add-on: inside oven and refrigerator", "qty": 1, "rate": 60},
-      {"desc": "Interior window cleaning", "qty": 1, "rate": 50},
-      {"desc": "Cleaning supplies and consumables", "qty": 1, "rate": 20}
+      {
+        "desc": "Standard home clean (3 bed, 2 bath)",
+        "qty": 4,
+        "rate": 140
+      },
+      {
+        "desc": "Add-on: inside oven and refrigerator",
+        "qty": 1,
+        "rate": 60
+      },
+      {
+        "desc": "Interior window cleaning",
+        "qty": 1,
+        "rate": 50
+      },
+      {
+        "desc": "Cleaning supplies and consumables",
+        "qty": 1,
+        "rate": 20
+      }
     ],
     "tips": [
       "Price add-ons such as inside appliances, laundry or interior windows separately so recurring clients see when a visit exceeded the standard scope.",
@@ -291,9 +524,18 @@
       "Offer card-on-file or automatic payment for weekly clients to avoid chasing small invoices every week."
     ],
     "faq": [
-      {"q": "Should I invoice cleaning clients weekly or monthly?", "a": "For weekly or biweekly clients, monthly invoicing with each visit listed reduces admin, though some cleaners prefer payment at each visit to protect cash flow. One-off deep cleans and move-out cleans are usually paid on completion. Whatever you choose, keep the visit dates on the invoice so clients can confirm each service."},
-      {"q": "Do I charge extra if I bring my own supplies?", "a": "Many cleaners build supplies into their rate, while others add a small flat supplies fee per visit. If a client requests specific eco-friendly or specialty products, it's reasonable to bill them at cost or with a small markup. If you use the client's own products, note that on the invoice for clarity."},
-      {"q": "How do I price a deep clean on an invoice?", "a": "Quote deep cleans as a flat job price based on home size and condition, or by the hour with an estimated range. On the invoice, describe the scope, such as baseboards, inside cabinets and appliances, so clients understand why it costs more than a standard visit. This also sets expectations for future maintenance cleans."}
+      {
+        "q": "Should I invoice cleaning clients weekly or monthly?",
+        "a": "For weekly or biweekly clients, monthly invoicing with each visit listed reduces admin, though some cleaners prefer payment at each visit to protect cash flow. One-off deep cleans and move-out cleans are usually paid on completion. Whatever you choose, keep the visit dates on the invoice so clients can confirm each service."
+      },
+      {
+        "q": "Do I charge extra if I bring my own supplies?",
+        "a": "Many cleaners build supplies into their rate, while others add a small flat supplies fee per visit. If a client requests specific eco-friendly or specialty products, it's reasonable to bill them at cost or with a small markup. If you use the client's own products, note that on the invoice for clarity."
+      },
+      {
+        "q": "How do I price a deep clean on an invoice?",
+        "a": "Quote deep cleans as a flat job price based on home size and condition, or by the hour with an estimated range. On the invoice, describe the scope, such as baseboards, inside cabinets and appliances, so clients understand why it costs more than a standard visit. This also sets expectations for future maintenance cleans."
+      }
     ],
     "payment_terms": "Payment due on the day of service or within 7 days of invoice. Same-day cancellations or lockouts billed at 50%."
   },
@@ -309,10 +551,26 @@
       "The template includes hourly labor, a minimum service or trip charge, repair materials and haul-away. If you price by the job instead of the hour, replace the labor line with one line per task. Keep receipts for parts and add them at cost or with your standard markup, and check local rules on licensing limits, since some areas cap the size of jobs an unlicensed handyman can take."
     ],
     "items": [
-      {"desc": "Labor: drywall patch, door rehang, faucet repair (hourly)", "qty": 4, "rate": 75},
-      {"desc": "Trip charge / minimum service fee", "qty": 1, "rate": 50},
-      {"desc": "Materials: joint compound, tape, hinges, faucet cartridge", "qty": 1, "rate": 68},
-      {"desc": "Haul-away of old fixtures and debris", "qty": 1, "rate": 35}
+      {
+        "desc": "Labor: drywall patch, door rehang, faucet repair (hourly)",
+        "qty": 4,
+        "rate": 75
+      },
+      {
+        "desc": "Trip charge / minimum service fee",
+        "qty": 1,
+        "rate": 50
+      },
+      {
+        "desc": "Materials: joint compound, tape, hinges, faucet cartridge",
+        "qty": 1,
+        "rate": 68
+      },
+      {
+        "desc": "Haul-away of old fixtures and debris",
+        "qty": 1,
+        "rate": 35
+      }
     ],
     "tips": [
       "Set a minimum charge, often one or two hours, so short jobs still cover travel and setup.",
@@ -321,9 +579,18 @@
       "Collect payment on completion for small residential jobs rather than offering net-30 terms to homeowners."
     ],
     "faq": [
-      {"q": "Should a handyman charge by the hour or by the job?", "a": "Hourly works for unpredictable repairs, while flat pricing suits repeatable tasks like mounting a TV or assembling furniture. Many handymen use both: flat rates for common jobs and hourly for troubleshooting. On the invoice, be consistent within each line so the client can see exactly how each charge was calculated."},
-      {"q": "Can I mark up materials on a handyman invoice?", "a": "Yes, a markup covering your time sourcing, transporting and guaranteeing materials is normal, commonly 10-25%. Be transparent if the client asks, and agree on it in your estimate. Some handymen show materials at cost and include sourcing time as labor instead, which can feel fairer to homeowners."},
-      {"q": "What is a trip charge?", "a": "A trip charge is a flat fee covering travel and setup for each visit, regardless of how long the job takes. It is common for small jobs or callbacks where travel time would otherwise go unpaid. Mention it in your quote and show it as a separate line so the client doesn't mistake it for labor."}
+      {
+        "q": "Should a handyman charge by the hour or by the job?",
+        "a": "Hourly works for unpredictable repairs, while flat pricing suits repeatable tasks like mounting a TV or assembling furniture. Many handymen use both: flat rates for common jobs and hourly for troubleshooting. On the invoice, be consistent within each line so the client can see exactly how each charge was calculated."
+      },
+      {
+        "q": "Can I mark up materials on a handyman invoice?",
+        "a": "Yes, a markup covering your time sourcing, transporting and guaranteeing materials is normal, commonly 10-25%. Be transparent if the client asks, and agree on it in your estimate. Some handymen show materials at cost and include sourcing time as labor instead, which can feel fairer to homeowners."
+      },
+      {
+        "q": "What is a trip charge?",
+        "a": "A trip charge is a flat fee covering travel and setup for each visit, regardless of how long the job takes. It is common for small jobs or callbacks where travel time would otherwise go unpaid. Mention it in your quote and show it as a separate line so the client doesn't mistake it for labor."
+      }
     ],
     "payment_terms": "Payment due on completion of work. Materials invoiced at cost plus 15%. Card, bank transfer or check accepted."
   },
@@ -339,10 +606,26 @@
       "The sample is a progress invoice for a bathroom remodel: demolition and framing, plumbing rough-in by a subcontractor, materials and a change order for an upgraded vanity. Adapt the phase names to your contract schedule. Change orders should always appear as separate, dated lines matching a signed document. Lien waivers, retainage and deposit limits vary by state and province, so check local rules before setting terms."
     ],
     "items": [
-      {"desc": "Phase 2: demolition and framing", "qty": 1, "rate": 3200},
-      {"desc": "Plumbing rough-in (subcontractor)", "qty": 1, "rate": 1850},
-      {"desc": "Materials: tile, backer board, fixtures", "qty": 1, "rate": 2400},
-      {"desc": "Change order #1: upgraded vanity", "qty": 1, "rate": 650}
+      {
+        "desc": "Phase 2: demolition and framing",
+        "qty": 1,
+        "rate": 3200
+      },
+      {
+        "desc": "Plumbing rough-in (subcontractor)",
+        "qty": 1,
+        "rate": 1850
+      },
+      {
+        "desc": "Materials: tile, backer board, fixtures",
+        "qty": 1,
+        "rate": 2400
+      },
+      {
+        "desc": "Change order #1: upgraded vanity",
+        "qty": 1,
+        "rate": 650
+      }
     ],
     "tips": [
       "Use progress billing tied to clear milestones, and show the contract total, amount previously billed and balance remaining on every invoice.",
@@ -351,9 +634,18 @@
       "Separate subcontractor costs from your own labor so clients and lenders can follow where the money goes."
     ],
     "faq": [
-      {"q": "What is progress billing for contractors?", "a": "Progress billing means invoicing for completed portions of a project rather than waiting for the end. You might bill after demolition, rough-in, drywall and final completion, each as a percentage of the contract. It keeps cash flowing to pay crews and suppliers and gives clients clear checkpoints to inspect before releasing payment."},
-      {"q": "How do I show a change order on an invoice?", "a": "Add a separate line describing the change order, its number, the date it was signed and the agreed price. Do not merge it into an existing phase. Your updated contract total should include all approved change orders, so the client can see how the original price moved and why it changed."},
-      {"q": "Can I charge a deposit before starting work?", "a": "Usually, but some jurisdictions limit how much a home improvement contractor can collect upfront, and others set rules on how deposits must be handled. Check local rules for your state, province or territory. Where permitted, a deposit covering initial materials and scheduling is standard and should appear as a credit on later invoices."}
+      {
+        "q": "What is progress billing for contractors?",
+        "a": "Progress billing means invoicing for completed portions of a project rather than waiting for the end. You might bill after demolition, rough-in, drywall and final completion, each as a percentage of the contract. It keeps cash flowing to pay crews and suppliers and gives clients clear checkpoints to inspect before releasing payment."
+      },
+      {
+        "q": "How do I show a change order on an invoice?",
+        "a": "Add a separate line describing the change order, its number, the date it was signed and the agreed price. Do not merge it into an existing phase. Your updated contract total should include all approved change orders, so the client can see how the original price moved and why it changed."
+      },
+      {
+        "q": "Can I charge a deposit before starting work?",
+        "a": "Usually, but some jurisdictions limit how much a home improvement contractor can collect upfront, and others set rules on how deposits must be handled. Check local rules for your state, province or territory. Where permitted, a deposit covering initial materials and scheduling is standard and should appear as a credit on later invoices."
+      }
     ],
     "payment_terms": "Progress payments due within 7 days of each milestone invoice per contract schedule. Final payment due on completion of punch list."
   },
@@ -369,10 +661,26 @@
       "This template includes a service call fee, hourly labor for adding a dedicated circuit, parts and a permit fee passed through to the client. Adjust the descriptions to name the specific work, such as installing a 20A circuit for a kitchen appliance or upgrading a panel. Add your license number in the business details if your jurisdiction expects it on invoices; requirements vary, so check local rules."
     ],
     "items": [
-      {"desc": "Service call / diagnostic fee", "qty": 1, "rate": 95},
-      {"desc": "Labor: install dedicated 20A circuit and outlets (hourly)", "qty": 5, "rate": 110},
-      {"desc": "Parts: breaker, 12/2 wire, boxes, GFCI receptacles", "qty": 1, "rate": 185},
-      {"desc": "Electrical permit (pass-through at cost)", "qty": 1, "rate": 120}
+      {
+        "desc": "Service call / diagnostic fee",
+        "qty": 1,
+        "rate": 95
+      },
+      {
+        "desc": "Labor: install dedicated 20A circuit and outlets (hourly)",
+        "qty": 5,
+        "rate": 110
+      },
+      {
+        "desc": "Parts: breaker, 12/2 wire, boxes, GFCI receptacles",
+        "qty": 1,
+        "rate": 185
+      },
+      {
+        "desc": "Electrical permit (pass-through at cost)",
+        "qty": 1,
+        "rate": 120
+      }
     ],
     "tips": [
       "Describe the work in specific terms, such as circuits added or panel replaced, so the invoice serves as a lasting record for the property.",
@@ -381,9 +689,18 @@
       "Include your license number on the invoice where your jurisdiction expects it, and check local rules on what else must appear."
     ],
     "faq": [
-      {"q": "Should electricians charge a call-out fee?", "a": "Many do, especially for residential service calls. A call-out or diagnostic fee covers travel and the first portion of troubleshooting, and is sometimes credited toward the repair if the customer goes ahead. Make the policy clear when booking and show the fee as its own line so customers know it is not hidden labor."},
-      {"q": "How should I bill emergency electrical work?", "a": "Use a separate emergency or after-hours rate, often higher than your standard hourly rate, and state the time you arrived and left. Customers calling at night generally expect a premium, but listing the hours and rate avoids disputes when the invoice arrives. Parts are billed the same way as on normal jobs."},
-      {"q": "Do I list permit fees on the invoice?", "a": "Yes. Show permit and inspection fees as their own lines, ideally at cost with the permit number in the description. It lets customers see which charges go to the local authority and which are yours. Whether a permit is needed depends on the job and jurisdiction, so check local rules."}
+      {
+        "q": "Should electricians charge a call-out fee?",
+        "a": "Many do, especially for residential service calls. A call-out or diagnostic fee covers travel and the first portion of troubleshooting, and is sometimes credited toward the repair if the customer goes ahead. Make the policy clear when booking and show the fee as its own line so customers know it is not hidden labor."
+      },
+      {
+        "q": "How should I bill emergency electrical work?",
+        "a": "Use a separate emergency or after-hours rate, often higher than your standard hourly rate, and state the time you arrived and left. Customers calling at night generally expect a premium, but listing the hours and rate avoids disputes when the invoice arrives. Parts are billed the same way as on normal jobs."
+      },
+      {
+        "q": "Do I list permit fees on the invoice?",
+        "a": "Yes. Show permit and inspection fees as their own lines, ideally at cost with the permit number in the description. It lets customers see which charges go to the local authority and which are yours. Whether a permit is needed depends on the job and jurisdiction, so check local rules."
+      }
     ],
     "payment_terms": "Payment due on completion for residential service calls. Commercial accounts net 30. After-hours work billed at 1.5x standard rate."
   },
@@ -399,10 +716,26 @@
       "The sample covers a water heater replacement: a service call fee, labor, a 50-gallon tank with fittings, and haul-away of the old unit. For emergency calls, add an after-hours line or swap in your emergency rate. If you offer flat-rate pricing from a price book, replace the hourly labor with the flat task price and keep parts on separate lines for transparency."
     ],
     "items": [
-      {"desc": "Service call fee", "qty": 1, "rate": 89},
-      {"desc": "Labor: remove and install water heater (hourly)", "qty": 4, "rate": 115},
-      {"desc": "50-gallon gas water heater with fittings and valves", "qty": 1, "rate": 1150},
-      {"desc": "Haul-away and disposal of old unit", "qty": 1, "rate": 75}
+      {
+        "desc": "Service call fee",
+        "qty": 1,
+        "rate": 89
+      },
+      {
+        "desc": "Labor: remove and install water heater (hourly)",
+        "qty": 4,
+        "rate": 115
+      },
+      {
+        "desc": "50-gallon gas water heater with fittings and valves",
+        "qty": 1,
+        "rate": 1150
+      },
+      {
+        "desc": "Haul-away and disposal of old unit",
+        "qty": 1,
+        "rate": 75
+      }
     ],
     "tips": [
       "Record make, model and serial numbers for installed water heaters, fixtures and pumps so customers have warranty details on file.",
@@ -411,9 +744,18 @@
       "If you use flat-rate pricing, still itemize parts so customers can see what was replaced."
     ],
     "faq": [
-      {"q": "Should plumbers use flat-rate or hourly pricing?", "a": "Flat-rate pricing from a price book is popular because customers know the cost before work starts and you are rewarded for working efficiently. Hourly billing suits unpredictable diagnostic work like tracing hidden leaks. Many plumbers quote a flat price for standard jobs and switch to hourly when the scope can't be known in advance."},
-      {"q": "How do I invoice an emergency plumbing call?", "a": "Note the call time and arrival time, apply your emergency or after-hours rate, and list the work done to stop the immediate problem separately from any follow-up repair. If a permanent fix happens on a later visit at standard rates, issue a separate invoice so the customer clearly sees the difference between the two."},
-      {"q": "Do I need to itemize parts on a plumbing invoice?", "a": "It is good practice. Listing each part, such as valves, fittings, cartridges or the water heater itself, shows customers what they paid for and supports warranty claims. You can bill parts at cost plus your standard markup, but avoid lumping everything into a single materials line on larger jobs."}
+      {
+        "q": "Should plumbers use flat-rate or hourly pricing?",
+        "a": "Flat-rate pricing from a price book is popular because customers know the cost before work starts and you are rewarded for working efficiently. Hourly billing suits unpredictable diagnostic work like tracing hidden leaks. Many plumbers quote a flat price for standard jobs and switch to hourly when the scope can't be known in advance."
+      },
+      {
+        "q": "How do I invoice an emergency plumbing call?",
+        "a": "Note the call time and arrival time, apply your emergency or after-hours rate, and list the work done to stop the immediate problem separately from any follow-up repair. If a permanent fix happens on a later visit at standard rates, issue a separate invoice so the customer clearly sees the difference between the two."
+      },
+      {
+        "q": "Do I need to itemize parts on a plumbing invoice?",
+        "a": "It is good practice. Listing each part, such as valves, fittings, cartridges or the water heater itself, shows customers what they paid for and supports warranty claims. You can bill parts at cost plus your standard markup, but avoid lumping everything into a single materials line on larger jobs."
+      }
     ],
     "payment_terms": "Payment due on completion of work. Emergency and after-hours calls billed at premium rates as quoted."
   },
@@ -429,10 +771,26 @@
       "The sample shows a month for a residential client: four mowing and edging visits, mulch delivered and spread by the cubic yard, shrub planting and green waste removal. Change units to match how you price, whether per visit, per square foot or per hour of crew time. For seasonal contracts, note in the terms whether pricing covers a set number of visits or a fixed season."
     ],
     "items": [
-      {"desc": "Weekly mowing, edging and blowing", "qty": 4, "rate": 55},
-      {"desc": "Mulch delivered and installed (per cubic yard)", "qty": 5, "rate": 85},
-      {"desc": "Shrub planting (3-gallon, plant included)", "qty": 6, "rate": 45},
-      {"desc": "Green waste removal", "qty": 1, "rate": 60}
+      {
+        "desc": "Weekly mowing, edging and blowing",
+        "qty": 4,
+        "rate": 55
+      },
+      {
+        "desc": "Mulch delivered and installed (per cubic yard)",
+        "qty": 5,
+        "rate": 85
+      },
+      {
+        "desc": "Shrub planting (3-gallon, plant included)",
+        "qty": 6,
+        "rate": 45
+      },
+      {
+        "desc": "Green waste removal",
+        "qty": 1,
+        "rate": 60
+      }
     ],
     "tips": [
       "Bill recurring maintenance monthly with each visit date listed, and invoice projects separately against the accepted estimate.",
@@ -441,9 +799,18 @@
       "For seasonal contracts, collect a deposit or the first month in advance to secure your crew schedule."
     ],
     "faq": [
-      {"q": "Should I invoice lawn care clients per visit or monthly?", "a": "Monthly invoicing with each visit listed is the norm for residential lawn care because it reduces admin for both sides. Some companies charge a flat monthly fee averaged over the season, which smooths cash flow when growth slows in late summer. Per-visit billing works better for occasional or on-call clients."},
-      {"q": "How do I bill for plants that don't survive?", "a": "If you offer a plant warranty, define it in writing, for example replacement within one year if the client followed watering instructions. When you replace a plant under warranty, add a zero-priced line so the replacement is documented. Outside warranty, bill the new plant and labor like any other planting job."},
-      {"q": "Do I charge for green waste disposal?", "a": "Yes, many landscapers do, since dump and green waste fees and the time to haul debris add up. Show it as a flat fee or per load. Including it as a separate line helps explain cleanup pricing and lets clients choose to keep clippings or branches on site to save money."}
+      {
+        "q": "Should I invoice lawn care clients per visit or monthly?",
+        "a": "Monthly invoicing with each visit listed is the norm for residential lawn care because it reduces admin for both sides. Some companies charge a flat monthly fee averaged over the season, which smooths cash flow when growth slows in late summer. Per-visit billing works better for occasional or on-call clients."
+      },
+      {
+        "q": "How do I bill for plants that don't survive?",
+        "a": "If you offer a plant warranty, define it in writing, for example replacement within one year if the client followed watering instructions. When you replace a plant under warranty, add a zero-priced line so the replacement is documented. Outside warranty, bill the new plant and labor like any other planting job."
+      },
+      {
+        "q": "Do I charge for green waste disposal?",
+        "a": "Yes, many landscapers do, since dump and green waste fees and the time to haul debris add up. Show it as a flat fee or per load. Including it as a separate line helps explain cleanup pricing and lets clients choose to keep clippings or branches on site to save money."
+      }
     ],
     "payment_terms": "Maintenance invoiced monthly, due within 15 days. Projects require a 30% deposit with the balance due on completion."
   },
@@ -459,10 +826,26 @@
       "The template covers an interior repaint: wall prep and patching, two coats on walls and ceilings by room, trim and doors, and paint and supplies. Record the paint brand, color name and sheen in the description so the client can buy matching touch-up paint. For exterior jobs, add pressure washing and weather-related scheduling notes, and check local rules on lead-safe practices for older homes."
     ],
     "items": [
-      {"desc": "Surface prep: patching, sanding, caulking", "qty": 1, "rate": 350},
-      {"desc": "Interior walls and ceiling, 2 coats (per room)", "qty": 3, "rate": 450},
-      {"desc": "Trim and doors (per door)", "qty": 6, "rate": 65},
-      {"desc": "Paint and supplies (premium eggshell, 6 gallons)", "qty": 1, "rate": 330}
+      {
+        "desc": "Surface prep: patching, sanding, caulking",
+        "qty": 1,
+        "rate": 350
+      },
+      {
+        "desc": "Interior walls and ceiling, 2 coats (per room)",
+        "qty": 3,
+        "rate": 450
+      },
+      {
+        "desc": "Trim and doors (per door)",
+        "qty": 6,
+        "rate": 65
+      },
+      {
+        "desc": "Paint and supplies (premium eggshell, 6 gallons)",
+        "qty": 1,
+        "rate": 330
+      }
     ],
     "tips": [
       "Write the paint brand, color name or code and sheen on the invoice so the client can match it for touch-ups.",
@@ -471,9 +854,18 @@
       "Record color changes or extra coats requested mid-job as change orders with their own price."
     ],
     "faq": [
-      {"q": "How do painters calculate an invoice?", "a": "Most price by square foot of paintable surface, by room or by the job, factoring in prep, number of coats, ceiling height and trim detail. The invoice should show those components rather than a single total. Paint and supplies can be billed at cost or with a markup, as long as it matches your estimate."},
-      {"q": "Should I list paint colors on the invoice?", "a": "Yes. Including the brand, color name or code and sheen for each area gives the client a permanent record for touch-ups and future repaints. It also prevents confusion if a different color than expected appears on a wall, because the approved selection is documented right on the invoice."},
-      {"q": "How do I bill for an extra coat?", "a": "If coverage needs an additional coat beyond what you quoted, for instance when going from a dark to a light color, discuss it with the client first. Once agreed, add it as a separate line with labor and extra paint. Unapproved extra coats are hard to bill, so get confirmation in writing."}
+      {
+        "q": "How do painters calculate an invoice?",
+        "a": "Most price by square foot of paintable surface, by room or by the job, factoring in prep, number of coats, ceiling height and trim detail. The invoice should show those components rather than a single total. Paint and supplies can be billed at cost or with a markup, as long as it matches your estimate."
+      },
+      {
+        "q": "Should I list paint colors on the invoice?",
+        "a": "Yes. Including the brand, color name or code and sheen for each area gives the client a permanent record for touch-ups and future repaints. It also prevents confusion if a different color than expected appears on a wall, because the approved selection is documented right on the invoice."
+      },
+      {
+        "q": "How do I bill for an extra coat?",
+        "a": "If coverage needs an additional coat beyond what you quoted, for instance when going from a dark to a light color, discuss it with the client first. Once agreed, add it as a separate line with labor and extra paint. Unapproved extra coats are hard to bill, so get confirmation in writing."
+      }
     ],
     "payment_terms": "30% deposit due before work begins to cover materials. Balance due on completion and final walkthrough."
   },
@@ -489,10 +881,26 @@
       "The sample includes a 10-session package, a fitness assessment, a custom training and nutrition plan and a month of online check-ins. Edit it to match in-person, hybrid or fully remote coaching. Include your cancellation window and package expiry in the terms. If a client asks about using a health spending account or insurance, requirements vary by provider and country, so suggest they check first."
     ],
     "items": [
-      {"desc": "10-session personal training package (60 min)", "qty": 1, "rate": 650},
-      {"desc": "Initial fitness assessment", "qty": 1, "rate": 75},
-      {"desc": "Custom training and nutrition plan", "qty": 1, "rate": 120},
-      {"desc": "Online coaching check-ins (monthly)", "qty": 1, "rate": 99}
+      {
+        "desc": "10-session personal training package (60 min)",
+        "qty": 1,
+        "rate": 650
+      },
+      {
+        "desc": "Initial fitness assessment",
+        "qty": 1,
+        "rate": 75
+      },
+      {
+        "desc": "Custom training and nutrition plan",
+        "qty": 1,
+        "rate": 120
+      },
+      {
+        "desc": "Online coaching check-ins (monthly)",
+        "qty": 1,
+        "rate": 99
+      }
     ],
     "tips": [
       "Show sessions purchased, used and remaining, plus the package expiry date, on each invoice.",
@@ -501,9 +909,18 @@
       "Collect package payments up front; prepaid packages improve attendance and cash flow."
     ],
     "faq": [
-      {"q": "Should personal trainers charge per session or per package?", "a": "Packages are popular because they secure commitment and give you predictable income, often at a slightly lower per-session price. Single sessions suit trial clients or occasional check-ins. On the invoice, show the per-session value inside a package so clients understand the discount and the cost of extra sessions if they need more."},
-      {"q": "How do I invoice online coaching clients?", "a": "Bill monthly in advance for a defined service, such as a training program, weekly check-ins and messaging support. Describe exactly what is included so clients know what to expect. Many coaches use recurring card payments, but a clear monthly invoice is still useful as a record and for clients who pay by bank transfer."},
-      {"q": "What should I do about expired sessions?", "a": "Set an expiry period, such as 90 days for a 10-pack, and state it on the invoice and in your terms. When sessions expire, you can forfeit them as agreed or offer a one-time extension as goodwill. Clear written terms make the conversation easier and protect your schedule from a backlog of old sessions."}
+      {
+        "q": "Should personal trainers charge per session or per package?",
+        "a": "Packages are popular because they secure commitment and give you predictable income, often at a slightly lower per-session price. Single sessions suit trial clients or occasional check-ins. On the invoice, show the per-session value inside a package so clients understand the discount and the cost of extra sessions if they need more."
+      },
+      {
+        "q": "How do I invoice online coaching clients?",
+        "a": "Bill monthly in advance for a defined service, such as a training program, weekly check-ins and messaging support. Describe exactly what is included so clients know what to expect. Many coaches use recurring card payments, but a clear monthly invoice is still useful as a record and for clients who pay by bank transfer."
+      },
+      {
+        "q": "What should I do about expired sessions?",
+        "a": "Set an expiry period, such as 90 days for a 10-pack, and state it on the invoice and in your terms. When sessions expire, you can forfeit them as agreed or offer a one-time extension as goodwill. Clear written terms make the conversation easier and protect your schedule from a backlog of old sessions."
+      }
     ],
     "payment_terms": "Packages paid in full before the first session and valid for 90 days. Cancellations under 24 hours count as a used session."
   },
@@ -519,10 +936,26 @@
       "The template is set up for a wedding morning: bridal makeup, bridal party makeup per person, a trial run held earlier and a travel fee. For editorial or commercial shoots, swap these for a day or half-day rate and note any kit fees. Include your deposit amount and the date it was paid so the balance is clear, and add an early-start surcharge if you begin before 7am."
     ],
     "items": [
-      {"desc": "Bridal makeup (lashes included)", "qty": 1, "rate": 250},
-      {"desc": "Bridal party makeup (per person)", "qty": 5, "rate": 120},
-      {"desc": "Bridal trial session", "qty": 1, "rate": 150},
-      {"desc": "On-location travel fee", "qty": 1, "rate": 75}
+      {
+        "desc": "Bridal makeup (lashes included)",
+        "qty": 1,
+        "rate": 250
+      },
+      {
+        "desc": "Bridal party makeup (per person)",
+        "qty": 5,
+        "rate": 120
+      },
+      {
+        "desc": "Bridal trial session",
+        "qty": 1,
+        "rate": 150
+      },
+      {
+        "desc": "On-location travel fee",
+        "qty": 1,
+        "rate": 75
+      }
     ],
     "tips": [
       "Take a non-refundable booking fee to reserve the date and show it as received on the final invoice.",
@@ -531,9 +964,18 @@
       "For large bridal parties, list each service per person so costs can be split easily."
     ],
     "faq": [
-      {"q": "Should I take a deposit for bridal makeup bookings?", "a": "Yes, most artists require a non-refundable deposit or retainer, often 30-50%, to secure a wedding date, since you'll turn away other work for that day. Record the deposit on the final invoice and set the balance due on or before the wedding morning. Spell out what happens if the party size changes."},
-      {"q": "How do I invoice a commercial or editorial shoot?", "a": "Commercial and editorial work is usually billed at a half-day or full-day rate rather than per face, with overtime charged hourly after the agreed time. Add kit fees, assistant fees and travel as separate lines. Production companies often require an invoice with their job number and may pay net 30, so ask early."},
-      {"q": "Can I charge for a makeup trial separately?", "a": "Yes. Many artists bill trials as a separate service on their own invoice, or include them in a bridal package. If paid separately, note the trial date on the final invoice for reference. Charging for trials values your time, product and planning, and it filters out clients who are only shopping for ideas."}
+      {
+        "q": "Should I take a deposit for bridal makeup bookings?",
+        "a": "Yes, most artists require a non-refundable deposit or retainer, often 30-50%, to secure a wedding date, since you'll turn away other work for that day. Record the deposit on the final invoice and set the balance due on or before the wedding morning. Spell out what happens if the party size changes."
+      },
+      {
+        "q": "How do I invoice a commercial or editorial shoot?",
+        "a": "Commercial and editorial work is usually billed at a half-day or full-day rate rather than per face, with overtime charged hourly after the agreed time. Add kit fees, assistant fees and travel as separate lines. Production companies often require an invoice with their job number and may pay net 30, so ask early."
+      },
+      {
+        "q": "Can I charge for a makeup trial separately?",
+        "a": "Yes. Many artists bill trials as a separate service on their own invoice, or include them in a bridal package. If paid separately, note the trial date on the final invoice for reference. Charging for trials values your time, product and planning, and it filters out clients who are only shopping for ideas."
+      }
     ],
     "payment_terms": "Non-refundable 30% booking fee due to reserve the date. Balance due 7 days before the event."
   },
@@ -549,10 +991,26 @@
       "The sample covers a five-hour wedding reception with ceremony audio, dance floor lighting and one hour of overtime. For club or bar gigs, replace the package with a flat set fee and note the venue and date. Overtime should be added after the event at the hourly rate agreed in your contract, and the deposit already received should appear so the balance is obvious."
     ],
     "items": [
-      {"desc": "Wedding reception DJ and MC (5 hours)", "qty": 1, "rate": 1200},
-      {"desc": "Ceremony sound system with wireless mics", "qty": 1, "rate": 250},
-      {"desc": "Dance floor and uplighting package", "qty": 1, "rate": 300},
-      {"desc": "Overtime (per hour)", "qty": 1, "rate": 175}
+      {
+        "desc": "Wedding reception DJ and MC (5 hours)",
+        "qty": 1,
+        "rate": 1200
+      },
+      {
+        "desc": "Ceremony sound system with wireless mics",
+        "qty": 1,
+        "rate": 250
+      },
+      {
+        "desc": "Dance floor and uplighting package",
+        "qty": 1,
+        "rate": 300
+      },
+      {
+        "desc": "Overtime (per hour)",
+        "qty": 1,
+        "rate": 175
+      }
     ],
     "tips": [
       "Take a non-refundable retainer to lock the date, and invoice the balance before the event so you don't chase payment after the last song.",
@@ -561,9 +1019,18 @@
       "Include the venue, event date and set times on the invoice to avoid confusion when you have several bookings close together."
     ],
     "faq": [
-      {"q": "When should a DJ get paid for a wedding?", "a": "Most wedding DJs take a retainer at booking and collect the remaining balance one to two weeks before the event, so payment is settled before the day. Overtime requested on the night is invoiced afterward. Avoid relying on cash in an envelope at the end of the night, which is easy to forget during a busy reception."},
-      {"q": "How should DJs invoice for overtime?", "a": "Agree on an hourly overtime rate in your contract and confirm with the client or planner on the night before extending. Afterward, send a short invoice or add a line to the final invoice showing the extra time, rate and total. Some DJs require overtime to be paid on the spot before continuing."},
-      {"q": "Should I charge travel for out-of-town gigs?", "a": "Yes. Beyond a local radius, many DJs charge per mile or a flat travel fee, and for distant events add accommodation if the gig ends late. List travel separately so clients understand it is cost recovery rather than a higher performance fee. Include load-in charges for venues with difficult access."}
+      {
+        "q": "When should a DJ get paid for a wedding?",
+        "a": "Most wedding DJs take a retainer at booking and collect the remaining balance one to two weeks before the event, so payment is settled before the day. Overtime requested on the night is invoiced afterward. Avoid relying on cash in an envelope at the end of the night, which is easy to forget during a busy reception."
+      },
+      {
+        "q": "How should DJs invoice for overtime?",
+        "a": "Agree on an hourly overtime rate in your contract and confirm with the client or planner on the night before extending. Afterward, send a short invoice or add a line to the final invoice showing the extra time, rate and total. Some DJs require overtime to be paid on the spot before continuing."
+      },
+      {
+        "q": "Should I charge travel for out-of-town gigs?",
+        "a": "Yes. Beyond a local radius, many DJs charge per mile or a flat travel fee, and for distant events add accommodation if the gig ends late. List travel separately so clients understand it is cost recovery rather than a higher performance fee. Include load-in charges for venues with difficult access."
+      }
     ],
     "payment_terms": "Non-refundable 30% retainer to reserve the date. Balance due 14 days before the event; overtime billed after the event."
   },
@@ -579,10 +1046,26 @@
       "The sample includes a French to English translation billed per source word, proofreading by a second linguist, a certified translation of an official document and a rush surcharge. Adjust the language pair, rate and units to your work. If you apply discounts for fuzzy matches or repetitions, show them as separate lines so the client can reconcile them with their own analysis."
     ],
     "items": [
-      {"desc": "Translation French to English, marketing brochure (per source word)", "qty": 3500, "rate": 0.14},
-      {"desc": "Proofreading by second linguist (hourly)", "qty": 3, "rate": 45},
-      {"desc": "Certified translation of birth certificate (per page)", "qty": 1, "rate": 40},
-      {"desc": "Rush surcharge (48-hour delivery)", "qty": 1, "rate": 120}
+      {
+        "desc": "Translation French to English, marketing brochure (per source word)",
+        "qty": 3500,
+        "rate": 0.14
+      },
+      {
+        "desc": "Proofreading by second linguist (hourly)",
+        "qty": 3,
+        "rate": 45
+      },
+      {
+        "desc": "Certified translation of birth certificate (per page)",
+        "qty": 1,
+        "rate": 40
+      },
+      {
+        "desc": "Rush surcharge (48-hour delivery)",
+        "qty": 1,
+        "rate": 120
+      }
     ],
     "tips": [
       "State the language pair, word count basis (source or target) and the document name on every line.",
@@ -591,9 +1074,18 @@
       "Add rush surcharges for weekend or under-48-hour delivery, and agree on them before starting."
     ],
     "faq": [
-      {"q": "Should I charge per source word or per target word?", "a": "Per source word is most common because the count is known before work starts, so clients can approve a fixed price. Per target word is used in some markets and for scanned documents where the source can't be counted easily. Either works; just state the basis clearly on both the quote and the invoice."},
-      {"q": "How do I invoice certified translations?", "a": "Bill certified translations per page or per document, with a separate line for certification, notarization or courier fees if applicable. What counts as a certified translation differs between countries and receiving authorities, so check local rules or the client's requirements. Include the document type and the receiving institution in the description for reference."},
-      {"q": "What is a minimum fee in translation?", "a": "A minimum fee is a flat charge for very short jobs, covering file handling, terminology checks and admin that take time regardless of word count. Many translators set a minimum equivalent to around an hour of work. Show it as a single line labelled minimum charge when the per-word total falls below it."}
+      {
+        "q": "Should I charge per source word or per target word?",
+        "a": "Per source word is most common because the count is known before work starts, so clients can approve a fixed price. Per target word is used in some markets and for scanned documents where the source can't be counted easily. Either works; just state the basis clearly on both the quote and the invoice."
+      },
+      {
+        "q": "How do I invoice certified translations?",
+        "a": "Bill certified translations per page or per document, with a separate line for certification, notarization or courier fees if applicable. What counts as a certified translation differs between countries and receiving authorities, so check local rules or the client's requirements. Include the document type and the receiving institution in the description for reference."
+      },
+      {
+        "q": "What is a minimum fee in translation?",
+        "a": "A minimum fee is a flat charge for very short jobs, covering file handling, terminology checks and admin that take time regardless of word count. Many translators set a minimum equivalent to around an hour of work. Show it as a single line labelled minimum charge when the per-word total falls below it."
+      }
     ],
     "payment_terms": "Payment due within 30 days of delivery. Agency clients: please include PO number. Rush jobs invoiced with a 25% surcharge."
   },
@@ -609,10 +1101,26 @@
       "The sample shows a 20-hour monthly retainer, extra hours beyond the block, a one-off project setting up a CRM and a software subscription paid on the client's behalf. Edit the categories to fit your services, and attach or link your time report for transparency. Many VAs bill retainers in advance and overages in arrears, which keeps your capacity reserved and your income steady."
     ],
     "items": [
-      {"desc": "Monthly retainer: 20 hours (inbox, calendar, admin)", "qty": 1, "rate": 700},
-      {"desc": "Additional hours beyond retainer", "qty": 4, "rate": 38},
-      {"desc": "CRM setup and contact import (project)", "qty": 1, "rate": 300},
-      {"desc": "Scheduling software subscription (reimbursable)", "qty": 1, "rate": 16}
+      {
+        "desc": "Monthly retainer: 20 hours (inbox, calendar, admin)",
+        "qty": 1,
+        "rate": 700
+      },
+      {
+        "desc": "Additional hours beyond retainer",
+        "qty": 4,
+        "rate": 38
+      },
+      {
+        "desc": "CRM setup and contact import (project)",
+        "qty": 1,
+        "rate": 300
+      },
+      {
+        "desc": "Scheduling software subscription (reimbursable)",
+        "qty": 1,
+        "rate": 16
+      }
     ],
     "tips": [
       "Bill retainers in advance and extra hours in arrears, and state whether unused hours roll over.",
@@ -621,9 +1129,18 @@
       "Use a higher rate for specialized tasks such as bookkeeping, design or tech setup than for general admin."
     ],
     "faq": [
-      {"q": "How do virtual assistants usually bill?", "a": "Most VAs either bill hourly from a time tracker or sell monthly retainer packages, such as 10, 20 or 40 hours. Retainers give the VA predictable income and the client priority access. Project fees work well for defined jobs like setting up a CRM or migrating files. Many VAs combine retainers with hourly overages."},
-      {"q": "Do unused retainer hours roll over?", "a": "That's up to your agreement. Some VAs allow a limited rollover, such as up to five hours into the next month, while others treat retainer hours as use-it-or-lose-it because the time was reserved. State the policy in your contract and repeat it on each retainer invoice to avoid end-of-month disputes."},
-      {"q": "Should I send a timesheet with my invoice?", "a": "For hourly work it's a good idea. A summary by task on the invoice plus a linked or attached detailed report from your time tracker builds trust and answers questions before they are asked. Retainer clients usually only need a summary showing hours used against the block, unless they request more detail."}
+      {
+        "q": "How do virtual assistants usually bill?",
+        "a": "Most VAs either bill hourly from a time tracker or sell monthly retainer packages, such as 10, 20 or 40 hours. Retainers give the VA predictable income and the client priority access. Project fees work well for defined jobs like setting up a CRM or migrating files. Many VAs combine retainers with hourly overages."
+      },
+      {
+        "q": "Do unused retainer hours roll over?",
+        "a": "That's up to your agreement. Some VAs allow a limited rollover, such as up to five hours into the next month, while others treat retainer hours as use-it-or-lose-it because the time was reserved. State the policy in your contract and repeat it on each retainer invoice to avoid end-of-month disputes."
+      },
+      {
+        "q": "Should I send a timesheet with my invoice?",
+        "a": "For hourly work it's a good idea. A summary by task on the invoice plus a linked or attached detailed report from your time tracker builds trust and answers questions before they are asked. Retainer clients usually only need a summary showing hours used against the block, unless they request more detail."
+      }
     ],
     "payment_terms": "Retainer invoiced in advance on the 1st, due by the 5th. Additional hours billed at month end, due within 7 days."
   },
@@ -639,10 +1156,26 @@
       "The sample covers a monthly package for two platforms, a batch of short-form videos, paid ad management and an ad budget passed through at cost. Tweak platforms, post counts and deliverables to your retainer. If the client pays platforms directly with their own card, remove the ad spend line and note the budget you managed instead, which keeps responsibility clear."
     ],
     "items": [
-      {"desc": "Monthly management: Instagram and Facebook (12 posts, community)", "qty": 1, "rate": 1200},
-      {"desc": "Short-form video creation (Reels/TikTok)", "qty": 4, "rate": 150},
-      {"desc": "Paid social campaign management", "qty": 1, "rate": 400},
-      {"desc": "Ad spend (pass-through at cost)", "qty": 1, "rate": 1000}
+      {
+        "desc": "Monthly management: Instagram and Facebook (12 posts, community)",
+        "qty": 1,
+        "rate": 1200
+      },
+      {
+        "desc": "Short-form video creation (Reels/TikTok)",
+        "qty": 4,
+        "rate": 150
+      },
+      {
+        "desc": "Paid social campaign management",
+        "qty": 1,
+        "rate": 400
+      },
+      {
+        "desc": "Ad spend (pass-through at cost)",
+        "qty": 1,
+        "rate": 1000
+      }
     ],
     "tips": [
       "Separate your management fee from ad spend; ideally have the client's own card on ad accounts so budgets don't run through your business.",
@@ -651,9 +1184,18 @@
       "Invoice monthly retainers in advance so content isn't produced before payment arrives."
     ],
     "faq": [
-      {"q": "Should ad spend be on my invoice?", "a": "Only if you pay the platforms yourself. In that case, list ad spend as a pass-through at cost, separate from your management fee, and keep platform receipts. Many managers prefer clients to add their own payment method to ad accounts, which avoids fronting large sums and keeps budgets transparent for everyone involved."},
-      {"q": "How do social media managers usually price?", "a": "Most charge a monthly retainer based on platforms, post volume, content production and community management hours. Paid ads are often managed for a flat fee or a percentage of spend. Hourly billing is less common, but useful for audits or one-off strategy sessions. Show deliverables on the invoice either way."},
-      {"q": "Should I charge for content creation separately?", "a": "If you shoot photos, edit videos or design graphics, it's sensible to price that separately or define it clearly within a package, since production takes more time than scheduling. Listing it on the invoice shows clients the effort behind each post and makes it easier to scale up or down."}
+      {
+        "q": "Should ad spend be on my invoice?",
+        "a": "Only if you pay the platforms yourself. In that case, list ad spend as a pass-through at cost, separate from your management fee, and keep platform receipts. Many managers prefer clients to add their own payment method to ad accounts, which avoids fronting large sums and keeps budgets transparent for everyone involved."
+      },
+      {
+        "q": "How do social media managers usually price?",
+        "a": "Most charge a monthly retainer based on platforms, post volume, content production and community management hours. Paid ads are often managed for a flat fee or a percentage of spend. Hourly billing is less common, but useful for audits or one-off strategy sessions. Show deliverables on the invoice either way."
+      },
+      {
+        "q": "Should I charge for content creation separately?",
+        "a": "If you shoot photos, edit videos or design graphics, it's sensible to price that separately or define it clearly within a package, since production takes more time than scheduling. Listing it on the invoice shows clients the effort behind each post and makes it easier to scale up or down."
+      }
     ],
     "payment_terms": "Monthly retainer invoiced in advance, due by the 1st of the service month. Ad spend billed at cost with receipts."
   },
@@ -669,10 +1211,26 @@
       "The template includes a monthly bookkeeping package, payroll processing per employee, catch-up work billed hourly for prior months and a year-end package for the client's accountant. Adjust the scope wording to match your engagement letter, and mention the period covered in each line. If the client is late providing documents, note it on the invoice so delays don't look like your oversight."
     ],
     "items": [
-      {"desc": "Monthly bookkeeping (up to 3 accounts, 200 transactions)", "qty": 1, "rate": 450},
-      {"desc": "Payroll processing (per employee)", "qty": 6, "rate": 15},
-      {"desc": "Catch-up bookkeeping for prior months (hourly)", "qty": 10, "rate": 60},
-      {"desc": "Year-end package for accountant", "qty": 1, "rate": 250}
+      {
+        "desc": "Monthly bookkeeping (up to 3 accounts, 200 transactions)",
+        "qty": 1,
+        "rate": 450
+      },
+      {
+        "desc": "Payroll processing (per employee)",
+        "qty": 6,
+        "rate": 15
+      },
+      {
+        "desc": "Catch-up bookkeeping for prior months (hourly)",
+        "qty": 10,
+        "rate": 60
+      },
+      {
+        "desc": "Year-end package for accountant",
+        "qty": 1,
+        "rate": 250
+      }
     ],
     "tips": [
       "Define monthly scope by number of accounts and transaction volume, and bill overages as a separate line.",
@@ -681,9 +1239,18 @@
       "Leave tax returns and tax advice to qualified professionals unless you hold the right credentials; check local rules on what bookkeepers may provide."
     ],
     "faq": [
-      {"q": "Should bookkeepers charge hourly or a fixed monthly fee?", "a": "Fixed monthly fees are popular because clients get predictable costs and you're rewarded for efficiency through automation and bank feeds. Hourly billing suits cleanup projects and unpredictable work. Many bookkeepers set a monthly fee based on transaction volume and number of accounts, then bill catch-up or special projects hourly."},
-      {"q": "How do I invoice catch-up bookkeeping?", "a": "Quote catch-up work as a separate project, either per month of backlog or hourly with an estimate. Many bookkeepers require part or all of it upfront, because cleanup is time-intensive and clients behind on bookkeeping can also be slow payers. List the months covered so the client sees what was brought up to date."},
-      {"q": "When should a bookkeeper send the monthly invoice?", "a": "Many bill at the start of the month for the previous month's work, or in advance for the coming month. Billing in advance with automatic payment tends to reduce late payments. Pick a consistent date, put it in your engagement letter and make sure the invoice states the service period clearly."}
+      {
+        "q": "Should bookkeepers charge hourly or a fixed monthly fee?",
+        "a": "Fixed monthly fees are popular because clients get predictable costs and you're rewarded for efficiency through automation and bank feeds. Hourly billing suits cleanup projects and unpredictable work. Many bookkeepers set a monthly fee based on transaction volume and number of accounts, then bill catch-up or special projects hourly."
+      },
+      {
+        "q": "How do I invoice catch-up bookkeeping?",
+        "a": "Quote catch-up work as a separate project, either per month of backlog or hourly with an estimate. Many bookkeepers require part or all of it upfront, because cleanup is time-intensive and clients behind on bookkeeping can also be slow payers. List the months covered so the client sees what was brought up to date."
+      },
+      {
+        "q": "When should a bookkeeper send the monthly invoice?",
+        "a": "Many bill at the start of the month for the previous month's work, or in advance for the coming month. Billing in advance with automatic payment tends to reduce late payments. Pick a consistent date, put it in your engagement letter and make sure the invoice states the service period clearly."
+      }
     ],
     "payment_terms": "Monthly fee invoiced in advance on the 1st, due within 10 days. Catch-up work: 50% upfront, balance on completion."
   },
@@ -699,10 +1266,26 @@
       "The sample covers a string trio for a wedding ceremony and cocktail hour, a custom song arrangement, amplification for an outdoor venue and travel. For studio work, replace these with session hours or per-track fees and note whether the fee is a buyout. Bandleaders who pay other musicians can add a line per player, or keep the client invoice as a package price and handle splits privately."
     ],
     "items": [
-      {"desc": "String trio: ceremony and cocktail hour (2.5 hours)", "qty": 1, "rate": 1100},
-      {"desc": "Custom arrangement of requested song", "qty": 1, "rate": 200},
-      {"desc": "Amplification for outdoor ceremony", "qty": 1, "rate": 100},
-      {"desc": "Travel (per mile, round trip)", "qty": 60, "rate": 0.7}
+      {
+        "desc": "String trio: ceremony and cocktail hour (2.5 hours)",
+        "qty": 1,
+        "rate": 1100
+      },
+      {
+        "desc": "Custom arrangement of requested song",
+        "qty": 1,
+        "rate": 200
+      },
+      {
+        "desc": "Amplification for outdoor ceremony",
+        "qty": 1,
+        "rate": 100
+      },
+      {
+        "desc": "Travel (per mile, round trip)",
+        "qty": 60,
+        "rate": 0.7
+      }
     ],
     "tips": [
       "List the performance date, venue, set times and number of musicians so the client can match the invoice to the booking.",
@@ -711,9 +1294,18 @@
       "Take a deposit for private events and set the balance due before the performance date."
     ],
     "faq": [
-      {"q": "How should musicians invoice for a wedding?", "a": "Include the date, venue, which parts of the day you're covering and the number of musicians. List add-ons like learning a special song, amplification or extra time separately. Most wedding musicians take a deposit at booking and the balance before the event, with overtime invoiced afterward if the couple asks you to keep playing."},
-      {"q": "What should a session musician's invoice include?", "a": "List the studio date, session hours or tracks recorded, the artist or project name and the agreed rate. State whether the fee is a buyout or whether you are entitled to royalties, credits or union scale terms. Producers often handle several sessions a week, so precise details help them pay you quickly."},
-      {"q": "How do I split payment with my band on an invoice?", "a": "The simplest approach is one invoice from the bandleader or band entity to the client at a single package price, with the leader paying members privately. If players invoice individually, coordinate so the client receives clear, consistent invoices. Either way, agree on splits in writing before the gig to avoid awkward conversations afterward."}
+      {
+        "q": "How should musicians invoice for a wedding?",
+        "a": "Include the date, venue, which parts of the day you're covering and the number of musicians. List add-ons like learning a special song, amplification or extra time separately. Most wedding musicians take a deposit at booking and the balance before the event, with overtime invoiced afterward if the couple asks you to keep playing."
+      },
+      {
+        "q": "What should a session musician's invoice include?",
+        "a": "List the studio date, session hours or tracks recorded, the artist or project name and the agreed rate. State whether the fee is a buyout or whether you are entitled to royalties, credits or union scale terms. Producers often handle several sessions a week, so precise details help them pay you quickly."
+      },
+      {
+        "q": "How do I split payment with my band on an invoice?",
+        "a": "The simplest approach is one invoice from the bandleader or band entity to the client at a single package price, with the leader paying members privately. If players invoice individually, coordinate so the client receives clear, consistent invoices. Either way, agree on splits in writing before the gig to avoid awkward conversations afterward."
+      }
     ],
     "payment_terms": "50% deposit due on booking to confirm the date. Balance due 7 days before the performance."
   },
@@ -729,10 +1321,26 @@
       "The sample shows a living room project: a flat design fee for concepts and floor plan, hourly site visits, a custom sofa ordered through your trade account and freight with white-glove delivery. Add each furnishing as its own line with its finish or SKU. Many designers require full payment for furnishings before placing orders, since custom pieces are usually non-returnable."
     ],
     "items": [
-      {"desc": "Design concept and floor plan (living room)", "qty": 1, "rate": 1800},
-      {"desc": "Site visits and contractor coordination (hourly)", "qty": 4, "rate": 125},
-      {"desc": "Custom sofa, performance fabric (designer pricing)", "qty": 1, "rate": 3400},
-      {"desc": "Freight, receiving and white-glove delivery", "qty": 1, "rate": 350}
+      {
+        "desc": "Design concept and floor plan (living room)",
+        "qty": 1,
+        "rate": 1800
+      },
+      {
+        "desc": "Site visits and contractor coordination (hourly)",
+        "qty": 4,
+        "rate": 125
+      },
+      {
+        "desc": "Custom sofa, performance fabric (designer pricing)",
+        "qty": 1,
+        "rate": 3400
+      },
+      {
+        "desc": "Freight, receiving and white-glove delivery",
+        "qty": 1,
+        "rate": 350
+      }
     ],
     "tips": [
       "Separate design fees from product purchases so clients see your service value and the product costs distinctly.",
@@ -741,9 +1349,18 @@
       "Bill freight, receiving, storage and installation as separate lines; they are real costs that clients often overlook."
     ],
     "faq": [
-      {"q": "How do interior designers bill for furniture?", "a": "Most order furniture through trade accounts and bill the client either at retail price or at net cost plus a markup, commonly 15-35%. Whichever model you use, disclose it in your contract. List each piece with vendor, description, quantity and price, and require payment before you place the order with the supplier."},
-      {"q": "Should design fees be flat or hourly?", "a": "Flat fees work well for defined rooms or projects and give clients cost certainty, while hourly billing suits consulting, revisions or open-ended projects. Many designers charge a flat fee for concept and space planning, then hourly for site visits, shopping and coordination. Show hours and dates on the invoice for any hourly work."},
-      {"q": "Do I charge sales tax on furniture I sell to clients?", "a": "Possibly. In many places, reselling furniture and decor to clients can require collecting sales tax or VAT, while design services may be treated differently. The rules depend on your state, province or country, so check local rules or consult an accountant, then add the appropriate rate to product lines in the generator."}
+      {
+        "q": "How do interior designers bill for furniture?",
+        "a": "Most order furniture through trade accounts and bill the client either at retail price or at net cost plus a markup, commonly 15-35%. Whichever model you use, disclose it in your contract. List each piece with vendor, description, quantity and price, and require payment before you place the order with the supplier."
+      },
+      {
+        "q": "Should design fees be flat or hourly?",
+        "a": "Flat fees work well for defined rooms or projects and give clients cost certainty, while hourly billing suits consulting, revisions or open-ended projects. Many designers charge a flat fee for concept and space planning, then hourly for site visits, shopping and coordination. Show hours and dates on the invoice for any hourly work."
+      },
+      {
+        "q": "Do I charge sales tax on furniture I sell to clients?",
+        "a": "Possibly. In many places, reselling furniture and decor to clients can require collecting sales tax or VAT, while design services may be treated differently. The rules depend on your state, province or country, so check local rules or consult an accountant, then add the appropriate rate to product lines in the generator."
+      }
     ],
     "payment_terms": "50% design retainer due before work begins. Furnishings paid in full before ordering. Hourly fees invoiced monthly, due in 14 days."
   },
@@ -759,10 +1376,26 @@
       "The sample covers full planning for a corporate event: a planning fee, day-of coordination staff, a venue deposit paid on the client's behalf and decor rentals. Rename lines for weddings, birthdays or conferences. If you charge a percentage of total event spend, show the base amount and percentage in the description. Include the event date and venue so the invoice is easy to file."
     ],
     "items": [
-      {"desc": "Event planning and design fee", "qty": 1, "rate": 3500},
-      {"desc": "Day-of coordination staff (per coordinator)", "qty": 2, "rate": 450},
-      {"desc": "Venue deposit paid on client's behalf", "qty": 1, "rate": 2000},
-      {"desc": "Decor and linen rentals (pass-through)", "qty": 1, "rate": 850}
+      {
+        "desc": "Event planning and design fee",
+        "qty": 1,
+        "rate": 3500
+      },
+      {
+        "desc": "Day-of coordination staff (per coordinator)",
+        "qty": 2,
+        "rate": 450
+      },
+      {
+        "desc": "Venue deposit paid on client's behalf",
+        "qty": 1,
+        "rate": 2000
+      },
+      {
+        "desc": "Decor and linen rentals (pass-through)",
+        "qty": 1,
+        "rate": 850
+      }
     ],
     "tips": [
       "Separate your planning fee from vendor pass-through costs, and attach vendor invoices for any cost you paid on the client's behalf.",
@@ -771,9 +1404,18 @@
       "Avoid fronting large vendor deposits; ask clients to pay vendors directly or collect the funds before committing."
     ],
     "faq": [
-      {"q": "How do event planners structure their fees?", "a": "Common models are a flat planning fee, a percentage of the total event budget (often 10-20%), or hourly rates for partial planning and consultations. Flat fees give clients certainty, while percentages scale with complexity. Whichever you choose, make it explicit on the invoice so clients can see exactly how the fee was calculated."},
-      {"q": "Should vendor payments go through my invoice?", "a": "It depends on your business model and risk tolerance. Having clients pay vendors directly avoids fronting money and keeps your income figures clean. If you do pay vendors, invoice those costs separately, attach receipts and state whether you add a service fee. Collect funds before paying vendors to protect your cash flow."},
-      {"q": "When should the final payment be due?", "a": "Most planners require the final balance one to four weeks before the event so all vendor payments can be settled in time. Last-minute additions or overtime on the day can be billed on a short post-event invoice. Put the schedule in your contract and repeat it on each milestone invoice."}
+      {
+        "q": "How do event planners structure their fees?",
+        "a": "Common models are a flat planning fee, a percentage of the total event budget (often 10-20%), or hourly rates for partial planning and consultations. Flat fees give clients certainty, while percentages scale with complexity. Whichever you choose, make it explicit on the invoice so clients can see exactly how the fee was calculated."
+      },
+      {
+        "q": "Should vendor payments go through my invoice?",
+        "a": "It depends on your business model and risk tolerance. Having clients pay vendors directly avoids fronting money and keeps your income figures clean. If you do pay vendors, invoice those costs separately, attach receipts and state whether you add a service fee. Collect funds before paying vendors to protect your cash flow."
+      },
+      {
+        "q": "When should the final payment be due?",
+        "a": "Most planners require the final balance one to four weeks before the event so all vendor payments can be settled in time. Last-minute additions or overtime on the day can be billed on a short post-event invoice. Put the schedule in your contract and repeat it on each milestone invoice."
+      }
     ],
     "payment_terms": "40% due on signing, 40% due 60 days before the event, final 20% due 14 days before the event date."
   },
@@ -789,10 +1431,26 @@
       "The template includes 30-minute weekday walks, an additional-dog fee, two pet drop-in visits and a holiday surcharge. Adjust it for group walks, solo walks or puppy visits, and add key pickup or lockbox details in your notes if needed. Many walkers bill regular clients weekly or monthly in advance, which secures the time slot and keeps you from chasing small amounts."
     ],
     "items": [
-      {"desc": "30-minute solo walk (weekdays)", "qty": 20, "rate": 22},
-      {"desc": "Additional dog, same household (per walk)", "qty": 20, "rate": 8},
-      {"desc": "Pet drop-in visit (feed, water, play)", "qty": 2, "rate": 25},
-      {"desc": "Holiday surcharge", "qty": 1, "rate": 15}
+      {
+        "desc": "30-minute solo walk (weekdays)",
+        "qty": 20,
+        "rate": 22
+      },
+      {
+        "desc": "Additional dog, same household (per walk)",
+        "qty": 20,
+        "rate": 8
+      },
+      {
+        "desc": "Pet drop-in visit (feed, water, play)",
+        "qty": 2,
+        "rate": 25
+      },
+      {
+        "desc": "Holiday surcharge",
+        "qty": 1,
+        "rate": 15
+      }
     ],
     "tips": [
       "List each walk with date and duration so owners can check visits against your app or text updates.",
@@ -801,9 +1459,18 @@
       "Bill regular clients in advance for the coming week or month to secure their slot and reduce late payments."
     ],
     "faq": [
-      {"q": "Should dog walkers bill weekly or monthly?", "a": "Either works; weekly suits new clients and irregular schedules, while monthly reduces admin for steady routines. Billing in advance secures the time slot and protects you from last-minute cancellations. Adjust the next invoice for any canceled or extra walks, and keep a cancellation window, like 24 hours, so short-notice cancellations are still paid."},
-      {"q": "How much extra should I charge for additional dogs?", "a": "Many walkers add a flat per-walk fee for each additional dog from the same household rather than charging a full second walk. The amount depends on local rates and how much extra handling the dogs need. Show it as its own line so owners understand exactly how the total was calculated."},
-      {"q": "What should I include for pet sitting and overnights?", "a": "Bill overnights as a separate service with dates, the number of nights and any extra walks or medication visits. Note key handover, emergency contact details and any vet visits you made, with receipts for costs you paid. Holiday overnights often carry a premium, which should be listed separately."}
+      {
+        "q": "Should dog walkers bill weekly or monthly?",
+        "a": "Either works; weekly suits new clients and irregular schedules, while monthly reduces admin for steady routines. Billing in advance secures the time slot and protects you from last-minute cancellations. Adjust the next invoice for any canceled or extra walks, and keep a cancellation window, like 24 hours, so short-notice cancellations are still paid."
+      },
+      {
+        "q": "How much extra should I charge for additional dogs?",
+        "a": "Many walkers add a flat per-walk fee for each additional dog from the same household rather than charging a full second walk. The amount depends on local rates and how much extra handling the dogs need. Show it as its own line so owners understand exactly how the total was calculated."
+      },
+      {
+        "q": "What should I include for pet sitting and overnights?",
+        "a": "Bill overnights as a separate service with dates, the number of nights and any extra walks or medication visits. Note key handover, emergency contact details and any vet visits you made, with receipts for costs you paid. Holiday overnights often carry a premium, which should be listed separately."
+      }
     ],
     "payment_terms": "Regular walks billed weekly in advance, due before the first walk. Cancellations with less than 24 hours' notice are charged."
   },
@@ -819,10 +1486,26 @@
       "The sample includes standard evening hours, a higher rate after midnight, an additional-child charge and driving for school pickups. Tweak rates for your area and experience, such as CPR certification or special-needs care. For regular families, invoice weekly with each date listed. Whether childcare payments are tax-deductible or reportable varies by country and household, so families should check local rules."
     ],
     "items": [
-      {"desc": "Evening babysitting (per hour)", "qty": 5, "rate": 20},
-      {"desc": "After-midnight hours", "qty": 1, "rate": 25},
-      {"desc": "Additional child (per hour)", "qty": 5, "rate": 4},
-      {"desc": "School pickup and driving (per trip)", "qty": 2, "rate": 10}
+      {
+        "desc": "Evening babysitting (per hour)",
+        "qty": 5,
+        "rate": 20
+      },
+      {
+        "desc": "After-midnight hours",
+        "qty": 1,
+        "rate": 25
+      },
+      {
+        "desc": "Additional child (per hour)",
+        "qty": 5,
+        "rate": 4
+      },
+      {
+        "desc": "School pickup and driving (per trip)",
+        "qty": 2,
+        "rate": 10
+      }
     ],
     "tips": [
       "Record start and end times for each booking; it avoids rounding disputes after late nights.",
@@ -831,9 +1514,18 @@
       "Agree on a minimum booking length, often 3 hours, and note it in your terms."
     ],
     "faq": [
-      {"q": "Do babysitters really need invoices?", "a": "For occasional evenings, families often pay on the spot. But regular sitters, nanny shares and families using a dependent care account or employer childcare benefit often need a written record of dates, hours and amounts. An invoice also helps you track your own income and spot unpaid hours if a family pays irregularly."},
-      {"q": "How should I charge for multiple children?", "a": "A common approach is a base hourly rate for the first child plus a few dollars per hour for each additional child. Listing the extra-child charge as its own line keeps the calculation transparent. For nanny shares, invoice each family separately for their share of the hours so nobody has to work out the split."},
-      {"q": "Can I charge a late cancellation fee?", "a": "Yes, if you agree on it in advance. Many sitters charge a portion of the booked hours, or a minimum amount, when families cancel within 24 hours, since you've turned down other work. Include the policy on your invoice and mention it when accepting regular bookings so it never comes as a surprise."}
+      {
+        "q": "Do babysitters really need invoices?",
+        "a": "For occasional evenings, families often pay on the spot. But regular sitters, nanny shares and families using a dependent care account or employer childcare benefit often need a written record of dates, hours and amounts. An invoice also helps you track your own income and spot unpaid hours if a family pays irregularly."
+      },
+      {
+        "q": "How should I charge for multiple children?",
+        "a": "A common approach is a base hourly rate for the first child plus a few dollars per hour for each additional child. Listing the extra-child charge as its own line keeps the calculation transparent. For nanny shares, invoice each family separately for their share of the hours so nobody has to work out the split."
+      },
+      {
+        "q": "Can I charge a late cancellation fee?",
+        "a": "Yes, if you agree on it in advance. Many sitters charge a portion of the booked hours, or a minimum amount, when families cancel within 24 hours, since you've turned down other work. Include the policy on your invoice and mention it when accepting regular bookings so it never comes as a surprise."
+      }
     ],
     "payment_terms": "Payment due at the end of each booking, or weekly for regular families. 3-hour minimum; cancellations within 24 hours charged at 50%."
   },
@@ -849,10 +1541,26 @@
       "The template is set up for a brake job: diagnostic fee, front pads and rotors, labor at book hours, and shop supplies with fluid disposal. Add the vehicle details in the notes section and record any recommended future repairs the customer declined. Some jurisdictions have specific requirements for auto repair invoices, such as identifying used or rebuilt parts, so check local rules."
     ],
     "items": [
-      {"desc": "Diagnostic inspection fee", "qty": 1, "rate": 95},
-      {"desc": "Front brake pads and rotors (parts)", "qty": 1, "rate": 240},
-      {"desc": "Labor: replace front pads and rotors (book hours)", "qty": 2, "rate": 120},
-      {"desc": "Shop supplies and fluid disposal", "qty": 1, "rate": 25}
+      {
+        "desc": "Diagnostic inspection fee",
+        "qty": 1,
+        "rate": 95
+      },
+      {
+        "desc": "Front brake pads and rotors (parts)",
+        "qty": 1,
+        "rate": 240
+      },
+      {
+        "desc": "Labor: replace front pads and rotors (book hours)",
+        "qty": 2,
+        "rate": 120
+      },
+      {
+        "desc": "Shop supplies and fluid disposal",
+        "qty": 1,
+        "rate": 25
+      }
     ],
     "tips": [
       "Record year, make, model, VIN and mileage on every invoice; it becomes part of the vehicle's service history.",
@@ -861,9 +1569,18 @@
       "Document recommended repairs the customer declined, which protects you if a related issue appears later."
     ],
     "faq": [
-      {"q": "What should an auto repair invoice include?", "a": "Include your shop details, customer name, vehicle year, make, model, VIN and odometer reading, then each repair with parts, part numbers and labor. Add shop fees, disposal and any warranty information. Some states and provinces require specific wording or written estimates before work begins, so check local rules for your area."},
-      {"q": "Should mechanics charge book time or actual time?", "a": "Many shops bill flat-rate book hours from labor guides, so customers pay a predictable amount regardless of how quickly the technician works. Others bill actual time, which suits unusual or diagnostic work. Either way, state the labor rate and hours per job on the invoice so the customer can compare it with the estimate."},
-      {"q": "Can I charge a diagnostic fee if the customer declines the repair?", "a": "Yes, diagnostic time is real work, and most shops charge for it whether or not the repair goes ahead. Some credit the fee toward the repair if the customer proceeds. Explain the policy before starting diagnostics and show it as a separate line so the customer knows exactly what they are paying for."}
+      {
+        "q": "What should an auto repair invoice include?",
+        "a": "Include your shop details, customer name, vehicle year, make, model, VIN and odometer reading, then each repair with parts, part numbers and labor. Add shop fees, disposal and any warranty information. Some states and provinces require specific wording or written estimates before work begins, so check local rules for your area."
+      },
+      {
+        "q": "Should mechanics charge book time or actual time?",
+        "a": "Many shops bill flat-rate book hours from labor guides, so customers pay a predictable amount regardless of how quickly the technician works. Others bill actual time, which suits unusual or diagnostic work. Either way, state the labor rate and hours per job on the invoice so the customer can compare it with the estimate."
+      },
+      {
+        "q": "Can I charge a diagnostic fee if the customer declines the repair?",
+        "a": "Yes, diagnostic time is real work, and most shops charge for it whether or not the repair goes ahead. Some credit the fee toward the repair if the customer proceeds. Explain the policy before starting diagnostics and show it as a separate line so the customer knows exactly what they are paying for."
+      }
     ],
     "payment_terms": "Payment due on vehicle pickup. Fleet accounts net 30. Parts covered by manufacturer warranty; labor warranted for 12 months or 12,000 miles."
   },
@@ -879,10 +1596,26 @@
       "The sample shows a single load: linehaul rate, fuel surcharge per mile, detention time at the receiver and an extra stop. Adjust units to per-mile or flat rate as shown on your rate confirmation. If you use a factoring company, add their remittance details as your agreement instructs. Accessorials like lumper fees, layovers and TONU should match what the broker approved, ideally with supporting receipts."
     ],
     "items": [
-      {"desc": "Linehaul: Dallas, TX to Atlanta, GA (Load #48213)", "qty": 1, "rate": 2100},
-      {"desc": "Fuel surcharge (per mile)", "qty": 780, "rate": 0.45},
-      {"desc": "Detention at receiver (per hour after 2 free hours)", "qty": 3, "rate": 50},
-      {"desc": "Additional stop", "qty": 1, "rate": 100}
+      {
+        "desc": "Linehaul: Dallas, TX to Atlanta, GA (Load #48213)",
+        "qty": 1,
+        "rate": 2100
+      },
+      {
+        "desc": "Fuel surcharge (per mile)",
+        "qty": 780,
+        "rate": 0.45
+      },
+      {
+        "desc": "Detention at receiver (per hour after 2 free hours)",
+        "qty": 3,
+        "rate": 50
+      },
+      {
+        "desc": "Additional stop",
+        "qty": 1,
+        "rate": 100
+      }
     ],
     "tips": [
       "Put the load number, rate confirmation number and pickup and delivery dates on every invoice, and attach the signed BOL.",
@@ -891,10 +1624,134 @@
       "If you factor invoices, make sure the remittance details match your factoring agreement so payments aren't misdirected."
     ],
     "faq": [
-      {"q": "What documents should I send with a trucking invoice?", "a": "Typically the signed bill of lading or proof of delivery, the rate confirmation, and receipts for accessorials like lumper fees or scale tickets. Brokers often won't process payment without the POD. Scan clear copies, label them with the load number and send them with the invoice in one email or upload."},
-      {"q": "How do I bill detention time?", "a": "Check your rate confirmation for the detention terms, often a set hourly rate after two free hours at the shipper or receiver. Record arrival and departure times, ideally with check-in and check-out signatures or ELD data. Add detention as a separate line with the hours and rate, and notify the broker promptly when it starts."},
-      {"q": "Should I invoice per mile or per load?", "a": "Follow whatever the rate confirmation says. Brokered freight is usually quoted as a flat rate per load, sometimes with fuel surcharge broken out, while dedicated or contract work might pay per mile. Your invoice should mirror the agreed structure exactly, since any mismatch is likely to delay payment or trigger a short-pay."}
+      {
+        "q": "What documents should I send with a trucking invoice?",
+        "a": "Typically the signed bill of lading or proof of delivery, the rate confirmation, and receipts for accessorials like lumper fees or scale tickets. Brokers often won't process payment without the POD. Scan clear copies, label them with the load number and send them with the invoice in one email or upload."
+      },
+      {
+        "q": "How do I bill detention time?",
+        "a": "Check your rate confirmation for the detention terms, often a set hourly rate after two free hours at the shipper or receiver. Record arrival and departure times, ideally with check-in and check-out signatures or ELD data. Add detention as a separate line with the hours and rate, and notify the broker promptly when it starts."
+      },
+      {
+        "q": "Should I invoice per mile or per load?",
+        "a": "Follow whatever the rate confirmation says. Brokered freight is usually quoted as a flat rate per load, sometimes with fuel surcharge broken out, while dedicated or contract work might pay per mile. Your invoice should mirror the agreed structure exactly, since any mismatch is likely to delay payment or trigger a short-pay."
+      }
     ],
     "payment_terms": "Net 30 from receipt of invoice and signed BOL. Detention billed at $50/hour after 2 free hours per rate confirmation."
+  },
+  {
+    "slug": "wedding-photographer",
+    "name": "Wedding Photographer",
+    "plural": "Wedding Photographers",
+    "keyword": "wedding photography invoice template",
+    "title": "Free Wedding Photography Invoice Template | Free Invoice Maker",
+    "description": "Wedding photography invoice template with deposit, balance, second shooter, travel and album lines. Edit online and download a free PDF. No signup required.",
+    "intro": [
+      "Wedding photography is usually paid in stages: a deposit to hold the date, then a balance before or after the event. A clear invoice shows the package price, the deposit already received and the balance remaining, so couples never have to guess what is still owed. It also gives you a written record if a date is moved or cancelled.",
+      "The sample shows a full-day package with a second shooter, travel and an album, with the booking deposit entered as a negative line. Adjust the lines to match your contract, and keep the invoice consistent with it, including the cancellation and deposit terms. Whether printed products and digital files are taxed differently depends on where you work, so check local rules."
+    ],
+    "items": [
+      {
+        "desc": "Wedding photography package: full day coverage (8 hours)",
+        "qty": 1,
+        "rate": 3200
+      },
+      {
+        "desc": "Second shooter (per hour)",
+        "qty": 6,
+        "rate": 75
+      },
+      {
+        "desc": "Travel to venue (per mile)",
+        "qty": 90,
+        "rate": 0.7
+      },
+      {
+        "desc": "Printed album (30 pages)",
+        "qty": 1,
+        "rate": 450
+      },
+      {
+        "desc": "Booking deposit received",
+        "qty": 1,
+        "rate": -1000
+      }
+    ],
+    "tips": [
+      "Show the deposit as its own negative line so the balance due is obvious.",
+      "Match package names, hours and add-ons to your signed contract.",
+      "List overtime, second shooter, travel and rush editing as separate lines.",
+      "Set the balance due date before the wedding if your contract allows it, and state it in the payment terms."
+    ],
+    "faq": [
+      {
+        "q": "How should I invoice a wedding deposit?",
+        "a": "Many photographers send a first invoice at booking for the deposit, then a second for the balance. Alternatively, issue one invoice with the deposit shown as a credit line. Whether the deposit is refundable should be spelled out in your contract, and local rules on deposits can vary, so check them."
+      },
+      {
+        "q": "When is the balance usually due?",
+        "a": "Common arrangements are some weeks before the wedding or on delivery of the photos, but it is whatever you agree in your contract. Put the date on the invoice."
+      },
+      {
+        "q": "Do I charge tax on wedding photography?",
+        "a": "It depends on your location and on whether you deliver digital files, prints or both. Rules differ between regions, so check with your local tax authority or an accountant."
+      }
+    ],
+    "payment_terms": "Deposit due at booking to reserve the date. Balance due before the wedding date as per contract."
+  },
+  {
+    "slug": "nanny",
+    "name": "Nanny",
+    "plural": "Nannies",
+    "keyword": "nanny invoice template",
+    "title": "Free Nanny Invoice Template | Free Invoice Maker",
+    "description": "Nanny invoice template for hourly care, overtime, outings and reimbursed expenses. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "Self-employed nannies and nanny-share carers benefit from an invoice that lists each date, the hours worked and the rate. It keeps your income records tidy and gives families a clear summary. Keep a time log for every shift and attach it if the family asks.",
+      "The sample covers regular hours, overtime, an additional child and reimbursed outing costs. Separate pay for your time from reimbursements for expenses. Be aware that some nannies are classed as household employees rather than self-employed, in which case payroll rules rather than invoices may apply. Check local rules or ask an advisor."
+    ],
+    "items": [
+      {
+        "desc": "Regular childcare hours (per hour)",
+        "qty": 30,
+        "rate": 22
+      },
+      {
+        "desc": "Overtime hours (per hour)",
+        "qty": 4,
+        "rate": 33
+      },
+      {
+        "desc": "Additional child (per hour)",
+        "qty": 30,
+        "rate": 3
+      },
+      {
+        "desc": "Reimbursement: outing admission and snacks",
+        "qty": 1,
+        "rate": 28
+      }
+    ],
+    "tips": [
+      "Record start and end times for each shift and keep the log with the invoice.",
+      "List overtime, extra children and holiday rates as separate lines with their multipliers.",
+      "Show reimbursements separately from pay and keep receipts.",
+      "Write the cancellation and guaranteed-hours terms on the invoice."
+    ],
+    "faq": [
+      {
+        "q": "Am I self-employed or an employee?",
+        "a": "It depends on your arrangement and local rules. Some families treat nannies as household employees with payroll, others work with self-employed carers who invoice. Check your local tax authority's guidance."
+      },
+      {
+        "q": "How often should I invoice?",
+        "a": "Weekly or every two weeks is common for regular care. Agree it upfront."
+      },
+      {
+        "q": "Can I bill for expenses?",
+        "a": "Yes, if agreed. List each reimbursement as its own line and keep receipts."
+      }
+    ],
+    "payment_terms": "Payment due weekly, by end of the last working day. Cancellations with under 24 hours' notice may be charged at 50%."
   }
 ]

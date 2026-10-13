@@ -17,3 +17,10 @@
 - Metrics: none (no analytics). Open issues: none found via GitHub MCP; gh unavailable.
 - IndexNow: NOT submitted — sandbox network policy returns 403 (CONNECT tunnel) for ziro0914.github.io and api.indexnow.org; key file + page liveness could not be verified. First submission of all 40 sitemap URLs still pending; retry when network allows.
 - Next: receipt/PAID + estimate mode toggle; guide "what is a proforma invoice".
+
+## 2026-10-13 (daily run)
+- Owner info: issue #1 comment — domain postponed, AdSense on hold; Search Console/FreshBooks/GA4 still pending (no IDs given). config.json unchanged.
+- Research (niche professions): wedding photographers typically use deposit + balance structure, add-ons (second shooter, travel, overtime); tax on prints vs digital varies by region. Nanny invoices list dates/hours/rate, separate extras and reimbursements. Sources: https://invoicequick.com/invoice-templates/wedding-photographer-invoice-template , https://invoicemaker.com/blog/invoice-template-for-photographers/ , https://invoicesimple.com/invoice-template/nanny-invoice
+- Shipped: professions wedding-photographer, nanny (/invoice-template/wedding-photographer/, /invoice-template/nanny/). Build+check pass (42 pages).
+- IndexNow: not submitted — sandbox proxy denies ziro0914.github.io (curl 000); key liveness unverifiable. Pending.
+- Next: guide "proforma invoice"; estimate/quote mode.
