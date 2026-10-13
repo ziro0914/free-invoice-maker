@@ -44,6 +44,12 @@ function analytics() {
   return s;
 }
 
+function productBox() {
+  const p = (cfg.products || []).find(x => x.url);
+  if (!p) return '';
+  return `<aside class="partner product"><strong>${esc(p.headline)}</strong> ${esc(p.text)} <a href="${esc(p.url)}" rel="noopener" target="_blank">${esc(p.cta)} →</a></aside>`;
+}
+
 function partnerBox(context) {
   const p = (cfg.partners || []).find(x => x.url);
   if (!p) return '';
@@ -169,6 +175,7 @@ function buildHome() {
 </section>
 ${toolHtml()}
 <article class="wrap content">
+  ${productBox()}
   ${partnerBox('home')}
   <h2>How to make an invoice</h2>
   <ol>
@@ -203,6 +210,7 @@ function buildProfession(p) {
 ${toolHtml()}
 <article class="wrap content">
   <p>${esc(p.intro[1])}</p>
+  ${productBox()}
   ${partnerBox(p.slug)}
   <h2>Invoicing tips for ${esc(p.plural.toLowerCase())}</h2>
   <ul>${p.tips.map(t => `<li>${esc(t)}</li>`).join('')}</ul>
@@ -251,6 +259,7 @@ function buildGuides() {
       jsonld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: g.title, datePublished: g.date, dateModified: g.updated || g.date, description: g.description }],
       body: `<article class="wrap content"><p class="small"><a href="${url('guides/')}">Guides</a> · ${esc(g.date)}</p>
 <h1>${esc(g.title)}</h1>${g.html}
+${productBox()}
 ${partnerBox(g.slug)}
 <p><a href="${url('')}"><strong>Create a free invoice now →</strong></a></p></article>`
     }));
