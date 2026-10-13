@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Etsy Fee Calculator 2026: Fees, Profit &amp; Margin | Free</title>
+<meta name="description" content="Free Etsy fee calculator. Enter your price, shipping and costs to see every Etsy fee, your profit, your margin and the price you need. US, UK, Canada, Australia.">
+<link rel="canonical" href="https://sendinvoicefree.com/tools/etsy-fee-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Etsy Fee Calculator 2026: Fees, Profit &amp; Margin | Free">
+<meta property="og:description" content="Free Etsy fee calculator. Enter your price, shipping and costs to see every Etsy fee, your profit, your margin and the price you need. US, UK, Canada, Australia.">
+<meta property="og:url" content="https://sendinvoicefree.com/tools/etsy-fee-calculator/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css?v=2026-10-13">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does Etsy take per sale?","acceptedAnswer":{"@type":"Answer","text":"For a US shop: a $0.20 listing fee, a 6.5% transaction fee on the item price plus shipping, and payment processing of 3% + $0.25 on the order total. That is usually 10-12% of the order. A sale from Offsite Ads adds 15% (12% for shops over $10k a year), capped at $100 per order."}},{"@type":"Question","name":"Does Etsy charge fees on shipping?","acceptedAnswer":{"@type":"Answer","text":"Yes. The 6.5% transaction fee and payment processing are both charged on the shipping you charge the buyer, not only on the item price."}},{"@type":"Question","name":"Is sales tax included?","acceptedAnswer":{"@type":"Answer","text":"No. Sales tax or VAT that Etsy collects from buyers is passed to the tax authority and is not your income, so this calculator leaves it out."}}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/invoice-templates/">Templates</a><a href="/guides/">Guides</a><a href="/tools/etsy-fee-calculator/">Etsy fees</a></nav>
+</div></header>
+<main><section class="wrap hero"><h1>Etsy Fee Calculator</h1><p>See every Etsy fee on a sale, what you actually keep, and the price you need for your target margin. Free, no sign-up.</p></section>
+<section class="wrap tool" style="margin:18px auto 40px">
+<form class="card" onsubmit="return false" id="etsy">
+  <fieldset><legend>Your sale</legend><div class="grid2">
+    <label>Shop country<select id="cty"><option value="us">United States</option><option value="uk">United Kingdom</option><option value="ca">Canada</option><option value="au">Australia</option><option value="eu">Eurozone</option></select></label>
+    <label>Item price<input id="price" type="number" inputmode="decimal" min="0" step="0.01" value="28"></label><label>Shipping you charge<input id="ship" type="number" inputmode="decimal" min="0" step="0.01" value="6"></label>
+    <label>Materials + packaging<input id="mat" type="number" inputmode="decimal" min="0" step="0.01" value="5.7"></label><label>Postage you pay<input id="post" type="number" inputmode="decimal" min="0" step="0.01" value="7.5"></label>
+    <label>Etsy Ads cost per sale<input id="ads" type="number" inputmode="decimal" min="0" step="0.01" value="0"></label><label>Target margin %<input id="target" type="number" inputmode="decimal" min="0" step="1" value="30"></label>
+    <label style="display:flex;gap:8px;align-items:center;padding-top:18px"><input id="offsite" type="checkbox" style="width:auto;margin:0">Sale came from Offsite Ads</label>
+  </div></fieldset>
+</form>
+<div class="card" id="out" aria-live="polite"></div>
+</section>
+<article class="wrap content">
+<aside class="partner product"><strong>Have more than one listing?</strong> The Etsy Seller Profit Calculator spreadsheet does this for up to 50 products at once, flags listings that lose money, adds labour cost and shows your monthly shop profit. Excel + Google Sheets. <a href="https://ziroflux4.gumroad.com/l/etsy-profit-calculator" rel="noopener" target="_blank">Get it ($7) →</a></aside>
+<h2>Etsy fees explained</h2>
+<h3>How much does Etsy take per sale?</h3><p>For a US shop: a $0.20 listing fee, a 6.5% transaction fee on the item price plus shipping, and payment processing of 3% + $0.25 on the order total. That is usually 10-12% of the order. A sale from Offsite Ads adds 15% (12% for shops over $10k a year), capped at $100 per order.</p><h3>Does Etsy charge fees on shipping?</h3><p>Yes. The 6.5% transaction fee and payment processing are both charged on the shipping you charge the buyer, not only on the item price.</p><h3>Is sales tax included?</h3><p>No. Sales tax or VAT that Etsy collects from buyers is passed to the tax authority and is not your income, so this calculator leaves it out.</p>
+<p class="small">Fee rates from Etsy's published fee schedule as of October 2026. Check etsy.com/legal/fees for your country. Not tax or accounting advice.</p>
+</article>
+<script>
+(function(){
+var F={us:[.065,.03,.25,.20,0,'$'],uk:[.065,.04,.20,.16,.0032,'£'],ca:[.065,.03,.25,.27,0,'C$'],au:[.065,.03,.25,.30,0,'A$'],eu:[.065,.04,.30,.18,0,'€']};
+function v(id){return parseFloat(document.getElementById(id).value)||0}
+function run(){
+ var f=F[document.getElementById('cty').value],c=f[5],off=document.getElementById('offsite').checked;
+ var p=v('price'),s=v('ship'),tot=p+s,costs=v('mat')+v('post')+v('ads'),t=v('target')/100;
+ var lines=[['Listing fee',f[3]],['Transaction fee (6.5%)',tot*f[0]],['Payment processing',tot*f[1]+f[2]],['Regulatory fee',tot*f[4]],['Offsite Ads',off?Math.min(tot*.15,100):0]];
+ var fees=lines.reduce(function(a,l){return a+l[1]},0),profit=tot-fees-costs,m=tot?profit/tot:0;
+ var pct=f[0]+f[1]+f[4]+(off?.15:0),need=(costs+f[3]+f[2])/(1-pct-t)-s;
+ function $(x){return (x<0?'-':'')+c+Math.abs(x).toFixed(2)}
+ document.getElementById('out').innerHTML='<h2 style="margin-top:0">Result</h2><table style="width:100%">'+
+  '<tr><td>Order total</td><td style="text-align:right">'+$(tot)+'</td></tr>'+
+  lines.filter(function(l){return l[1]>0}).map(function(l){return '<tr><td>'+l[0]+'</td><td style="text-align:right">-'+$(l[1])+'</td></tr>'}).join('')+
+  '<tr><td><b>Total Etsy fees</b></td><td style="text-align:right"><b>'+$(fees)+'</b> ('+(tot?(fees/tot*100).toFixed(1):0)+'%)</td></tr>'+
+  '<tr><td>Your costs</td><td style="text-align:right">-'+$(costs)+'</td></tr>'+
+  '<tr><td><b>Profit per sale</b></td><td style="text-align:right;font-size:1.3em"><b>'+$(profit)+'</b></td></tr>'+
+  '<tr><td>Margin</td><td style="text-align:right">'+(m*100).toFixed(1)+'%</td></tr></table>'+
+  '<p>Item price for a '+(t*100).toFixed(0)+'% margin: <b>'+(pct+t<1&&need>0?$(need):'n/a')+'</b></p>';
+}
+document.getElementById('etsy').addEventListener('input',run);run();
+})();
+</script></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/">Invoice generator</a><a href="/invoice-templates/">Invoice templates</a><a href="/guides/">Guides</a><a href="/tools/etsy-fee-calculator/">Etsy fee calculator</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+
+</body>
+</html>

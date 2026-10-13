@@ -79,11 +79,11 @@ ${analytics()}
 <body>
 <header class="site"><div class="wrap">
   <a class="brand" href="${url('')}">Free<b>Invoice</b>Maker</a>
-  <nav><a href="${url('invoice-templates/')}">Templates</a><a href="${url('guides/')}">Guides</a></nav>
+  <nav><a href="${url('invoice-templates/')}">Templates</a><a href="${url('guides/')}">Guides</a><a href="${url('tools/etsy-fee-calculator/')}">Etsy fees</a></nav>
 </div></header>
 <main>${body}</main>
 <footer class="site"><div class="wrap">
-  <p><a href="${url('')}">Invoice generator</a><a href="${url('invoice-templates/')}">Invoice templates</a><a href="${url('guides/')}">Guides</a><a href="${url('about/')}">About</a><a href="${url('privacy/')}">Privacy</a></p>
+  <p><a href="${url('')}">Invoice generator</a><a href="${url('invoice-templates/')}">Invoice templates</a><a href="${url('guides/')}">Guides</a><a href="${url('tools/etsy-fee-calculator/')}">Etsy fee calculator</a><a href="${url('about/')}">About</a><a href="${url('privacy/')}">Privacy</a></p>
   <p>© ${new Date().getFullYear()} Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
 </div></footer>
 ${tool ? `<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
@@ -266,6 +266,65 @@ ${partnerBox(g.slug)}
   }
 }
 
+function buildTools() {
+  const rel = 'tools/etsy-fee-calculator/';
+  const prod = 'https://ziroflux4.gumroad.com/l/etsy-profit-calculator';
+  const field = (id, label, v, step = '0.01') => `<label>${label}<input id="${id}" type="number" inputmode="decimal" min="0" step="${step}" value="${v}"></label>`;
+  const faq = [
+    ['How much does Etsy take per sale?', 'For a US shop: a $0.20 listing fee, a 6.5% transaction fee on the item price plus shipping, and payment processing of 3% + $0.25 on the order total. That is usually 10-12% of the order. A sale from Offsite Ads adds 15% (12% for shops over $10k a year), capped at $100 per order.'],
+    ['Does Etsy charge fees on shipping?', 'Yes. The 6.5% transaction fee and payment processing are both charged on the shipping you charge the buyer, not only on the item price.'],
+    ['Is sales tax included?', 'No. Sales tax or VAT that Etsy collects from buyers is passed to the tax authority and is not your income, so this calculator leaves it out.'],
+  ];
+  write(`${rel}index.html`, layout({
+    title: 'Etsy Fee Calculator 2026: Fees, Profit & Margin | Free',
+    description: 'Free Etsy fee calculator. Enter your price, shipping and costs to see every Etsy fee, your profit, your margin and the price you need. US, UK, Canada, Australia.',
+    rel,
+    jsonld: [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }],
+    body: `<section class="wrap hero"><h1>Etsy Fee Calculator</h1><p>See every Etsy fee on a sale, what you actually keep, and the price you need for your target margin. Free, no sign-up.</p></section>
+<section class="wrap tool" style="margin:18px auto 40px">
+<form class="card" onsubmit="return false" id="etsy">
+  <fieldset><legend>Your sale</legend><div class="grid2">
+    <label>Shop country<select id="cty"><option value="us">United States</option><option value="uk">United Kingdom</option><option value="ca">Canada</option><option value="au">Australia</option><option value="eu">Eurozone</option></select></label>
+    ${field('price', 'Item price', 28)}${field('ship', 'Shipping you charge', 6)}
+    ${field('mat', 'Materials + packaging', 5.7)}${field('post', 'Postage you pay', 7.5)}
+    ${field('ads', 'Etsy Ads cost per sale', 0)}${field('target', 'Target margin %', 30, '1')}
+    <label style="display:flex;gap:8px;align-items:center;padding-top:18px"><input id="offsite" type="checkbox" style="width:auto;margin:0">Sale came from Offsite Ads</label>
+  </div></fieldset>
+</form>
+<div class="card" id="out" aria-live="polite"></div>
+</section>
+<article class="wrap content">
+${(cfg.products || []).length ? `<aside class="partner product"><strong>Have more than one listing?</strong> The Etsy Seller Profit Calculator spreadsheet does this for up to 50 products at once, flags listings that lose money, adds labour cost and shows your monthly shop profit. Excel + Google Sheets. <a href="${prod}" rel="noopener" target="_blank">Get it ($7) →</a></aside>` : ''}
+<h2>Etsy fees explained</h2>
+${faq.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join('')}
+<p class="small">Fee rates from Etsy's published fee schedule as of October 2026. Check etsy.com/legal/fees for your country. Not tax or accounting advice.</p>
+</article>
+<script>
+(function(){
+var F={us:[.065,.03,.25,.20,0,'$'],uk:[.065,.04,.20,.16,.0032,'£'],ca:[.065,.03,.25,.27,0,'C$'],au:[.065,.03,.25,.30,0,'A$'],eu:[.065,.04,.30,.18,0,'€']};
+function v(id){return parseFloat(document.getElementById(id).value)||0}
+function run(){
+ var f=F[document.getElementById('cty').value],c=f[5],off=document.getElementById('offsite').checked;
+ var p=v('price'),s=v('ship'),tot=p+s,costs=v('mat')+v('post')+v('ads'),t=v('target')/100;
+ var lines=[['Listing fee',f[3]],['Transaction fee (6.5%)',tot*f[0]],['Payment processing',tot*f[1]+f[2]],['Regulatory fee',tot*f[4]],['Offsite Ads',off?Math.min(tot*.15,100):0]];
+ var fees=lines.reduce(function(a,l){return a+l[1]},0),profit=tot-fees-costs,m=tot?profit/tot:0;
+ var pct=f[0]+f[1]+f[4]+(off?.15:0),need=(costs+f[3]+f[2])/(1-pct-t)-s;
+ function $(x){return (x<0?'-':'')+c+Math.abs(x).toFixed(2)}
+ document.getElementById('out').innerHTML='<h2 style="margin-top:0">Result</h2><table style="width:100%">'+
+  '<tr><td>Order total</td><td style="text-align:right">'+$(tot)+'</td></tr>'+
+  lines.filter(function(l){return l[1]>0}).map(function(l){return '<tr><td>'+l[0]+'</td><td style="text-align:right">-'+$(l[1])+'</td></tr>'}).join('')+
+  '<tr><td><b>Total Etsy fees</b></td><td style="text-align:right"><b>'+$(fees)+'</b> ('+(tot?(fees/tot*100).toFixed(1):0)+'%)</td></tr>'+
+  '<tr><td>Your costs</td><td style="text-align:right">-'+$(costs)+'</td></tr>'+
+  '<tr><td><b>Profit per sale</b></td><td style="text-align:right;font-size:1.3em"><b>'+$(profit)+'</b></td></tr>'+
+  '<tr><td>Margin</td><td style="text-align:right">'+(m*100).toFixed(1)+'%</td></tr></table>'+
+  '<p>Item price for a '+(t*100).toFixed(0)+'% margin: <b>'+(pct+t<1&&need>0?$(need):'n/a')+'</b></p>';
+}
+document.getElementById('etsy').addEventListener('input',run);run();
+})();
+</script>`
+  }));
+}
+
 function buildStatic() {
   write('about/index.html', layout({
     title: 'About | Free Invoice Maker', description: 'Free Invoice Maker is a free, private, browser-based invoice generator for freelancers and small businesses.', rel: 'about/',
@@ -289,7 +348,7 @@ function buildStatic() {
 }
 
 function buildMeta() {
-  const pages = ['', 'invoice-templates/', 'guides/', 'about/', 'privacy/',
+  const pages = ['', 'invoice-templates/', 'guides/', 'tools/etsy-fee-calculator/', 'about/', 'privacy/',
     ...professions.map(p => `invoice-template/${p.slug}/`), ...guides.map(g => `guides/${g.slug}/`)];
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -312,6 +371,7 @@ buildHome();
 professions.forEach(buildProfession);
 buildHub();
 buildGuides();
+buildTools();
 buildStatic();
 const n = buildMeta();
 console.log(`Built ${n} pages (${professions.length} professions, ${guides.length} guides) -> docs/`);
