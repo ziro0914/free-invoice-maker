@@ -24,3 +24,7 @@
 - Shipped: professions wedding-photographer, nanny (/invoice-template/wedding-photographer/, /invoice-template/nanny/). Build+check pass (42 pages).
 - IndexNow: not submitted — sandbox proxy denies ziro0914.github.io (curl 000); key liveness unverifiable. Pending.
 - Next: guide "proforma invoice"; estimate/quote mode.
+
+## 2026-10-14 (local session)
+- Domain https://sendinvoicefree.com live with HTTPS enforced. Added free tools hub /tools/ with Etsy fee, freelance hourly rate and reorder point calculators, each linking to a paid Gumroad product.
+- IndexNow: submitted all 46 sitemap URLs for host sendinvoicefree.com from the local machine (HTTP 200). Cloud runs: if the sandbox blocks api.indexnow.org, just log it; the local session submits.

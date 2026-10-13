@@ -1,6 +1,6 @@
 # Free Invoice Maker: Launch & Growth Plan
 
-Product: https://ziro0914.github.io/free-invoice-maker/
+Product: https://sendinvoicefree.com/ (old github.io URL redirects)
 Positioning: free, no signup, browser-only invoice generator. Live preview, PDF download with no watermark, logo upload, 14 currencies, tax and discount, data never leaves the browser. About 30 prefilled profession templates and a set of guides.
 Markets: US / UK / CA / AU, English.
 Operating model: an AI agent drafts and schedules. The owner has to create accounts and do any posting that needs a human identity (Reddit, HN, Product Hunt).
