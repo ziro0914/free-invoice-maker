@@ -354,6 +354,19 @@ return [['Average daily sales',d.toFixed(1)],['Reorder point (units)',rop,1],[v.
     faq: [['What is a reorder point?', 'The stock level that tells you to place a new order. It equals average daily sales × (supplier lead time + safety days). When stock falls to it, the new order arrives just before you run out.'],
       ['How much safety stock do I need?', 'A common start is one to two weeks of sales. Use more if your supplier is unreliable or sales swing a lot, less for slow or cheap items.']],
   },
+  {
+    slug: 'freelance-project-price-calculator', name: 'Freelance project price calculator',
+    title: 'Freelance Project Price Calculator: Hourly to Fixed Quote | Free',
+    description: 'Free project price calculator. Turn your hourly rate and estimated hours into a fixed-price quote with a buffer for surprises, expenses and a deposit.',
+    h1: 'Freelance Project Price Calculator', intro: 'Convert your hourly rate and time estimate into a fixed project quote, with a safety buffer, pass-through expenses and a deposit amount.',
+    fields: [['hours', 'Estimated hours for the project', 20, '1'], ['rate', 'Your hourly rate', 60, '1'], ['buffer', 'Buffer for revisions and surprises %', 15, '1'],
+      ['exp', 'Expenses to pass on (stock assets, fees)', 50, '1'], ['dep', 'Deposit % upfront', 50, '1']],
+    compute: `var labor=v.hours*v.rate*(1+v.buffer/100),total=labor+v.exp,eff=v.hours?labor/v.hours:0;
+return [['Labor (hours x rate + buffer)',m(labor)],['Expenses',m(v.exp)],['Fixed project price',m(total),1],['Deposit upfront',m(total*v.dep/100)],['Balance on delivery',m(total-total*v.dep/100)],['Hourly rate if it takes the estimated hours',m(eff)]];`,
+    cta: ['Quote more projects with less guesswork', 'The Freelance Rate & Pricing Calculator spreadsheet adds a project quote builder, side-by-side scenarios and a raise-your-rates simulator. Excel + Google Sheets.', 'Get it ($7)', 'https://ziroflux4.gumroad.com/l/rate-calculator'],
+    faq: [['How do I turn an hourly rate into a fixed project price?', 'Estimate the hours honestly, multiply by your hourly rate, add a buffer for revisions and surprises, then add any expenses you pass on. The result is your fixed price; a deposit is a share of it paid upfront.'],
+      ['How big should the buffer be?', 'There is no universal number. Many freelancers add roughly 10-20% for well-defined work and more when the scope is vague or the client is new. Spell out the number of revision rounds in the quote.']],
+  },
 ];
 
 function buildCalcs() {

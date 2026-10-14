@@ -28,3 +28,9 @@
 ## 2026-10-14 (local session)
 - Domain https://sendinvoicefree.com live with HTTPS enforced. Added free tools hub /tools/ with Etsy fee, freelance hourly rate and reorder point calculators, each linking to a paid Gumroad product.
 - IndexNow: submitted all 46 sitemap URLs for host sendinvoicefree.com from the local machine (HTTP 200). Cloud runs: if the sandbox blocks api.indexnow.org, just log it; the local session submits.
+
+## 2026-10-14 (daily run, cloud)
+- Owner info: issue #1 still open, no new IDs; config.json unchanged.
+- Research (freelance pricing): hourly-to-project method = hours x rate + ~10-20% buffer; admin/proposals often eat 15-30% of time; fixed pricing needs scope/revision limits. Sources: https://uxdesign.cc/freelance-designer-101-pricing-strategies-work-capacity-6039fb6526e2 , https://aiproposer.com/tools/freelance-rate-calculator , https://blog.xolo.io/how-to-calculate-freelance-rates-with-up-to-date-rate-statistics . Also US tax set-aside commonly cited 25-35% (varies; check with a pro): https://1800accountant.com/blog/how-much-to-set-aside-for-self-employed-taxes
+- Shipped: calculator https://sendinvoicefree.com/tools/freelance-project-price-calculator/ (cta -> rate-calculator $7). Hand check: 20h x $60 = 1200; x1.15 = 1380; +$50 = 1430; 50% deposit = 715; effective hourly 69. Build+check pass (47 pages).
+- Next: tax set-aside calculator (cta freelancer-kit/budget-planner), guide "proforma invoice".
