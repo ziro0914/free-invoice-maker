@@ -79,11 +79,11 @@ ${analytics()}
 <body>
 <header class="site"><div class="wrap">
   <a class="brand" href="${url('')}">Free<b>Invoice</b>Maker</a>
-  <nav><a href="${url('invoice-templates/')}">Templates</a><a href="${url('guides/')}">Guides</a><a href="${url('tools/')}">Free tools</a></nav>
+  <nav><a href="${url('invoice-templates/')}">Templates</a><a href="${url('guides/')}">Guides</a><a href="${url('tools/')}">Free tools</a><a href="${url('shop/')}">Shop</a></nav>
 </div></header>
 <main>${body}</main>
 <footer class="site"><div class="wrap">
-  <p><a href="${url('')}">Invoice generator</a><a href="${url('invoice-templates/')}">Invoice templates</a><a href="${url('guides/')}">Guides</a><a href="${url('tools/')}">Free tools</a><a href="${url('tools/etsy-fee-calculator/')}">Etsy fee calculator</a><a href="${url('about/')}">About</a><a href="${url('privacy/')}">Privacy</a></p>
+  <p><a href="${url('')}">Invoice generator</a><a href="${url('invoice-templates/')}">Invoice templates</a><a href="${url('guides/')}">Guides</a><a href="${url('tools/')}">Free tools</a><a href="${url('shop/')}">Shop</a><a href="${url('tools/etsy-fee-calculator/')}">Etsy fee calculator</a><a href="${url('about/')}">About</a><a href="${url('privacy/')}">Privacy</a></p>
   <p>© ${new Date().getFullYear()} Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
 </div></footer>
 ${tool ? `<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
@@ -409,6 +409,31 @@ document.getElementById('calc').addEventListener('input',run);run();
   }));
 }
 
+// Paid spreadsheets sold on Gumroad (source: github.com/ziro0914/digital-products). Keep wording to what each file actually does.
+const G = 'https://ziroflux4.gumroad.com/l/';
+const SHOP = [
+  ['freelancer-kit', 'Freelancer Invoice & Bookkeeping Kit', 12, 'Invoice log with overdue alerts, expenses and mileage, a monthly profit dashboard and a tax set-aside.'],
+  ['tax-organizer', 'Self-Employed Tax Organizer 2026 (US)', 12, 'Income, expense and mileage logs, Schedule C totals by line and a quarterly tax set-aside estimate. Not tax advice.'],
+  ['rate-calculator', 'Freelance Rate & Pricing Calculator', 7, 'Your minimum hourly, day and retainer rates, a project quote builder and a raise-your-rates simulator.'],
+  ['client-tracker', 'Freelance Client Tracker & Onboarding System', 12, 'Lead pipeline with follow-up reminders, a 9-step onboarding checklist and project deadlines.'],
+  ['budget-planner', 'Small Business Budget & Cash-Flow Planner', 12, '12-month budget by category, budget vs actual every month and low-cash alerts.'],
+  ['inventory-tracker', 'Small Business Inventory & Stock Tracker', 12, 'Stock on hand per SKU, reorder alerts, a reorder list with order cost and a best-seller dashboard.'],
+  ['etsy-profit-calculator', 'Etsy Seller Profit Calculator', 7, 'Every Etsy fee line by line, profit and margin for up to 50 listings and the price for your target margin.'],
+  ['money-bundle', 'Small Business Money Bundle', 22, 'Bookkeeping kit + rate calculator + budget planner. Save $9.'],
+  ['etsy-seller-bundle', 'Etsy Seller Bundle', 15, 'Inventory tracker + Etsy profit calculator. Save $4.'],
+];
+
+function buildShop() {
+  write('shop/index.html', layout({
+    title: 'Spreadsheet Templates for Freelancers & Small Shops | Free Invoice Maker',
+    description: 'Excel and Google Sheets templates for freelancers and small online shops: bookkeeping, taxes, pricing, clients, budget, inventory and Etsy fees. One-time price.',
+    rel: 'shop/',
+    body: `<section class="wrap hero"><h1>Spreadsheet templates</h1><p>The free tools on this site do one job at a time. These spreadsheets keep your whole year in one file. Excel, Google Sheets and Apple Numbers. One-time price, instant download.</p></section>
+<article class="wrap content">${SHOP.map(([slug, name, price, text]) => `<aside class="partner product"><strong>${esc(name)} ($${price})</strong> ${esc(text)} <a href="${G}${slug}" rel="noopener" target="_blank">See it on Gumroad →</a></aside>`).join('\n')}
+<p class="small">Sold through Gumroad, which handles payment and download. Not tax, legal or financial advice.</p></article>`
+  }));
+}
+
 function buildStatic() {
   write('about/index.html', layout({
     title: 'About | Free Invoice Maker', description: 'Free Invoice Maker is a free, private, browser-based invoice generator for freelancers and small businesses.', rel: 'about/',
@@ -432,7 +457,7 @@ function buildStatic() {
 }
 
 function buildMeta() {
-  const pages = ['', 'invoice-templates/', 'guides/', 'tools/', 'tools/etsy-fee-calculator/', ...CALCS.map(c => `tools/${c.slug}/`), 'about/', 'privacy/',
+  const pages = ['', 'invoice-templates/', 'guides/', 'tools/', 'shop/', 'tools/etsy-fee-calculator/', ...CALCS.map(c => `tools/${c.slug}/`), 'about/', 'privacy/',
     ...professions.map(p => `invoice-template/${p.slug}/`), ...guides.map(g => `guides/${g.slug}/`)];
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -457,6 +482,7 @@ buildHub();
 buildGuides();
 buildTools();
 buildCalcs();
+buildShop();
 buildStatic();
 const n = buildMeta();
 console.log(`Built ${n} pages (${professions.length} professions, ${guides.length} guides) -> docs/`);
