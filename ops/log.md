@@ -42,3 +42,4 @@
 - Shipped: guide https://sendinvoicefree.com/guides/proforma-invoice/ (~1000 words; links to /, project price calculator, templates, how-to-write guide). Build+check pass (48 pages).
 - Metrics: none (no analytics).
 - Next: tax set-aside calculator (cta freelancer-kit/budget-planner), guide "invoice numbering", estimate/quote mode in the generator (the new guide mentions no proforma mode yet).
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com (curl 000 for ~5 min); local session to submit /guides/proforma-invoice/, /guides/, /, /sitemap.xml.
