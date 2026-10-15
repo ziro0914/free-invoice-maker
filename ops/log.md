@@ -43,3 +43,8 @@
 - Metrics: none (no analytics).
 - Next: tax set-aside calculator (cta freelancer-kit/budget-planner), guide "invoice numbering", estimate/quote mode in the generator (the new guide mentions no proforma mode yet).
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com (curl 000 for ~5 min); local session to submit /guides/proforma-invoice/, /guides/, /, /sitemap.xml.
+
+## 2026-10-15 (iMac IndexNow + health)
+- URLs checked: 48
+- Broken: none
+- Submitted: 48 new URLs (+ home, sitemap); IndexNow HTTP 200
