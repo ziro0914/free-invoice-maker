@@ -7,3 +7,7 @@
 5. Localization later: UK (VAT wording), Spanish version.
 6. Idea: "Paid"/receipt mode should link from the invoice-vs-receipt guide; list the site on AlternativeTo/SaaSHub when owner has accounts (competitors found: Freebillkit, InvoiceGen).
 7. Idea: add a "document title" selector (Invoice / Proforma / Estimate / Receipt) to the generator; proforma guide currently tells users to edit the title.
+
+## New paid products (2026-10-15, from local session)
+- https://ziroflux4.gumroad.com/l/tax-organizer ($12): Self-Employed Tax Organizer 2026 (US). Income/expense/mileage logs, Schedule C totals by line, quarterly tax set-aside estimate, 1099 totals, missing-receipt flags. Use it as the cta for the planned tax set-aside calculator and for tax/1099/quarterly-tax guides. Always say "not tax advice".
+- https://ziroflux4.gumroad.com/l/etsy-seller-bundle ($15): inventory tracker + Etsy profit calculator.
