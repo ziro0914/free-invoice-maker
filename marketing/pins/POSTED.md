@@ -13,3 +13,6 @@ Images: `python3 marketing/pins/make_pins.py` (1000x1500, written to `marketing/
 | 2026-10-15 | Free Etsy Fee Calculator (free tool) | Freelancer Business Spreadsheets | /tools/etsy-fee-calculator/ |
 | 2026-10-15 | Freelance Hourly Rate Calculator (free tool) | Freelancer Business Spreadsheets | /tools/freelance-hourly-rate-calculator/ |
 | 2026-10-15 | Reorder Point Calculator (free tool) | Freelancer Business Spreadsheets | /tools/reorder-point-calculator/ |
+| 2026-10-15 | Late Payment Reminder Emails: 5 Templates for Freelancers | Invoicing Tips for Freelancers | /guides/late-payment-email-templates/ |
+| 2026-10-15 | Invoice Payment Terms Explained: Net 30, Due on Receipt & More | Invoicing Tips for Freelancers | /guides/invoice-payment-terms/ |
+| 2026-10-15 | What Is a Proforma Invoice? (And When You Need One) | Invoicing Tips for Freelancers | /guides/proforma-invoice/ |
