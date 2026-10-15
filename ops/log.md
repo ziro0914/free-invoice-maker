@@ -35,3 +35,10 @@
 - Shipped: calculator https://sendinvoicefree.com/tools/freelance-project-price-calculator/ (cta -> rate-calculator $7). Hand check: 20h x $60 = 1200; x1.15 = 1380; +$50 = 1430; 50% deposit = 715; effective hourly 69. Build+check pass (47 pages).
 - Next: tax set-aside calculator (cta freelancer-kit/budget-planner), guide "proforma invoice".
 - IndexNow: not submitted — sandbox proxy denies api.indexnow.org and sendinvoicefree.com (curl 000); local session to submit /tools/freelance-project-price-calculator/, /tools/, /, /sitemap.xml.
+
+## 2026-10-15 (daily run, cloud)
+- Owner info: issue #1 still open, no new IDs; config.json unchanged.
+- Research (proforma invoice demand): proformas are non-binding previews, usually not booked as sales, often unnumbered; commercial invoice is the main customs document (rules vary); for deposits a labelled deposit invoice is advised over a proforma. Sources: https://www.xero.com/uk/guides/what-is-a-proforma-invoice , https://www.gocomet.com/blog/commercial-invoice-vs-pro-forma-invoice/ , https://sparkreceipt.com/blog/pro-forma-invoice/ , https://magicheidi.ch/en/proforma-rechnung-schweiz
+- Shipped: guide https://sendinvoicefree.com/guides/proforma-invoice/ (~1000 words; links to /, project price calculator, templates, how-to-write guide). Build+check pass (48 pages).
+- Metrics: none (no analytics).
+- Next: tax set-aside calculator (cta freelancer-kit/budget-planner), guide "invoice numbering", estimate/quote mode in the generator (the new guide mentions no proforma mode yet).
