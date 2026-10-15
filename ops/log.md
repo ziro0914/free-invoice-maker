@@ -48,3 +48,8 @@
 - URLs checked: 48
 - Broken: none
 - Submitted: 48 new URLs (+ home, sitemap); IndexNow HTTP 200
+
+## 2026-10-15 (iMac IndexNow + health)
+- URLs checked: 49
+- Broken: none
+- Submitted: 1 new URL (/shop/) + home + sitemap; IndexNow HTTP 200
