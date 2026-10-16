@@ -61,3 +61,7 @@
 - Metrics: none (no analytics).
 - Next: guide "invoice numbering", guide on quarterly estimated taxes linking this calculator; estimate/quote mode.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com (curl 000 for ~5 min); local session to submit /tools/self-employed-tax-set-aside-calculator/, /tools/, /, /sitemap.xml.
+
+## 2026-10-16 (iMac IndexNow + health)
+- Checked 50 URLs; broken: none.
+- Submitted 1 new URL(s) + / + sitemap.xml to IndexNow; HTTP 200.
