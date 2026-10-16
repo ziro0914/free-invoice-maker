@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Self-Employed Tax Set-Aside Calculator (US Estimate) | Free</title>
+<meta name="description" content="Free self-employed tax calculator. Estimate self-employment tax, income tax and state tax, then see how much of every invoice to set aside and your quarterly payment.">
+<link rel="canonical" href="https://sendinvoicefree.com/tools/self-employed-tax-set-aside-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Self-Employed Tax Set-Aside Calculator (US Estimate) | Free">
+<meta property="og:description" content="Free self-employed tax calculator. Estimate self-employment tax, income tax and state tax, then see how much of every invoice to set aside and your quarterly payment.">
+<meta property="og:url" content="https://sendinvoicefree.com/tools/self-employed-tax-set-aside-calculator/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css?v=2026-10-16">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much should a freelancer set aside for taxes?","acceptedAnswer":{"@type":"Answer","text":"It depends on income, deductions, filing status and state. Many guides cite a rough 25-30% of net profit as a starting point, and some people need more. Use this calculator for a ballpark and confirm the real figure with the IRS or a tax professional."}},{"@type":"Question","name":"How is self-employment tax calculated?","acceptedAnswer":{"@type":"Answer","text":"In the US it is generally 15.3% (12.4% Social Security plus 2.9% Medicare) applied to 92.35% of net self-employment earnings. This calculator ignores the Social Security wage-base cap and any additional Medicare tax, so check the current rules if your income is high."}}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/invoice-templates/">Templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a></nav>
+</div></header>
+<main><section class="wrap hero"><h1>Self-Employed Tax Set-Aside Calculator</h1><p>A rough US estimate of how much of your freelance income to put aside for taxes: self-employment tax, income tax and state tax, plus a quarterly amount and a set-aside per invoice. Not tax advice. Free, no sign-up.</p></section>
+<section class="wrap tool" style="margin:18px auto 40px">
+<form class="card" id="calc" onsubmit="return false"><fieldset><legend>Your numbers</legend><div class="grid2"><label>Expected net profit for the year (income minus business expenses)<input data-k="profit" type="number" inputmode="decimal" min="0" step="100" value="60000"></label><label>Estimated federal income tax rate % (effective, after deductions)<input data-k="fed" type="number" inputmode="decimal" min="0" step="1" value="12"></label><label>State and local tax rate % (0 if none)<input data-k="state" type="number" inputmode="decimal" min="0" step="1" value="4"></label><label>An invoice amount to check<input data-k="inv" type="number" inputmode="decimal" min="0" step="1" value="1000"></label></div></fieldset></form>
+<div class="card" id="out" aria-live="polite"></div>
+</section>
+<article class="wrap content">
+<aside class="partner product"><strong>Keep your income, expenses and quarterly set-aside in one place</strong> The Self-Employed Tax Organizer 2026 (US) spreadsheet has income, expense and mileage logs, Schedule C totals by line, a quarterly tax set-aside estimate, 1099 totals and missing-receipt flags. It is an organizer, not tax advice. <a href="https://ziroflux4.gumroad.com/l/tax-organizer" rel="noopener" target="_blank">Get it ($12) →</a></aside>
+<h2>How much should a freelancer set aside for taxes?</h2><p>It depends on income, deductions, filing status and state. Many guides cite a rough 25-30% of net profit as a starting point, and some people need more. Use this calculator for a ballpark and confirm the real figure with the IRS or a tax professional.</p><h2>How is self-employment tax calculated?</h2><p>In the US it is generally 15.3% (12.4% Social Security plus 2.9% Medicare) applied to 92.35% of net self-employment earnings. This calculator ignores the Social Security wage-base cap and any additional Medicare tax, so check the current rules if your income is high.</p>
+<p class="small">Estimates only. Not tax, legal or financial advice. <a href="/tools/">More free tools</a></p>
+</article>
+<script>
+(function(){
+function m(x){return (x<0?'-':'')+'$'+Math.abs(x).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function calc(v){var se=v.profit*.9235*.153,inc=Math.max(0,v.profit-se/2)*v.fed/100,st=v.profit*v.state/100,tot=se+inc+st,pc=v.profit?tot/v.profit*100:0;
+return [['Self-employment tax (15.3% of 92.35%)',m(se)],['Federal income tax (estimate)',m(inc)],['State and local tax (estimate)',m(st)],['Total to set aside per year',m(tot),1],['Share of net profit',pc.toFixed(1)+'%',1],['Quarterly payment (total / 4)',m(tot/4)],['Set aside from a '+m(v.inv)+' invoice',m(v.inv*pc/100)]];}
+function run(){var v={};document.querySelectorAll('#calc [data-k]').forEach(function(e){v[e.dataset.k]=parseFloat(e.value)||0});
+ document.getElementById('out').innerHTML='<h2 style="margin-top:0">Result</h2><table style="width:100%">'+calc(v).map(function(r){
+  return '<tr><td>'+(r[2]?'<b>'+r[0]+'</b>':r[0])+'</td><td style="text-align:right'+(r[2]?';font-size:1.3em':'')+'">'+(r[2]?'<b>'+r[1]+'</b>':r[1])+'</td></tr>'}).join('')+'</table>';}
+document.getElementById('calc').addEventListener('input',run);run();
+})();
+</script></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/">Invoice generator</a><a href="/invoice-templates/">Invoice templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a><a href="/tools/etsy-fee-calculator/">Etsy fee calculator</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+
+</body>
+</html>

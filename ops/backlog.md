@@ -11,3 +11,5 @@
 ## New paid products (2026-10-15, from local session)
 - https://ziroflux4.gumroad.com/l/tax-organizer ($12): Self-Employed Tax Organizer 2026 (US). Income/expense/mileage logs, Schedule C totals by line, quarterly tax set-aside estimate, 1099 totals, missing-receipt flags. Use it as the cta for the planned tax set-aside calculator and for tax/1099/quarterly-tax guides. Always say "not tax advice".
 - https://ziroflux4.gumroad.com/l/etsy-seller-bundle ($15): inventory tracker + Etsy profit calculator.
+
+- (2026-10-16) Done: tax set-aside calculator. Ideas: guide 'how much to save from each invoice for taxes' linking the calculator; UK/CA/AU variants of tax calculators (needs verified rates); sales-tax/VAT invoice calculator.

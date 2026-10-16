@@ -53,3 +53,10 @@
 - URLs checked: 49
 - Broken: none
 - Submitted: 1 new URL (/shop/) + home + sitemap; IndexNow HTTP 200
+
+## 2026-10-16 (daily run, cloud)
+- Owner info: issue #1 only has the 10-13 comment; no new IDs; config.json unchanged.
+- Research (tax set-aside demand): SE tax = 15.3% (12.4% SS + 2.9% Medicare) on 92.35% of net earnings; common rule of thumb 25-30% of net income, some sources say 30-40%; quarterly payments generally if you expect to owe $1,000+. Sources: https://pilot.com/calculators/self-employment-tax-calculator , https://smallbiztrends.com/estimated-taxes-for-self-employed/ , https://www.hellobonsai.com/blog/how-much-to-set-aside-1099-tax , https://1800accountant.com/blog/how-much-to-set-aside-for-self-employed-taxes
+- Shipped: calculator https://sendinvoicefree.com/tools/self-employed-tax-set-aside-calculator/ (cta -> tax-organizer $12, wording from backlog; hedged "not tax advice"). Hand check: profit 60000 -> SE 8477.73; income tax 12% x (60000-4238.87)=6691.34; state 4%=2400; total 17569.07 = 29.3%; quarterly 4392.27; $1000 invoice -> 292.82. Build+check pass (50 pages).
+- Metrics: none (no analytics).
+- Next: guide "invoice numbering", guide on quarterly estimated taxes linking this calculator; estimate/quote mode.

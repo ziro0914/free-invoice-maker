@@ -367,6 +367,19 @@ return [['Labor (hours x rate + buffer)',m(labor)],['Expenses',m(v.exp)],['Fixed
     faq: [['How do I turn an hourly rate into a fixed project price?', 'Estimate the hours honestly, multiply by your hourly rate, add a buffer for revisions and surprises, then add any expenses you pass on. The result is your fixed price; a deposit is a share of it paid upfront.'],
       ['How big should the buffer be?', 'There is no universal number. Many freelancers add roughly 10-20% for well-defined work and more when the scope is vague or the client is new. Spell out the number of revision rounds in the quote.']],
   },
+  {
+    slug: 'self-employed-tax-set-aside-calculator', name: 'Self-employed tax set-aside calculator',
+    title: 'Self-Employed Tax Set-Aside Calculator (US Estimate) | Free',
+    description: 'Free self-employed tax calculator. Estimate self-employment tax, income tax and state tax, then see how much of every invoice to set aside and your quarterly payment.',
+    h1: 'Self-Employed Tax Set-Aside Calculator', intro: 'A rough US estimate of how much of your freelance income to put aside for taxes: self-employment tax, income tax and state tax, plus a quarterly amount and a set-aside per invoice. Not tax advice.',
+    fields: [['profit', 'Expected net profit for the year (income minus business expenses)', 60000, '100'], ['fed', 'Estimated federal income tax rate % (effective, after deductions)', 12, '1'],
+      ['state', 'State and local tax rate % (0 if none)', 4, '1'], ['inv', 'An invoice amount to check', 1000, '1']],
+    compute: `var se=v.profit*.9235*.153,inc=Math.max(0,v.profit-se/2)*v.fed/100,st=v.profit*v.state/100,tot=se+inc+st,pc=v.profit?tot/v.profit*100:0;
+return [['Self-employment tax (15.3% of 92.35%)',m(se)],['Federal income tax (estimate)',m(inc)],['State and local tax (estimate)',m(st)],['Total to set aside per year',m(tot),1],['Share of net profit',pc.toFixed(1)+'%',1],['Quarterly payment (total / 4)',m(tot/4)],['Set aside from a '+m(v.inv)+' invoice',m(v.inv*pc/100)]];`,
+    cta: ['Keep your income, expenses and quarterly set-aside in one place', 'The Self-Employed Tax Organizer 2026 (US) spreadsheet has income, expense and mileage logs, Schedule C totals by line, a quarterly tax set-aside estimate, 1099 totals and missing-receipt flags. It is an organizer, not tax advice.', 'Get it ($12)', 'https://ziroflux4.gumroad.com/l/tax-organizer'],
+    faq: [['How much should a freelancer set aside for taxes?', 'It depends on income, deductions, filing status and state. Many guides cite a rough 25-30% of net profit as a starting point, and some people need more. Use this calculator for a ballpark and confirm the real figure with the IRS or a tax professional.'],
+      ['How is self-employment tax calculated?', 'In the US it is generally 15.3% (12.4% Social Security plus 2.9% Medicare) applied to 92.35% of net self-employment earnings. This calculator ignores the Social Security wage-base cap and any additional Medicare tax, so check the current rules if your income is high.']],
+  },
 ];
 
 function buildCalcs() {
