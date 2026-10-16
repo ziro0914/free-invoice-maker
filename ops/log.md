@@ -60,3 +60,4 @@
 - Shipped: calculator https://sendinvoicefree.com/tools/self-employed-tax-set-aside-calculator/ (cta -> tax-organizer $12, wording from backlog; hedged "not tax advice"). Hand check: profit 60000 -> SE 8477.73; income tax 12% x (60000-4238.87)=6691.34; state 4%=2400; total 17569.07 = 29.3%; quarterly 4392.27; $1000 invoice -> 292.82. Build+check pass (50 pages).
 - Metrics: none (no analytics).
 - Next: guide "invoice numbering", guide on quarterly estimated taxes linking this calculator; estimate/quote mode.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com (curl 000 for ~5 min); local session to submit /tools/self-employed-tax-set-aside-calculator/, /tools/, /, /sitemap.xml.
