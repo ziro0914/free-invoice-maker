@@ -65,3 +65,10 @@
 ## 2026-10-16 (iMac IndexNow + health)
 - Checked 50 URLs; broken: none.
 - Submitted 1 new URL(s) + / + sitemap.xml to IndexNow; HTTP 200.
+
+## 2026-10-17 (daily run, cloud)
+- Owner info: issue #1 open, only the 10-13 comment; no new IDs; config.json unchanged.
+- Research (invoice numbering): consensus = unique, sequential, consistent; formats INV-0001, year+seq, client-code; UK/VAT sources disagree on gaps (strict "no gaps" vs. acceptable if cancelled invoice kept/explained per HMRC FAQ via Avalara) -> hedged in guide. Sources: https://invoicebloom.io/blog/freelance-invoice-numbering-system-best-practices , https://invoiceninja.com/blog/how-to-number-freelance-invoices/ , https://www.selfemployed.com/what-is-an-invoice-number/ , https://www.avalara.com/vatlive/en/vat-news/sequential-invoice-numbering-for-tax-invoices.html , https://www.taxfly.co.uk/academy/vat-for-small-business/valid-vat-invoices
+- Shipped: guide https://sendinvoicefree.com/guides/invoice-numbering/ (~1000 words). Build+check pass (51 pages).
+- Metrics: none (no analytics).
+- Next: guide "late fees", estimate/quote mode toggle, a calculator (sales tax/VAT) next run.
