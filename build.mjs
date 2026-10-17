@@ -485,6 +485,8 @@ ${pages.map(p => `<url><loc>${abs(p)}</loc><lastmod>${BUILD_DATE}</lastmod></url
   fs.mkdirSync(path.join(OUT, 'assets'), { recursive: true });
   fs.copyFileSync(path.join(ROOT, 'src/app.js'), path.join(OUT, 'assets/app.js'));
   fs.copyFileSync(path.join(ROOT, 'src/style.css'), path.join(OUT, 'assets/style.css'));
+  // static/ holds pre-generated files (e.g. Pinterest pin images from ops/make-pins.mjs)
+  if (fs.existsSync(path.join(ROOT, 'static'))) fs.cpSync(path.join(ROOT, 'static'), OUT, { recursive: true });
   return pages.length;
 }
 
