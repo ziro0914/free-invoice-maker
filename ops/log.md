@@ -73,3 +73,8 @@
 - Metrics: none (no analytics).
 - Next: guide "late fees", estimate/quote mode toggle, a calculator (sales tax/VAT) next run.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com; local session to submit /guides/invoice-numbering/, /guides/, /, /sitemap.xml.
+
+## 2026-10-17 (iMac IndexNow + health)
+- URLs checked: 51
+- Broken: none
+- Submitted to IndexNow: 1 new URL(s) + home + sitemap, HTTP 200
