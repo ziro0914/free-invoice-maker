@@ -72,3 +72,4 @@
 - Shipped: guide https://sendinvoicefree.com/guides/invoice-numbering/ (~1000 words). Build+check pass (51 pages).
 - Metrics: none (no analytics).
 - Next: guide "late fees", estimate/quote mode toggle, a calculator (sales tax/VAT) next run.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com; local session to submit /guides/invoice-numbering/, /guides/, /, /sitemap.xml.
