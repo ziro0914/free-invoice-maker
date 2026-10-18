@@ -86,3 +86,7 @@
 - Metrics: none.
 - Next: guide "how to charge late fees" linking this calculator; estimate/quote mode; sales tax/VAT calculator.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /tools/invoice-late-fee-calculator/, /tools/, /, /sitemap.xml.
+
+## 2026-10-18 (iMac IndexNow + health)
+- URLs checked: 52. Broken: none (dog-walker had one transient curl failure, 200 on recheck).
+- Submitted to IndexNow: /tools/invoice-late-fee-calculator/, /, /sitemap.xml. HTTP status: 200
