@@ -380,6 +380,18 @@ return [['Self-employment tax (15.3% of 92.35%)',m(se)],['Federal income tax (es
     faq: [['How much should a freelancer set aside for taxes?', 'It depends on income, deductions, filing status and state. Many guides cite a rough 25-30% of net profit as a starting point, and some people need more. Use this calculator for a ballpark and confirm the real figure with the IRS or a tax professional.'],
       ['How is self-employment tax calculated?', 'In the US it is generally 15.3% (12.4% Social Security plus 2.9% Medicare) applied to 92.35% of net self-employment earnings. This calculator ignores the Social Security wage-base cap and any additional Medicare tax, so check the current rules if your income is high.']],
   },
+  {
+    slug: 'invoice-late-fee-calculator', name: 'Invoice late fee calculator',
+    title: 'Invoice Late Fee Calculator: Flat vs Compounding | Free',
+    description: 'Free late fee calculator for invoices. Enter the amount, monthly late fee % and months overdue to see the fee with simple and compounding interest, plus the new balance.',
+    h1: 'Invoice Late Fee Calculator', intro: 'See what a late payment fee comes to on an overdue invoice, with a flat monthly percentage or compounding, plus an optional one-off fee. Check your local rules on what you may charge.',
+    fields: [['amt', 'Invoice amount', 5000, '1'], ['rate', 'Late fee % per month', 1.5, '0.1'], ['months', 'Months overdue', 3, '0.1'], ['flat', 'One-off flat late fee (0 if none)', 0, '1']],
+    compute: `var s=v.amt*v.rate/100*v.months,c=v.amt*Math.pow(1+v.rate/100,v.months)-v.amt;
+return [['Fee, simple (on original amount)',m(s+v.flat)],['New balance, simple',m(v.amt+s+v.flat),1],['Fee, compounding monthly',m(c+v.flat)],['New balance, compounding',m(v.amt+c+v.flat),1],['Equivalent yearly rate (simple)',(v.rate*12).toFixed(1)+'%'],['Fee per extra month (simple)',m(v.amt*v.rate/100)]];`,
+    cta: ['Spot overdue invoices before they get old', 'The Freelancer Invoice & Bookkeeping Kit spreadsheet has an invoice log with overdue alerts, expenses and mileage, a monthly profit dashboard and a tax set-aside. Excel + Google Sheets.', 'Get it ($12)', 'https://ziroflux4.gumroad.com/l/freelancer-kit'],
+    faq: [['How do you calculate a late fee on an invoice?', 'For a simple monthly fee, multiply the invoice amount by the monthly rate and by the months overdue. For example, 1.5% a month on $5,000 is $75 a month, or $225 after three months. With compounding, each month the fee is charged on the growing balance.'],
+      ['Can I charge a late fee on any invoice?', 'Only if your agreement or invoice terms say so, and many places cap or regulate late fees and interest. State the rate and due date on the invoice up front and check your local rules or a professional before charging.']],
+  },
 ];
 
 function buildCalcs() {

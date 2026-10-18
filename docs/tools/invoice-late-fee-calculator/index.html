@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invoice Late Fee Calculator: Flat vs Compounding | Free</title>
+<meta name="description" content="Free late fee calculator for invoices. Enter the amount, monthly late fee % and months overdue to see the fee with simple and compounding interest, plus the new balance.">
+<link rel="canonical" href="https://sendinvoicefree.com/tools/invoice-late-fee-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Invoice Late Fee Calculator: Flat vs Compounding | Free">
+<meta property="og:description" content="Free late fee calculator for invoices. Enter the amount, monthly late fee % and months overdue to see the fee with simple and compounding interest, plus the new balance.">
+<meta property="og:url" content="https://sendinvoicefree.com/tools/invoice-late-fee-calculator/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css?v=2026-10-18">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you calculate a late fee on an invoice?","acceptedAnswer":{"@type":"Answer","text":"For a simple monthly fee, multiply the invoice amount by the monthly rate and by the months overdue. For example, 1.5% a month on $5,000 is $75 a month, or $225 after three months. With compounding, each month the fee is charged on the growing balance."}},{"@type":"Question","name":"Can I charge a late fee on any invoice?","acceptedAnswer":{"@type":"Answer","text":"Only if your agreement or invoice terms say so, and many places cap or regulate late fees and interest. State the rate and due date on the invoice up front and check your local rules or a professional before charging."}}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/invoice-templates/">Templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a></nav>
+</div></header>
+<main><section class="wrap hero"><h1>Invoice Late Fee Calculator</h1><p>See what a late payment fee comes to on an overdue invoice, with a flat monthly percentage or compounding, plus an optional one-off fee. Check your local rules on what you may charge. Free, no sign-up.</p></section>
+<section class="wrap tool" style="margin:18px auto 40px">
+<form class="card" id="calc" onsubmit="return false"><fieldset><legend>Your numbers</legend><div class="grid2"><label>Invoice amount<input data-k="amt" type="number" inputmode="decimal" min="0" step="1" value="5000"></label><label>Late fee % per month<input data-k="rate" type="number" inputmode="decimal" min="0" step="0.1" value="1.5"></label><label>Months overdue<input data-k="months" type="number" inputmode="decimal" min="0" step="0.1" value="3"></label><label>One-off flat late fee (0 if none)<input data-k="flat" type="number" inputmode="decimal" min="0" step="1" value="0"></label></div></fieldset></form>
+<div class="card" id="out" aria-live="polite"></div>
+</section>
+<article class="wrap content">
+<aside class="partner product"><strong>Spot overdue invoices before they get old</strong> The Freelancer Invoice &amp; Bookkeeping Kit spreadsheet has an invoice log with overdue alerts, expenses and mileage, a monthly profit dashboard and a tax set-aside. Excel + Google Sheets. <a href="https://ziroflux4.gumroad.com/l/freelancer-kit" rel="noopener" target="_blank">Get it ($12) →</a></aside>
+<h2>How do you calculate a late fee on an invoice?</h2><p>For a simple monthly fee, multiply the invoice amount by the monthly rate and by the months overdue. For example, 1.5% a month on $5,000 is $75 a month, or $225 after three months. With compounding, each month the fee is charged on the growing balance.</p><h2>Can I charge a late fee on any invoice?</h2><p>Only if your agreement or invoice terms say so, and many places cap or regulate late fees and interest. State the rate and due date on the invoice up front and check your local rules or a professional before charging.</p>
+<p class="small">Estimates only. Not tax, legal or financial advice. <a href="/tools/">More free tools</a></p>
+</article>
+<script>
+(function(){
+function m(x){return (x<0?'-':'')+'$'+Math.abs(x).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function calc(v){var s=v.amt*v.rate/100*v.months,c=v.amt*Math.pow(1+v.rate/100,v.months)-v.amt;
+return [['Fee, simple (on original amount)',m(s+v.flat)],['New balance, simple',m(v.amt+s+v.flat),1],['Fee, compounding monthly',m(c+v.flat)],['New balance, compounding',m(v.amt+c+v.flat),1],['Equivalent yearly rate (simple)',(v.rate*12).toFixed(1)+'%'],['Fee per extra month (simple)',m(v.amt*v.rate/100)]];}
+function run(){var v={};document.querySelectorAll('#calc [data-k]').forEach(function(e){v[e.dataset.k]=parseFloat(e.value)||0});
+ document.getElementById('out').innerHTML='<h2 style="margin-top:0">Result</h2><table style="width:100%">'+calc(v).map(function(r){
+  return '<tr><td>'+(r[2]?'<b>'+r[0]+'</b>':r[0])+'</td><td style="text-align:right'+(r[2]?';font-size:1.3em':'')+'">'+(r[2]?'<b>'+r[1]+'</b>':r[1])+'</td></tr>'}).join('')+'</table>';}
+document.getElementById('calc').addEventListener('input',run);run();
+})();
+</script></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/">Invoice generator</a><a href="/invoice-templates/">Invoice templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a><a href="/tools/etsy-fee-calculator/">Etsy fee calculator</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+
+</body>
+</html>

@@ -78,3 +78,11 @@
 - URLs checked: 51
 - Broken: none
 - Submitted to IndexNow: 1 new URL(s) + home + sitemap, HTTP 200
+
+## 2026-10-18 (daily run, cloud)
+- Owner info: issue #1 not checkable (gh GraphQL blocked); OWNER_TODO has no new info; config.json unchanged.
+- Research (late fees): simple monthly = amount x rate x months; compounding grows on balance; typical 1-2%/month; some places regulate/cap late fees. Source: https://www.brex.com/spend-trends/cash-flow-management/late-fees-on-invoices.md , https://enty.io/blog/how-to-calculate-and-charge-late-fees-on-invoices-a-complete-guide
+- Shipped: calculator https://sendinvoicefree.com/tools/invoice-late-fee-calculator/ (cta -> freelancer-kit $12, wording from SHOP). Hand check: $5000 x 1.5% x 3 = 225 simple; 5000 x 1.015^3 - 5000 = 228.39 compounding. Build+check pass (52 pages).
+- Metrics: none.
+- Next: guide "how to charge late fees" linking this calculator; estimate/quote mode; sales tax/VAT calculator.
+- IndexNow: see below.
