@@ -85,4 +85,4 @@
 - Shipped: calculator https://sendinvoicefree.com/tools/invoice-late-fee-calculator/ (cta -> freelancer-kit $12, wording from SHOP). Hand check: $5000 x 1.5% x 3 = 225 simple; 5000 x 1.015^3 - 5000 = 228.39 compounding. Build+check pass (52 pages).
 - Metrics: none.
 - Next: guide "how to charge late fees" linking this calculator; estimate/quote mode; sales tax/VAT calculator.
-- IndexNow: see below.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /tools/invoice-late-fee-calculator/, /tools/, /, /sitemap.xml.
