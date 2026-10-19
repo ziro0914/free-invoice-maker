@@ -97,3 +97,4 @@
 - Shipped: guide https://sendinvoicefree.com/guides/how-to-charge-late-fees/ (~1030 words; links to /, late-fee calculator, payment-terms, late-payment emails, first-invoice guides, freelance-writer template). Example checked: $2000 x1.5% x3 = 90 simple; compounding 91.36. Build+check pass (53 pages).
 - Metrics: none.
 - Next: tax-saving guide, deposits guide, estimate/quote mode, sales tax/VAT calculator.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/how-to-charge-late-fees/, /guides/, /, /sitemap.xml.
