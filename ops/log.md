@@ -90,3 +90,10 @@
 ## 2026-10-18 (iMac IndexNow + health)
 - URLs checked: 52. Broken: none (dog-walker had one transient curl failure, 200 on recheck).
 - Submitted to IndexNow: /tools/invoice-late-fee-calculator/, /, /sitemap.xml. HTTP status: 200
+
+## 2026-10-19 (daily run, cloud)
+- Owner info: gh auth failed in sandbox (issue #1 not checkable); OWNER_TODO has no new info; config.json unchanged.
+- Research (late-fee practice/limits): fee must be disclosed in the agreement beforehand, not added retroactively; typical freelancer range ~1-2%/month, hybrid "1.5% or $50/25 whichever greater"; state caps vary and figures unverified -> hedged in guide; UK has statutory B2B late payment regime (check gov.uk). Sources: https://invoicemaker.com/invoice-late-fees/ , https://keepertax.com/posts/typical-late-fee-for-invoice , https://ruul.io/blog/late-payment-fees-guide , https://www.freshbooks.com/hub/invoicing/how-do-i-charge-late-fees-on-an-invoice
+- Shipped: guide https://sendinvoicefree.com/guides/how-to-charge-late-fees/ (~1030 words; links to /, late-fee calculator, payment-terms, late-payment emails, first-invoice guides, freelance-writer template). Example checked: $2000 x1.5% x3 = 90 simple; compounding 91.36. Build+check pass (53 pages).
+- Metrics: none.
+- Next: tax-saving guide, deposits guide, estimate/quote mode, sales tax/VAT calculator.

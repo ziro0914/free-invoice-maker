@@ -1,6 +1,6 @@
 # Backlog (priority order)
 
-1. Guides (done: first-freelance-invoice, proforma-invoice, invoice-numbering): "how to charge late fees" (link /tools/invoice-late-fee-calculator/).
+1. Guides (done: first-freelance-invoice, proforma-invoice, invoice-numbering, how-to-charge-late-fees): next "how much to save from each invoice for taxes" (link tax calculator), "net 30 vs net 15".
 2. Professions: nanny, wedding photographer, drone pilot, voice actor, app developer, data analyst, illustrator, tattoo artist, hair stylist, carpenter, painter, HVAC technician, roofer, pool cleaner, pressure washing, moving company, catering, florist, yoga instructor, music teacher.
 3. Product: estimate/quote mode toggle ("ESTIMATE" title); receipt mode ("PAID" stamp); save multiple clients; CSV export of invoice history.
 4. Monetization: Gumroad paid template packs (Excel/Google Sheets invoice + tracker bundle) once owner creates Gumroad.
@@ -13,3 +13,5 @@
 - https://ziroflux4.gumroad.com/l/etsy-seller-bundle ($15): inventory tracker + Etsy profit calculator.
 
 - (2026-10-16) Done: tax set-aside calculator. Ideas: guide 'how much to save from each invoice for taxes' linking the calculator; UK/CA/AU variants of tax calculators (needs verified rates); sales-tax/VAT invoice calculator.
+
+- (2026-10-19) Ideas: UK late-payment-interest calculator (8% over base rate B2B; needs verified gov.uk figures); guide on deposits/retainers.
