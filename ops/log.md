@@ -105,3 +105,4 @@
 - Shipped: guide https://sendinvoicefree.com/guides/how-much-to-save-from-each-invoice-for-taxes/ (~900 words; links to /, tax calculator, numbering, payment terms, writer template, tax-organizer). Example checked: 2000 - 20% = 1600; x30% = 480; left 1120. Build+check pass (54 pages).
 - Metrics: none.
 - Next: net 30 vs net 15 guide, deposits guide, estimate/quote mode, sales tax/VAT calculator.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com; local session to submit /guides/how-much-to-save-from-each-invoice-for-taxes/, /guides/, /, /sitemap.xml.
