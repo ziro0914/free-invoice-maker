@@ -98,3 +98,10 @@
 - Metrics: none.
 - Next: tax-saving guide, deposits guide, estimate/quote mode, sales tax/VAT calculator.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/how-to-charge-late-fees/, /guides/, /, /sitemap.xml.
+
+## 2026-10-20 (daily run, cloud)
+- Owner info: OWNER_TODO has no new info; config.json unchanged.
+- Research (tax set-aside per invoice): common range ~25-35% of net profit; SE tax 15.3%; round up if unsure; estimated payments generally if expecting to owe $1,000+; varies by state. Sources: https://www.workmade.com/blog/how-much-should-a-freelancer-set-aside-for-taxes , https://www.everlance.com/blog/how-much-a-freelancer-should-set-aside-for-taxes , https://taxbracketcalc.com/self-employment/tax-set-aside-calculator/
+- Shipped: guide https://sendinvoicefree.com/guides/how-much-to-save-from-each-invoice-for-taxes/ (~900 words; links to /, tax calculator, numbering, payment terms, writer template, tax-organizer). Example checked: 2000 - 20% = 1600; x30% = 480; left 1120. Build+check pass (54 pages).
+- Metrics: none.
+- Next: net 30 vs net 15 guide, deposits guide, estimate/quote mode, sales tax/VAT calculator.

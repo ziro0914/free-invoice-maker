@@ -15,3 +15,4 @@
 - (2026-10-16) Done: tax set-aside calculator. Ideas: guide 'how much to save from each invoice for taxes' linking the calculator; UK/CA/AU variants of tax calculators (needs verified rates); sales-tax/VAT invoice calculator.
 
 - (2026-10-19) Ideas: UK late-payment-interest calculator (8% over base rate B2B; needs verified gov.uk figures); guide on deposits/retainers.
+- (2026-10-20) Done: guide how-much-to-save-from-each-invoice-for-taxes. Ideas: net 30 vs net 15 guide; deposits guide; sales tax/VAT calculator.
