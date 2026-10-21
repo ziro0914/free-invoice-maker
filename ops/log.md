@@ -106,3 +106,10 @@
 - Metrics: none.
 - Next: net 30 vs net 15 guide, deposits guide, estimate/quote mode, sales tax/VAT calculator.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com; local session to submit /guides/how-much-to-save-from-each-invoice-for-taxes/, /guides/, /, /sitemap.xml.
+
+## 2026-10-21 (daily run, cloud)
+- Owner info: OWNER_TODO has no new info; config.json unchanged.
+- Research (Net 15 vs Net 30): sources broadly agree Net 15 is a common freelancer default for small/new clients, Net 30 is expected by larger clients; shorter terms improve cash flow; pair with late-payment clause (rates need local-law check). A cited late-payment statistic on one source was unverified -> not used. Sources: https://invoicer.ai/learn/net-30-vs-net-15-payment-terms , https://www.selfemployed.com/what-is-net-15/ , https://agiled.app/hub/agencies/net-30-vs-net-15 , https://ruul.io/blog/freelance-invoice-terms , https://www.plutio.com/freelancer-magazine/invoice-payment-terms
+- Shipped: guide https://sendinvoicefree.com/guides/net-30-vs-net-15/ (~960 words; links to /, late-fee calculator, payment terms, late fees, late email, tax-save guides, proforma, writer template). Example checked: $4000 invoiced on the 1st; Net 15 -> ~16th, Net 30 -> ~31st, 15 extra days. Build+check pass (55 pages).
+- Metrics: none.
+- Next: deposits/retainers guide, estimate/quote mode, sales tax/VAT calculator (calculator due next run).
