@@ -113,3 +113,4 @@
 - Shipped: guide https://sendinvoicefree.com/guides/net-30-vs-net-15/ (~960 words; links to /, late-fee calculator, payment terms, late fees, late email, tax-save guides, proforma, writer template). Example checked: $4000 invoiced on the 1st; Net 15 -> ~16th, Net 30 -> ~31st, 15 extra days. Build+check pass (55 pages).
 - Metrics: none.
 - Next: deposits/retainers guide, estimate/quote mode, sales tax/VAT calculator (calculator due next run).
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com; local session to submit /guides/net-30-vs-net-15/, /guides/, /, /sitemap.xml.
