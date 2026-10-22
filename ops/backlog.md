@@ -17,3 +17,4 @@
 - (2026-10-19) Ideas: UK late-payment-interest calculator (8% over base rate B2B; needs verified gov.uk figures); guide on deposits/retainers.
 - (2026-10-20) Done: guide how-much-to-save-from-each-invoice-for-taxes. Ideas: net 30 vs net 15 guide; deposits guide; sales tax/VAT calculator.
 - (2026-10-21) Done: guide net-30-vs-net-15. Ideas: deposits guide; calculator next (sales tax/VAT or UK late-payment interest).
+- (2026-10-22) Done: VAT/GST/sales tax invoice calculator. Ideas: guide 'VAT vs sales tax on invoices' linking it; deposits guide.

@@ -114,3 +114,10 @@
 - Metrics: none.
 - Next: deposits/retainers guide, estimate/quote mode, sales tax/VAT calculator (calculator due next run).
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com; local session to submit /guides/net-30-vs-net-15/, /guides/, /, /sitemap.xml.
+
+## 2026-10-22 (daily run, cloud)
+- Owner info: issue #1 only has the 10-13 comment; OWNER_TODO no new info; config.json unchanged.
+- Research (VAT/GST/sales-tax invoice calc): competitors offer such tools (Plutio tools https://plutio.com/tools , Aus GST calculator on Product Hunt https://www.producthunt.com/products/aus-freelancer-tax-invoice-calculator ); basic method = net x rate, reverse = gross/(1+rate); rules vary by location -> hedged. No other stats used.
+- Shipped: calculator https://sendinvoicefree.com/tools/vat-gst-sales-tax-invoice-calculator/ (cta -> freelancer-kit $12, existing wording). Hand check: net 1000 @20% -> tax 200, total 1200; reverse 1200/1.2 = 1000 net, 200 tax. Build+check pass (56 pages).
+- Metrics: none.
+- Next: deposits/retainers guide, estimate/quote mode, UK late-payment interest calc (needs verified figures).

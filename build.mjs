@@ -392,6 +392,18 @@ return [['Fee, simple (on original amount)',m(s+v.flat)],['New balance, simple',
     faq: [['How do you calculate a late fee on an invoice?', 'For a simple monthly fee, multiply the invoice amount by the monthly rate and by the months overdue. For example, 1.5% a month on $5,000 is $75 a month, or $225 after three months. With compounding, each month the fee is charged on the growing balance.'],
       ['Can I charge a late fee on any invoice?', 'Only if your agreement or invoice terms say so, and many places cap or regulate late fees and interest. State the rate and due date on the invoice up front and check your local rules or a professional before charging.']],
   },
+  {
+    slug: 'vat-gst-sales-tax-invoice-calculator', name: 'VAT, GST and sales tax invoice calculator',
+    title: 'VAT / GST / Sales Tax Calculator for Invoices (Add or Remove Tax) | Free',
+    description: 'Free invoice tax calculator. Add VAT, GST or sales tax to a price, or remove it from a tax-inclusive total, and see the net, tax and gross amounts.',
+    h1: 'VAT, GST and Sales Tax Invoice Calculator', intro: 'Add tax to a net price, or work backwards from a tax-inclusive total to find the net amount and the tax. Works for VAT, GST, HST or sales tax at any rate. Check which rate applies to you with your tax authority.',
+    fields: [['net', 'Net amount (before tax)', 1000, '1'], ['rate', 'Tax rate %', 20, '0.1'], ['gross', 'Tax-inclusive total (to remove tax from)', 1200, '1']],
+    compute: `var r=v.rate/100,tax=v.net*r,g=v.net+tax,n2=v.gross/(1+r),t2=v.gross-n2;
+return [['Tax on the net amount',m(tax)],['Invoice total including tax',m(g),1],['Net amount inside the tax-inclusive total',m(n2),1],['Tax inside the tax-inclusive total',m(t2)]];`,
+    cta: ['Keep every invoice and its tax in one place', 'The Freelancer Invoice & Bookkeeping Kit spreadsheet has an invoice log with overdue alerts, expenses and mileage, a monthly profit dashboard and a tax set-aside. Excel + Google Sheets.', 'Get it ($12)', 'https://ziroflux4.gumroad.com/l/freelancer-kit'],
+    faq: [['How do I add VAT, GST or sales tax to an invoice?', 'Multiply the net amount by the tax rate to get the tax, then add it to the net amount. For example, 20% on 1,000 is 200, so the invoice total is 1,200.'],
+      ['How do I remove tax from a total that already includes it?', 'Divide the tax-inclusive total by 1 plus the rate. For example, 1,200 divided by 1.20 is 1,000 net, so 200 of it is tax. Do not just subtract 20% of 1,200, which would give the wrong answer. Whether you must charge tax at all depends on your location and registration, so check with your tax authority.']],
+  },
 ];
 
 function buildCalcs() {

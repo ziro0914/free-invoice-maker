@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VAT / GST / Sales Tax Calculator for Invoices (Add or Remove Tax) | Free</title>
+<meta name="description" content="Free invoice tax calculator. Add VAT, GST or sales tax to a price, or remove it from a tax-inclusive total, and see the net, tax and gross amounts.">
+<link rel="canonical" href="https://sendinvoicefree.com/tools/vat-gst-sales-tax-invoice-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VAT / GST / Sales Tax Calculator for Invoices (Add or Remove Tax) | Free">
+<meta property="og:description" content="Free invoice tax calculator. Add VAT, GST or sales tax to a price, or remove it from a tax-inclusive total, and see the net, tax and gross amounts.">
+<meta property="og:url" content="https://sendinvoicefree.com/tools/vat-gst-sales-tax-invoice-calculator/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css?v=2026-10-22">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I add VAT, GST or sales tax to an invoice?","acceptedAnswer":{"@type":"Answer","text":"Multiply the net amount by the tax rate to get the tax, then add it to the net amount. For example, 20% on 1,000 is 200, so the invoice total is 1,200."}},{"@type":"Question","name":"How do I remove tax from a total that already includes it?","acceptedAnswer":{"@type":"Answer","text":"Divide the tax-inclusive total by 1 plus the rate. For example, 1,200 divided by 1.20 is 1,000 net, so 200 of it is tax. Do not just subtract 20% of 1,200, which would give the wrong answer. Whether you must charge tax at all depends on your location and registration, so check with your tax authority."}}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/invoice-templates/">Templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a></nav>
+</div></header>
+<main><section class="wrap hero"><h1>VAT, GST and Sales Tax Invoice Calculator</h1><p>Add tax to a net price, or work backwards from a tax-inclusive total to find the net amount and the tax. Works for VAT, GST, HST or sales tax at any rate. Check which rate applies to you with your tax authority. Free, no sign-up.</p></section>
+<section class="wrap tool" style="margin:18px auto 40px">
+<form class="card" id="calc" onsubmit="return false"><fieldset><legend>Your numbers</legend><div class="grid2"><label>Net amount (before tax)<input data-k="net" type="number" inputmode="decimal" min="0" step="1" value="1000"></label><label>Tax rate %<input data-k="rate" type="number" inputmode="decimal" min="0" step="0.1" value="20"></label><label>Tax-inclusive total (to remove tax from)<input data-k="gross" type="number" inputmode="decimal" min="0" step="1" value="1200"></label></div></fieldset></form>
+<div class="card" id="out" aria-live="polite"></div>
+</section>
+<article class="wrap content">
+<aside class="partner product"><strong>Keep every invoice and its tax in one place</strong> The Freelancer Invoice &amp; Bookkeeping Kit spreadsheet has an invoice log with overdue alerts, expenses and mileage, a monthly profit dashboard and a tax set-aside. Excel + Google Sheets. <a href="https://ziroflux4.gumroad.com/l/freelancer-kit" rel="noopener" target="_blank">Get it ($12) →</a></aside>
+<h2>How do I add VAT, GST or sales tax to an invoice?</h2><p>Multiply the net amount by the tax rate to get the tax, then add it to the net amount. For example, 20% on 1,000 is 200, so the invoice total is 1,200.</p><h2>How do I remove tax from a total that already includes it?</h2><p>Divide the tax-inclusive total by 1 plus the rate. For example, 1,200 divided by 1.20 is 1,000 net, so 200 of it is tax. Do not just subtract 20% of 1,200, which would give the wrong answer. Whether you must charge tax at all depends on your location and registration, so check with your tax authority.</p>
+<p class="small">Estimates only. Not tax, legal or financial advice. <a href="/tools/">More free tools</a></p>
+</article>
+<script>
+(function(){
+function m(x){return (x<0?'-':'')+'$'+Math.abs(x).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function calc(v){var r=v.rate/100,tax=v.net*r,g=v.net+tax,n2=v.gross/(1+r),t2=v.gross-n2;
+return [['Tax on the net amount',m(tax)],['Invoice total including tax',m(g),1],['Net amount inside the tax-inclusive total',m(n2),1],['Tax inside the tax-inclusive total',m(t2)]];}
+function run(){var v={};document.querySelectorAll('#calc [data-k]').forEach(function(e){v[e.dataset.k]=parseFloat(e.value)||0});
+ document.getElementById('out').innerHTML='<h2 style="margin-top:0">Result</h2><table style="width:100%">'+calc(v).map(function(r){
+  return '<tr><td>'+(r[2]?'<b>'+r[0]+'</b>':r[0])+'</td><td style="text-align:right'+(r[2]?';font-size:1.3em':'')+'">'+(r[2]?'<b>'+r[1]+'</b>':r[1])+'</td></tr>'}).join('')+'</table>';}
+document.getElementById('calc').addEventListener('input',run);run();
+})();
+</script></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/">Invoice generator</a><a href="/invoice-templates/">Invoice templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a><a href="/tools/etsy-fee-calculator/">Etsy fee calculator</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+
+</body>
+</html>
