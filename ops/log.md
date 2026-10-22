@@ -121,3 +121,4 @@
 - Shipped: calculator https://sendinvoicefree.com/tools/vat-gst-sales-tax-invoice-calculator/ (cta -> freelancer-kit $12, existing wording). Hand check: net 1000 @20% -> tax 200, total 1200; reverse 1200/1.2 = 1000 net, 200 tax. Build+check pass (56 pages).
 - Metrics: none.
 - Next: deposits/retainers guide, estimate/quote mode, UK late-payment interest calc (needs verified figures).
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com; local session to submit /tools/vat-gst-sales-tax-invoice-calculator/, /tools/, /, /sitemap.xml.
