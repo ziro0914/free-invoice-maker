@@ -129,3 +129,4 @@
 - Shipped: guide https://sendinvoicefree.com/guides/deposit-invoice-for-freelancers/ (~900 words). Example checked: 3000 x 30% = 900; 3000 - 900 = 2100. Build+check pass (57 pages).
 - Metrics: none.
 - Next: calculator (UK late-payment interest or milestone), estimate/quote mode.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com; local session to submit /guides/deposit-invoice-for-freelancers/, /guides/, /, /sitemap.xml.
