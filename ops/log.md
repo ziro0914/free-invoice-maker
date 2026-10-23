@@ -122,3 +122,10 @@
 - Metrics: none.
 - Next: deposits/retainers guide, estimate/quote mode, UK late-payment interest calc (needs verified figures).
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com; local session to submit /tools/vat-gst-sales-tax-invoice-calculator/, /tools/, /, /sitemap.xml.
+
+## 2026-10-23 (daily run, cloud)
+- Owner info: issue #1 only has the 10-13 comment; OWNER_TODO no new info; config.json unchanged.
+- Research (deposits/retainers): common advice 25-50% upfront (higher for small jobs, milestones for large); deposit usually credited on final invoice; refundability wording/jurisdiction varies, sources are mostly vendor blogs/forums -> hedged. Sources: https://www.moneycrashers.com/freelance-security-deposit-upfront-payment/ , https://weareindy.com/blog/how-to-ask-for-a-deposit-or-an-upfront-payment , https://invoicebloom.io/glossary/retainer , https://www.jim.com/blog/how-to-take-deposits-from-clients
+- Shipped: guide https://sendinvoicefree.com/guides/deposit-invoice-for-freelancers/ (~900 words). Example checked: 3000 x 30% = 900; 3000 - 900 = 2100. Build+check pass (57 pages).
+- Metrics: none.
+- Next: calculator (UK late-payment interest or milestone), estimate/quote mode.
