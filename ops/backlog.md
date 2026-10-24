@@ -19,3 +19,4 @@
 - (2026-10-21) Done: guide net-30-vs-net-15. Ideas: deposits guide; calculator next (sales tax/VAT or UK late-payment interest).
 - (2026-10-22) Done: VAT/GST/sales tax invoice calculator. Ideas: guide 'VAT vs sales tax on invoices' linking it; deposits guide.
 - (2026-10-23) Done: guide deposit-invoice-for-freelancers. Ideas: UK late-payment interest calc (verified figures), estimate/quote mode, milestone-billing guide, calculator next ~Oct 25.
+- (2026-10-24) Done: professions drone-pilot, voice-actor (nanny, wedding-photographer already existed). Remaining: app developer, data analyst, illustrator, tattoo artist, hair stylist, carpenter, HVAC, roofer, pool cleaner.

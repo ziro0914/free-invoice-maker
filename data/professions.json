@@ -1753,5 +1753,125 @@
       }
     ],
     "payment_terms": "Payment due weekly, by end of the last working day. Cancellations with under 24 hours' notice may be charged at 50%."
+  },
+  {
+    "slug": "drone-pilot",
+    "name": "Drone Pilot",
+    "plural": "Drone Pilots",
+    "keyword": "drone pilot invoice template",
+    "title": "Free Drone Pilot Invoice Template | Free Invoice Maker",
+    "description": "Drone pilot invoice template for flight time, editing, licensing and travel. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "Aerial work mixes capture, post-production and image rights, so a clear invoice avoids disputes. List the flight work, the editing and any licence for the footage as separate lines so the client can see what each one covers.",
+      "The sample shows a half-day shoot, edited photos, a short video, a usage licence and mileage. Describe the licence in plain words: who may use the files, where and for how long. Also keep your registration, airspace authorisation and insurance details on file, as the rules differ by country. Check local aviation rules."
+    ],
+    "items": [
+      {
+        "desc": "Aerial shoot, half day (flat fee)",
+        "qty": 1,
+        "rate": 450
+      },
+      {
+        "desc": "Photo editing and retouching (per image)",
+        "qty": 20,
+        "rate": 12
+      },
+      {
+        "desc": "Edited video, up to 2 minutes (flat fee)",
+        "qty": 1,
+        "rate": 300
+      },
+      {
+        "desc": "Usage licence: web and print, 12 months (flat fee)",
+        "qty": 1,
+        "rate": 150
+      },
+      {
+        "desc": "Travel (per mile)",
+        "qty": 60,
+        "rate": 0.67
+      }
+    ],
+    "tips": [
+      "Separate capture, editing and licence into their own lines.",
+      "State licence scope: who, where and how long.",
+      "List add-ons such as rush delivery or mapping outputs separately.",
+      "Show travel and any permit costs as their own lines and keep receipts."
+    ],
+    "faq": [
+      {
+        "q": "Should I charge for the usage licence separately?",
+        "a": "Many pilots do, because the value to the client depends on how the images are used. Whatever you choose, put it in your contract and on the invoice."
+      },
+      {
+        "q": "Do I need to put my registration on the invoice?",
+        "a": "Not always, but some clients ask for proof of registration and insurance. Requirements vary by country, so check your aviation authority."
+      },
+      {
+        "q": "How do I handle weather delays?",
+        "a": "Agree a reschedule policy before the shoot and write it in your terms."
+      }
+    ],
+    "payment_terms": "Payment due within 14 days of delivery. A 50% deposit secures the shoot date. Weather reschedules are free; client cancellations with under 48 hours' notice may be charged at 50%."
+  },
+  {
+    "slug": "voice-actor",
+    "name": "Voice Actor",
+    "plural": "Voice Actors",
+    "keyword": "voice actor invoice template",
+    "title": "Free Voice Actor Invoice Template | Free Invoice Maker",
+    "description": "Voice actor invoice template for session fees, usage, pickups and revisions. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "Voice work is usually priced in two parts: the session or recording fee and the usage fee for how the recording will be used. Showing them as separate lines makes your terms easy for a client to check.",
+      "The sample covers a recording session, extra finished minutes, a pickup, a limited-term usage fee and a rush surcharge. Note the media, territory and term next to the usage line, and mention renewal terms if they apply. Check your contract for what is covered."
+    ],
+    "items": [
+      {
+        "desc": "Recording session, up to 1 hour (flat fee)",
+        "qty": 1,
+        "rate": 250
+      },
+      {
+        "desc": "Additional finished minutes (per minute)",
+        "qty": 3,
+        "rate": 40
+      },
+      {
+        "desc": "Pickups and corrections (flat fee)",
+        "qty": 1,
+        "rate": 60
+      },
+      {
+        "desc": "Usage: web and social, 12 months (flat fee)",
+        "qty": 1,
+        "rate": 300
+      },
+      {
+        "desc": "Rush delivery within 24 hours (flat fee)",
+        "qty": 1,
+        "rate": 75
+      }
+    ],
+    "tips": [
+      "Keep session fee and usage fee on separate lines.",
+      "Write media, territory and term next to the usage line.",
+      "State how many revision rounds are included and price extra ones.",
+      "Quote any renewal or buyout terms in your contract and reference them on the invoice."
+    ],
+    "faq": [
+      {
+        "q": "What is the difference between usage and a buyout?",
+        "a": "A usage fee covers specific media for a set term, while a buyout is usually a one-time payment for broader rights. Define the one you mean in your contract."
+      },
+      {
+        "q": "Can I charge for pickups?",
+        "a": "Yes, if agreed in advance. List them as their own line, or say how many are included."
+      },
+      {
+        "q": "When should I invoice?",
+        "a": "Commonly on delivery of the final files, or with a deposit up front for longer projects."
+      }
+    ],
+    "payment_terms": "Payment due within 30 days of delivery. Usage rights apply once the invoice is paid in full. Extra revisions are billed at the listed rate."
   }
 ]

@@ -130,3 +130,11 @@
 - Metrics: none.
 - Next: calculator (UK late-payment interest or milestone), estimate/quote mode.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com; local session to submit /guides/deposit-invoice-for-freelancers/, /guides/, /, /sitemap.xml.
+
+## 2026-10-24 (daily run, cloud)
+- Owner info: OWNER_TODO has no new info; config.json unchanged.
+- Research (profession demand): vendors cover drone and voice-actor invoices with separate capture/editing/licence lines (https://invoicequick.com/invoice-templates/drone-invoice-template , https://paperform.co/templates/drone-pilot-invoice-template/) and session vs usage vs buyout lines (https://invoicequickly.com/blog/how-to-invoice-voice-actor , https://voiceactor.com/articles/ai-voiceover-work). Nanny/wedding-photographer already existed (backlog was stale). Usage-fee percentage claims unverified -> not used.
+- Shipped: professions https://sendinvoicefree.com/invoice-template/drone-pilot/ and https://sendinvoicefree.com/invoice-template/voice-actor/. Build+check pass (59 pages).
+- Metrics: none.
+- Next: calculator next run (UK late-payment interest needs verified figures, or milestone/hourly-to-project), estimate/quote mode.
+- IndexNow: see below.
