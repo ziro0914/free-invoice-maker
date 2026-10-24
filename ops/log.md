@@ -137,4 +137,4 @@
 - Shipped: professions https://sendinvoicefree.com/invoice-template/drone-pilot/ and https://sendinvoicefree.com/invoice-template/voice-actor/. Build+check pass (59 pages).
 - Metrics: none.
 - Next: calculator next run (UK late-payment interest needs verified figures, or milestone/hourly-to-project), estimate/quote mode.
-- IndexNow: see below.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com; local session to submit /invoice-template/drone-pilot/, /invoice-template/voice-actor/, /, /sitemap.xml.
