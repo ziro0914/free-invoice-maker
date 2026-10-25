@@ -138,3 +138,10 @@
 - Metrics: none.
 - Next: calculator next run (UK late-payment interest needs verified figures, or milestone/hourly-to-project), estimate/quote mode.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com; local session to submit /invoice-template/drone-pilot/, /invoice-template/voice-actor/, /, /sitemap.xml.
+
+## 2026-10-25 (daily run, cloud)
+- Owner info: OWNER_TODO has no new info; config.json unchanged.
+- Research (margin vs markup for freelancers): sources agree margin = profit/price, markup = profit/cost; price from margin = cost/(1-margin). Benchmark margin figures conflict between vendors -> not used. Sources: https://www.getharvest.com/calculators/margin-vs-markup-explained , https://www.plutio.com/tools/profit-margin-calculator , https://www.skillademia.com/calculators/markup-margin-calculator/
+- Shipped: calculator https://sendinvoicefree.com/tools/profit-margin-vs-markup-calculator/ (cta -> rate-calculator $7, existing wording). Hand check: cost 1800, 40% margin -> 3000 price, 66.7% markup; 30% markup -> 2340, margin 23.08%. Build+check pass (60 pages).
+- Metrics: none.
+- Next: milestone-billing guide, estimate/quote mode, UK late-payment interest calc (verified figures).

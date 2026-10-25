@@ -404,6 +404,18 @@ return [['Tax on the net amount',m(tax)],['Invoice total including tax',m(g),1],
     faq: [['How do I add VAT, GST or sales tax to an invoice?', 'Multiply the net amount by the tax rate to get the tax, then add it to the net amount. For example, 20% on 1,000 is 200, so the invoice total is 1,200.'],
       ['How do I remove tax from a total that already includes it?', 'Divide the tax-inclusive total by 1 plus the rate. For example, 1,200 divided by 1.20 is 1,000 net, so 200 of it is tax. Do not just subtract 20% of 1,200, which would give the wrong answer. Whether you must charge tax at all depends on your location and registration, so check with your tax authority.']],
   },
+  {
+    slug: 'profit-margin-vs-markup-calculator', name: 'Profit margin vs markup calculator',
+    title: 'Profit Margin vs Markup Calculator: Price From Cost | Free',
+    description: 'Free margin vs markup calculator. Enter your cost and a target margin or markup to get the selling price, profit and the equivalent figure on the other basis.',
+    h1: 'Profit Margin vs Markup Calculator', intro: 'Margin is profit as a share of the price; markup is profit as a share of your cost. Enter your cost and either figure to see the price, the profit and the other number.',
+    fields: [['cost', 'Your cost (materials, subcontractors, your time)', 1800, '1'], ['margin', 'Target profit margin %', 40, '0.1'], ['markup', 'Or a markup % you were planning to use', 30, '0.1']],
+    compute: `var mg=Math.min(v.margin,99.9)/100,p=v.cost/(1-mg),mu=v.cost?(p/v.cost-1)*100:0,p2=v.cost*(1+v.markup/100),mg2=p2?(p2-v.cost)/p2*100:0;
+return [['Price for a '+v.margin+'% margin',m(p),1],['Profit at that price',m(p-v.cost)],['Same price as a markup on cost',mu.toFixed(1)+'%'],['Price with a '+v.markup+'% markup',m(p2),1],['Profit at that price',m(p2-v.cost)],['Actual margin of that markup',mg2.toFixed(1)+'%',1]];`,
+    cta: ['Price jobs with your real numbers', 'The Freelance Rate & Pricing Calculator spreadsheet adds a project quote builder, side-by-side scenarios and a raise-your-rates simulator. Excel + Google Sheets.', 'Get it ($7)', 'https://ziroflux4.gumroad.com/l/rate-calculator'],
+    faq: [['What is the difference between margin and markup?', 'Markup is profit divided by cost; margin is profit divided by the selling price. The same sale gives a bigger markup than margin. For example, a $1,800 cost sold at $3,000 is a 40% margin but a 66.7% markup.'],
+      ['How do I price a job for a target margin?', 'Divide your cost by 1 minus the margin, for example $1,800 / (1 - 0.40) = $3,000. Multiplying the cost by 1.40 would give $2,520, which is only a 28.6% margin. Remember to include your own time in the cost.']],
+  },
 ];
 
 function buildCalcs() {

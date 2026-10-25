@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profit Margin vs Markup Calculator: Price From Cost | Free</title>
+<meta name="description" content="Free margin vs markup calculator. Enter your cost and a target margin or markup to get the selling price, profit and the equivalent figure on the other basis.">
+<link rel="canonical" href="https://sendinvoicefree.com/tools/profit-margin-vs-markup-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Profit Margin vs Markup Calculator: Price From Cost | Free">
+<meta property="og:description" content="Free margin vs markup calculator. Enter your cost and a target margin or markup to get the selling price, profit and the equivalent figure on the other basis.">
+<meta property="og:url" content="https://sendinvoicefree.com/tools/profit-margin-vs-markup-calculator/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css?v=2026-10-25">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between margin and markup?","acceptedAnswer":{"@type":"Answer","text":"Markup is profit divided by cost; margin is profit divided by the selling price. The same sale gives a bigger markup than margin. For example, a $1,800 cost sold at $3,000 is a 40% margin but a 66.7% markup."}},{"@type":"Question","name":"How do I price a job for a target margin?","acceptedAnswer":{"@type":"Answer","text":"Divide your cost by 1 minus the margin, for example $1,800 / (1 - 0.40) = $3,000. Multiplying the cost by 1.40 would give $2,520, which is only a 28.6% margin. Remember to include your own time in the cost."}}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/invoice-templates/">Templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a></nav>
+</div></header>
+<main><section class="wrap hero"><h1>Profit Margin vs Markup Calculator</h1><p>Margin is profit as a share of the price; markup is profit as a share of your cost. Enter your cost and either figure to see the price, the profit and the other number. Free, no sign-up.</p></section>
+<section class="wrap tool" style="margin:18px auto 40px">
+<form class="card" id="calc" onsubmit="return false"><fieldset><legend>Your numbers</legend><div class="grid2"><label>Your cost (materials, subcontractors, your time)<input data-k="cost" type="number" inputmode="decimal" min="0" step="1" value="1800"></label><label>Target profit margin %<input data-k="margin" type="number" inputmode="decimal" min="0" step="0.1" value="40"></label><label>Or a markup % you were planning to use<input data-k="markup" type="number" inputmode="decimal" min="0" step="0.1" value="30"></label></div></fieldset></form>
+<div class="card" id="out" aria-live="polite"></div>
+</section>
+<article class="wrap content">
+<aside class="partner product"><strong>Price jobs with your real numbers</strong> The Freelance Rate &amp; Pricing Calculator spreadsheet adds a project quote builder, side-by-side scenarios and a raise-your-rates simulator. Excel + Google Sheets. <a href="https://ziroflux4.gumroad.com/l/rate-calculator" rel="noopener" target="_blank">Get it ($7) →</a></aside>
+<h2>What is the difference between margin and markup?</h2><p>Markup is profit divided by cost; margin is profit divided by the selling price. The same sale gives a bigger markup than margin. For example, a $1,800 cost sold at $3,000 is a 40% margin but a 66.7% markup.</p><h2>How do I price a job for a target margin?</h2><p>Divide your cost by 1 minus the margin, for example $1,800 / (1 - 0.40) = $3,000. Multiplying the cost by 1.40 would give $2,520, which is only a 28.6% margin. Remember to include your own time in the cost.</p>
+<p class="small">Estimates only. Not tax, legal or financial advice. <a href="/tools/">More free tools</a></p>
+</article>
+<script>
+(function(){
+function m(x){return (x<0?'-':'')+'$'+Math.abs(x).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function calc(v){var mg=Math.min(v.margin,99.9)/100,p=v.cost/(1-mg),mu=v.cost?(p/v.cost-1)*100:0,p2=v.cost*(1+v.markup/100),mg2=p2?(p2-v.cost)/p2*100:0;
+return [['Price for a '+v.margin+'% margin',m(p),1],['Profit at that price',m(p-v.cost)],['Same price as a markup on cost',mu.toFixed(1)+'%'],['Price with a '+v.markup+'% markup',m(p2),1],['Profit at that price',m(p2-v.cost)],['Actual margin of that markup',mg2.toFixed(1)+'%',1]];}
+function run(){var v={};document.querySelectorAll('#calc [data-k]').forEach(function(e){v[e.dataset.k]=parseFloat(e.value)||0});
+ document.getElementById('out').innerHTML='<h2 style="margin-top:0">Result</h2><table style="width:100%">'+calc(v).map(function(r){
+  return '<tr><td>'+(r[2]?'<b>'+r[0]+'</b>':r[0])+'</td><td style="text-align:right'+(r[2]?';font-size:1.3em':'')+'">'+(r[2]?'<b>'+r[1]+'</b>':r[1])+'</td></tr>'}).join('')+'</table>';}
+document.getElementById('calc').addEventListener('input',run);run();
+})();
+</script></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/">Invoice generator</a><a href="/invoice-templates/">Invoice templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a><a href="/tools/etsy-fee-calculator/">Etsy fee calculator</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+
+</body>
+</html>
