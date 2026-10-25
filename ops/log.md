@@ -145,3 +145,4 @@
 - Shipped: calculator https://sendinvoicefree.com/tools/profit-margin-vs-markup-calculator/ (cta -> rate-calculator $7, existing wording). Hand check: cost 1800, 40% margin -> 3000 price, 66.7% markup; 30% markup -> 2340, margin 23.08%. Build+check pass (60 pages).
 - Metrics: none.
 - Next: milestone-billing guide, estimate/quote mode, UK late-payment interest calc (verified figures).
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com; local session to submit /tools/profit-margin-vs-markup-calculator/, /tools/, /, /sitemap.xml.
