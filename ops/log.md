@@ -153,4 +153,4 @@
 - Shipped: guide https://sendinvoicefree.com/guides/milestone-billing-for-freelancers/ (~1060 words; links to /, project price calculator, payment terms, numbering, deposit, late email, late fee guides, web-developer + graphic-designer templates). Example checked: 6000 x (30%+40%+30%) = 1800+2400+1800 = 6000. Build+check pass (61 pages).
 - Metrics: none.
 - Next: margin-vs-markup guide, estimate/quote mode, professions (app developer, data analyst), calculator ~Oct 28.
-- IndexNow: pending (sandbox proxy has denied sendinvoicefree.com before; see below).
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/milestone-billing-for-freelancers/, /guides/, /, /sitemap.xml.
