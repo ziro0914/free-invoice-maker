@@ -146,3 +146,11 @@
 - Metrics: none.
 - Next: milestone-billing guide, estimate/quote mode, UK late-payment interest calc (verified figures).
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com; local session to submit /tools/profit-margin-vs-markup-calculator/, /tools/, /, /sitemap.xml.
+
+## 2026-10-26 (daily run, cloud)
+- Owner info: gh auth fails in sandbox (issue #1 unchecked); OWNER_TODO has no new info; config.json unchanged.
+- Research (milestone billing): sources agree on 2-4 deliverable-based payment points, example 30/40/30 split, 50/50 for short jobs, milestones for work beyond ~4-6 weeks; risks = vague milestones and slow client approvals. Examples are practitioner advice, not stats. Sources: https://stripe.com/ie/resources/more/how-to-invoice-as-a-freelancer , https://ruul.io/blog/milestone-payments-freelancers , https://www.selfemployed.com/what-is-a-milestone-payment/
+- Shipped: guide https://sendinvoicefree.com/guides/milestone-billing-for-freelancers/ (~1060 words; links to /, project price calculator, payment terms, numbering, deposit, late email, late fee guides, web-developer + graphic-designer templates). Example checked: 6000 x (30%+40%+30%) = 1800+2400+1800 = 6000. Build+check pass (61 pages).
+- Metrics: none.
+- Next: margin-vs-markup guide, estimate/quote mode, professions (app developer, data analyst), calculator ~Oct 28.
+- IndexNow: pending (sandbox proxy has denied sendinvoicefree.com before; see below).

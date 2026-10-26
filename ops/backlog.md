@@ -21,3 +21,4 @@
 - (2026-10-23) Done: guide deposit-invoice-for-freelancers. Ideas: UK late-payment interest calc (verified figures), estimate/quote mode, milestone-billing guide, calculator next ~Oct 25.
 - (2026-10-24) Done: professions drone-pilot, voice-actor (nanny, wedding-photographer already existed). Remaining: app developer, data analyst, illustrator, tattoo artist, hair stylist, carpenter, HVAC, roofer, pool cleaner.
 - (2026-10-25) Done: margin vs markup calculator. Ideas: guide 'margin vs markup for freelancers' linking it.
+- (2026-10-26) Done: milestone billing guide. Ideas: margin vs markup guide linking calculator; estimate/quote mode.
