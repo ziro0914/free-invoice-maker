@@ -154,3 +154,11 @@
 - Metrics: none.
 - Next: margin-vs-markup guide, estimate/quote mode, professions (app developer, data analyst), calculator ~Oct 28.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/milestone-billing-for-freelancers/, /guides/, /, /sitemap.xml.
+
+## 2026-10-27 (daily run, cloud)
+- Owner info: gh auth fails in sandbox; OWNER_TODO has no new info; config.json unchanged.
+- Research (margin vs markup for service pricing): sources agree margin = profit/price, markup = profit/cost, price = cost/(1-margin); 30% markup yields ~23% margin; include own time and overhead in cost; no reliable freelance margin benchmark found -> none used. Sources: https://yourincomecalculator.com/gb/blog/profit-margin-vs-markup-why-small-business-pricing-goes-wrong , https://www.plutio.com/tools/profit-margin-calculator , https://invoicefly.com/?p=79179
+- Shipped: guide https://sendinvoicefree.com/guides/margin-vs-markup-for-freelancers/ (~970 words; links to /, margin calculator, hourly rate, project price, tax calculator, tax-save, payment terms, deposit guides, web-developer + graphic-designer templates). Examples checked: 1800/(1-0.3)=2571.43; 1800*1.3=2340, profit 540 = 23.08%; 1200/0.65=1846.15, profit 646.15 = 35%. Build+check pass (62 pages).
+- Metrics: none.
+- Next: calculator ~Oct 28 (milestone/hourly-to-project or UK late-payment interest with verified figures), estimate/quote mode, professions (app developer, data analyst).
+- IndexNow: pending post-push attempt (see below).
