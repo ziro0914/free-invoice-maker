@@ -169,4 +169,4 @@
 - Shipped: calculator https://sendinvoicefree.com/tools/freelance-retainer-fee-calculator/ (cta -> rate-calculator $7, existing wording). Hand check: 100 x 20 = 2000; 10% off = 1800; effective 90/h; 5 extra h = 500; month total 2300; year 21600. Build+check pass (63 pages).
 - Metrics: none.
 - Next: retainer guide, estimate/quote mode, professions (app developer, data analyst).
-- IndexNow: pending (see below).
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /tools/freelance-retainer-fee-calculator/, /tools/, /, /sitemap.xml.
