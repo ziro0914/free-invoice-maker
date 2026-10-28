@@ -162,3 +162,11 @@
 - Metrics: none.
 - Next: calculator ~Oct 28 (milestone/hourly-to-project or UK late-payment interest with verified figures), estimate/quote mode, professions (app developer, data analyst).
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/margin-vs-markup-for-freelancers/, /guides/, /, /sitemap.xml.
+
+## 2026-10-28 (daily run, cloud)
+- Owner info: OWNER_TODO has no new info; config.json unchanged.
+- Research (retainer pricing): sources agree on rate x reserved hours, with a modest commitment discount (~5-15% convention) or, in one source, an availability premium; overage at full rate; define rollover; use realistic utilization. Conventions, not market data. Sources: https://freelancekit.it.com/tools/retainer-calculator , https://weareindy.com/blog/monthly-retainer-contracts-why-and-how-to-use-them , https://www.hostinger.com/au/tutorials/monthly-retainers/ , https://dev.to/datanestdigital/pricing-rate-calculator-2o73
+- Shipped: calculator https://sendinvoicefree.com/tools/freelance-retainer-fee-calculator/ (cta -> rate-calculator $7, existing wording). Hand check: 100 x 20 = 2000; 10% off = 1800; effective 90/h; 5 extra h = 500; month total 2300; year 21600. Build+check pass (63 pages).
+- Metrics: none.
+- Next: retainer guide, estimate/quote mode, professions (app developer, data analyst).
+- IndexNow: pending (see below).

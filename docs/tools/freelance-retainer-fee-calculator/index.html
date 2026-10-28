@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Freelance Retainer Fee Calculator: Monthly Price | Free</title>
+<meta name="description" content="Free retainer fee calculator. Turn your hourly rate and reserved hours into a monthly retainer, with a commitment discount and overage hours billed at full rate.">
+<link rel="canonical" href="https://sendinvoicefree.com/tools/freelance-retainer-fee-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Freelance Retainer Fee Calculator: Monthly Price | Free">
+<meta property="og:description" content="Free retainer fee calculator. Turn your hourly rate and reserved hours into a monthly retainer, with a commitment discount and overage hours billed at full rate.">
+<meta property="og:url" content="https://sendinvoicefree.com/tools/freelance-retainer-fee-calculator/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css?v=2026-10-28">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate a monthly retainer?","acceptedAnswer":{"@type":"Answer","text":"Multiply your standard hourly rate by the hours the client reserves each month, then decide whether to give a small commitment discount. For example, 20 hours at $100 is $2,000; with a 10% discount the retainer is $1,800, an effective $90 per hour."}},{"@type":"Question","name":"Should a retainer be cheaper than my hourly rate?","acceptedAnswer":{"@type":"Answer","text":"Practices differ. Some freelancers give a modest discount, often described as roughly 5-15%, in return for guaranteed income, while others charge a premium for reserving their availability. Bill hours beyond the commitment at your full rate and state in writing whether unused hours roll over."}}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/invoice-templates/">Templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a></nav>
+</div></header>
+<main><section class="wrap hero"><h1>Freelance Retainer Fee Calculator</h1><p>Price a monthly retainer from your standard hourly rate, the hours the client reserves and an optional commitment discount, then see the effective hourly rate and what extra hours add. Free, no sign-up.</p></section>
+<section class="wrap tool" style="margin:18px auto 40px">
+<form class="card" id="calc" onsubmit="return false"><fieldset><legend>Your numbers</legend><div class="grid2"><label>Your standard hourly rate<input data-k="rate" type="number" inputmode="decimal" min="0" step="1" value="100"></label><label>Hours reserved per month<input data-k="hours" type="number" inputmode="decimal" min="0" step="1" value="20"></label><label>Commitment discount %<input data-k="disc" type="number" inputmode="decimal" min="0" step="1" value="10"></label><label>Extra hours beyond the retainer this month<input data-k="extra" type="number" inputmode="decimal" min="0" step="1" value="5"></label></div></fieldset></form>
+<div class="card" id="out" aria-live="polite"></div>
+</section>
+<article class="wrap content">
+<aside class="partner product"><strong>Price retainers and projects with real numbers</strong> The Freelance Rate &amp; Pricing Calculator spreadsheet adds a project quote builder, side-by-side scenarios and a raise-your-rates simulator. Excel + Google Sheets. <a href="https://ziroflux4.gumroad.com/l/rate-calculator" rel="noopener" target="_blank">Get it ($7) →</a></aside>
+<h2>How do I calculate a monthly retainer?</h2><p>Multiply your standard hourly rate by the hours the client reserves each month, then decide whether to give a small commitment discount. For example, 20 hours at $100 is $2,000; with a 10% discount the retainer is $1,800, an effective $90 per hour.</p><h2>Should a retainer be cheaper than my hourly rate?</h2><p>Practices differ. Some freelancers give a modest discount, often described as roughly 5-15%, in return for guaranteed income, while others charge a premium for reserving their availability. Bill hours beyond the commitment at your full rate and state in writing whether unused hours roll over.</p>
+<p class="small">Estimates only. Not tax, legal or financial advice. <a href="/tools/">More free tools</a></p>
+</article>
+<script>
+(function(){
+function m(x){return (x<0?'-':'')+'$'+Math.abs(x).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function calc(v){var full=v.rate*v.hours,fee=full*(1-v.disc/100),eff=v.hours?fee/v.hours:0,over=v.extra*v.rate;
+return [['Hours x standard rate',m(full)],['Monthly retainer fee',m(fee),1],['Effective hourly rate',m(eff)],['Extra hours at full rate',m(over)],['Invoice total this month',m(fee+over),1],['Retainer value per year',m(fee*12)]];}
+function run(){var v={};document.querySelectorAll('#calc [data-k]').forEach(function(e){v[e.dataset.k]=parseFloat(e.value)||0});
+ document.getElementById('out').innerHTML='<h2 style="margin-top:0">Result</h2><table style="width:100%">'+calc(v).map(function(r){
+  return '<tr><td>'+(r[2]?'<b>'+r[0]+'</b>':r[0])+'</td><td style="text-align:right'+(r[2]?';font-size:1.3em':'')+'">'+(r[2]?'<b>'+r[1]+'</b>':r[1])+'</td></tr>'}).join('')+'</table>';}
+document.getElementById('calc').addEventListener('input',run);run();
+})();
+</script></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/">Invoice generator</a><a href="/invoice-templates/">Invoice templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a><a href="/tools/etsy-fee-calculator/">Etsy fee calculator</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+
+</body>
+</html>

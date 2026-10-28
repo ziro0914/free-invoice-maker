@@ -416,6 +416,18 @@ return [['Price for a '+v.margin+'% margin',m(p),1],['Profit at that price',m(p-
     faq: [['What is the difference between margin and markup?', 'Markup is profit divided by cost; margin is profit divided by the selling price. The same sale gives a bigger markup than margin. For example, a $1,800 cost sold at $3,000 is a 40% margin but a 66.7% markup.'],
       ['How do I price a job for a target margin?', 'Divide your cost by 1 minus the margin, for example $1,800 / (1 - 0.40) = $3,000. Multiplying the cost by 1.40 would give $2,520, which is only a 28.6% margin. Remember to include your own time in the cost.']],
   },
+  {
+    slug: 'freelance-retainer-fee-calculator', name: 'Freelance retainer fee calculator',
+    title: 'Freelance Retainer Fee Calculator: Monthly Price | Free',
+    description: 'Free retainer fee calculator. Turn your hourly rate and reserved hours into a monthly retainer, with a commitment discount and overage hours billed at full rate.',
+    h1: 'Freelance Retainer Fee Calculator', intro: 'Price a monthly retainer from your standard hourly rate, the hours the client reserves and an optional commitment discount, then see the effective hourly rate and what extra hours add.',
+    fields: [['rate', 'Your standard hourly rate', 100, '1'], ['hours', 'Hours reserved per month', 20, '1'], ['disc', 'Commitment discount %', 10, '1'], ['extra', 'Extra hours beyond the retainer this month', 5, '1']],
+    compute: `var full=v.rate*v.hours,fee=full*(1-v.disc/100),eff=v.hours?fee/v.hours:0,over=v.extra*v.rate;
+return [['Hours x standard rate',m(full)],['Monthly retainer fee',m(fee),1],['Effective hourly rate',m(eff)],['Extra hours at full rate',m(over)],['Invoice total this month',m(fee+over),1],['Retainer value per year',m(fee*12)]];`,
+    cta: ['Price retainers and projects with real numbers', 'The Freelance Rate & Pricing Calculator spreadsheet adds a project quote builder, side-by-side scenarios and a raise-your-rates simulator. Excel + Google Sheets.', 'Get it ($7)', 'https://ziroflux4.gumroad.com/l/rate-calculator'],
+    faq: [['How do I calculate a monthly retainer?', 'Multiply your standard hourly rate by the hours the client reserves each month, then decide whether to give a small commitment discount. For example, 20 hours at $100 is $2,000; with a 10% discount the retainer is $1,800, an effective $90 per hour.'],
+      ['Should a retainer be cheaper than my hourly rate?', 'Practices differ. Some freelancers give a modest discount, often described as roughly 5-15%, in return for guaranteed income, while others charge a premium for reserving their availability. Bill hours beyond the commitment at your full rate and state in writing whether unused hours roll over.']],
+  },
 ];
 
 function buildCalcs() {
