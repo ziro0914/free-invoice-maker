@@ -177,3 +177,4 @@
 - Shipped: guide https://sendinvoicefree.com/guides/how-to-price-a-freelance-retainer/ (~880 words; links to /, retainer + hourly calculators, payment terms, late fees, numbering, deposit, milestone guides, consultant + VA templates). Example checked: 20x100=2000; 10% off=1800; 3 extra h x100=300; invoice 2100. Build+check pass (64 pages).
 - Metrics: none.
 - Next: estimate/quote mode, professions (app developer, data analyst), calculator ~Oct 31.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/how-to-price-a-freelance-retainer/, /guides/, /, /sitemap.xml.
