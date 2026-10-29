@@ -170,3 +170,10 @@
 - Metrics: none.
 - Next: retainer guide, estimate/quote mode, professions (app developer, data analyst).
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /tools/freelance-retainer-fee-calculator/, /tools/, /, /sitemap.xml.
+
+## 2026-10-29 (daily run, cloud)
+- Owner info: OWNER_TODO has no new info; config.json unchanged (gh not used; issue #1 not re-read).
+- Research (retainer agreements): sources describe rollover options (none/capped/expiry), 30-day notice as common, invoicing in advance, overage at full or slightly higher rate, 5-15% discount convention; practitioner advice, not stats. Sources: https://invoicebloom.io/blog/retainer-invoice-guide-freelancers , https://www.selfemployed.com/what-is-a-retainer-agreement-guide-for-freelancers/ , https://sprintlaw.com.au/articles/retainer-agreement-template-a-practical-guide/ , https://www.creativebloq.com/professional-development/creative-careers/how-to-stop-scope-creep-as-a-freelancer
+- Shipped: guide https://sendinvoicefree.com/guides/how-to-price-a-freelance-retainer/ (~880 words; links to /, retainer + hourly calculators, payment terms, late fees, numbering, deposit, milestone guides, consultant + VA templates). Example checked: 20x100=2000; 10% off=1800; 3 extra h x100=300; invoice 2100. Build+check pass (64 pages).
+- Metrics: none.
+- Next: estimate/quote mode, professions (app developer, data analyst), calculator ~Oct 31.

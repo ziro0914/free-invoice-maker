@@ -24,3 +24,4 @@
 - (2026-10-26) Done: milestone billing guide. Ideas: margin vs markup guide linking calculator; estimate/quote mode.
 - (2026-10-27) Done: margin vs markup guide. Ideas: calculator next (retainer/monthly pricing or UK late-payment interest), professions app developer + data analyst.
 - (2026-10-28) Done: retainer fee calculator. Ideas: guide 'how to price a retainer' linking it; professions app developer + data analyst.
+- (2026-10-29) Done: retainer pricing guide. Ideas: estimate/quote mode; professions app developer + data analyst; calculator ~Oct 31 (UK late-payment interest w/ verified figures, or hourly-to-project).
