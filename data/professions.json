@@ -1873,5 +1873,120 @@
       }
     ],
     "payment_terms": "Payment due within 30 days of delivery. Usage rights apply once the invoice is paid in full. Extra revisions are billed at the listed rate."
+  },
+  {
+    "slug": "app-developer",
+    "name": "App Developer",
+    "plural": "App Developers",
+    "keyword": "app developer invoice template",
+    "title": "Free App Developer Invoice Template | Free Invoice Maker",
+    "description": "App developer invoice template for milestones, change requests, hosting pass-throughs and maintenance. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "App projects are often billed in stages, with ongoing maintenance afterwards. Tying each line to a clear deliverable or acceptance point makes the invoice easy for a client to approve.",
+      "The sample shows two milestones, a separately listed change request, a pass-through store fee and a monthly maintenance block. Rates and splits are examples only. Match them to your contract and check local rules for tax."
+    ],
+    "items": [
+      {
+        "desc": "Milestone 1: design approved and prototype delivered (flat fee)",
+        "qty": 1,
+        "rate": 2500
+      },
+      {
+        "desc": "Milestone 2: core features complete on test build (flat fee)",
+        "qty": 1,
+        "rate": 3500
+      },
+      {
+        "desc": "Change request #1: add push notifications (hours)",
+        "qty": 8,
+        "rate": 95
+      },
+      {
+        "desc": "App store developer account fee, passed through at cost",
+        "qty": 1,
+        "rate": 99
+      },
+      {
+        "desc": "Maintenance plan, monthly (hours)",
+        "qty": 5,
+        "rate": 95
+      }
+    ],
+    "tips": [
+      "Tie each milestone to an acceptance event, not a date.",
+      "List change requests on their own lines so they can be approved separately.",
+      "Show third-party costs as pass-through lines, if your contract allows it.",
+      "Put maintenance hours and rate on a separate line from build work."
+    ],
+    "faq": [
+      {
+        "q": "Should I bill an app project hourly or by milestone?",
+        "a": "Milestones suit defined builds, while hourly suits open-ended support and maintenance. Many developers combine both. Agree the model in your contract."
+      },
+      {
+        "q": "How do I invoice extra features?",
+        "a": "List them as a separate change request with hours and rate, ideally approved in writing before work starts."
+      },
+      {
+        "q": "Who pays for app store fees and hosting?",
+        "a": "It depends on your agreement. If you pay them upfront, list them as pass-through lines, and state any markup in the contract."
+      }
+    ],
+    "payment_terms": "Payment due within 14 days of milestone acceptance. Change requests are billed at the listed hourly rate. Source code and assets transfer once the invoice is paid in full."
+  },
+  {
+    "slug": "data-analyst",
+    "name": "Data Analyst",
+    "plural": "Data Analysts",
+    "keyword": "data analyst invoice template",
+    "title": "Free Data Analyst Invoice Template | Free Invoice Maker",
+    "description": "Data analyst invoice template for data cleaning, dashboards, reporting and training. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "Analytics work is easiest to approve when each line names the task, such as data cleaning, a dashboard build or a reporting run, rather than just listing hours.",
+      "The sample covers data cleaning, a dashboard build, a monthly KPI report and a training session. Add your tools, such as SQL, Python or R, in the descriptions if they help. Rates are examples. Check local rules on whether your services are taxable."
+    ],
+    "items": [
+      {
+        "desc": "Data cleaning and preparation (hours)",
+        "qty": 10,
+        "rate": 70
+      },
+      {
+        "desc": "Dashboard build and handover (flat fee)",
+        "qty": 1,
+        "rate": 1200
+      },
+      {
+        "desc": "Monthly KPI report, analysis and commentary (flat fee)",
+        "qty": 1,
+        "rate": 400
+      },
+      {
+        "desc": "Stakeholder walkthrough and training (hours)",
+        "qty": 2,
+        "rate": 80
+      }
+    ],
+    "tips": [
+      "Name the task and tool on each line, for example 'SQL queries for churn report'.",
+      "Reference the agreement or statement of work on the invoice.",
+      "State how many revision rounds a fixed fee includes.",
+      "Put the service period on the invoice for retainer-style reporting."
+    ],
+    "faq": [
+      {
+        "q": "Hourly or fixed fee for analysis work?",
+        "a": "Hourly suits exploratory work with uncertain effort. Fixed fees suit defined deliverables with clear scope and revision limits."
+      },
+      {
+        "q": "Do I charge sales tax on data analysis?",
+        "a": "It depends on your location and the client's. Rules vary by state, country and service type, so check local rules or ask an accountant."
+      },
+      {
+        "q": "What should I attach to the invoice?",
+        "a": "Often a short summary of work done or the deliverable links, so the client can match the invoice to approved work."
+      }
+    ],
+    "payment_terms": "Payment due within 30 days of invoice date. Additional revisions beyond the agreed scope are billed at the listed hourly rate."
   }
 ]

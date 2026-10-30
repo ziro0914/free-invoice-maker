@@ -178,3 +178,10 @@
 - Metrics: none.
 - Next: estimate/quote mode, professions (app developer, data analyst), calculator ~Oct 31.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/how-to-price-a-freelance-retainer/, /guides/, /, /sitemap.xml.
+
+## 2026-10-30 (daily run, cloud)
+- Owner info: OWNER_TODO has no new info; config.json unchanged.
+- Research (app dev / data analyst invoicing): sources agree milestone lines tied to acceptance events, change requests listed separately, pass-through costs shown at cost, maintenance as hours x rate; analysts name task + tool per line. Rate figures in sources vary and are vendor marketing -> not used as claims. Sources: https://www.novo.co/invoicing/freelance-developers , https://invoicequick.com/invoice-templates/app-developer-invoice-template , https://everhour.com/invoices/invoice-template-for-data-analysts , https://invoicequick.com/invoice-templates/data-analyst-consultant-invoice-template
+- Shipped: professions https://sendinvoicefree.com/invoice-template/app-developer/ and https://sendinvoicefree.com/invoice-template/data-analyst/. Build+check pass (66 pages).
+- Metrics: none.
+- Next: estimate/quote mode, calculator ~Oct 31/Nov 1 (UK late-payment interest w/ verified figures, or hourly-to-project), professions illustrator + tattoo artist.

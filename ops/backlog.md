@@ -25,3 +25,4 @@
 - (2026-10-27) Done: margin vs markup guide. Ideas: calculator next (retainer/monthly pricing or UK late-payment interest), professions app developer + data analyst.
 - (2026-10-28) Done: retainer fee calculator. Ideas: guide 'how to price a retainer' linking it; professions app developer + data analyst.
 - (2026-10-29) Done: retainer pricing guide. Ideas: estimate/quote mode; professions app developer + data analyst; calculator ~Oct 31 (UK late-payment interest w/ verified figures, or hourly-to-project).
+- (2026-10-30) Done: professions app-developer, data-analyst. Remaining: illustrator, tattoo artist, hair stylist, carpenter, HVAC, roofer, pool cleaner.
