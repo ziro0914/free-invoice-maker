@@ -185,3 +185,4 @@
 - Shipped: professions https://sendinvoicefree.com/invoice-template/app-developer/ and https://sendinvoicefree.com/invoice-template/data-analyst/. Build+check pass (66 pages).
 - Metrics: none.
 - Next: estimate/quote mode, calculator ~Oct 31/Nov 1 (UK late-payment interest w/ verified figures, or hourly-to-project), professions illustrator + tattoo artist.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /invoice-template/app-developer/, /invoice-template/data-analyst/, /, /sitemap.xml.
