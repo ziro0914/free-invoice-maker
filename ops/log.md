@@ -193,4 +193,4 @@
 - Shipped: calculator https://sendinvoicefree.com/tools/freelance-day-rate-calculator/ (cta -> rate-calculator $7, existing wording). Hand check: (60000+6000)/0.75 = 88000; 46x5x0.7 = 161 days; 88000/161 = 546.58/day; /8 = 68.32/h; /12 = 7333.33/mo. Build+check pass (67 pages).
 - Metrics: none.
 - Next: day-rate guide, estimate/quote mode, professions illustrator + tattoo artist, UK late-payment interest calc (verified figures).
-- IndexNow: pending (see below).
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /tools/freelance-day-rate-calculator/, /tools/, /, /sitemap.xml.
