@@ -186,3 +186,11 @@
 - Metrics: none.
 - Next: estimate/quote mode, calculator ~Oct 31/Nov 1 (UK late-payment interest w/ verified figures, or hourly-to-project), professions illustrator + tattoo artist.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /invoice-template/app-developer/, /invoice-template/data-analyst/, /, /sitemap.xml.
+
+## 2026-10-31 (daily run, cloud)
+- Owner info: OWNER_TODO has no new info; config.json unchanged.
+- Research (day rate): sources agree day rate = (target income + expenses) / billable days; billable-day assumptions vary widely (~187 to ~220 of ~260 weekdays); some add tax before dividing. Unverified figures not used as claims. Sources: https://www.xero.com/uk/guides/pricing-freelance-services/ , https://www.9am.works/freelancer-academy/blog/freelance-day-rate-187-days-formula-benchmark , https://freelancekit.it.com/tools/day-rate-calculator , https://www.calckit.co.uk/tools/freelancer-rate-calculator
+- Shipped: calculator https://sendinvoicefree.com/tools/freelance-day-rate-calculator/ (cta -> rate-calculator $7, existing wording). Hand check: (60000+6000)/0.75 = 88000; 46x5x0.7 = 161 days; 88000/161 = 546.58/day; /8 = 68.32/h; /12 = 7333.33/mo. Build+check pass (67 pages).
+- Metrics: none.
+- Next: day-rate guide, estimate/quote mode, professions illustrator + tattoo artist, UK late-payment interest calc (verified figures).
+- IndexNow: pending (see below).

@@ -428,6 +428,18 @@ return [['Hours x standard rate',m(full)],['Monthly retainer fee',m(fee),1],['Ef
     faq: [['How do I calculate a monthly retainer?', 'Multiply your standard hourly rate by the hours the client reserves each month, then decide whether to give a small commitment discount. For example, 20 hours at $100 is $2,000; with a 10% discount the retainer is $1,800, an effective $90 per hour.'],
       ['Should a retainer be cheaper than my hourly rate?', 'Practices differ. Some freelancers give a modest discount, often described as roughly 5-15%, in return for guaranteed income, while others charge a premium for reserving their availability. Bill hours beyond the commitment at your full rate and state in writing whether unused hours roll over.']],
   },
+  {
+    slug: 'freelance-day-rate-calculator', name: 'Freelance day rate calculator',
+    title: 'Freelance Day Rate Calculator: From Income Goal | Free',
+    description: 'Free day rate calculator for freelancers and contractors. Turn a take-home income goal, expenses, tax set-aside, time off and billable share into a daily and hourly rate.',
+    h1: 'Freelance Day Rate Calculator', intro: 'Work out the day rate you need from your yearly take-home goal, business expenses, a tax set-aside, weeks off and the share of working days you can really bill.',
+    fields: [['goal', 'Yearly take-home income goal', 60000, '1'], ['exp', 'Yearly business expenses', 6000, '1'], ['tax', 'Tax set-aside % of revenue', 25, '1'], ['off', 'Weeks off per year (holidays, sick, public holidays)', 6, '1'], ['dpw', 'Working days per week', 5, '1'], ['bill', 'Share of working days you bill %', 70, '1'], ['hpd', 'Hours in a billable day', 8, '1']],
+    compute: `var rev=(v.goal+v.exp)/(1-Math.min(v.tax,90)/100),days=Math.max(52-v.off,0)*v.dpw*v.bill/100,dr=days?rev/days:0;
+return [['Revenue you need to invoice per year',m(rev)],['Billable days per year',days.toFixed(0)],['Day rate',m(dr),1],['Equivalent hourly rate',m(v.hpd?dr/v.hpd:0),1],['Revenue per month (average)',m(rev/12)]];`,
+    cta: ['Turn your day rate into project quotes', 'The Freelance Rate & Pricing Calculator spreadsheet adds a project quote builder, side-by-side scenarios and a raise-your-rates simulator. Excel + Google Sheets.', 'Get it ($7)', 'https://ziroflux4.gumroad.com/l/rate-calculator'],
+    faq: [['How do I calculate a freelance day rate?', 'Add your take-home goal and business expenses, gross it up for tax, then divide by the days you can realistically bill. For example, 60,000 + 6,000 = 66,000; at a 25% set-aside that is 88,000 of revenue. With 46 working weeks x 5 days x 70% billable = 161 days, the day rate is about 546.58.'],
+      ['Why not just divide by every working day?', 'Not every working day is billable: admin, sales, learning and gaps between clients take time. Using a billable share such as 60-80% (your own figure may differ) stops you underpricing. The tax set-aside here is only a placeholder, so confirm your real rate with a tax professional.']],
+  },
 ];
 
 function buildCalcs() {

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Freelance Day Rate Calculator: From Income Goal | Free</title>
+<meta name="description" content="Free day rate calculator for freelancers and contractors. Turn a take-home income goal, expenses, tax set-aside, time off and billable share into a daily and hourly rate.">
+<link rel="canonical" href="https://sendinvoicefree.com/tools/freelance-day-rate-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Freelance Day Rate Calculator: From Income Goal | Free">
+<meta property="og:description" content="Free day rate calculator for freelancers and contractors. Turn a take-home income goal, expenses, tax set-aside, time off and billable share into a daily and hourly rate.">
+<meta property="og:url" content="https://sendinvoicefree.com/tools/freelance-day-rate-calculator/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css?v=2026-10-31">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate a freelance day rate?","acceptedAnswer":{"@type":"Answer","text":"Add your take-home goal and business expenses, gross it up for tax, then divide by the days you can realistically bill. For example, 60,000 + 6,000 = 66,000; at a 25% set-aside that is 88,000 of revenue. With 46 working weeks x 5 days x 70% billable = 161 days, the day rate is about 546.58."}},{"@type":"Question","name":"Why not just divide by every working day?","acceptedAnswer":{"@type":"Answer","text":"Not every working day is billable: admin, sales, learning and gaps between clients take time. Using a billable share such as 60-80% (your own figure may differ) stops you underpricing. The tax set-aside here is only a placeholder, so confirm your real rate with a tax professional."}}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/invoice-templates/">Templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a></nav>
+</div></header>
+<main><section class="wrap hero"><h1>Freelance Day Rate Calculator</h1><p>Work out the day rate you need from your yearly take-home goal, business expenses, a tax set-aside, weeks off and the share of working days you can really bill. Free, no sign-up.</p></section>
+<section class="wrap tool" style="margin:18px auto 40px">
+<form class="card" id="calc" onsubmit="return false"><fieldset><legend>Your numbers</legend><div class="grid2"><label>Yearly take-home income goal<input data-k="goal" type="number" inputmode="decimal" min="0" step="1" value="60000"></label><label>Yearly business expenses<input data-k="exp" type="number" inputmode="decimal" min="0" step="1" value="6000"></label><label>Tax set-aside % of revenue<input data-k="tax" type="number" inputmode="decimal" min="0" step="1" value="25"></label><label>Weeks off per year (holidays, sick, public holidays)<input data-k="off" type="number" inputmode="decimal" min="0" step="1" value="6"></label><label>Working days per week<input data-k="dpw" type="number" inputmode="decimal" min="0" step="1" value="5"></label><label>Share of working days you bill %<input data-k="bill" type="number" inputmode="decimal" min="0" step="1" value="70"></label><label>Hours in a billable day<input data-k="hpd" type="number" inputmode="decimal" min="0" step="1" value="8"></label></div></fieldset></form>
+<div class="card" id="out" aria-live="polite"></div>
+</section>
+<article class="wrap content">
+<aside class="partner product"><strong>Turn your day rate into project quotes</strong> The Freelance Rate &amp; Pricing Calculator spreadsheet adds a project quote builder, side-by-side scenarios and a raise-your-rates simulator. Excel + Google Sheets. <a href="https://ziroflux4.gumroad.com/l/rate-calculator" rel="noopener" target="_blank">Get it ($7) →</a></aside>
+<h2>How do I calculate a freelance day rate?</h2><p>Add your take-home goal and business expenses, gross it up for tax, then divide by the days you can realistically bill. For example, 60,000 + 6,000 = 66,000; at a 25% set-aside that is 88,000 of revenue. With 46 working weeks x 5 days x 70% billable = 161 days, the day rate is about 546.58.</p><h2>Why not just divide by every working day?</h2><p>Not every working day is billable: admin, sales, learning and gaps between clients take time. Using a billable share such as 60-80% (your own figure may differ) stops you underpricing. The tax set-aside here is only a placeholder, so confirm your real rate with a tax professional.</p>
+<p class="small">Estimates only. Not tax, legal or financial advice. <a href="/tools/">More free tools</a></p>
+</article>
+<script>
+(function(){
+function m(x){return (x<0?'-':'')+'$'+Math.abs(x).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function calc(v){var rev=(v.goal+v.exp)/(1-Math.min(v.tax,90)/100),days=Math.max(52-v.off,0)*v.dpw*v.bill/100,dr=days?rev/days:0;
+return [['Revenue you need to invoice per year',m(rev)],['Billable days per year',days.toFixed(0)],['Day rate',m(dr),1],['Equivalent hourly rate',m(v.hpd?dr/v.hpd:0),1],['Revenue per month (average)',m(rev/12)]];}
+function run(){var v={};document.querySelectorAll('#calc [data-k]').forEach(function(e){v[e.dataset.k]=parseFloat(e.value)||0});
+ document.getElementById('out').innerHTML='<h2 style="margin-top:0">Result</h2><table style="width:100%">'+calc(v).map(function(r){
+  return '<tr><td>'+(r[2]?'<b>'+r[0]+'</b>':r[0])+'</td><td style="text-align:right'+(r[2]?';font-size:1.3em':'')+'">'+(r[2]?'<b>'+r[1]+'</b>':r[1])+'</td></tr>'}).join('')+'</table>';}
+document.getElementById('calc').addEventListener('input',run);run();
+})();
+</script></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/">Invoice generator</a><a href="/invoice-templates/">Invoice templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a><a href="/tools/etsy-fee-calculator/">Etsy fee calculator</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+
+</body>
+</html>
