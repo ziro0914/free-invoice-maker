@@ -27,3 +27,4 @@
 - (2026-10-29) Done: retainer pricing guide. Ideas: estimate/quote mode; professions app developer + data analyst; calculator ~Oct 31 (UK late-payment interest w/ verified figures, or hourly-to-project).
 - (2026-10-30) Done: professions app-developer, data-analyst. Remaining: illustrator, tattoo artist, hair stylist, carpenter, HVAC, roofer, pool cleaner.
 - (2026-10-31) Done: day rate calculator. Ideas: guide 'how many billable days per year'; professions illustrator + tattoo artist; estimate/quote mode.
+- (2026-11-01) Done: professions illustrator, tattoo-artist. Remaining: hair stylist, carpenter, HVAC, roofer, pool cleaner. Ideas: billable-days guide; estimate/quote mode.

@@ -194,3 +194,11 @@
 - Metrics: none.
 - Next: day-rate guide, estimate/quote mode, professions illustrator + tattoo artist, UK late-payment interest calc (verified figures).
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /tools/freelance-day-rate-calculator/, /tools/, /, /sitemap.xml.
+
+## 2026-11-01 (daily run, cloud)
+- Owner info: OWNER_TODO has no new info; config.json unchanged.
+- Research (illustrator / tattoo invoicing): illustrator sources recommend separate lines for sketches, final art, revisions and usage license, with a usage summary (medium, exclusivity, duration, territory); revision caps of 2-3 rounds are a convention. Tattoo sources show design fee, deposit credited as a negative line, and a $0 touch-up line; touch-up windows vary by studio (e.g. 60 days vs 3 months). Vendor template pages, not stats. Sources: https://invoicer.ai/invoice-templates-for-illustrators , https://hellobonsai.com/invoice-template/adobe-illustrator , https://www.novo.co/invoicing/tattoo-studios , https://invoicequickly.com/blog/how-to-invoice-tattoo-artist
+- Shipped: professions https://sendinvoicefree.com/invoice-template/illustrator/ and https://sendinvoicefree.com/invoice-template/tattoo-artist/. Sample math checked: illustrator 150+600+120+200=1070; tattoo 100+750-100+0=750. Build+check pass (69 pages).
+- Metrics: none.
+- Next: day-rate/billable-days guide, estimate/quote mode, professions hair stylist + carpenter, calculator ~Nov 3.
+- IndexNow: pending (see below).

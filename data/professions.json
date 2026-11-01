@@ -1988,5 +1988,115 @@
       }
     ],
     "payment_terms": "Payment due within 30 days of invoice date. Additional revisions beyond the agreed scope are billed at the listed hourly rate."
+  },
+  {
+    "slug": "illustrator",
+    "name": "Illustrator",
+    "plural": "Illustrators",
+    "keyword": "illustrator invoice template",
+    "title": "Free Illustrator Invoice Template | Free Invoice Maker",
+    "description": "Illustrator invoice template with separate lines for concept sketches, final art, revisions and licensing. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "Illustration invoices work best when the artwork and the rights to use it are billed on separate lines. That keeps the client's idea of 'final files' and your license terms from getting mixed up.",
+      "The sample covers concept sketches, a finished illustration, an extra revision round and a usage license. Add the medium, duration and territory to the license line. Rates are examples. Check local rules on taxes and on how copyright and licensing apply to your work."
+    ],
+    "items": [
+      {
+        "desc": "Concept sketches (3 options)",
+        "qty": 1,
+        "rate": 150
+      },
+      {
+        "desc": "Final illustration, colour, delivered as PNG and PDF (flat fee)",
+        "qty": 1,
+        "rate": 600
+      },
+      {
+        "desc": "Additional revision round beyond agreed scope (hours)",
+        "qty": 2,
+        "rate": 60
+      },
+      {
+        "desc": "Usage license: web and social, non-exclusive, 2 years (flat fee)",
+        "qty": 1,
+        "rate": 200
+      }
+    ],
+    "tips": [
+      "Put a short usage summary on the license line: medium, exclusivity, duration and territory.",
+      "State how many revision rounds the fee includes, and bill extra rounds on their own line.",
+      "Invoice a deposit up front and the balance on delivery; say when rights transfer, for example on final payment.",
+      "List file formats and the delivery date so 'final files' is clear."
+    ],
+    "faq": [
+      {
+        "q": "Should I bill the license separately from the artwork?",
+        "a": "Many illustrators do, because it makes the scope of use visible and gives a clear line to adjust if the client wants wider use later. Keep it consistent with your written agreement."
+      },
+      {
+        "q": "How many revisions should a fixed fee include?",
+        "a": "Two or three rounds is a common convention, but it is your choice. Whatever you pick, write it in the agreement and on the invoice."
+      },
+      {
+        "q": "Do I charge tax on illustration work?",
+        "a": "It depends on your location and the client's, and on whether the sale is a service or a license. Rules vary, so check local rules or ask an accountant."
+      }
+    ],
+    "payment_terms": "Payment due within 30 days of invoice date. Usage rights apply once the invoice is paid in full. Revisions beyond the agreed rounds are billed at the listed hourly rate."
+  },
+  {
+    "slug": "tattoo-artist",
+    "name": "Tattoo Artist",
+    "plural": "Tattoo Artists",
+    "keyword": "tattoo artist invoice template",
+    "title": "Free Tattoo Artist Invoice Template | Free Invoice Maker",
+    "description": "Tattoo artist invoice template with design fee, booking deposit credit, session rate and touch-up note. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "A tattoo invoice is clearer when the design fee, the booking deposit and the session time each get their own line, with the deposit shown as a credit against the final bill.",
+      "The sample covers a design fee, a two-session piece, a deposit credit shown as a negative amount, and a zero-cost touch-up line. Adjust to your own studio policy. Rates are examples. Check local rules on taxes, licensing and health requirements for your area."
+    ],
+    "items": [
+      {
+        "desc": "Custom design and consultation (flat fee)",
+        "qty": 1,
+        "rate": 100
+      },
+      {
+        "desc": "Tattoo session (hours)",
+        "qty": 5,
+        "rate": 150
+      },
+      {
+        "desc": "Booking deposit applied (paid earlier)",
+        "qty": 1,
+        "rate": -100
+      },
+      {
+        "desc": "Touch-up within 60 days of healing (per studio policy)",
+        "qty": 1,
+        "rate": 0
+      }
+    ],
+    "tips": [
+      "Show the deposit as a negative line so the client sees it credited against the total.",
+      "Write your touch-up window and conditions in the studio policy and refer to it on the invoice.",
+      "Itemize design time separately from tattooing time.",
+      "Add aftercare items as their own line if you charge for them."
+    ],
+    "faq": [
+      {
+        "q": "How should I show a booking deposit on the invoice?",
+        "a": "List it as a credit (negative amount) labelled 'Booking deposit applied'. Keep your refund and rescheduling policy in writing and shared before booking."
+      },
+      {
+        "q": "Should free touch-ups appear on the invoice?",
+        "a": "A zero-cost line can remind clients of the policy. Specify the time window and conditions in your written studio policy."
+      },
+      {
+        "q": "Do I charge sales tax on tattoos?",
+        "a": "It depends on your state, province or country, and rules differ. Check local rules or ask an accountant."
+      }
+    ],
+    "payment_terms": "Payment due at the end of the final session. Booking deposits are credited against the total; see studio policy for rescheduling and refunds."
   }
 ]
