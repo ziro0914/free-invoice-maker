@@ -201,4 +201,4 @@
 - Shipped: professions https://sendinvoicefree.com/invoice-template/illustrator/ and https://sendinvoicefree.com/invoice-template/tattoo-artist/. Sample math checked: illustrator 150+600+120+200=1070; tattoo 100+750-100+0=750. Build+check pass (69 pages).
 - Metrics: none.
 - Next: day-rate/billable-days guide, estimate/quote mode, professions hair stylist + carpenter, calculator ~Nov 3.
-- IndexNow: pending (see below).
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /invoice-template/illustrator/, /invoice-template/tattoo-artist/, /, /sitemap.xml.
