@@ -28,3 +28,4 @@
 - (2026-10-30) Done: professions app-developer, data-analyst. Remaining: illustrator, tattoo artist, hair stylist, carpenter, HVAC, roofer, pool cleaner.
 - (2026-10-31) Done: day rate calculator. Ideas: guide 'how many billable days per year'; professions illustrator + tattoo artist; estimate/quote mode.
 - (2026-11-01) Done: professions illustrator, tattoo-artist. Remaining: hair stylist, carpenter, HVAC, roofer, pool cleaner. Ideas: billable-days guide; estimate/quote mode.
+- (2026-11-02) Done: billable-days guide. Remaining professions: hair stylist, carpenter, HVAC, roofer, pool cleaner. Ideas: estimate/quote mode; calculator Nov 3.

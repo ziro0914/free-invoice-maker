@@ -202,3 +202,11 @@
 - Metrics: none.
 - Next: day-rate/billable-days guide, estimate/quote mode, professions hair stylist + carpenter, calculator ~Nov 3.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /invoice-template/illustrator/, /invoice-template/tattoo-artist/, /, /sitemap.xml.
+
+## 2026-11-02 (daily run, cloud)
+- Owner info: OWNER_TODO has no new info; config.json unchanged.
+- Research (billable days): sources start from ~260 weekdays, subtract holidays/public holidays/sick days, then apply utilization (80% "healthy" in one, 50-70% in others); common cited range ~130-180 billable days; utilization drives the result. Conventions, not stats. Sources: https://freelancepaycalculator.com/billable-days/ , https://practicaltools.co/guides/how-to-set-your-freelance-rate , https://growtoria.com/freelance-day-rate-calculator/
+- Shipped: guide https://sendinvoicefree.com/guides/how-many-billable-days-per-year-freelancer/ (~935 words; links to /, day rate, hourly, tax set-aside calcs, payment terms, deposit, milestone, retainer, numbering guides, consultant template). Example checked: 260-40=220; x0.7=154; 88000/154=571.43 (naive 338.46); /8=71.43; 60%->666.67, 80%->500. Build+check pass (70 pages).
+- Metrics: none.
+- Next: calculator ~Nov 3 (UK late-payment interest w/ verified figures, or hourly-to-project), estimate/quote mode, professions hair stylist + carpenter.
+- IndexNow: pending (see below).
