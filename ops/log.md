@@ -209,4 +209,4 @@
 - Shipped: guide https://sendinvoicefree.com/guides/how-many-billable-days-per-year-freelancer/ (~935 words; links to /, day rate, hourly, tax set-aside calcs, payment terms, deposit, milestone, retainer, numbering guides, consultant template). Example checked: 260-40=220; x0.7=154; 88000/154=571.43 (naive 338.46); /8=71.43; 60%->666.67, 80%->500. Build+check pass (70 pages).
 - Metrics: none.
 - Next: calculator ~Nov 3 (UK late-payment interest w/ verified figures, or hourly-to-project), estimate/quote mode, professions hair stylist + carpenter.
-- IndexNow: pending (see below).
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/how-many-billable-days-per-year-freelancer/, /guides/, /, /sitemap.xml.
