@@ -217,3 +217,4 @@
 - Shipped: calculator https://sendinvoicefree.com/tools/scope-creep-cost-calculator/ (cta -> rate-calculator $7, existing wording). Hand check: 3000/30=100; 3000/42=71.43; overrun 12h = 40%; 12x100=1200 unpaid; 42x100=4200. Build+check pass (71 pages).
 - Metrics: none.
 - Next: scope-creep guide, estimate/quote mode, professions hair stylist + carpenter.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /tools/scope-creep-cost-calculator/, /tools/, /, /sitemap.xml.
