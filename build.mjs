@@ -440,6 +440,18 @@ return [['Revenue you need to invoice per year',m(rev)],['Billable days per year
     faq: [['How do I calculate a freelance day rate?', 'Add your take-home goal and business expenses, gross it up for tax, then divide by the days you can realistically bill. For example, 60,000 + 6,000 = 66,000; at a 25% set-aside that is 88,000 of revenue. With 46 working weeks x 5 days x 70% billable = 161 days, the day rate is about 546.58.'],
       ['Why not just divide by every working day?', 'Not every working day is billable: admin, sales, learning and gaps between clients take time. Using a billable share such as 60-80% (your own figure may differ) stops you underpricing. The tax set-aside here is only a placeholder, so confirm your real rate with a tax professional.']],
   },
+  {
+    slug: 'scope-creep-cost-calculator', name: 'Scope creep cost calculator',
+    title: 'Scope Creep Cost Calculator: Your Real Hourly Rate | Free',
+    description: 'Free scope creep cost calculator for fixed-price freelance projects. Enter the price, estimated hours and actual hours to see your real hourly rate and the unpaid work.',
+    h1: 'Scope Creep Cost Calculator', intro: 'On a fixed-price project every extra hour comes out of your pay. Enter the agreed price, the hours you estimated and the hours you actually worked to see your effective hourly rate and the value of the unpaid overrun.',
+    fields: [['price', 'Fixed project price', 3000, '1'], ['est', 'Hours you estimated', 30, '0.5'], ['act', 'Hours you actually worked', 42, '0.5'], ['rate', 'Your target hourly rate', 100, '1']],
+    compute: `var over=Math.max(v.act-v.est,0),pct=v.est?over/v.est*100:0,eff=v.act?v.price/v.act:0,planned=v.est?v.price/v.est:0,unpaid=over*v.rate,need=v.act*v.rate;
+return [['Planned hourly rate (price / estimated hours)',m(planned)],['Effective hourly rate (price / actual hours)',m(eff),1],['Overrun',over.toFixed(1)+' h ('+pct.toFixed(0)+'%)'],['Unpaid overrun at your target rate',m(unpaid),1],['Price that would have matched your target rate',m(need)]];`,
+    cta: ['Price the next project so the hours are covered', 'The Freelance Rate & Pricing Calculator spreadsheet adds a project quote builder, side-by-side scenarios and a raise-your-rates simulator. Excel + Google Sheets.', 'Get it ($7)', 'https://ziroflux4.gumroad.com/l/rate-calculator'],
+    faq: [['How do I calculate the cost of scope creep?', 'Divide the fixed price by the hours you really worked to get your effective rate, and multiply the overrun hours by your target rate for the unpaid value. For example, a 3,000 project estimated at 30 hours but taking 42 pays 71.43 per hour instead of 100, and the 12 extra hours are worth 1,200 at a 100 rate.'],
+      ['How can I stop scope creep on fixed-price work?', 'Common practice is to list deliverables and a limited number of revision rounds in writing, and to quote changes outside that list as separate paid change requests. Some freelancers also add a contingency to the estimate; sources suggest figures from roughly 10% to 30%, but the right amount depends on the project and client.']],
+  },
 ];
 
 function buildCalcs() {

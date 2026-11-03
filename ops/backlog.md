@@ -29,3 +29,4 @@
 - (2026-10-31) Done: day rate calculator. Ideas: guide 'how many billable days per year'; professions illustrator + tattoo artist; estimate/quote mode.
 - (2026-11-01) Done: professions illustrator, tattoo-artist. Remaining: hair stylist, carpenter, HVAC, roofer, pool cleaner. Ideas: billable-days guide; estimate/quote mode.
 - (2026-11-02) Done: billable-days guide. Remaining professions: hair stylist, carpenter, HVAC, roofer, pool cleaner. Ideas: estimate/quote mode; calculator Nov 3.
+- (2026-11-03) Done: scope creep cost calculator. Ideas: scope-creep/change-request guide; estimate/quote mode; professions hair stylist + carpenter.

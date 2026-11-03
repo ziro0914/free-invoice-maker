@@ -210,3 +210,10 @@
 - Metrics: none.
 - Next: calculator ~Nov 3 (UK late-payment interest w/ verified figures, or hourly-to-project), estimate/quote mode, professions hair stylist + carpenter.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/how-many-billable-days-per-year-freelancer/, /guides/, /, /sitemap.xml.
+
+## 2026-11-03 (daily run, cloud)
+- Owner info: issue #1 still open, no new info; OWNER_TODO empty; config.json unchanged.
+- Research (scope creep / project buffers): sources use hours x rate x (1+buffer); buffer suggestions conflict (10-25% Harvest, 15-30% bushe, 20-30% others, 10-20% of hours); buffer doesn't replace written scope; overrun % = extra/estimated hours. Vendor pages, no stats used. Sources: https://getharvest.com/project-management/freelance-project-quote-calculator , https://bushe.co/tools/project-price-calculator/ , https://tool.teamzlab.com/freelance/scope-creep-cost-calculator/ , https://wayfront.com/blog/project-based-pricing
+- Shipped: calculator https://sendinvoicefree.com/tools/scope-creep-cost-calculator/ (cta -> rate-calculator $7, existing wording). Hand check: 3000/30=100; 3000/42=71.43; overrun 12h = 40%; 12x100=1200 unpaid; 42x100=4200. Build+check pass (71 pages).
+- Metrics: none.
+- Next: scope-creep guide, estimate/quote mode, professions hair stylist + carpenter.
