@@ -225,4 +225,4 @@
 - Shipped: professions https://sendinvoicefree.com/invoice-template/hair-stylist/ and https://sendinvoicefree.com/invoice-template/carpenter/. Sample math: hair 65+120+44+20=249; carpenter 24x55=1320+640-500=1460. Build+check pass (73 pages).
 - Metrics: none.
 - Next: scope-creep guide, estimate/quote mode, calculator ~Nov 6, professions HVAC + roofer.
-- IndexNow: pending (see below).
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /invoice-template/hair-stylist/, /invoice-template/carpenter/, /, /sitemap.xml.
