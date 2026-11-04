@@ -2098,5 +2098,110 @@
       }
     ],
     "payment_terms": "Payment due at the end of the final session. Booking deposits are credited against the total; see studio policy for rescheduling and refunds."
+  },
+  {
+    "slug": "hair-stylist",
+    "name": "Hair Stylist",
+    "plural": "Hair Stylists",
+    "keyword": "hair stylist invoice template",
+    "title": "Free Hair Stylist Invoice Template | Free Invoice Maker",
+    "description": "Hair stylist invoice template with service lines, retail products and a separate tip line. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "A hair stylist invoice is easiest to read when each service and each retail product has its own line, and tips sit on a separate line at the bottom.",
+      "The sample covers a cut and style, a color service, two retail products and a tip. Prices are examples. Booth renters and independent stylists should keep rent and commission arrangements out of client-facing invoices. Check local rules on sales tax and tip reporting, since they differ by region."
+    ],
+    "items": [
+      {
+        "desc": "Cut and style",
+        "qty": 1,
+        "rate": 65
+      },
+      {
+        "desc": "Color service (root touch-up)",
+        "qty": 1,
+        "rate": 120
+      },
+      {
+        "desc": "Retail product (shampoo / treatment)",
+        "qty": 2,
+        "rate": 22
+      },
+      {
+        "desc": "Tip",
+        "qty": 1,
+        "rate": 20
+      }
+    ],
+    "tips": [
+      "Use one line per service and one per retail product.",
+      "Keep booth rent and commission splits off the client's invoice; track them in your own records.",
+      "Show tips as their own line so they are easy to log at tax time.",
+      "Retail products may be taxed differently from services in some places, so check local rules."
+    ],
+    "faq": [
+      {
+        "q": "Should tips go on the invoice?",
+        "a": "Many stylists add tips as a separate line below the services so they are easy to track. Check local rules on how tips are reported."
+      },
+      {
+        "q": "Do I charge sales tax on hair services?",
+        "a": "It depends on your state, province or country. Retail products are often treated differently from services. Check local rules or ask an accountant."
+      },
+      {
+        "q": "Can I use this if I rent a booth?",
+        "a": "Yes, for invoicing your own clients. Keep your booth rent separate, and ask an accountant how your arrangement is treated for tax."
+      }
+    ],
+    "payment_terms": "Payment due at the end of the appointment. Cash, card and bank transfer accepted; cancellations per salon policy."
+  },
+  {
+    "slug": "carpenter",
+    "name": "Carpenter",
+    "plural": "Carpenters",
+    "keyword": "carpenter invoice template",
+    "title": "Free Carpenter Invoice Template | Free Invoice Maker",
+    "description": "Carpenter invoice template with labor hours, itemized materials and a deposit credit. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "A carpenter invoice avoids disputes when labor and materials are listed on separate lines and any deposit is shown as a credit against the total.",
+      "The sample has labor hours, a materials line and a deposit applied as a negative amount. Rates and prices are examples. Materials markup is a business choice, so state it in your quote. Check local rules on taxes, licensing and lien or contractor requirements."
+    ],
+    "items": [
+      {
+        "desc": "Carpentry labor (hours): built-in shelving",
+        "qty": 24,
+        "rate": 55
+      },
+      {
+        "desc": "Materials: lumber, hardware, finish (receipts available)",
+        "qty": 1,
+        "rate": 640
+      },
+      {
+        "desc": "Deposit applied (paid earlier)",
+        "qty": 1,
+        "rate": -500
+      }
+    ],
+    "tips": [
+      "List labor and materials on separate lines.",
+      "Itemize major materials when the job is large, and keep receipts.",
+      "Show the deposit as a dated credit so the balance is clear.",
+      "Bill larger jobs at milestones: deposit, mid-project and completion."
+    ],
+    "faq": [
+      {
+        "q": "Should I mark up materials?",
+        "a": "Many carpenters add a markup to cover sourcing and handling; the amount varies. Agree it in the quote beforehand and check local rules."
+      },
+      {
+        "q": "How do I show a deposit?",
+        "a": "List it as a negative line labelled 'Deposit applied' so the client sees it subtracted from the total."
+      },
+      {
+        "q": "Do I need to charge tax on materials and labor?",
+        "a": "It depends on your location and the type of work. Check local rules or ask an accountant."
+      }
+    ],
+    "payment_terms": "Balance due within 14 days of completion. Deposit credited as shown; late fees only if agreed in writing."
   }
 ]

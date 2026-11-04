@@ -218,3 +218,11 @@
 - Metrics: none.
 - Next: scope-creep guide, estimate/quote mode, professions hair stylist + carpenter.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /tools/scope-creep-cost-calculator/, /tools/, /, /sitemap.xml.
+
+## 2026-11-04 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged.
+- Research (hair stylist / carpenter invoicing): hair sources suggest one line per service/retail product, tips on a separate line, booth rent and commission kept off client invoices, sales tax often differs for retail vs services (varies; vendor blogs). Carpenter sources: separate labor and materials, itemize materials, deposit as credit, milestone billing; materials markup quoted at 10-25% (rule of thumb only, not used as a claim). Sources: https://www.novo.co/invoicing/hair-salons , https://invoicemaker.com/blog/invoice-template-for-hair-stylists/ , https://invoicequickly.com/blog/how-to-invoice-hairdresser , https://www.hellobonsai.com/invoice-template/carpenter , https://pro.houzz.com/pro-learn/blog/carpenter-invoice-template-example , https://invoicer.ai/invoice-templates-for-carpenters
+- Shipped: professions https://sendinvoicefree.com/invoice-template/hair-stylist/ and https://sendinvoicefree.com/invoice-template/carpenter/. Sample math: hair 65+120+44+20=249; carpenter 24x55=1320+640-500=1460. Build+check pass (73 pages).
+- Metrics: none.
+- Next: scope-creep guide, estimate/quote mode, calculator ~Nov 6, professions HVAC + roofer.
+- IndexNow: pending (see below).
