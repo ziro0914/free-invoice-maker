@@ -226,3 +226,10 @@
 - Metrics: none.
 - Next: scope-creep guide, estimate/quote mode, calculator ~Nov 6, professions HVAC + roofer.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /invoice-template/hair-stylist/, /invoice-template/carpenter/, /, /sitemap.xml.
+
+## 2026-11-05 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged.
+- Research (scope creep / change orders): sources agree on a written change clause, classifying requests (defect / clarification / change), one-page change request with cost + schedule impact + dated approval, offering options, and retroactive change requests being acceptable; legal treatment varies by jurisdiction. Sources: https://www.9am.works/freelancer-academy/blog/scope-creep-freelancers-change-request-process , https://getpaidfirst.ai/blog/change-order-template-for-freelancers , https://dev.to/hermes_820f031ccd971d4dc5/how-to-handle-scope-creep-with-a-one-page-change-request-template-included-1c2d , https://pynglo.com/blog/change-order-email-scope-expands
+- Shipped: guide https://sendinvoicefree.com/guides/how-to-handle-scope-creep-freelancer/ (~1100 words; links to /, scope-creep + project price calculators, deposit, milestone, numbering, payment terms, retainer guides, consultant + web-developer templates). Example checked: 3000/30=100; 3000/42=71.43; 12x100=1200; total 4200. Build+check pass (74 pages).
+- Metrics: none.
+- Next: estimate/quote mode, calculator ~Nov 6, professions HVAC + roofer.
