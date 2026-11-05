@@ -233,3 +233,4 @@
 - Shipped: guide https://sendinvoicefree.com/guides/how-to-handle-scope-creep-freelancer/ (~1100 words; links to /, scope-creep + project price calculators, deposit, milestone, numbering, payment terms, retainer guides, consultant + web-developer templates). Example checked: 3000/30=100; 3000/42=71.43; 12x100=1200; total 4200. Build+check pass (74 pages).
 - Metrics: none.
 - Next: estimate/quote mode, calculator ~Nov 6, professions HVAC + roofer.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/how-to-handle-scope-creep-freelancer/, /guides/, /, /sitemap.xml.
