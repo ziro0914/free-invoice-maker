@@ -452,6 +452,18 @@ return [['Planned hourly rate (price / estimated hours)',m(planned)],['Effective
     faq: [['How do I calculate the cost of scope creep?', 'Divide the fixed price by the hours you really worked to get your effective rate, and multiply the overrun hours by your target rate for the unpaid value. For example, a 3,000 project estimated at 30 hours but taking 42 pays 71.43 per hour instead of 100, and the 12 extra hours are worth 1,200 at a 100 rate.'],
       ['How can I stop scope creep on fixed-price work?', 'Common practice is to list deliverables and a limited number of revision rounds in writing, and to quote changes outside that list as separate paid change requests. Some freelancers also add a contingency to the estimate; sources suggest figures from roughly 10% to 30%, but the right amount depends on the project and client.']],
   },
+  {
+    slug: 'effective-hourly-rate-calculator', name: 'Effective hourly rate calculator',
+    title: 'Effective Hourly Rate Calculator for Freelancers | Free',
+    description: 'Free effective hourly rate calculator for freelancers. Enter monthly revenue, costs, billable hours and unpaid admin hours to see what you really earn per hour.',
+    h1: 'Effective Hourly Rate Calculator', intro: 'Your invoice rate is not what you earn per hour. Enter a month of revenue, business costs, billable hours and the unpaid hours (admin, sales, revisions) to see your effective hourly rate and how much of your time is billable.',
+    fields: [['rev', 'Revenue invoiced this month', 6000, '50'], ['cost', 'Business costs this month (software, fees, gear)', 600, '10'], ['bh', 'Billable hours worked', 90, '0.5'], ['nh', 'Unpaid hours (admin, sales, revisions, learning)', 40, '0.5']],
+    compute: `var net=v.rev-v.cost,tot=v.bh+v.nh,eff=tot?net/tot:0,bill=v.bh?v.rev/v.bh:0,util=tot?v.bh/tot*100:0;
+return [['Revenue after business costs',m(net)],['Total hours worked',tot.toFixed(1)+' h'],['Effective hourly rate (after costs, all hours)',m(eff),1],['Average rate on billable hours only',m(bill)],['Billable share of your time',util.toFixed(0)+'%']];`,
+    cta: ['Turn your real hours into a better price', 'The Freelance Rate & Pricing Calculator spreadsheet adds a project quote builder, side-by-side scenarios and a raise-your-rates simulator. Excel + Google Sheets.', 'Get it ($7)', 'https://ziroflux4.gumroad.com/l/rate-calculator'],
+    faq: [['How do I calculate my effective hourly rate as a freelancer?', 'Subtract business costs from revenue, then divide by every hour you worked, billable or not. For example, 6,000 revenue minus 600 costs is 5,400; with 90 billable and 40 unpaid hours that is 130 hours, so the effective rate is about 41.54 per hour, even though revenue per billable hour is 66.67.'],
+      ['Should I include tax in the calculation?', 'This calculator stops before income tax so you can compare it with your target rate. Tax rules differ by country and situation, so check local rules or ask a tax professional before treating the result as take-home pay. Time-tracking tools and your own logs give better inputs than guesses.']],
+  },
 ];
 
 function buildCalcs() {

@@ -234,3 +234,10 @@
 - Metrics: none.
 - Next: estimate/quote mode, calculator ~Nov 6, professions HVAC + roofer.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/how-to-handle-scope-creep-freelancer/, /guides/, /, /sitemap.xml.
+
+## 2026-11-06 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh issue list blocked by GraphQL restriction in sandbox).
+- Research (effective hourly rate): sources agree on (revenue - overhead) / (billable + non-billable hours); admin-time assumptions vary and are vendor anecdotes (not used as claims). Sources: https://everhour.com/calculators/how-to-calculate-effective-hourly-rate , https://rize.io/tools/rate-calculator , https://freelancekit.it.com/tools/effective-hourly-rate-calculator , https://dev.to/kuroha/the-hourly-rate-math-most-freelancers-get-wrong-4g8b ; hourly-to-project: https://mentorcruise.com/freelance-rate-calculator/
+- Shipped: calculator https://sendinvoicefree.com/tools/effective-hourly-rate-calculator/ (cta -> rate-calculator $7, existing wording). Hand check: (6000-600)=5400; 90+40=130h; 5400/130=41.54; 6000/90=66.67; 90/130=69%. Build+check pass (75 pages).
+- Metrics: none.
+- Next: effective-rate guide, estimate/quote mode, professions HVAC + roofer.
