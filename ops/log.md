@@ -241,3 +241,4 @@
 - Shipped: calculator https://sendinvoicefree.com/tools/effective-hourly-rate-calculator/ (cta -> rate-calculator $7, existing wording). Hand check: (6000-600)=5400; 90+40=130h; 5400/130=41.54; 6000/90=66.67; 90/130=69%. Build+check pass (75 pages).
 - Metrics: none.
 - Next: effective-rate guide, estimate/quote mode, professions HVAC + roofer.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /tools/effective-hourly-rate-calculator/, /tools/, /, /sitemap.xml. (Pushed as ab24f1d; note: HEAD was detached, pushed via HEAD:main.)
