@@ -2203,5 +2203,115 @@
       }
     ],
     "payment_terms": "Balance due within 14 days of completion. Deposit credited as shown; late fees only if agreed in writing."
+  },
+  {
+    "slug": "hvac-technician",
+    "name": "HVAC Technician",
+    "plural": "HVAC Technicians",
+    "keyword": "hvac invoice template",
+    "title": "Free HVAC Invoice Template | Free Invoice Maker",
+    "description": "HVAC invoice template with a service call fee, labor hours, parts and refrigerant. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "An HVAC invoice is clearest when the service call or diagnostic fee, labor, parts and refrigerant each have their own line, so the customer can see what they paid for.",
+      "The sample shows a diagnostic fee, labor hours, a replacement part and refrigerant billed by the pound. All rates are examples. Disclose any after-hours surcharge before the visit, and check local rules on licensing, taxes and warranty wording."
+    ],
+    "items": [
+      {
+        "desc": "Service call / diagnostic fee",
+        "qty": 1,
+        "rate": 89
+      },
+      {
+        "desc": "Labor (hours): replace capacitor, test system",
+        "qty": 2,
+        "rate": 95
+      },
+      {
+        "desc": "Part: dual run capacitor (model on request)",
+        "qty": 1,
+        "rate": 145
+      },
+      {
+        "desc": "Refrigerant (lbs)",
+        "qty": 2,
+        "rate": 60
+      }
+    ],
+    "tips": [
+      "Put the service call or diagnostic fee on its own line.",
+      "List parts with name, quantity and unit price; add model or serial numbers where useful.",
+      "Bill refrigerant by the pound as a separate line.",
+      "State any emergency or after-hours surcharge before you arrive, and note warranty terms on the invoice."
+    ],
+    "faq": [
+      {
+        "q": "Should I credit the diagnostic fee if the customer approves the repair?",
+        "a": "Some companies do and some don't. Decide your policy, tell the customer in the quote, and show any credit as a negative line."
+      },
+      {
+        "q": "How do I invoice a maintenance contract?",
+        "a": "Bill the agreed visit or monthly fee as one line and describe the covered visits. See the retainer guide for recurring billing ideas."
+      },
+      {
+        "q": "Do I charge tax on parts and labor?",
+        "a": "It depends on your location and the type of work. Check local rules or ask an accountant."
+      }
+    ],
+    "payment_terms": "Due on completion of service, or within 14 days for commercial accounts. Warranty terms as stated; late fees only if agreed in writing."
+  },
+  {
+    "slug": "roofer",
+    "name": "Roofer",
+    "plural": "Roofers",
+    "keyword": "roofing invoice template",
+    "title": "Free Roofing Invoice Template | Free Invoice Maker",
+    "description": "Roofing invoice template with materials, labor, tear-off and disposal, and a deposit credit. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "A roofing invoice avoids disputes when materials, labor, tear-off and disposal are separate lines and any deposit is shown as a credit against the total.",
+      "The sample covers a small re-roof with a deposit taken before materials were ordered. Prices are examples only. Deposit limits, permits and tax treatment vary by state, so check your local licensing rules."
+    ],
+    "items": [
+      {
+        "desc": "Tear-off and disposal of existing shingles",
+        "qty": 1,
+        "rate": 900
+      },
+      {
+        "desc": "Materials: shingles, underlayment, flashing, drip edge",
+        "qty": 1,
+        "rate": 3200
+      },
+      {
+        "desc": "Installation labor (hours)",
+        "qty": 60,
+        "rate": 45
+      },
+      {
+        "desc": "Deposit applied (paid earlier)",
+        "qty": 1,
+        "rate": -2000
+      }
+    ],
+    "tips": [
+      "Separate materials, labor, tear-off and disposal into their own lines.",
+      "List permits and equipment rental as separate charges if they apply.",
+      "Show the deposit as a dated credit so the balance is obvious.",
+      "For large jobs, bill at milestones such as deposit, tear-off complete and final."
+    ],
+    "faq": [
+      {
+        "q": "How big a deposit can I ask for?",
+        "a": "Common practice is a deposit before ordering materials, but some states limit contractor deposits. Check your local licensing board."
+      },
+      {
+        "q": "How do I handle extra work like rotted decking?",
+        "a": "Get a written change order before doing it, then add it as a separate line. See the scope creep guide."
+      },
+      {
+        "q": "Is tax charged on roofing materials and labor?",
+        "a": "It varies by state. Check local rules or ask an accountant."
+      }
+    ],
+    "payment_terms": "Deposit due before materials are ordered; balance due within 10 days of completion. Late fees only if agreed in writing."
   }
 ]

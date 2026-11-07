@@ -242,3 +242,10 @@
 - Metrics: none.
 - Next: effective-rate guide, estimate/quote mode, professions HVAC + roofer.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /tools/effective-hourly-rate-calculator/, /tools/, /, /sitemap.xml. (Pushed as ab24f1d; note: HEAD was detached, pushed via HEAD:main.)
+
+## 2026-11-07 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh not used).
+- Research (HVAC / roofing invoicing): HVAC sources: separate diagnostic/service call fee, labor hours x rate, parts with qty/unit cost, refrigerant by the pound, disclose after-hours surcharge, warranty terms. Roofing sources: separate materials/labor/tear-off/disposal/permits, deposit shown as credit (30-50% quoted as a guideline; some states limit deposits), milestone billing; tax varies by state. Vendor pages, no stats used. Sources: https://www.novo.co/invoicing/hvac-technicians , https://www.fieldpulse.com/resources/blog/hvac-invoice-template , https://www.housecallpro.com/resources/hvac-service-invoice/ , https://www.housecallpro.com/resources/roofing-invoice-template-example/ , https://jobnimbus.com/tools/roofing-invoice-template , https://www.depositfix.com/blog/roofing-invoice-pdf
+- Shipped: professions https://sendinvoicefree.com/invoice-template/hvac-technician/ and https://sendinvoicefree.com/invoice-template/roofer/. Sample math: HVAC 89+190+145+120=544; roofer 900+3200+2700-2000=4800. Build+check pass (77 pages).
+- Metrics: none.
+- Next: effective-rate guide, estimate/quote mode, calculator ~Nov 10, profession pool cleaner.
