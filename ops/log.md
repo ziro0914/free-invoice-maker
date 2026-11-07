@@ -249,3 +249,4 @@
 - Shipped: professions https://sendinvoicefree.com/invoice-template/hvac-technician/ and https://sendinvoicefree.com/invoice-template/roofer/. Sample math: HVAC 89+190+145+120=544; roofer 900+3200+2700-2000=4800. Build+check pass (77 pages).
 - Metrics: none.
 - Next: effective-rate guide, estimate/quote mode, calculator ~Nov 10, profession pool cleaner.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /invoice-template/hvac-technician/, /invoice-template/roofer/, /, /sitemap.xml. (Pushed as 2b4632d via HEAD:main.)
