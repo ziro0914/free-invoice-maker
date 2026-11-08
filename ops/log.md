@@ -250,3 +250,11 @@
 - Metrics: none.
 - Next: effective-rate guide, estimate/quote mode, calculator ~Nov 10, profession pool cleaner.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /invoice-template/hvac-technician/, /invoice-template/roofer/, /, /sitemap.xml. (Pushed as 2b4632d via HEAD:main.)
+
+## 2026-11-08 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh issue list blocked by GraphQL restriction).
+- Research (billing vs effective rate): sources define effective rate as revenue / all hours (billable + non-billable); one example $200/h with 40% admin = $120/h; "60-70% billable" and "35-45% lower after taxes" are rules of thumb only (not used as claims). Sources: https://rize.io/blog/freelance-time-tracking , https://rize.io/tools/rate-calculator , https://dev.to/taskford/billable-vs-non-billable-hours-what-every-freelancer-should-know-4e9b , https://www.dayflow.so/blog/how-to-calculate-your-real-hourly-rate/ , https://solohourly.com/guides/how-many-billable-hours-per-week-is-realistic
+- Shipped: guide https://sendinvoicefree.com/guides/effective-hourly-rate-vs-billing-rate/ (~940 words; links to /, effective-rate, hourly, project price, scope-creep, tax calculators + payment terms, deposit, retainer, billable-days, scope-creep guides). Example checked: 24x75=1800; /40=45; 24/40=60%; 50/0.6=83.33; 50/0.5=100; 50/0.7=71.43. Build+check pass (78 pages).
+- Metrics: none.
+- Next: estimate/quote mode, calculator ~Nov 10, profession pool cleaner + pressure washing.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/effective-hourly-rate-vs-billing-rate/, /guides/, /, /sitemap.xml.
