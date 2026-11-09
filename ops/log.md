@@ -265,3 +265,4 @@
 - Shipped: calculator https://sendinvoicefree.com/tools/salary-to-freelance-rate-calculator/ (cta -> rate-calculator $7, existing wording). Hand check: 70000x1.2765=89355; +4000=93355; 46x40x0.65=1196h; 93355/1196=78.06; salary hourly 70000/2080=33.65; ratio 2.32x. Build+check pass (79 pages).
 - Metrics: none.
 - Next: salary-to-freelance guide, estimate/quote mode, professions pool cleaner + pressure washing.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /tools/salary-to-freelance-rate-calculator/, /tools/, /, /sitemap.xml. (Pushed as 9a2d24c via HEAD:main.)
