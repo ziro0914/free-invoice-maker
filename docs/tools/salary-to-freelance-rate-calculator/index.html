@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salary to Freelance Rate Calculator: Hourly &amp; Day Rate | Free</title>
+<meta name="description" content="Free salary to freelance rate calculator. Turn a job salary into the hourly and day rate you need as a freelancer, including benefits, payroll taxes, costs and unpaid time.">
+<link rel="canonical" href="https://sendinvoicefree.com/tools/salary-to-freelance-rate-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Salary to Freelance Rate Calculator: Hourly &amp; Day Rate | Free">
+<meta property="og:description" content="Free salary to freelance rate calculator. Turn a job salary into the hourly and day rate you need as a freelancer, including benefits, payroll taxes, costs and unpaid time.">
+<meta property="og:url" content="https://sendinvoicefree.com/tools/salary-to-freelance-rate-calculator/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css?v=2026-11-09">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I convert a salary to a freelance hourly rate?","acceptedAnswer":{"@type":"Answer","text":"Add the cost of what an employer used to cover (benefits, payroll taxes) and your business costs to the salary, then divide by the hours you can actually bill. For example, 70,000 x (1 + 20% + 7.65%) = 89,355; plus 4,000 of costs is 93,355. With 46 weeks x 40 hours x 65% billable = 1,196 hours, the rate is about 78.06 per hour, around 2.3 times a 33.65 salary hourly wage (70,000 / 2,080)."}},{"@type":"Question","name":"Are the benefit and tax percentages realistic?","acceptedAnswer":{"@type":"Answer","text":"They are placeholders, not statistics. Benefit value, payroll tax and income tax differ by country, employer and personal situation, and the tax portion here is not income tax. Check local rules or ask a tax professional, and replace the defaults with your own figures."}}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/invoice-templates/">Templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a></nav>
+</div></header>
+<main><section class="wrap hero"><h1>Salary to Freelance Rate Calculator</h1><p>Moving from a job to freelancing? Enter your salary and the extras an employer used to cover (benefits, payroll taxes, paid leave) to see the hourly and day rate that replaces it, and how many times your old hourly pay that is. Free, no sign-up.</p></section>
+<section class="wrap tool" style="margin:18px auto 40px">
+<form class="card" id="calc" onsubmit="return false"><fieldset><legend>Your numbers</legend><div class="grid2"><label>Current or target yearly salary<input data-k="sal" type="number" inputmode="decimal" min="0" step="1000" value="70000"></label><label>Benefits you must now replace, % of salary (health, retirement, etc.)<input data-k="ben" type="number" inputmode="decimal" min="0" step="1" value="20"></label><label>Employer-side payroll or self-employment tax you now cover, % of salary<input data-k="ptax" type="number" inputmode="decimal" min="0" step="0.05" value="7.65"></label><label>Business costs per year (software, gear, insurance)<input data-k="costs" type="number" inputmode="decimal" min="0" step="100" value="4000"></label><label>Weeks off per year (holiday, sick)<input data-k="weeks" type="number" inputmode="decimal" min="0" step="1" value="6"></label><label>Hours worked per week<input data-k="hours" type="number" inputmode="decimal" min="0" step="1" value="40"></label><label>Billable share of your hours %<input data-k="bill" type="number" inputmode="decimal" min="0" step="1" value="65"></label></div></fieldset></form>
+<div class="card" id="out" aria-live="polite"></div>
+</section>
+<article class="wrap content">
+<aside class="partner product"><strong>Check your new rate against real projects</strong> The Freelance Rate &amp; Pricing Calculator spreadsheet adds a project quote builder, side-by-side scenarios and a raise-your-rates simulator. Excel + Google Sheets. <a href="https://ziroflux4.gumroad.com/l/rate-calculator" rel="noopener" target="_blank">Get it ($7) →</a></aside>
+<h2>How do I convert a salary to a freelance hourly rate?</h2><p>Add the cost of what an employer used to cover (benefits, payroll taxes) and your business costs to the salary, then divide by the hours you can actually bill. For example, 70,000 x (1 + 20% + 7.65%) = 89,355; plus 4,000 of costs is 93,355. With 46 weeks x 40 hours x 65% billable = 1,196 hours, the rate is about 78.06 per hour, around 2.3 times a 33.65 salary hourly wage (70,000 / 2,080).</p><h2>Are the benefit and tax percentages realistic?</h2><p>They are placeholders, not statistics. Benefit value, payroll tax and income tax differ by country, employer and personal situation, and the tax portion here is not income tax. Check local rules or ask a tax professional, and replace the defaults with your own figures.</p>
+<p class="small">Estimates only. Not tax, legal or financial advice. <a href="/tools/">More free tools</a></p>
+</article>
+<script>
+(function(){
+function m(x){return (x<0?'-':'')+'$'+Math.abs(x).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function calc(v){var need=v.sal*(1+(v.ben+v.ptax)/100)+v.costs,hrs=(52-v.weeks)*v.hours*v.bill/100,h=hrs?need/hrs:0,old=v.hours?v.sal/(52*v.hours):0;
+return [['Revenue needed per year',m(need)],['Billable hours per year',hrs.toFixed(0)],['Freelance hourly rate',m(h),1],['Day rate (8h)',m(h*8)],['Your salary as an hourly wage',m(old)],['Freelance rate vs salary hourly',old?(h/old).toFixed(2)+'x':'n/a']];}
+function run(){var v={};document.querySelectorAll('#calc [data-k]').forEach(function(e){v[e.dataset.k]=parseFloat(e.value)||0});
+ document.getElementById('out').innerHTML='<h2 style="margin-top:0">Result</h2><table style="width:100%">'+calc(v).map(function(r){
+  return '<tr><td>'+(r[2]?'<b>'+r[0]+'</b>':r[0])+'</td><td style="text-align:right'+(r[2]?';font-size:1.3em':'')+'">'+(r[2]?'<b>'+r[1]+'</b>':r[1])+'</td></tr>'}).join('')+'</table>';}
+document.getElementById('calc').addEventListener('input',run);run();
+})();
+</script></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/">Invoice generator</a><a href="/invoice-templates/">Invoice templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a><a href="/tools/etsy-fee-calculator/">Etsy fee calculator</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+
+</body>
+</html>

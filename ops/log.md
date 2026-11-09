@@ -258,3 +258,10 @@
 - Metrics: none.
 - Next: estimate/quote mode, calculator ~Nov 10, profession pool cleaner + pressure washing.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/effective-hourly-rate-vs-billing-rate/, /guides/, /, /sitemap.xml.
+
+## 2026-11-09 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged.
+- Research (salary-to-freelance conversion): sources use (target income + expenses + benefits + tax reserve) / annual billable hours; benefit/markup figures (e.g. benefits 25-40% of salary, rates 25-50% higher) vary by vendor and are rules of thumb only (not used as claims); project pricing gets little coverage. Sources: https://ceocult.com/tools/freelance-rate-calculator , https://www.contractrates.fyi/incomecalculator , https://themincave.com/tools/salary-to-freelance-rate-calculator , https://rize.io/tools/rate-calculator
+- Shipped: calculator https://sendinvoicefree.com/tools/salary-to-freelance-rate-calculator/ (cta -> rate-calculator $7, existing wording). Hand check: 70000x1.2765=89355; +4000=93355; 46x40x0.65=1196h; 93355/1196=78.06; salary hourly 70000/2080=33.65; ratio 2.32x. Build+check pass (79 pages).
+- Metrics: none.
+- Next: salary-to-freelance guide, estimate/quote mode, professions pool cleaner + pressure washing.

@@ -464,6 +464,19 @@ return [['Revenue after business costs',m(net)],['Total hours worked',tot.toFixe
     faq: [['How do I calculate my effective hourly rate as a freelancer?', 'Subtract business costs from revenue, then divide by every hour you worked, billable or not. For example, 6,000 revenue minus 600 costs is 5,400; with 90 billable and 40 unpaid hours that is 130 hours, so the effective rate is about 41.54 per hour, even though revenue per billable hour is 66.67.'],
       ['Should I include tax in the calculation?', 'This calculator stops before income tax so you can compare it with your target rate. Tax rules differ by country and situation, so check local rules or ask a tax professional before treating the result as take-home pay. Time-tracking tools and your own logs give better inputs than guesses.']],
   },
+  {
+    slug: 'salary-to-freelance-rate-calculator', name: 'Salary to freelance rate calculator',
+    title: 'Salary to Freelance Rate Calculator: Hourly & Day Rate | Free',
+    description: 'Free salary to freelance rate calculator. Turn a job salary into the hourly and day rate you need as a freelancer, including benefits, payroll taxes, costs and unpaid time.',
+    h1: 'Salary to Freelance Rate Calculator', intro: 'Moving from a job to freelancing? Enter your salary and the extras an employer used to cover (benefits, payroll taxes, paid leave) to see the hourly and day rate that replaces it, and how many times your old hourly pay that is.',
+    fields: [['sal', 'Current or target yearly salary', 70000, '1000'], ['ben', 'Benefits you must now replace, % of salary (health, retirement, etc.)', 20, '1'], ['ptax', 'Employer-side payroll or self-employment tax you now cover, % of salary', 7.65, '0.05'],
+      ['costs', 'Business costs per year (software, gear, insurance)', 4000, '100'], ['weeks', 'Weeks off per year (holiday, sick)', 6, '1'], ['hours', 'Hours worked per week', 40, '1'], ['bill', 'Billable share of your hours %', 65, '1']],
+    compute: `var need=v.sal*(1+(v.ben+v.ptax)/100)+v.costs,hrs=(52-v.weeks)*v.hours*v.bill/100,h=hrs?need/hrs:0,old=v.hours?v.sal/(52*v.hours):0;
+return [['Revenue needed per year',m(need)],['Billable hours per year',hrs.toFixed(0)],['Freelance hourly rate',m(h),1],['Day rate (8h)',m(h*8)],['Your salary as an hourly wage',m(old)],['Freelance rate vs salary hourly',old?(h/old).toFixed(2)+'x':'n/a']];`,
+    cta: ['Check your new rate against real projects', 'The Freelance Rate & Pricing Calculator spreadsheet adds a project quote builder, side-by-side scenarios and a raise-your-rates simulator. Excel + Google Sheets.', 'Get it ($7)', 'https://ziroflux4.gumroad.com/l/rate-calculator'],
+    faq: [['How do I convert a salary to a freelance hourly rate?', 'Add the cost of what an employer used to cover (benefits, payroll taxes) and your business costs to the salary, then divide by the hours you can actually bill. For example, 70,000 x (1 + 20% + 7.65%) = 89,355; plus 4,000 of costs is 93,355. With 46 weeks x 40 hours x 65% billable = 1,196 hours, the rate is about 78.06 per hour, around 2.3 times a 33.65 salary hourly wage (70,000 / 2,080).'],
+      ['Are the benefit and tax percentages realistic?', 'They are placeholders, not statistics. Benefit value, payroll tax and income tax differ by country, employer and personal situation, and the tax portion here is not income tax. Check local rules or ask a tax professional, and replace the defaults with your own figures.']],
+  },
 ];
 
 function buildCalcs() {
