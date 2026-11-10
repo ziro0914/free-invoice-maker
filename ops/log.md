@@ -273,4 +273,4 @@
 - Shipped: professions https://sendinvoicefree.com/invoice-template/pool-cleaner/ and https://sendinvoicefree.com/invoice-template/pressure-washing/. Sample math: pool 4x35=140+48+22+40=250; pressure 600x0.25=150+250x0.3=75+45+25=295. Build+check pass (81 pages).
 - Metrics: none.
 - Next: calculator ~Nov 13 (UK late-payment interest w/ verified gov.uk figures), salary-to-freelance guide, estimate/quote mode, professions moving company + catering.
-- IndexNow: see below.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /invoice-template/pool-cleaner/, /invoice-template/pressure-washing/, /, /sitemap.xml. (Pushed as 604e48e via HEAD:main.)
