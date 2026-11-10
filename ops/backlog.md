@@ -36,3 +36,4 @@
 - (2026-11-07) Done: professions hvac-technician, roofer. Remaining: pool cleaner, pressure washing, moving, catering, florist. Ideas: effective-rate guide; estimate/quote mode.
 - (2026-11-08) Done: effective-rate guide. Remaining professions: pool cleaner, pressure washing, moving, catering, florist. Ideas: estimate/quote mode; calculator ~Nov 10 (hourly-to-project or UK late-payment interest).
 - (2026-11-09) Done: salary to freelance rate calculator. Ideas: guide 'salary to freelance rate'; estimate/quote mode; professions pool cleaner, pressure washing; calculator ~Nov 13 (UK late-payment interest w/ verified figures).
+- (2026-11-10) Done: professions pool-cleaner, pressure-washing. Remaining: moving, catering, florist, yoga instructor, music teacher. Ideas: salary-to-freelance guide; estimate/quote mode; calculator ~Nov 13; per-sq-ft/quantity-based price calculator (pressure washing/painting/flooring) as a calculator idea.

@@ -2313,5 +2313,115 @@
       }
     ],
     "payment_terms": "Deposit due before materials are ordered; balance due within 10 days of completion. Late fees only if agreed in writing."
+  },
+  {
+    "slug": "pool-cleaner",
+    "name": "Pool Cleaner",
+    "plural": "Pool Cleaners",
+    "keyword": "pool service invoice template",
+    "title": "Free Pool Service Invoice Template | Free Invoice Maker",
+    "description": "Pool cleaning invoice template with a monthly service line, chemicals as separate items and one-time repairs. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "A pool service invoice is easiest to defend when the monthly maintenance fee, chemicals and one-time repairs sit on separate lines, with the service dates noted.",
+      "The sample shows a month of weekly visits plus chemicals and a small repair. Prices are examples only. Whether chemicals are bundled into the fee or billed separately is your call, and sales tax rules on chemicals and parts vary by state, so check your local rules."
+    ],
+    "items": [
+      {
+        "desc": "Weekly pool maintenance, 4 visits (brush, skim, vacuum, filter check)",
+        "qty": 4,
+        "rate": 35
+      },
+      {
+        "desc": "Chemicals: chlorine tablets (buckets used)",
+        "qty": 1,
+        "rate": 48
+      },
+      {
+        "desc": "Algaecide treatment (one-time)",
+        "qty": 1,
+        "rate": 22
+      },
+      {
+        "desc": "Skimmer basket replacement, parts and labor",
+        "qty": 1,
+        "rate": 40
+      }
+    ],
+    "tips": [
+      "Show the visit count and billing period on the monthly maintenance line.",
+      "List chemicals as their own lines with quantities so clients can see what was used.",
+      "Keep one-time repairs separate from recurring service.",
+      "Add the last water readings (chlorine, pH) in the notes if clients ask for proof of work."
+    ],
+    "faq": [
+      {
+        "q": "Should chemicals be included in the monthly fee?",
+        "a": "Both approaches are common. A flat fee is simpler for clients, while separate chemical lines are more transparent when usage varies. Pick one and state it on your first invoice."
+      },
+      {
+        "q": "How do I bill a recurring client?",
+        "a": "Send one invoice per month with the visit dates in the notes, and reuse the same template each time. See the invoice numbering guide."
+      },
+      {
+        "q": "Is sales tax charged on pool service?",
+        "a": "It varies by state and sometimes applies only to chemicals and parts. Check local rules or ask an accountant."
+      }
+    ],
+    "payment_terms": "Due within 14 days of invoice date. Monthly service billed at the end of each month. Late fees only if agreed in writing."
+  },
+  {
+    "slug": "pressure-washing",
+    "name": "Pressure Washing Pro",
+    "plural": "Pressure Washing Pros",
+    "keyword": "pressure washing invoice template",
+    "title": "Free Pressure Washing Invoice Template | Free Invoice Maker",
+    "description": "Pressure washing invoice template with surfaces billed by square foot, a minimum charge and optional extras. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "A pressure washing invoice works best when each surface is its own line with the approximate area, rather than one generic 'pressure washing' charge.",
+      "The sample bills a driveway and patio by square foot, plus a stain treatment and a travel fee. Rates are examples only and vary by region, surface and condition, so use your own prices. Check local rules on licensing and sales tax."
+    ],
+    "items": [
+      {
+        "desc": "Driveway pressure washing (sq ft)",
+        "qty": 600,
+        "rate": 0.25
+      },
+      {
+        "desc": "Patio soft wash (sq ft)",
+        "qty": 250,
+        "rate": 0.3
+      },
+      {
+        "desc": "Rust stain treatment (one-time)",
+        "qty": 1,
+        "rate": 45
+      },
+      {
+        "desc": "Travel fee",
+        "qty": 1,
+        "rate": 25
+      }
+    ],
+    "tips": [
+      "List each surface with its approximate square or linear footage.",
+      "Say whether the work was pressure washing or soft washing.",
+      "Itemize stain, rust or mold treatments separately from the base cleaning.",
+      "If you have a job minimum, show it as its own line so small jobs still cover travel."
+    ],
+    "faq": [
+      {
+        "q": "Should I charge by the square foot or by the job?",
+        "a": "Many operators quote per square foot with a minimum job charge. Choose what covers your time and travel, and show the basis on the invoice."
+      },
+      {
+        "q": "What if the job is bigger than quoted?",
+        "a": "Agree the change in writing before extra work, then add it as a separate line. See the scope creep guide."
+      },
+      {
+        "q": "Do I need to charge tax?",
+        "a": "It varies by location and by whether the work is treated as a service. Check local rules or ask an accountant."
+      }
+    ],
+    "payment_terms": "Due on completion or within 7 days. Deposit may be requested for large jobs. Late fees only if agreed in writing."
   }
 ]

@@ -266,3 +266,11 @@
 - Metrics: none.
 - Next: salary-to-freelance guide, estimate/quote mode, professions pool cleaner + pressure washing.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /tools/salary-to-freelance-rate-calculator/, /tools/, /, /sitemap.xml. (Pushed as 9a2d24c via HEAD:main.)
+
+## 2026-11-10 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh not used).
+- Research (pool service / pressure washing invoices): pool sources agree on a monthly service line with visit count/dates, chemicals itemized with quantities, one-time repairs separate; whether chemicals are bundled in a flat fee is disputed (vendor opinions); tax on chemicals/parts varies by state. Pressure washing sources: itemize each surface with area, note pressure vs soft wash, minimum job charge and travel fee; per-sq-ft ranges are vendor figures and vary, not used as claims (sample rates are labeled examples). Sources: https://www.reliabills.com/blog/pool-service-invoice-template/ , https://www.novo.co/invoicing/pool-service , https://tradetab.co/blog/pool-service-invoice-template , https://invoicezap.app/blog/pressure-washing-invoice-template/ , https://invoicemaker.com/templates/estimate/pressure-washing , https://www.showthereceipts.app/resources/pressure-washing-price-calculator
+- Shipped: professions https://sendinvoicefree.com/invoice-template/pool-cleaner/ and https://sendinvoicefree.com/invoice-template/pressure-washing/. Sample math: pool 4x35=140+48+22+40=250; pressure 600x0.25=150+250x0.3=75+45+25=295. Build+check pass (81 pages).
+- Metrics: none.
+- Next: calculator ~Nov 13 (UK late-payment interest w/ verified gov.uk figures), salary-to-freelance guide, estimate/quote mode, professions moving company + catering.
+- IndexNow: see below.
