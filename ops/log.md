@@ -274,3 +274,10 @@
 - Metrics: none.
 - Next: calculator ~Nov 13 (UK late-payment interest w/ verified gov.uk figures), salary-to-freelance guide, estimate/quote mode, professions moving company + catering.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /invoice-template/pool-cleaner/, /invoice-template/pressure-washing/, /, /sitemap.xml. (Pushed as 604e48e via HEAD:main.)
+
+## 2026-11-11 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh not used).
+- Research (employee-to-freelance rate conversion): sources say salary/2,080 undercharges; use (salary + benefits + payroll/SE tax + costs) / billable hours; overhead uplift of 20-40% and 1.3-2x multipliers are vendor rules of thumb only (not used as claims; our example percentages are labeled placeholders). Common mistakes: assuming 100% billable, ignoring unpaid leave, never raising rates, discounting early. Sources: https://www.financialaha.com/articles/salary-converter-calculator-annual-to-hourly/ , https://themincave.com/tools/salary-to-freelance-rate-calculator , https://wildandfreetools.com/blog/freelance-rate-vs-salary-how-to-compare/ , https://freelancepricing.com/guides/contractor-rate-guide , https://salario.io/blog/freelance-rate-calculator-guide/
+- Shipped: guide https://sendinvoicefree.com/guides/salary-to-freelance-rate-guide/ (~950 words; links to /, salary-to-freelance, tax set-aside, day rate, project price, effective-rate calculators + scope-creep, effective-rate, retainer, deposit, payment-terms guides). Example checked: 70000x1.2765=89355; +4000=93355; 46x40x0.65=1196h; 93355/1196=78.06; 70000/2080=33.65; ratio 2.32x; day rate x8=624. Build+check pass (82 pages).
+- Metrics: none.
+- Next: calculator ~Nov 13, estimate/quote mode, professions moving company + catering, rate-raise guide.
