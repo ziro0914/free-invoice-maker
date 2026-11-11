@@ -281,3 +281,4 @@
 - Shipped: guide https://sendinvoicefree.com/guides/salary-to-freelance-rate-guide/ (~950 words; links to /, salary-to-freelance, tax set-aside, day rate, project price, effective-rate calculators + scope-creep, effective-rate, retainer, deposit, payment-terms guides). Example checked: 70000x1.2765=89355; +4000=93355; 46x40x0.65=1196h; 93355/1196=78.06; 70000/2080=33.65; ratio 2.32x; day rate x8=624. Build+check pass (82 pages).
 - Metrics: none.
 - Next: calculator ~Nov 13, estimate/quote mode, professions moving company + catering, rate-raise guide.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/salary-to-freelance-rate-guide/, /guides/, /, /sitemap.xml. (Pushed as 9c7abf2 via HEAD:main.)
