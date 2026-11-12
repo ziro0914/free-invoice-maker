@@ -289,3 +289,4 @@
 - Shipped: professions https://sendinvoicefree.com/invoice-template/moving-company/ and https://sendinvoicefree.com/invoice-template/caterer/. Sample math: moving 15x50=750+120+85+40-100=895; catering 50x32=1600+250+90+160-500=1600. Build+check pass (84 pages).
 - Metrics: none.
 - Next: calculator ~Nov 13 (UK late-payment interest w/ verified gov.uk figures, or hourly-to-project), estimate/quote mode, professions florist + yoga instructor, rate-raise guide.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /invoice-template/moving-company/, /invoice-template/caterer/, /, /sitemap.xml. (Pushed as 190a4bd via HEAD:main.)
