@@ -2423,5 +2423,127 @@
       }
     ],
     "payment_terms": "Due on completion or within 7 days. Deposit may be requested for large jobs. Late fees only if agreed in writing."
+  },
+  {
+    "slug": "moving-company",
+    "name": "Moving Company",
+    "plural": "Moving Companies",
+    "keyword": "moving company invoice template",
+    "title": "Free Moving Company Invoice Template | Free Invoice Maker",
+    "description": "Moving company invoice template with crew labor by the hour, a truck and travel fee, packing materials and a deposit credit. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "A moving invoice is easiest to defend when labor shows crew size, hours and rate, and the truck or travel charge sits on its own line.",
+      "The sample bills a three-person crew for a local move, plus a truck fee, packing materials and a stair surcharge, with the booking deposit credited. All rates are examples only and vary by region; use your own prices and check local and federal licensing and insurance rules for movers."
+    ],
+    "items": [
+      {
+        "desc": "Crew labor: 3 movers x 5 hours (15 labor hours)",
+        "qty": 15,
+        "rate": 50
+      },
+      {
+        "desc": "Truck and travel fee",
+        "qty": 1,
+        "rate": 120
+      },
+      {
+        "desc": "Packing materials (boxes, tape, wrap)",
+        "qty": 1,
+        "rate": 85
+      },
+      {
+        "desc": "Stair carry surcharge",
+        "qty": 1,
+        "rate": 40
+      },
+      {
+        "desc": "Deposit received (credit)",
+        "qty": 1,
+        "rate": -100
+      }
+    ],
+    "tips": [
+      "Show crew size, hours and the hourly rate so the labor line can be checked.",
+      "Note the start and end times, and how breaks and travel time were counted.",
+      "List the truck or travel fee separately from labor.",
+      "Itemize packing materials and surcharges such as stairs, long carries or bulky items.",
+      "Show any deposit as a credit against the total."
+    ],
+    "faq": [
+      {
+        "q": "Should I bill by the hour or a flat rate?",
+        "a": "Both are common. Hourly suits local moves with uncertain scope; flat rates suit well-defined jobs. Whichever you use, state it on the quote and the invoice."
+      },
+      {
+        "q": "How do I handle travel time?",
+        "a": "Some movers bill travel from the yard and back as its own line, others use a flat truck fee. Agree the method before the move and show it clearly."
+      },
+      {
+        "q": "Do I need special licensing or insurance details on the invoice?",
+        "a": "Requirements differ by state and for interstate moves. Check with your state regulator and federal rules, and consider showing your license and coverage details."
+      }
+    ],
+    "payment_terms": "Due on completion of the move. Deposit credited against the total. Late fees only if agreed in writing."
+  },
+  {
+    "slug": "caterer",
+    "name": "Caterer",
+    "plural": "Caterers",
+    "keyword": "catering invoice template",
+    "title": "Free Catering Invoice Template | Free Invoice Maker",
+    "description": "Catering invoice template with per-person food pricing, staffing, a service charge and a deposit credit. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "A catering invoice should show the guest count it is based on, the per-person food price, and staff, rentals and service charges as separate lines.",
+      "The sample bills a 50-guest buffet with two servers, a service charge and a deposit credit. Prices are examples only; use your own, and check local rules on sales tax and on how service charges and gratuities are treated."
+    ],
+    "items": [
+      {
+        "desc": "Buffet menu, per person (final count 50 guests)",
+        "qty": 50,
+        "rate": 32
+      },
+      {
+        "desc": "Servers (2 staff x 5 hours)",
+        "qty": 10,
+        "rate": 25
+      },
+      {
+        "desc": "Equipment rental (chafing dishes, serveware)",
+        "qty": 1,
+        "rate": 90
+      },
+      {
+        "desc": "Service charge (flat, as per contract)",
+        "qty": 1,
+        "rate": 160
+      },
+      {
+        "desc": "Deposit received (credit)",
+        "qty": 1,
+        "rate": -500
+      }
+    ],
+    "tips": [
+      "State the final guest count the invoice is based on and when it was locked.",
+      "Itemize each menu package with the per-person price.",
+      "Break out staff by role, hours and rate, and list rentals separately.",
+      "Define the service charge and say whether it is a gratuity.",
+      "Show the deposit as a credit and note what it covered."
+    ],
+    "faq": [
+      {
+        "q": "What if the guest count changes?",
+        "a": "Many caterers set a minimum and lock the final count a few days before the event. Put that policy in your quote and show the count billed on the invoice."
+      },
+      {
+        "q": "Is a service charge the same as a tip?",
+        "a": "Not necessarily. Treatment of service charges and gratuities, including tax, varies by location, so state clearly what it is and check local rules."
+      },
+      {
+        "q": "How should I show a deposit?",
+        "a": "As a credit line against the total, noting what it covers and whether any part is non-refundable per your contract."
+      }
+    ],
+    "payment_terms": "Balance due within 7 days of the event, or on the day by agreement. Deposit credited against the total. Late fees only if agreed in writing."
   }
 ]

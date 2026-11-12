@@ -282,3 +282,10 @@
 - Metrics: none.
 - Next: calculator ~Nov 13, estimate/quote mode, professions moving company + catering, rate-raise guide.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/salary-to-freelance-rate-guide/, /guides/, /, /sitemap.xml. (Pushed as 9c7abf2 via HEAD:main.)
+
+## 2026-11-12 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh not used).
+- Research (moving / catering invoices): movers: labor as crew size x hours x rate with start/end times, truck/travel fee as separate line (flat vs yard-to-yard varies), packing materials and surcharges (stairs, long carry, bulky), deposit credit; licensing/insurance and interstate rules vary. Caterers: per-person lines with locked final guest count, staff by role/hours, rentals separate, service charge defined (gratuity vs business charge, tax treatment varies), deposit credited. Vendor pages; per-person price ranges not used as claims. Sources: https://www.novo.co/invoicing/movers , https://www.xero.com/ae/templates/invoice-template/moving-company-template/ , https://invoicemaker.com/template/service/moving-company/ , https://www.novo.co/invoicing/caterers , https://paperform.co/templates/catering-invoice-template/ , https://invoicefly.com/free-resources/free-templates/free-invoice-templates/catering-invoice-template/
+- Shipped: professions https://sendinvoicefree.com/invoice-template/moving-company/ and https://sendinvoicefree.com/invoice-template/caterer/. Sample math: moving 15x50=750+120+85+40-100=895; catering 50x32=1600+250+90+160-500=1600. Build+check pass (84 pages).
+- Metrics: none.
+- Next: calculator ~Nov 13 (UK late-payment interest w/ verified gov.uk figures, or hourly-to-project), estimate/quote mode, professions florist + yoga instructor, rate-raise guide.
