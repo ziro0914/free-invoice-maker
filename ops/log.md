@@ -290,3 +290,11 @@
 - Metrics: none.
 - Next: calculator ~Nov 13 (UK late-payment interest w/ verified gov.uk figures, or hourly-to-project), estimate/quote mode, professions florist + yoga instructor, rate-raise guide.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /invoice-template/moving-company/, /invoice-template/caterer/, /, /sitemap.xml. (Pushed as 190a4bd via HEAD:main.)
+
+## 2026-11-13 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh not used).
+- Research (hourly-to-project pricing): sources agree on hours x rate + buffer, check the quote divides back to target rate; buffer suggestions (10-30%, 35-50% unfamiliar) are vendor rules of thumb, not used as claims. Sources: https://projectcostcalculators-gh.pages.dev/freelance-service-pricing-calculator , https://waveapps.com/freelancing/hourly-vs-project-rates , https://toggl.com/blog/flat-rate-vs-hourly . UK late payment: 8% over BoE base rate, simple interest, fixed sums by debt size (only the 40 and 100 tiers confirmed in search; calculator takes the fixed sum as a user input with a placeholder). Sources: https://www.gov.uk/late-commercial-payments-interest-debt-recovery/claim-debt-recovery-costs , https://www.smallbusinesscommissioner.gov.uk/interest-calculator-guidance-page/
+- Shipped: calculator https://sendinvoicefree.com/tools/uk-late-payment-interest-calculator/ (cta -> freelancer-kit $12, existing wording). Hand check: 8+4=12%; 2000x0.12x45/365=29.59; per day 0.66; +70 fixed placeholder -> 2099.59. Build+check pass (85 pages).
+- Metrics: none.
+- Next: estimate/quote mode, professions florist + yoga instructor, rate-raise guide, hourly-to-fixed-fee quote calculator.
+- IndexNow: see below.

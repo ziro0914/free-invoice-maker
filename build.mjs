@@ -477,6 +477,18 @@ return [['Revenue needed per year',m(need)],['Billable hours per year',hrs.toFix
     faq: [['How do I convert a salary to a freelance hourly rate?', 'Add the cost of what an employer used to cover (benefits, payroll taxes) and your business costs to the salary, then divide by the hours you can actually bill. For example, 70,000 x (1 + 20% + 7.65%) = 89,355; plus 4,000 of costs is 93,355. With 46 weeks x 40 hours x 65% billable = 1,196 hours, the rate is about 78.06 per hour, around 2.3 times a 33.65 salary hourly wage (70,000 / 2,080).'],
       ['Are the benefit and tax percentages realistic?', 'They are placeholders, not statistics. Benefit value, payroll tax and income tax differ by country, employer and personal situation, and the tax portion here is not income tax. Check local rules or ask a tax professional, and replace the defaults with your own figures.']],
   },
+  {
+    slug: 'uk-late-payment-interest-calculator', name: 'UK late payment interest calculator',
+    title: 'UK Late Payment Interest Calculator: Statutory 8% + Base Rate | Free',
+    description: 'Free UK late payment interest calculator for business invoices. Enter the invoice, days overdue and the Bank of England base rate to estimate statutory interest and the fixed recovery sum.',
+    h1: 'UK Late Payment Interest Calculator', intro: 'Business-to-business invoices in the UK can carry statutory late payment interest of 8% above the Bank of England base rate, plus a fixed recovery sum. Enter your invoice, the days overdue and the base rate to estimate what you could claim.',
+    fields: [['amt', 'Overdue invoice amount (£)', 2000, '1'], ['base', 'Bank of England base rate % (use the rate gov.uk says applies)', 4, '0.05'], ['days', 'Days overdue', 45, '1'], ['fixed', 'Fixed debt recovery sum (£, check the gov.uk table for your invoice size)', 70, '10']],
+    compute: `var r=8+v.base,i=v.amt*r/100*v.days/365,d=v.amt*r/100/365;
+return [['Statutory interest rate (8% + base rate)',r.toFixed(2)+'%'],['Interest accrued so far',m(i),1],['Interest per extra day',m(d)],['Fixed recovery sum',m(v.fixed)],['Estimated total you could claim (invoice + interest + fixed sum)',m(v.amt+i+v.fixed),1]];`,
+    cta: ['Spot overdue invoices before they get old', 'The Freelancer Invoice & Bookkeeping Kit spreadsheet has an invoice log with overdue alerts, expenses and mileage, a monthly profit dashboard and a tax set-aside. Excel + Google Sheets.', 'Get it ($12)', 'https://ziroflux4.gumroad.com/l/freelancer-kit'],
+    faq: [['How is UK late payment interest calculated?', 'Under the Late Payment of Commercial Debts rules, interest on a late business-to-business invoice is simple interest at 8% above the Bank of England base rate. For example, on 2,000 pounds at a 4% base rate the rate is 12%, so 45 days overdue is 2,000 x 12% x 45 / 365 = about 29.59 pounds, roughly 0.66 pounds a day.'],
+      ['Which base rate and fixed sum should I use?', 'The base rate that applies is generally the one in force at a set reference date, so check the current gov.uk guidance rather than relying on this default. The fixed recovery sum depends on the size of the debt; the 70 pound default here is only a placeholder, so look up the gov.uk table. Rules differ for consumers, public bodies and other countries, and contract terms can change things, so check gov.uk or ask a professional before claiming.']],
+  },
 ];
 
 function buildCalcs() {

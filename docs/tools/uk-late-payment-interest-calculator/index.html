@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UK Late Payment Interest Calculator: Statutory 8% + Base Rate | Free</title>
+<meta name="description" content="Free UK late payment interest calculator for business invoices. Enter the invoice, days overdue and the Bank of England base rate to estimate statutory interest and the fixed recovery sum.">
+<link rel="canonical" href="https://sendinvoicefree.com/tools/uk-late-payment-interest-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="UK Late Payment Interest Calculator: Statutory 8% + Base Rate | Free">
+<meta property="og:description" content="Free UK late payment interest calculator for business invoices. Enter the invoice, days overdue and the Bank of England base rate to estimate statutory interest and the fixed recovery sum.">
+<meta property="og:url" content="https://sendinvoicefree.com/tools/uk-late-payment-interest-calculator/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css?v=2026-11-13">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is UK late payment interest calculated?","acceptedAnswer":{"@type":"Answer","text":"Under the Late Payment of Commercial Debts rules, interest on a late business-to-business invoice is simple interest at 8% above the Bank of England base rate. For example, on 2,000 pounds at a 4% base rate the rate is 12%, so 45 days overdue is 2,000 x 12% x 45 / 365 = about 29.59 pounds, roughly 0.66 pounds a day."}},{"@type":"Question","name":"Which base rate and fixed sum should I use?","acceptedAnswer":{"@type":"Answer","text":"The base rate that applies is generally the one in force at a set reference date, so check the current gov.uk guidance rather than relying on this default. The fixed recovery sum depends on the size of the debt; the 70 pound default here is only a placeholder, so look up the gov.uk table. Rules differ for consumers, public bodies and other countries, and contract terms can change things, so check gov.uk or ask a professional before claiming."}}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/invoice-templates/">Templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a></nav>
+</div></header>
+<main><section class="wrap hero"><h1>UK Late Payment Interest Calculator</h1><p>Business-to-business invoices in the UK can carry statutory late payment interest of 8% above the Bank of England base rate, plus a fixed recovery sum. Enter your invoice, the days overdue and the base rate to estimate what you could claim. Free, no sign-up.</p></section>
+<section class="wrap tool" style="margin:18px auto 40px">
+<form class="card" id="calc" onsubmit="return false"><fieldset><legend>Your numbers</legend><div class="grid2"><label>Overdue invoice amount (£)<input data-k="amt" type="number" inputmode="decimal" min="0" step="1" value="2000"></label><label>Bank of England base rate % (use the rate gov.uk says applies)<input data-k="base" type="number" inputmode="decimal" min="0" step="0.05" value="4"></label><label>Days overdue<input data-k="days" type="number" inputmode="decimal" min="0" step="1" value="45"></label><label>Fixed debt recovery sum (£, check the gov.uk table for your invoice size)<input data-k="fixed" type="number" inputmode="decimal" min="0" step="10" value="70"></label></div></fieldset></form>
+<div class="card" id="out" aria-live="polite"></div>
+</section>
+<article class="wrap content">
+<aside class="partner product"><strong>Spot overdue invoices before they get old</strong> The Freelancer Invoice &amp; Bookkeeping Kit spreadsheet has an invoice log with overdue alerts, expenses and mileage, a monthly profit dashboard and a tax set-aside. Excel + Google Sheets. <a href="https://ziroflux4.gumroad.com/l/freelancer-kit" rel="noopener" target="_blank">Get it ($12) →</a></aside>
+<h2>How is UK late payment interest calculated?</h2><p>Under the Late Payment of Commercial Debts rules, interest on a late business-to-business invoice is simple interest at 8% above the Bank of England base rate. For example, on 2,000 pounds at a 4% base rate the rate is 12%, so 45 days overdue is 2,000 x 12% x 45 / 365 = about 29.59 pounds, roughly 0.66 pounds a day.</p><h2>Which base rate and fixed sum should I use?</h2><p>The base rate that applies is generally the one in force at a set reference date, so check the current gov.uk guidance rather than relying on this default. The fixed recovery sum depends on the size of the debt; the 70 pound default here is only a placeholder, so look up the gov.uk table. Rules differ for consumers, public bodies and other countries, and contract terms can change things, so check gov.uk or ask a professional before claiming.</p>
+<p class="small">Estimates only. Not tax, legal or financial advice. <a href="/tools/">More free tools</a></p>
+</article>
+<script>
+(function(){
+function m(x){return (x<0?'-':'')+'$'+Math.abs(x).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function calc(v){var r=8+v.base,i=v.amt*r/100*v.days/365,d=v.amt*r/100/365;
+return [['Statutory interest rate (8% + base rate)',r.toFixed(2)+'%'],['Interest accrued so far',m(i),1],['Interest per extra day',m(d)],['Fixed recovery sum',m(v.fixed)],['Estimated total you could claim (invoice + interest + fixed sum)',m(v.amt+i+v.fixed),1]];}
+function run(){var v={};document.querySelectorAll('#calc [data-k]').forEach(function(e){v[e.dataset.k]=parseFloat(e.value)||0});
+ document.getElementById('out').innerHTML='<h2 style="margin-top:0">Result</h2><table style="width:100%">'+calc(v).map(function(r){
+  return '<tr><td>'+(r[2]?'<b>'+r[0]+'</b>':r[0])+'</td><td style="text-align:right'+(r[2]?';font-size:1.3em':'')+'">'+(r[2]?'<b>'+r[1]+'</b>':r[1])+'</td></tr>'}).join('')+'</table>';}
+document.getElementById('calc').addEventListener('input',run);run();
+})();
+</script></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/">Invoice generator</a><a href="/invoice-templates/">Invoice templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a><a href="/tools/etsy-fee-calculator/">Etsy fee calculator</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+
+</body>
+</html>
