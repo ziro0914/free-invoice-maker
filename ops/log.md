@@ -297,4 +297,4 @@
 - Shipped: calculator https://sendinvoicefree.com/tools/uk-late-payment-interest-calculator/ (cta -> freelancer-kit $12, existing wording). Hand check: 8+4=12%; 2000x0.12x45/365=29.59; per day 0.66; +70 fixed placeholder -> 2099.59. Build+check pass (85 pages).
 - Metrics: none.
 - Next: estimate/quote mode, professions florist + yoga instructor, rate-raise guide, hourly-to-fixed-fee quote calculator.
-- IndexNow: see below.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /tools/uk-late-payment-interest-calculator/, /tools/, /, /sitemap.xml. (Pushed as e760faf via HEAD:main.)
