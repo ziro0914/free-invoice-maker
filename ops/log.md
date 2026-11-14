@@ -298,3 +298,10 @@
 - Metrics: none.
 - Next: estimate/quote mode, professions florist + yoga instructor, rate-raise guide, hourly-to-fixed-fee quote calculator.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /tools/uk-late-payment-interest-calculator/, /tools/, /, /sitemap.xml. (Pushed as e760faf via HEAD:main.)
+
+## 2026-11-14 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh not used).
+- Research (florist / yoga invoices): florist sources: itemize by category (personal flowers, ceremony, reception), delivery/setup/breakdown as separate lines, deposit as a negative "Deposit received" credit; deposit percentages/timing vary by vendor (not used as claims). Yoga sources: separate studio classes from private sessions, prepaid packages (5-10 sessions) with expiry, studios pay per class or base + per head, travel/rental as separate lines; $80-150 private rates are vendor figures, not used. Sources: https://www.fiory.ai/blog/wedding-florist-invoice-guide , https://www.invoicesimple.com/invoice-template/florist-invoice/ , https://invoicer.ai/invoice-templates-for-florists , https://www.filecurrent.com/blog/yoga-invoice-template , https://invoicequick.com/invoice-templates/yoga-instructor-invoice-template , https://cleverinvo.com/invoice-template/yoga-fitness-instructor
+- Shipped: professions https://sendinvoicefree.com/invoice-template/florist/ and https://sendinvoicefree.com/invoice-template/yoga-instructor/. Sample math: florist 120+3x55=165+340+85-300=410; yoga 8x45=360+5x70=350+2x15=30+2x60=120=860. Build+check pass (87 pages).
+- Metrics: none.
+- Next: estimate/quote mode, music teacher profession + new pool, rate-raise guide, hourly-to-fixed-fee quote calculator ~Nov 17.

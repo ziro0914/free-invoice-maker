@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Yoga Instructor Invoice Template | Free Invoice Maker</title>
+<meta name="description" content="Yoga instructor invoice template for studio classes, private sessions and class packages. Customize it, export a free PDF, no account needed.">
+<link rel="canonical" href="https://sendinvoicefree.com/invoice-template/yoga-instructor/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Yoga Instructor Invoice Template | Free Invoice Maker">
+<meta property="og:description" content="Yoga instructor invoice template for studio classes, private sessions and class packages. Customize it, export a free PDF, no account needed.">
+<meta property="og:url" content="https://sendinvoicefree.com/invoice-template/yoga-instructor/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css?v=2026-11-14">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Yoga Instructor Invoice Generator","url":"https://sendinvoicefree.com/invoice-template/yoga-instructor/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Per class or per head?","acceptedAnswer":{"@type":"Answer","text":"Studios pay in different ways, such as a flat rate per class or a base plus a per-attendee amount. Confirm the basis before you start and show it on the invoice."}},{"@type":"Question","name":"How do I invoice a class package?","acceptedAnswer":{"@type":"Answer","text":"Show the number of sessions and the package price, and note any expiry date. Many instructors invoice the package in advance."}},{"@type":"Question","name":"Am I an employee or a contractor?","acceptedAnswer":{"@type":"Answer","text":"It depends on your agreement and local rules, which affect whether you invoice at all. Check local guidance if unsure."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Invoice templates","item":"https://sendinvoicefree.com/invoice-templates/"},{"@type":"ListItem","position":2,"name":"Yoga Instructor invoice template","item":"https://sendinvoicefree.com/invoice-template/yoga-instructor/"}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/invoice-templates/">Templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a></nav>
+</div></header>
+<main><section class="wrap hero">
+  <h1>Free Yoga Instructor Invoice Template</h1>
+  <p>A yoga instructor invoice should keep studio classes and private sessions on separate lines, with the dates or counts that each rate applies to.</p>
+  <div class="badges"><span>Pre-filled for yoga instructors</span><span>Download as PDF</span><span>No sign-up</span></div>
+</section>
+<script>window.FIM_PREFILL={"slug":"yoga-instructor","items":[{"desc":"Studio group classes, November (8 classes)","qty":8,"rate":45},{"desc":"Private sessions package (5 sessions)","qty":5,"rate":70},{"desc":"Travel to client home (private sessions)","qty":2,"rate":15},{"desc":"Workshop, Saturday 2 hours","qty":2,"rate":60}],"payment_terms":"Studios: due within 14 days of the month end. Private clients: package paid in advance, single sessions due on the day. Late fees only if agreed in writing."};</script>
+<section class="wrap tool">
+<form id="invoice-form" class="card" autocomplete="on" onsubmit="return false">
+  <fieldset><legend>From (your business)</legend>
+    <div class="grid2">
+      <label>Business / your name<input name="biz_name" placeholder="Jane Doe Studio"></label>
+      <label>Email<input name="biz_email" type="email" placeholder="you@example.com"></label>
+      <label>Phone<input name="biz_phone" placeholder="+1 555 0100"></label>
+      <label>Logo (optional)<input name="logo" type="file" accept="image/png,image/jpeg"></label>
+    </div>
+    <label>Address<textarea name="biz_address" rows="2" placeholder="123 Main St&#10;Austin, TX 78701"></textarea></label>
+    <button type="button" id="logo-clear" class="btn" style="margin-top:6px;padding:4px 10px;font-size:13px">Remove logo</button>
+  </fieldset>
+  <fieldset><legend>Bill to (client)</legend>
+    <div class="grid2">
+      <label>Client name<input name="client_name" placeholder="Acme Inc."></label>
+      <label>Client email<input name="client_email" type="email" placeholder="billing@acme.com"></label>
+    </div>
+    <label>Client address<textarea name="client_address" rows="2"></textarea></label>
+  </fieldset>
+  <fieldset><legend>Invoice details</legend>
+    <div class="grid2">
+      <label>Invoice #<input name="number"></label>
+      <label>Currency<select name="currency"></select></label>
+      <label>Issue date<input name="issued" type="date"></label>
+      <label>Due date<input name="due" type="date"></label>
+    </div>
+  </fieldset>
+  <fieldset><legend>Line items</legend>
+    <div class="item-head"><span>Description</span><span>Qty</span><span>Rate</span><span style="text-align:right">Amount</span><span></span></div>
+    <div id="items"></div>
+    <button type="button" id="add-item" class="btn" style="margin-top:4px">+ Add line</button>
+  </fieldset>
+  <fieldset>
+    <div class="grid2">
+      <label>Tax rate (%)<input name="tax" type="number" step="any" min="0"></label>
+      <label>Discount (amount)<input name="discount" type="number" step="any" min="0"></label>
+    </div>
+    <label>Notes &amp; payment terms<textarea name="notes" rows="3"></textarea></label>
+  </fieldset>
+  <p class="small">Saved automatically in this browser only. Nothing is uploaded.</p>
+</form>
+<div class="sticky">
+  <div class="actions no-print" style="margin-bottom:10px">
+    <button type="button" id="download" class="btn primary">Download PDF</button>
+    <button type="button" id="print" class="btn">Print</button>
+    <button type="button" id="reset" class="btn">New invoice</button>
+  </div>
+  <div id="preview" aria-live="polite"></div>
+</div>
+</section>
+<article class="wrap content">
+  <p>The sample bills a studio for a month of classes plus a private client's 5-session package. Rates are examples only; use your own and agree terms such as expiry and cancellation in advance.</p>
+  <aside class="partner product"><strong>Track every invoice in one spreadsheet.</strong> The Freelancer Invoice &amp; Bookkeeping Kit logs invoices, flags overdue payments, tracks expenses and mileage, and shows your profit and tax set-aside. Excel + Google Sheets. <a href="https://ziroflux4.gumroad.com/l/freelancer-kit" rel="noopener" target="_blank">Get the kit ($12) →</a></aside>
+  
+  <h2>Invoicing tips for yoga instructors</h2>
+  <ul><li>List class dates or counts so studios can reconcile them with their schedule.</li><li>Bill private clients per session or per prepaid package and note any expiry date.</li><li>Show travel and studio rental as separate lines.</li><li>State your cancellation policy for private sessions.</li><li>Number invoices sequentially so repeat studios can track them.</li></ul>
+  <h2>Typical line items</h2>
+  <ul><li>Studio group classes, November (8 classes)</li><li>Private sessions package (5 sessions)</li><li>Travel to client home (private sessions)</li><li>Workshop, Saturday 2 hours</li></ul>
+  <p class="small">Rates shown are examples only — edit them to match your pricing.</p>
+  <h2>FAQ</h2><div class="faq"><details><summary>Per class or per head?</summary><p>Studios pay in different ways, such as a flat rate per class or a base plus a per-attendee amount. Confirm the basis before you start and show it on the invoice.</p></details><details><summary>How do I invoice a class package?</summary><p>Show the number of sessions and the package price, and note any expiry date. Many instructors invoice the package in advance.</p></details><details><summary>Am I an employee or a contractor?</summary><p>It depends on your agreement and local rules, which affect whether you invoice at all. Check local guidance if unsure.</p></details></div>
+  <h2>More invoice templates</h2>
+  <ul class="links"><li><a href="/invoice-template/photographer/">Photographer invoice template</a></li><li><a href="/invoice-template/graphic-designer/">Graphic Designer invoice template</a></li><li><a href="/invoice-template/web-developer/">Web Developer invoice template</a></li><li><a href="/invoice-template/freelance-writer/">Freelance Writer invoice template</a></li><li><a href="/invoice-template/copywriter/">Copywriter invoice template</a></li><li><a href="/invoice-template/videographer/">Videographer invoice template</a></li><li><a href="/invoice-template/video-editor/">Video Editor invoice template</a></li><li><a href="/invoice-template/consultant/">Consultant invoice template</a></li><li><a href="/invoice-template/tutor/">Tutor invoice template</a></li><li><a href="/invoice-template/house-cleaner/">House Cleaner invoice template</a></li><li><a href="/invoice-template/handyman/">Handyman invoice template</a></li><li><a href="/invoice-template/contractor/">Contractor invoice template</a></li><li><a href="/invoice-template/electrician/">Electrician invoice template</a></li><li><a href="/invoice-template/plumber/">Plumber invoice template</a></li><li><a href="/invoice-template/landscaper/">Landscaper invoice template</a></li><li><a href="/invoice-template/painter/">Painter invoice template</a></li><li><a href="/invoice-template/personal-trainer/">Personal Trainer invoice template</a></li><li><a href="/invoice-template/makeup-artist/">Makeup Artist invoice template</a></li><li><a href="/invoice-template/dj/">DJ invoice template</a></li><li><a href="/invoice-template/translator/">Translator invoice template</a></li><li><a href="/invoice-template/virtual-assistant/">Virtual Assistant invoice template</a></li><li><a href="/invoice-template/social-media-manager/">Social Media Manager invoice template</a></li><li><a href="/invoice-template/bookkeeper/">Bookkeeper invoice template</a></li><li><a href="/invoice-template/musician/">Musician invoice template</a></li><li><a href="/invoice-template/interior-designer/">Interior Designer invoice template</a></li><li><a href="/invoice-template/event-planner/">Event Planner invoice template</a></li><li><a href="/invoice-template/dog-walker/">Dog Walker invoice template</a></li><li><a href="/invoice-template/babysitter/">Babysitter invoice template</a></li><li><a href="/invoice-template/mechanic/">Mechanic invoice template</a></li><li><a href="/invoice-template/truck-driver/">Truck Driver invoice template</a></li><li><a href="/invoice-template/wedding-photographer/">Wedding Photographer invoice template</a></li><li><a href="/invoice-template/nanny/">Nanny invoice template</a></li><li><a href="/invoice-template/drone-pilot/">Drone Pilot invoice template</a></li><li><a href="/invoice-template/voice-actor/">Voice Actor invoice template</a></li><li><a href="/invoice-template/app-developer/">App Developer invoice template</a></li><li><a href="/invoice-template/data-analyst/">Data Analyst invoice template</a></li><li><a href="/invoice-template/illustrator/">Illustrator invoice template</a></li><li><a href="/invoice-template/tattoo-artist/">Tattoo Artist invoice template</a></li><li><a href="/invoice-template/hair-stylist/">Hair Stylist invoice template</a></li><li><a href="/invoice-template/carpenter/">Carpenter invoice template</a></li><li><a href="/invoice-template/hvac-technician/">HVAC Technician invoice template</a></li><li><a href="/invoice-template/roofer/">Roofer invoice template</a></li><li><a href="/invoice-template/pool-cleaner/">Pool Cleaner invoice template</a></li><li><a href="/invoice-template/pressure-washing/">Pressure Washing Pro invoice template</a></li><li><a href="/invoice-template/moving-company/">Moving Company invoice template</a></li><li><a href="/invoice-template/caterer/">Caterer invoice template</a></li><li><a href="/invoice-template/florist/">Florist invoice template</a></li></ul>
+</article></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/">Invoice generator</a><a href="/invoice-templates/">Invoice templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a><a href="/tools/etsy-fee-calculator/">Etsy fee calculator</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+<script src="/assets/app.js?v=2026-11-14" defer></script>
+</body>
+</html>

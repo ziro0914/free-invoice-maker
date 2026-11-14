@@ -2545,5 +2545,122 @@
       }
     ],
     "payment_terms": "Balance due within 7 days of the event, or on the day by agreement. Deposit credited against the total. Late fees only if agreed in writing."
+  },
+  {
+    "slug": "florist",
+    "name": "Florist",
+    "plural": "Florists",
+    "keyword": "florist invoice template",
+    "title": "Free Florist Invoice Template | Free Invoice Maker",
+    "description": "Florist invoice template with itemized arrangements, delivery, setup and a deposit credit for event and wedding orders. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "A florist invoice should list each arrangement or category, then show delivery, setup and any rental pickup as separate lines so the client sees what the total is made of.",
+      "The sample bills a small wedding order with a deposit credit. Prices are examples only; use your own, and check local rules on sales tax for flowers and delivery."
+    ],
+    "items": [
+      {
+        "desc": "Bridal bouquet",
+        "qty": 1,
+        "rate": 120
+      },
+      {
+        "desc": "Bridesmaid bouquets",
+        "qty": 3,
+        "rate": 55
+      },
+      {
+        "desc": "Ceremony arrangements (aisle and arch)",
+        "qty": 1,
+        "rate": 340
+      },
+      {
+        "desc": "Delivery and setup at venue",
+        "qty": 1,
+        "rate": 85
+      },
+      {
+        "desc": "Deposit received (credit)",
+        "qty": 1,
+        "rate": -300
+      }
+    ],
+    "tips": [
+      "Group items by category such as personal flowers, ceremony and reception.",
+      "List delivery, setup and breakdown as separate lines with the venue and time.",
+      "Note any rented vases or stands and how they are returned or charged.",
+      "Show the deposit as a credit so the total equals the balance due.",
+      "Add your substitution policy if seasonal stems may change."
+    ],
+    "faq": [
+      {
+        "q": "Should delivery be a separate line?",
+        "a": "Yes. Showing delivery and setup separately makes the total easy to follow and helps if the venue or time changes."
+      },
+      {
+        "q": "How should I show a deposit?",
+        "a": "As a negative credit line so the total shows the remaining balance. Deposit amounts and refund rules are set by your contract, so state them clearly."
+      },
+      {
+        "q": "Do I charge sales tax on flowers?",
+        "a": "Rules on flowers, delivery and services differ by location, so check local rules or ask an accountant."
+      }
+    ],
+    "payment_terms": "Balance due 14 days before the event, or on delivery for same-day orders. Deposit credited against the total. Late fees only if agreed in writing."
+  },
+  {
+    "slug": "yoga-instructor",
+    "name": "Yoga Instructor",
+    "plural": "Yoga Instructors",
+    "keyword": "yoga instructor invoice template",
+    "title": "Free Yoga Instructor Invoice Template | Free Invoice Maker",
+    "description": "Yoga instructor invoice template for studio classes, private sessions and class packages. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "A yoga instructor invoice should keep studio classes and private sessions on separate lines, with the dates or counts that each rate applies to.",
+      "The sample bills a studio for a month of classes plus a private client's 5-session package. Rates are examples only; use your own and agree terms such as expiry and cancellation in advance."
+    ],
+    "items": [
+      {
+        "desc": "Studio group classes, November (8 classes)",
+        "qty": 8,
+        "rate": 45
+      },
+      {
+        "desc": "Private sessions package (5 sessions)",
+        "qty": 5,
+        "rate": 70
+      },
+      {
+        "desc": "Travel to client home (private sessions)",
+        "qty": 2,
+        "rate": 15
+      },
+      {
+        "desc": "Workshop, Saturday 2 hours",
+        "qty": 2,
+        "rate": 60
+      }
+    ],
+    "tips": [
+      "List class dates or counts so studios can reconcile them with their schedule.",
+      "Bill private clients per session or per prepaid package and note any expiry date.",
+      "Show travel and studio rental as separate lines.",
+      "State your cancellation policy for private sessions.",
+      "Number invoices sequentially so repeat studios can track them."
+    ],
+    "faq": [
+      {
+        "q": "Per class or per head?",
+        "a": "Studios pay in different ways, such as a flat rate per class or a base plus a per-attendee amount. Confirm the basis before you start and show it on the invoice."
+      },
+      {
+        "q": "How do I invoice a class package?",
+        "a": "Show the number of sessions and the package price, and note any expiry date. Many instructors invoice the package in advance."
+      },
+      {
+        "q": "Am I an employee or a contractor?",
+        "a": "It depends on your agreement and local rules, which affect whether you invoice at all. Check local guidance if unsure."
+      }
+    ],
+    "payment_terms": "Studios: due within 14 days of the month end. Private clients: package paid in advance, single sessions due on the day. Late fees only if agreed in writing."
   }
 ]
