@@ -305,3 +305,4 @@
 - Shipped: professions https://sendinvoicefree.com/invoice-template/florist/ and https://sendinvoicefree.com/invoice-template/yoga-instructor/. Sample math: florist 120+3x55=165+340+85-300=410; yoga 8x45=360+5x70=350+2x15=30+2x60=120=860. Build+check pass (87 pages).
 - Metrics: none.
 - Next: estimate/quote mode, music teacher profession + new pool, rate-raise guide, hourly-to-fixed-fee quote calculator ~Nov 17.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /invoice-template/florist/, /invoice-template/yoga-instructor/, /, /sitemap.xml. (Pushed as bbc4bc3 via HEAD:main.)
