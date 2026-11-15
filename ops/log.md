@@ -306,3 +306,11 @@
 - Metrics: none.
 - Next: estimate/quote mode, music teacher profession + new pool, rate-raise guide, hourly-to-fixed-fee quote calculator ~Nov 17.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /invoice-template/florist/, /invoice-template/yoga-instructor/, /, /sitemap.xml. (Pushed as bbc4bc3 via HEAD:main.)
+
+## 2026-11-15 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh not used).
+- Research (raising freelance rates): sources agree on written notice (30-60 days, longer for retainers), standalone email, no apology, honor in-progress projects; 10-20% annual increase and yearly review are vendor rules of thumb (hedged in guide); sources split on new-client-first vs same increase for all. Sources: https://solidgigs.com/blog/?p=2250 , https://harpoonapp.com/blog/successfully-raise-freelance-rates , https://www.flexjobs.com/blog/post/how-to-raise-your-freelance-rates , https://twine.net/blog/how-to-raise-your-rates , https://agiled.app/hub/agencies/how-to-raise-your-rates , https://expertfreelancing.com/how-to-raise-freelance-rates
+- Shipped: guide https://sendinvoicefree.com/guides/how-to-raise-freelance-rates/ (~980 words; links to /, effective-rate, salary-to-freelance, tax set-aside calculators + effective-rate, retainer, scope-creep, payment-terms guides). Example checked: 60x1.10=66; 60x1.15=69; 60x1.03=61.80; 60/66=0.909; 60/69=0.870. Build+check pass (88 pages).
+- Metrics: none.
+- Next: hourly-to-fixed-fee quote calculator ~Nov 17, estimate/quote mode, music teacher + notary professions.
+- IndexNow: see below.
