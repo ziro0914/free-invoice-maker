@@ -313,4 +313,4 @@
 - Shipped: guide https://sendinvoicefree.com/guides/how-to-raise-freelance-rates/ (~980 words; links to /, effective-rate, salary-to-freelance, tax set-aside calculators + effective-rate, retainer, scope-creep, payment-terms guides). Example checked: 60x1.10=66; 60x1.15=69; 60x1.03=61.80; 60/66=0.909; 60/69=0.870. Build+check pass (88 pages).
 - Metrics: none.
 - Next: hourly-to-fixed-fee quote calculator ~Nov 17, estimate/quote mode, music teacher + notary professions.
-- IndexNow: see below.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/how-to-raise-freelance-rates/, /guides/, /, /sitemap.xml. (Pushed as bbe5248 via HEAD:main.)
