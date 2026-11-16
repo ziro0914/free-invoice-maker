@@ -489,6 +489,18 @@ return [['Statutory interest rate (8% + base rate)',r.toFixed(2)+'%'],['Interest
     faq: [['How is UK late payment interest calculated?', 'Under the Late Payment of Commercial Debts rules, interest on a late business-to-business invoice is simple interest at 8% above the Bank of England base rate. For example, on 2,000 pounds at a 4% base rate the rate is 12%, so 45 days overdue is 2,000 x 12% x 45 / 365 = about 29.59 pounds, roughly 0.66 pounds a day.'],
       ['Which base rate and fixed sum should I use?', 'The base rate that applies is generally the one in force at a set reference date, so check the current gov.uk guidance rather than relying on this default. The fixed recovery sum depends on the size of the debt; the 70 pound default here is only a placeholder, so look up the gov.uk table. Rules differ for consumers, public bodies and other countries, and contract terms can change things, so check gov.uk or ask a professional before claiming.']],
   },
+  {
+    slug: 'early-payment-discount-calculator', name: 'Early payment discount calculator',
+    title: 'Early Payment Discount Calculator: 2/10 Net 30 Cost | Free',
+    description: 'Free early payment discount calculator for invoices. Enter terms like 2/10 net 30 to see the discount you give away, the annualized cost and whether it beats your own financing cost.',
+    h1: 'Early Payment Discount Calculator', intro: 'Thinking of offering terms like 2/10 net 30 on your invoices? Enter the invoice, the discount and the days to see what the discount really costs you per year, and compare it with what it would cost you to borrow instead.',
+    fields: [['amt', 'Invoice amount', 1000, '10'], ['disc', 'Early payment discount %', 2, '0.1'], ['dd', 'Discount applies if paid within (days)', 10, '1'], ['net', 'Full payment due in (days)', 30, '1'], ['rate', 'Your yearly cost of borrowing or the return you could earn on cash %', 12, '0.5']],
+    compute: `var d=v.amt*v.disc/100,paid=v.amt-d,span=v.net-v.dd,ann=(span>0&&v.disc<100)?v.disc/(100-v.disc)*365/span*100:0,save=span>0?paid*v.rate/100*span/365:0,diff=save-d;
+return [['Discount you give away',m(d)],['You receive if the client pays early',m(paid)],['Annualized cost of the discount (simple, 365-day year)',ann.toFixed(2)+'%',1],['Interest you would pay to wait '+Math.max(0,span)+' more days',m(save)],[diff>=0?'Net gain from offering the discount':'Net cost of offering the discount',m(Math.abs(diff)),1],['Verdict',ann>v.rate?'Costs more than your money does':'Cheaper than your money']];`,
+    cta: ['Spot overdue invoices before they get old', 'The Freelancer Invoice & Bookkeeping Kit spreadsheet has an invoice log with overdue alerts, expenses and mileage, a monthly profit dashboard and a tax set-aside. Excel + Google Sheets.', 'Get it ($12)', 'https://ziroflux4.gumroad.com/l/freelancer-kit'],
+    faq: [['How do I calculate the cost of a 2/10 net 30 early payment discount?', 'Divide the discount by what you still receive (2 / 98), then multiply by 365 divided by the days you are speeding up payment (30 - 10 = 20). That is 2/98 x 365/20, about 37.24% a year. Some textbooks use a 360-day year, which gives a slightly lower figure, and compounding raises it.'],
+      ['Is offering an early payment discount worth it?', 'It depends on what your own money costs. If you would otherwise borrow at a rate below the annualized cost, the discount costs more than it saves; if cash is tight and financing is expensive, it can help. For example, on 1,000 at a 12% cost of money, 2/10 net 30 gives away 20 to save about 6.44 of interest. Smaller discounts such as 1% are often tried first. Check your contract and local rules, and treat this as an estimate, not financial advice.']],
+  },
 ];
 
 function buildCalcs() {

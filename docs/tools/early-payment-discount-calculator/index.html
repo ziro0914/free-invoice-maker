@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Early Payment Discount Calculator: 2/10 Net 30 Cost | Free</title>
+<meta name="description" content="Free early payment discount calculator for invoices. Enter terms like 2/10 net 30 to see the discount you give away, the annualized cost and whether it beats your own financing cost.">
+<link rel="canonical" href="https://sendinvoicefree.com/tools/early-payment-discount-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Early Payment Discount Calculator: 2/10 Net 30 Cost | Free">
+<meta property="og:description" content="Free early payment discount calculator for invoices. Enter terms like 2/10 net 30 to see the discount you give away, the annualized cost and whether it beats your own financing cost.">
+<meta property="og:url" content="https://sendinvoicefree.com/tools/early-payment-discount-calculator/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css?v=2026-11-16">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate the cost of a 2/10 net 30 early payment discount?","acceptedAnswer":{"@type":"Answer","text":"Divide the discount by what you still receive (2 / 98), then multiply by 365 divided by the days you are speeding up payment (30 - 10 = 20). That is 2/98 x 365/20, about 37.24% a year. Some textbooks use a 360-day year, which gives a slightly lower figure, and compounding raises it."}},{"@type":"Question","name":"Is offering an early payment discount worth it?","acceptedAnswer":{"@type":"Answer","text":"It depends on what your own money costs. If you would otherwise borrow at a rate below the annualized cost, the discount costs more than it saves; if cash is tight and financing is expensive, it can help. For example, on 1,000 at a 12% cost of money, 2/10 net 30 gives away 20 to save about 6.44 of interest. Smaller discounts such as 1% are often tried first. Check your contract and local rules, and treat this as an estimate, not financial advice."}}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/invoice-templates/">Templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a></nav>
+</div></header>
+<main><section class="wrap hero"><h1>Early Payment Discount Calculator</h1><p>Thinking of offering terms like 2/10 net 30 on your invoices? Enter the invoice, the discount and the days to see what the discount really costs you per year, and compare it with what it would cost you to borrow instead. Free, no sign-up.</p></section>
+<section class="wrap tool" style="margin:18px auto 40px">
+<form class="card" id="calc" onsubmit="return false"><fieldset><legend>Your numbers</legend><div class="grid2"><label>Invoice amount<input data-k="amt" type="number" inputmode="decimal" min="0" step="10" value="1000"></label><label>Early payment discount %<input data-k="disc" type="number" inputmode="decimal" min="0" step="0.1" value="2"></label><label>Discount applies if paid within (days)<input data-k="dd" type="number" inputmode="decimal" min="0" step="1" value="10"></label><label>Full payment due in (days)<input data-k="net" type="number" inputmode="decimal" min="0" step="1" value="30"></label><label>Your yearly cost of borrowing or the return you could earn on cash %<input data-k="rate" type="number" inputmode="decimal" min="0" step="0.5" value="12"></label></div></fieldset></form>
+<div class="card" id="out" aria-live="polite"></div>
+</section>
+<article class="wrap content">
+<aside class="partner product"><strong>Spot overdue invoices before they get old</strong> The Freelancer Invoice &amp; Bookkeeping Kit spreadsheet has an invoice log with overdue alerts, expenses and mileage, a monthly profit dashboard and a tax set-aside. Excel + Google Sheets. <a href="https://ziroflux4.gumroad.com/l/freelancer-kit" rel="noopener" target="_blank">Get it ($12) →</a></aside>
+<h2>How do I calculate the cost of a 2/10 net 30 early payment discount?</h2><p>Divide the discount by what you still receive (2 / 98), then multiply by 365 divided by the days you are speeding up payment (30 - 10 = 20). That is 2/98 x 365/20, about 37.24% a year. Some textbooks use a 360-day year, which gives a slightly lower figure, and compounding raises it.</p><h2>Is offering an early payment discount worth it?</h2><p>It depends on what your own money costs. If you would otherwise borrow at a rate below the annualized cost, the discount costs more than it saves; if cash is tight and financing is expensive, it can help. For example, on 1,000 at a 12% cost of money, 2/10 net 30 gives away 20 to save about 6.44 of interest. Smaller discounts such as 1% are often tried first. Check your contract and local rules, and treat this as an estimate, not financial advice.</p>
+<p class="small">Estimates only. Not tax, legal or financial advice. <a href="/tools/">More free tools</a></p>
+</article>
+<script>
+(function(){
+function m(x){return (x<0?'-':'')+'$'+Math.abs(x).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function calc(v){var d=v.amt*v.disc/100,paid=v.amt-d,span=v.net-v.dd,ann=(span>0&&v.disc<100)?v.disc/(100-v.disc)*365/span*100:0,save=span>0?paid*v.rate/100*span/365:0,diff=save-d;
+return [['Discount you give away',m(d)],['You receive if the client pays early',m(paid)],['Annualized cost of the discount (simple, 365-day year)',ann.toFixed(2)+'%',1],['Interest you would pay to wait '+Math.max(0,span)+' more days',m(save)],[diff>=0?'Net gain from offering the discount':'Net cost of offering the discount',m(Math.abs(diff)),1],['Verdict',ann>v.rate?'Costs more than your money does':'Cheaper than your money']];}
+function run(){var v={};document.querySelectorAll('#calc [data-k]').forEach(function(e){v[e.dataset.k]=parseFloat(e.value)||0});
+ document.getElementById('out').innerHTML='<h2 style="margin-top:0">Result</h2><table style="width:100%">'+calc(v).map(function(r){
+  return '<tr><td>'+(r[2]?'<b>'+r[0]+'</b>':r[0])+'</td><td style="text-align:right'+(r[2]?';font-size:1.3em':'')+'">'+(r[2]?'<b>'+r[1]+'</b>':r[1])+'</td></tr>'}).join('')+'</table>';}
+document.getElementById('calc').addEventListener('input',run);run();
+})();
+</script></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/">Invoice generator</a><a href="/invoice-templates/">Invoice templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a><a href="/tools/etsy-fee-calculator/">Etsy fee calculator</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+
+</body>
+</html>

@@ -314,3 +314,11 @@
 - Metrics: none.
 - Next: hourly-to-fixed-fee quote calculator ~Nov 17, estimate/quote mode, music teacher + notary professions.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/how-to-raise-freelance-rates/, /guides/, /, /sitemap.xml. (Pushed as bbe5248 via HEAD:main.)
+
+## 2026-11-16 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh not used).
+- Research (early payment discounts on invoices): formula = discount/(100-discount) x 365/(net days - discount days); 2/10 net 30 is about 37% annualized (360-day textbooks give ~36.7%, compounding ~43.9%); BDC rule of thumb: only worth offering if your cost of money exceeds ~37% or cash is tight; 1/10 net 30 is about 18%. Mostly vendor/lender blogs. Sources: https://www.accountingtools.com/articles/credit-terms-and-the-cost-of-credit , https://touro.pressbooks.pub/corporatefinance/?p=419 , https://bdc.ca/en/articles-tools/money-finance/manage-finances/early-payment-discount-big-returns-business , https://tipalti.com/resources/learn/early-payment-discount/
+- Shipped: calculator https://sendinvoicefree.com/tools/early-payment-discount-calculator/ (cta -> freelancer-kit $12, existing wording). Hand check: 1000x2%=20; paid 980; 2/98x365/20=37.24%; interest to wait 20 days at 12% = 980x0.12x20/365=6.44; net cost 13.56. Build+check pass (89 pages).
+- Metrics: none.
+- Next: early-payment-discount guide (net 30 vs discount), estimate/quote mode, professions music teacher + notary.
+- IndexNow: see below.
