@@ -321,4 +321,4 @@
 - Shipped: calculator https://sendinvoicefree.com/tools/early-payment-discount-calculator/ (cta -> freelancer-kit $12, existing wording). Hand check: 1000x2%=20; paid 980; 2/98x365/20=37.24%; interest to wait 20 days at 12% = 980x0.12x20/365=6.44; net cost 13.56. Build+check pass (89 pages).
 - Metrics: none.
 - Next: early-payment-discount guide (net 30 vs discount), estimate/quote mode, professions music teacher + notary.
-- IndexNow: see below.
+- IndexNow: not submitted — sandbox proxy denies api.indexnow.org; local session to submit /tools/early-payment-discount-calculator/, /tools/, /, /sitemap.xml. (Pushed as b552942 via HEAD:main.)
