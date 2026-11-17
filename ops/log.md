@@ -329,3 +329,4 @@
 - Shipped: professions https://sendinvoicefree.com/invoice-template/music-teacher/ and https://sendinvoicefree.com/invoice-template/notary/. Sample math: music 4x45=180+22+60+20=282; notary 3x10=30+35+20x0.5=10+15=90. Build+check pass (91 pages).
 - Metrics: none.
 - Next: early-payment-discount guide, estimate/quote mode, new professions (bartender, personal chef, window cleaner), calculator ~Nov 19.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com; local session to submit /invoice-template/music-teacher/, /invoice-template/notary/, /, /sitemap.xml. (Pushed as 283f17e via HEAD:main.)
