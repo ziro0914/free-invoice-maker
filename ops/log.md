@@ -322,3 +322,10 @@
 - Metrics: none.
 - Next: early-payment-discount guide (net 30 vs discount), estimate/quote mode, professions music teacher + notary.
 - IndexNow: not submitted — sandbox proxy denies api.indexnow.org; local session to submit /tools/early-payment-discount-calculator/, /tools/, /, /sitemap.xml. (Pushed as b552942 via HEAD:main.)
+
+## 2026-11-17 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh not used).
+- Research (music teacher / notary invoices): music: month + lesson count line, per-lesson rate, materials/exam fees separate, cancellation/make-up policy on the invoice (e.g. 24h notice), package expiry; "lessons generally not taxed" is one vendor claim, hedged. Notary: notarial act fee separate from travel/printing; many states cap act fees but not travel (vendor claim; hedged "check local rules"); loan signing = flat fee + adders. $5-15 / $75-200 ranges not used. Sources: https://www.invoicesimple.com/invoice-template/music-lesson-invoice/ , https://invoicequick.com/invoice-templates/piano-teacher-invoice-template , https://invoize.app/invoice-templates/music-teacher-invoice-template/ , https://www.nationalnotary.org/knowledge-center/notary-invoice-template , https://agiled.app/invoice-templates/notary , https://invoicequick.com/invoice-templates/notary-invoice-template
+- Shipped: professions https://sendinvoicefree.com/invoice-template/music-teacher/ and https://sendinvoicefree.com/invoice-template/notary/. Sample math: music 4x45=180+22+60+20=282; notary 3x10=30+35+20x0.5=10+15=90. Build+check pass (91 pages).
+- Metrics: none.
+- Next: early-payment-discount guide, estimate/quote mode, new professions (bartender, personal chef, window cleaner), calculator ~Nov 19.

@@ -2662,5 +2662,117 @@
       }
     ],
     "payment_terms": "Studios: due within 14 days of the month end. Private clients: package paid in advance, single sessions due on the day. Late fees only if agreed in writing."
+  },
+  {
+    "slug": "music-teacher",
+    "name": "Music Teacher",
+    "plural": "Music Teachers",
+    "keyword": "music teacher invoice template",
+    "title": "Free Music Teacher Invoice Template | Free Invoice Maker",
+    "description": "Music teacher invoice template for weekly lessons, monthly billing and lesson packages. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "A music teacher invoice should show the month, the number of lessons, the rate per lesson and any extras such as sheet music or exam fees on separate lines.",
+      "The sample bills one student for a month of weekly 45-minute lessons plus materials and a late-cancellation charge. Rates are examples only; use your own and state your cancellation policy up front."
+    ],
+    "items": [
+      {
+        "desc": "Piano lessons, November (4 x 45 min)",
+        "qty": 4,
+        "rate": 45
+      },
+      {
+        "desc": "Sheet music and method book",
+        "qty": 1,
+        "rate": 22
+      },
+      {
+        "desc": "Exam entry fee (pass-through at cost)",
+        "qty": 1,
+        "rate": 60
+      },
+      {
+        "desc": "Late-cancellation charge (policy: under 24 hours)",
+        "qty": 1,
+        "rate": 20
+      }
+    ],
+    "tips": [
+      "Write the month and lesson count on the line, for example '4 x 45 min, November'.",
+      "Put your cancellation and make-up policy on every invoice and apply it the same way each time.",
+      "List sheet music, books and exam fees as separate lines.",
+      "Add a travel line if you teach at the student's home.",
+      "Decide whether you bill monthly in advance or per term, and state it."
+    ],
+    "faq": [
+      {
+        "q": "Should I bill monthly or per lesson?",
+        "a": "Many teachers bill monthly for weekly lessons or take a term or package payment in advance. Pick one approach and state it clearly on the invoice."
+      },
+      {
+        "q": "How do I handle cancellations?",
+        "a": "Set a notice period, such as 24 hours, and say what happens to a missed lesson (charged, or rescheduled). Applying it consistently avoids disputes."
+      },
+      {
+        "q": "Do I charge tax on lessons?",
+        "a": "It depends on where you are and how you are set up. Check local rules or ask an accountant."
+      }
+    ],
+    "payment_terms": "Monthly lessons: due by the 5th of the month, or paid in advance for the term. Late cancellations charged as agreed in writing."
+  },
+  {
+    "slug": "notary",
+    "name": "Notary Public",
+    "plural": "Notaries",
+    "keyword": "notary invoice template",
+    "title": "Free Notary Invoice Template | Free Invoice Maker",
+    "description": "Notary invoice template that separates notarial fees from travel and signing fees. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "A notary invoice should list each notarial act and any travel or service charges as separate lines, because many places regulate notarial fees differently from other charges.",
+      "The sample bills a mobile appointment: three notarial acts, a travel fee and a printing line. Amounts are examples only; check your state or country's fee rules before setting prices."
+    ],
+    "items": [
+      {
+        "desc": "Notarial act: acknowledgment (statutory fee per act)",
+        "qty": 3,
+        "rate": 10
+      },
+      {
+        "desc": "Mobile travel fee (12 miles each way, flat)",
+        "qty": 1,
+        "rate": 35
+      },
+      {
+        "desc": "Document printing, 20 pages",
+        "qty": 20,
+        "rate": 0.5
+      },
+      {
+        "desc": "After-hours appointment surcharge",
+        "qty": 1,
+        "rate": 15
+      }
+    ],
+    "tips": [
+      "Show the notarial fee per act separately from travel and service charges.",
+      "Include the appointment date, location and the type of each act.",
+      "State your travel fee basis (flat or per mile) before the appointment.",
+      "Check local rules on maximum notarial fees and any disclosure requirements.",
+      "Keep invoices alongside your notary journal references where your rules require records."
+    ],
+    "faq": [
+      {
+        "q": "Should travel be a separate line?",
+        "a": "Yes, it is generally clearer and in many places required to show it apart from the notarial fee. Check your local rules."
+      },
+      {
+        "q": "Can I charge any price I want?",
+        "a": "Notarial act fees are often capped by law, while travel and convenience charges may not be. Verify your local limits."
+      },
+      {
+        "q": "What about loan signings?",
+        "a": "Signing agents often bill a flat signing fee plus extras such as printing, scanbacks or wait time. Agree it with the client first."
+      }
+    ],
+    "payment_terms": "Individuals: due at the appointment. Businesses and title companies: due within 15 days of invoice. Late fees only if agreed in writing."
   }
 ]

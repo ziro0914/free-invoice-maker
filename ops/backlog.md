@@ -43,3 +43,4 @@
 - (2026-11-14) Done: professions florist, yoga-instructor. Remaining: music teacher (then need new profession ideas: notary, bartender, personal chef, window cleaner). Ideas: estimate/quote mode; rate-raise guide; calculator ~Nov 17 (hourly-to-fixed-fee quote).
 - (2026-11-15) Done: rate-raise guide. Remaining: music teacher + new professions (notary, bartender, personal chef, window cleaner). Ideas: hourly-to-fixed-fee quote calculator ~Nov 17; estimate/quote mode.
 - (2026-11-16) Done: early payment discount calculator (hourly-to-fixed-fee already existed as project price calculator). Ideas: early-payment-discount guide; estimate/quote mode; professions music teacher, notary, bartender, personal chef, window cleaner.
+- (2026-11-17) Done: professions music-teacher, notary. Remaining ideas: bartender, personal chef, window cleaner, dog groomer; early-payment-discount guide; estimate/quote mode.
