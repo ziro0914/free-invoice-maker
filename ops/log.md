@@ -337,3 +337,4 @@
 - Shipped: guide https://sendinvoicefree.com/guides/early-payment-discount-2-10-net-30-explained/ (~915 words; links to calculators + 5 guides). Example checked: 1000x2%=20, receive 980; 2/98x365/20=37.2%; 980x0.12x20/365=6.44. Build+check pass (92 pages).
 - Metrics: none.
 - Next: estimate/quote mode, professions bartender/personal chef/window cleaner/dog groomer, calculator ~Nov 19.
+- IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/early-payment-discount-2-10-net-30-explained/, /guides/, /, /sitemap.xml. (Pushed as 6196129 via HEAD:main.)
