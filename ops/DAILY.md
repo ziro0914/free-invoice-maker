@@ -15,6 +15,7 @@ Do these steps in order. Keep the whole run under ~40 minutes.
 4. **Build & verify**: `node build.mjs` must succeed; `node ops/check.mjs` must pass. If anything fails, fix it or revert your change — never push a broken site.
 5. **Promotion drafts**: write `marketing/daily/YYYY-MM-DD.md` with 2-3 ready-to-paste posts for channels in PLAN.md that match today's content (respect each community's self-promo rules; helpful-first). Drafts only unless the owner has granted posting for a channel in OWNER_TODO.md "Granted".
 6. **Commit & push**: `git add -A && git commit -m "daily: <summary>" && git push origin main`.
+   IndexNow is automatic now: `.github/workflows/indexnow.yml` runs on every push that touches `docs/`, submits the new/changed URLs and records them in `ops/indexnow-submitted.txt`. Don't submit IndexNow by hand or edit that ledger; just note in the log that it is handled by the workflow.
 7. **Log**: append to `ops/log.md`: date, research findings, what shipped (URLs), metrics if available, next step.
 8. **Escalate only if needed**: when you need the owner (account sign-up, payment, approval, decision), add it to `ops/OWNER_TODO.md` AND open ONE GitHub issue: `gh issue create --label owner-action --assignee ziro0914 --title "<Korean short ask>" --body "<Korean: exactly what to do, why, ~minutes needed, what to reply>"`. Don't duplicate an existing open issue. Owner-facing text in Korean.
 
