@@ -330,3 +330,10 @@
 - Metrics: none.
 - Next: early-payment-discount guide, estimate/quote mode, new professions (bartender, personal chef, window cleaner), calculator ~Nov 19.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com; local session to submit /invoice-template/music-teacher/, /invoice-template/notary/, /, /sitemap.xml. (Pushed as 283f17e via HEAD:main.)
+
+## 2026-11-18 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh not used).
+- Research (early payment discount wording / whether freelancers should offer): sources agree on 2/10 net 30 meaning and ~37% annualized figure; disagree on whether to offer (suits corporate AP clients; pointless if clients pay on time); wording tips: put near total, use dates, state scope (before tax/freight), pair with late fee optionally. Sources: https://www.freshbooks.com/blog/?p=61300 , https://tipalti.com/resources/learn/early-payment-discount/ , https://fitsmallbusiness.com/early-payment-discounts/ , https://www.xero.com/small-business-guides/invoicing/invoice-payment-terms/ , https://racklify.com/encyclopedia/how-to-write-payment-terms-on-invoices-wording-net-dates-discounts-and-late-fees/
+- Shipped: guide https://sendinvoicefree.com/guides/early-payment-discount-2-10-net-30-explained/ (~915 words; links to calculators + 5 guides). Example checked: 1000x2%=20, receive 980; 2/98x365/20=37.2%; 980x0.12x20/365=6.44. Build+check pass (92 pages).
+- Metrics: none.
+- Next: estimate/quote mode, professions bartender/personal chef/window cleaner/dog groomer, calculator ~Nov 19.
