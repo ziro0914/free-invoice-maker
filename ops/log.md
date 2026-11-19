@@ -346,3 +346,10 @@
 - Metrics: none.
 - Next: guide on building a client pipeline / win rate, estimate/quote mode, professions bartender/personal chef/window cleaner/dog groomer.
 - IndexNow: handled by .github/workflows/indexnow.yml on push.
+
+## 2026-11-19 (owner request: GA4 + Search Console 연결)
+- ✅ Google Search Console: `https://sendinvoicefree.com/` (URL 접두어) 속성 생성, **HTML 태그 방식으로 소유권 확인 완료** (토큰 `3If-J_jyE53T0GJQzYqkmcp2Di-C6HBnpSSMbsbkgFY`), `sitemap.xml` 제출 → 상태 성공, 93개 URL 발견.
+- ✅ GA4: 계정 `senior.inglish.co.kr`(a8524201) 아래 속성 **sendinvoicefree.com**(p565150811) + 웹 스트림 `https://sendinvoicefree.com` (스트림 ID 16371130088) 생성. **측정 ID `G-MQCQQKEBJ2`**. 시간대 아시아/서울, 통화 USD, 향상된 측정 ON. 실시간 보고서에서 활성 사용자 1명 수신 확인.
+- ✅ GA4 ↔ Search Console 제품 링크 생성(속성 `https://sendinvoicefree.com/` ↔ 스트림 16371130088).
+- 반영 위치: `config.json`의 `gaId`·`googleSiteVerification` (build.mjs가 모든 페이지에 gtag + meta 생성). 커밋 `b0067a5`, Pages 배포 성공, 라이브 93페이지 전부에 태그 포함 확인.
+- ⚠️ 남은 일(사장님 계정 필요): AdSense(도메인 필요, 보류 중), FreshBooks 제휴 가입, Pinterest 비즈니스 계정 → issue #1 참고. GA4/GSC는 더 이상 에스컬레이션 불필요.
