@@ -338,3 +338,11 @@
 - Metrics: none.
 - Next: estimate/quote mode, professions bartender/personal chef/window cleaner/dog groomer, calculator ~Nov 19.
 - IndexNow: not submitted — sandbox proxy denies sendinvoicefree.com and api.indexnow.org; local session to submit /guides/early-payment-discount-2-10-net-30-explained/, /guides/, /, /sitemap.xml. (Pushed as 6196129 via HEAD:main.)
+
+## 2026-11-19 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged.
+- Research (clients needed for income goal): sources agree on goal+costs+tax grossed up, divided by average project/client value; reverse funnel (clients -> proposals via win rate); churn = lost/start clients. Figures like 40% churn, 10% Upwork reply rate are vendor/platform data, not used as claims (defaults labeled placeholders). Sources: https://freelanceguide.pages.dev/tools/income-goal-calculator , https://solohourly.com/tools/income-goal-calculator , https://www.growthmentor.com/blog/escape-feast-or-famine-freelancing , https://bookipi.com/?p=40262
+- Shipped: calculator https://sendinvoicefree.com/tools/how-many-clients-do-i-need-calculator/ (cta -> client-tracker $12, wording from existing shop entry). Hand check: (80000+6000)/0.75=114666.67; /8000=14.33 -> 15 clients; 15/0.25=60 proposals/yr = 5/month. Build+check pass (93 pages).
+- Metrics: none.
+- Next: guide on building a client pipeline / win rate, estimate/quote mode, professions bartender/personal chef/window cleaner/dog groomer.
+- IndexNow: handled by .github/workflows/indexnow.yml on push.

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Many Clients Do I Need? Freelance Client Goal Calculator | Free</title>
+<meta name="description" content="Free calculator: enter your income goal, costs, tax, average revenue per client and proposal win rate to see how many clients and proposals you need per year.">
+<link rel="canonical" href="https://sendinvoicefree.com/tools/how-many-clients-do-i-need-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="How Many Clients Do I Need? Freelance Client Goal Calculator | Free">
+<meta property="og:description" content="Free calculator: enter your income goal, costs, tax, average revenue per client and proposal win rate to see how many clients and proposals you need per year.">
+<meta property="og:url" content="https://sendinvoicefree.com/tools/how-many-clients-do-i-need-calculator/">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f766e'/%3E%3Cpath d='M9 8h14M9 14h14M9 20h9' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css?v=2026-11-19">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many clients do I need to hit my income goal?","acceptedAnswer":{"@type":"Answer","text":"Add your desired take-home pay to your business costs, gross it up for tax, then divide by what an average client pays you per year and round up. For example, (80,000 + 6,000) / (1 - 25%) = about 114,667 of revenue; at 8,000 per client that is 14.33, so plan for 15 clients."}},{"@type":"Question","name":"How many proposals do I need to send?","acceptedAnswer":{"@type":"Answer","text":"Divide the clients you need by your win rate. At a 25% win rate, 15 clients means about 60 proposals a year, roughly 5 a month. The 25% default is a placeholder, not a benchmark; track your own results, since win rates vary widely by niche and lead source. Also plan for clients who leave, so aim a little above the number shown. Tax is an estimate only; check local rules."}}]}</script>
+
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="/">Free<b>Invoice</b>Maker</a>
+  <nav><a href="/invoice-templates/">Templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a></nav>
+</div></header>
+<main><section class="wrap hero"><h1>How Many Clients Do I Need? Calculator</h1><p>Turn an income goal into a client target. Enter the take-home pay you want, your costs and tax, what an average client pays you per year and how often your proposals win, and see how many clients and proposals that takes. Free, no sign-up.</p></section>
+<section class="wrap tool" style="margin:18px auto 40px">
+<form class="card" id="calc" onsubmit="return false"><fieldset><legend>Your numbers</legend><div class="grid2"><label>Take-home pay you want per year<input data-k="income" type="number" inputmode="decimal" min="0" step="1000" value="80000"></label><label>Business costs per year<input data-k="costs" type="number" inputmode="decimal" min="0" step="100" value="6000"></label><label>Tax rate % (placeholder, check your own)<input data-k="tax" type="number" inputmode="decimal" min="0" step="1" value="25"></label><label>Average revenue per client per year<input data-k="avg" type="number" inputmode="decimal" min="0" step="100" value="8000"></label><label>Share of proposals you win %<input data-k="win" type="number" inputmode="decimal" min="0" step="1" value="25"></label></div></fieldset></form>
+<div class="card" id="out" aria-live="polite"></div>
+</section>
+<article class="wrap content">
+<aside class="partner product"><strong>Keep your lead pipeline and clients organized</strong> The Freelance Client Tracker &amp; Onboarding System spreadsheet has a lead pipeline with follow-up reminders, a 9-step onboarding checklist and project deadlines. Excel + Google Sheets. <a href="https://ziroflux4.gumroad.com/l/client-tracker" rel="noopener" target="_blank">Get it ($12) →</a></aside>
+<h2>How many clients do I need to hit my income goal?</h2><p>Add your desired take-home pay to your business costs, gross it up for tax, then divide by what an average client pays you per year and round up. For example, (80,000 + 6,000) / (1 - 25%) = about 114,667 of revenue; at 8,000 per client that is 14.33, so plan for 15 clients.</p><h2>How many proposals do I need to send?</h2><p>Divide the clients you need by your win rate. At a 25% win rate, 15 clients means about 60 proposals a year, roughly 5 a month. The 25% default is a placeholder, not a benchmark; track your own results, since win rates vary widely by niche and lead source. Also plan for clients who leave, so aim a little above the number shown. Tax is an estimate only; check local rules.</p>
+<p class="small">Estimates only. Not tax, legal or financial advice. <a href="/tools/">More free tools</a></p>
+</article>
+<script>
+(function(){
+function m(x){return (x<0?'-':'')+'$'+Math.abs(x).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function calc(v){var gross=(v.income+v.costs)/Math.max(.01,1-v.tax/100),raw=v.avg>0?gross/v.avg:0,n=Math.ceil(raw-1e-9),p=v.win>0?n/(v.win/100):0;
+return [['Revenue you need per year',m(gross)],['Clients needed (exact)',raw.toFixed(2)],['Clients needed (rounded up)',String(n),1],['Revenue per month',m(gross/12)],['Proposals to send per year at your win rate',Math.ceil(p-1e-9)+'',1],['Proposals per month',(p/12).toFixed(1)]];}
+function run(){var v={};document.querySelectorAll('#calc [data-k]').forEach(function(e){v[e.dataset.k]=parseFloat(e.value)||0});
+ document.getElementById('out').innerHTML='<h2 style="margin-top:0">Result</h2><table style="width:100%">'+calc(v).map(function(r){
+  return '<tr><td>'+(r[2]?'<b>'+r[0]+'</b>':r[0])+'</td><td style="text-align:right'+(r[2]?';font-size:1.3em':'')+'">'+(r[2]?'<b>'+r[1]+'</b>':r[1])+'</td></tr>'}).join('')+'</table>';}
+document.getElementById('calc').addEventListener('input',run);run();
+})();
+</script></main>
+<footer class="site"><div class="wrap">
+  <p><a href="/">Invoice generator</a><a href="/invoice-templates/">Invoice templates</a><a href="/guides/">Guides</a><a href="/tools/">Free tools</a><a href="/shop/">Shop</a><a href="/tools/etsy-fee-calculator/">Etsy fee calculator</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></p>
+  <p>© 2026 Free Invoice Maker. Free forever, no sign-up. Your data stays in your browser. Not tax or legal advice.</p>
+</div></footer>
+
+</body>
+</html>

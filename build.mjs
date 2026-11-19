@@ -501,6 +501,18 @@ return [['Discount you give away',m(d)],['You receive if the client pays early',
     faq: [['How do I calculate the cost of a 2/10 net 30 early payment discount?', 'Divide the discount by what you still receive (2 / 98), then multiply by 365 divided by the days you are speeding up payment (30 - 10 = 20). That is 2/98 x 365/20, about 37.24% a year. Some textbooks use a 360-day year, which gives a slightly lower figure, and compounding raises it.'],
       ['Is offering an early payment discount worth it?', 'It depends on what your own money costs. If you would otherwise borrow at a rate below the annualized cost, the discount costs more than it saves; if cash is tight and financing is expensive, it can help. For example, on 1,000 at a 12% cost of money, 2/10 net 30 gives away 20 to save about 6.44 of interest. Smaller discounts such as 1% are often tried first. Check your contract and local rules, and treat this as an estimate, not financial advice.']],
   },
+  {
+    slug: 'how-many-clients-do-i-need-calculator', name: 'How many clients do I need calculator',
+    title: 'How Many Clients Do I Need? Freelance Client Goal Calculator | Free',
+    description: 'Free calculator: enter your income goal, costs, tax, average revenue per client and proposal win rate to see how many clients and proposals you need per year.',
+    h1: 'How Many Clients Do I Need? Calculator', intro: 'Turn an income goal into a client target. Enter the take-home pay you want, your costs and tax, what an average client pays you per year and how often your proposals win, and see how many clients and proposals that takes.',
+    fields: [['income', 'Take-home pay you want per year', 80000, '1000'], ['costs', 'Business costs per year', 6000, '100'], ['tax', 'Tax rate % (placeholder, check your own)', 25, '1'], ['avg', 'Average revenue per client per year', 8000, '100'], ['win', 'Share of proposals you win %', 25, '1']],
+    compute: `var gross=(v.income+v.costs)/Math.max(.01,1-v.tax/100),raw=v.avg>0?gross/v.avg:0,n=Math.ceil(raw-1e-9),p=v.win>0?n/(v.win/100):0;
+return [['Revenue you need per year',m(gross)],['Clients needed (exact)',raw.toFixed(2)],['Clients needed (rounded up)',String(n),1],['Revenue per month',m(gross/12)],['Proposals to send per year at your win rate',Math.ceil(p-1e-9)+'',1],['Proposals per month',(p/12).toFixed(1)]];`,
+    cta: ['Keep your lead pipeline and clients organized', 'The Freelance Client Tracker & Onboarding System spreadsheet has a lead pipeline with follow-up reminders, a 9-step onboarding checklist and project deadlines. Excel + Google Sheets.', 'Get it ($12)', 'https://ziroflux4.gumroad.com/l/client-tracker'],
+    faq: [['How many clients do I need to hit my income goal?', 'Add your desired take-home pay to your business costs, gross it up for tax, then divide by what an average client pays you per year and round up. For example, (80,000 + 6,000) / (1 - 25%) = about 114,667 of revenue; at 8,000 per client that is 14.33, so plan for 15 clients.'],
+      ['How many proposals do I need to send?', 'Divide the clients you need by your win rate. At a 25% win rate, 15 clients means about 60 proposals a year, roughly 5 a month. The 25% default is a placeholder, not a benchmark; track your own results, since win rates vary widely by niche and lead source. Also plan for clients who leave, so aim a little above the number shown. Tax is an estimate only; check local rules.']],
+  },
 ];
 
 function buildCalcs() {
