@@ -2774,5 +2774,122 @@
       }
     ],
     "payment_terms": "Individuals: due at the appointment. Businesses and title companies: due within 15 days of invoice. Late fees only if agreed in writing."
+  },
+  {
+    "slug": "bartender",
+    "name": "Bartender",
+    "plural": "Bartenders",
+    "keyword": "bartender invoice template",
+    "title": "Free Bartender Invoice Template | Free Invoice Maker",
+    "description": "Bartender invoice template with hourly labor, barback, setup and deposit lines. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "A freelance bartender invoice should split labor, support staff, setup time and supplies into separate lines so the host can see exactly what the event cost.",
+      "The sample bills a private party: two bartenders, a barback, setup and breakdown, glassware, and a deposit credit. Amounts are examples only; check local alcohol-service and tax rules."
+    ],
+    "items": [
+      {
+        "desc": "Bartender labor, 4 hrs x 2 bartenders",
+        "qty": 8,
+        "rate": 45
+      },
+      {
+        "desc": "Barback, 4 hrs",
+        "qty": 4,
+        "rate": 25
+      },
+      {
+        "desc": "Setup and breakdown, 2 hrs",
+        "qty": 2,
+        "rate": 45
+      },
+      {
+        "desc": "Glassware and garnish kit",
+        "qty": 1,
+        "rate": 60
+      },
+      {
+        "desc": "Deposit received",
+        "qty": 1,
+        "rate": -150
+      }
+    ],
+    "tips": [
+      "List bartender labor as hours x number of bartenders x rate.",
+      "Show barback and setup/breakdown time as their own lines.",
+      "Say who supplies alcohol, mixers and ice, and bill supplies separately if you buy them.",
+      "Show the deposit as a credit so the balance due is clear.",
+      "Check local rules on permits, insurance and sales tax for event bar service."
+    ],
+    "faq": [
+      {
+        "q": "Should setup time be billed?",
+        "a": "Many bartenders bill setup and breakdown as separate hours or a flat line. State it in your quote so it is not a surprise."
+      },
+      {
+        "q": "How do I handle a deposit?",
+        "a": "Add it as a negative line (Deposit received) on the final invoice so the total due reflects what is still owed."
+      },
+      {
+        "q": "Do I charge tax?",
+        "a": "It depends on where you are and what you sell. Show any tax as its own line and check local rules."
+      }
+    ],
+    "payment_terms": "Deposit due to hold the date. Balance due on the event date or within 7 days of invoice. Late fees only if agreed in writing."
+  },
+  {
+    "slug": "personal-chef",
+    "name": "Personal Chef",
+    "plural": "Personal chefs",
+    "keyword": "personal chef invoice template",
+    "title": "Free Personal Chef Invoice Template | Free Invoice Maker",
+    "description": "Personal chef invoice template that separates your service fee from grocery reimbursement and travel. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "A personal chef invoice is clearest when your cooking fee, grocery costs and travel are separate lines, which also reduces disputes about ingredients.",
+      "The sample bills a weekly meal-prep visit: a service fee, groceries at cost with receipts, and a travel line. Amounts are examples only."
+    ],
+    "items": [
+      {
+        "desc": "Weekly meal prep service (5 dinners, 4 hrs cooking)",
+        "qty": 1,
+        "rate": 240
+      },
+      {
+        "desc": "Groceries purchased (receipts attached)",
+        "qty": 1,
+        "rate": 132.4
+      },
+      {
+        "desc": "Travel, 22 miles",
+        "qty": 22,
+        "rate": 0.65
+      },
+      {
+        "desc": "Dietary-restriction menu planning",
+        "qty": 1,
+        "rate": 30
+      }
+    ],
+    "tips": [
+      "Keep the service fee and grocery costs on separate lines.",
+      "Attach or offer receipts for groceries you bought.",
+      "Agree up front whether groceries are reimbursed at cost or built into your fee.",
+      "Bill travel per mile or as a flat zone fee, and say which.",
+      "Note allergy or dietary requirements handled so the extra planning is visible."
+    ],
+    "faq": [
+      {
+        "q": "Should groceries be on the invoice?",
+        "a": "If you buy them for the client, list them as a separate line with receipts so the client sees what was spent."
+      },
+      {
+        "q": "Can I add a markup on groceries?",
+        "a": "Some chefs do; it should be agreed in writing beforehand and shown clearly."
+      },
+      {
+        "q": "How often should I invoice?",
+        "a": "Per visit for one-offs, or weekly or monthly for regular clients. Agree it in your contract."
+      }
+    ],
+    "payment_terms": "Due within 7 days of invoice, or at the end of each service visit. Late fees only if agreed in writing."
   }
 ]

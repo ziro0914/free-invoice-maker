@@ -353,3 +353,11 @@
 - ✅ GA4 ↔ Search Console 제품 링크 생성(속성 `https://sendinvoicefree.com/` ↔ 스트림 16371130088).
 - 반영 위치: `config.json`의 `gaId`·`googleSiteVerification` (build.mjs가 모든 페이지에 gtag + meta 생성). 커밋 `b0067a5`, Pages 배포 성공, 라이브 93페이지 전부에 태그 포함 확인.
 - ⚠️ 남은 일(사장님 계정 필요): AdSense(도메인 필요, 보류 중), FreshBooks 제휴 가입, Pinterest 비즈니스 계정 → issue #1 참고. GA4/GSC는 더 이상 에스컬레이션 불필요.
+
+## 2026-11-20 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json already has GA4/GSC from 11-19; nothing new.
+- Research (bartender / personal chef invoices): bartender: labor = rate x hours x number of bartenders, barback and setup/strike as separate lines, supplies/glassware/permits separate, deposit 25-50% shown as credit on final invoice (vendor guidance; not used as claim), tax only on taxable items. Chef: separate labor and groceries, receipts, groceries reimbursed vs built into fee, travel per mile or zone fee; no standard markup found. Sources: https://www.novo.co/invoicing/bars , https://www.invoicesimple.com/invoice-template/bartender-invoice/ , https://invoicequick.com/invoice-templates/personal-chef-invoice-template , https://invoicer.ai/invoice-templates-for-personal-chefs , https://ailawyer.pro/templates/private-chef-agreement-template-services-fees-and-terms
+- Shipped: professions https://sendinvoicefree.com/invoice-template/bartender/ and https://sendinvoicefree.com/invoice-template/personal-chef/. Sample math: bartender 8x45=360+4x25=100+2x45=90+60-150=460; chef 240+132.40+22x0.65=14.30+30=416.70. Build+check pass (95 pages).
+- Metrics: none.
+- Next: calculator ~Nov 22 (e.g. per-sq-ft price calculator), pipeline/win-rate guide, estimate/quote mode, professions window cleaner, dog groomer.
+- IndexNow: handled by .github/workflows/indexnow.yml on push.

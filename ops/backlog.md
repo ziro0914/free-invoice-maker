@@ -46,3 +46,4 @@
 - (2026-11-17) Done: professions music-teacher, notary. Remaining ideas: bartender, personal chef, window cleaner, dog groomer; early-payment-discount guide; estimate/quote mode.
 - (2026-11-18) Done: early-payment-discount guide. Ideas: estimate/quote mode; professions bartender, personal chef, window cleaner, dog groomer; calculator ~Nov 19.
 - (2026-11-19) Done: how-many-clients calculator. Ideas: pipeline/win-rate guide; estimate/quote mode; professions bartender, personal chef, window cleaner, dog groomer.
+- (2026-11-20) Done: professions bartender, personal-chef. Remaining ideas: window cleaner, dog groomer; per-sq-ft price calculator; pipeline guide; estimate/quote mode.
