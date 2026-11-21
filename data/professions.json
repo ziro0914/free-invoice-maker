@@ -2891,5 +2891,122 @@
       }
     ],
     "payment_terms": "Due within 7 days of invoice, or at the end of each service visit. Late fees only if agreed in writing."
+  },
+  {
+    "slug": "window-cleaner",
+    "name": "Window Cleaner",
+    "plural": "Window cleaners",
+    "keyword": "window cleaner invoice template",
+    "title": "Free Window Cleaner Invoice Template | Free Invoice Maker",
+    "description": "Window cleaner invoice template that itemizes panes, interior and exterior work and add-ons like screens and tracks. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "Window cleaner invoice template that itemizes panes, interior and exterior work and add-ons like screens and tracks. Customize it, export a free PDF, no account needed.",
+      "A window cleaning invoice is easiest to approve when pane counts and add-ons are separate lines, so the client sees exactly what was cleaned."
+    ],
+    "items": [
+      {
+        "desc": "Exterior window cleaning (24 panes)",
+        "qty": 24,
+        "rate": 5
+      },
+      {
+        "desc": "Interior window cleaning (24 panes)",
+        "qty": 24,
+        "rate": 4
+      },
+      {
+        "desc": "Screen and track cleaning (8 windows)",
+        "qty": 8,
+        "rate": 6
+      },
+      {
+        "desc": "Second-story ladder work",
+        "qty": 1,
+        "rate": 40
+      }
+    ],
+    "tips": [
+      "List pane counts and interior vs exterior as separate lines.",
+      "Show add-ons such as screens, tracks and sills individually.",
+      "Note ladder or high-access work as its own line.",
+      "Add a note if weather forced a re-visit and whether it is charged.",
+      "For commercial clients, include the PO or contract number."
+    ],
+    "faq": [
+      {
+        "q": "Should I charge per pane or per job?",
+        "a": "Either works; per pane is easy to itemize, a flat job price is simpler for clients. Show your basis on the invoice."
+      },
+      {
+        "q": "How do I invoice recurring clients?",
+        "a": "Many cleaners invoice after each visit or monthly for scheduled routes. Agree it up front."
+      },
+      {
+        "q": "Do I charge sales tax?",
+        "a": "Rules for taxing cleaning services vary by location, so check local rules."
+      }
+    ],
+    "payment_terms": "Due on completion or within 7 days of invoice. Late fees only if agreed in writing."
+  },
+  {
+    "slug": "dog-groomer",
+    "name": "Dog Groomer",
+    "plural": "Dog groomers",
+    "keyword": "dog groomer invoice template",
+    "title": "Free Dog Groomer Invoice Template | Free Invoice Maker",
+    "description": "Dog groomer invoice template with a base grooming fee, add-ons and optional mobile travel as separate lines. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "Dog groomer invoice template with a base grooming fee, add-ons and optional mobile travel as separate lines. Customize it, export a free PDF, no account needed.",
+      "A grooming invoice reads best when each pet and each add-on is its own line, so owners understand why the price differs by breed or coat."
+    ],
+    "items": [
+      {
+        "desc": "Full groom, medium dog (Beagle mix)",
+        "qty": 1,
+        "rate": 65
+      },
+      {
+        "desc": "De-matting (extra time)",
+        "qty": 1,
+        "rate": 15
+      },
+      {
+        "desc": "Teeth cleaning",
+        "qty": 1,
+        "rate": 10
+      },
+      {
+        "desc": "Nail grinding",
+        "qty": 1,
+        "rate": 8
+      },
+      {
+        "desc": "Mobile travel fee",
+        "qty": 1,
+        "rate": 12
+      }
+    ],
+    "tips": [
+      "List each pet separately in multi-pet households.",
+      "Show add-ons like de-matting, teeth cleaning and nail grinding as their own lines.",
+      "Note coat condition if it affects the price.",
+      "Put late pickup or cancellation fees on separate lines.",
+      "Bill mobile travel as a flat fee or per mile and say which."
+    ],
+    "faq": [
+      {
+        "q": "Should add-ons be listed separately?",
+        "a": "Yes. Separate lines make the extra work visible and reduce disputes."
+      },
+      {
+        "q": "How do I explain breed or size pricing?",
+        "a": "Name the breed or size class on the line so the price basis is clear."
+      },
+      {
+        "q": "Is grooming subject to sales tax?",
+        "a": "It varies by state or country, so check local rules."
+      }
+    ],
+    "payment_terms": "Due at pickup, or within 7 days for invoiced clients. Late pickup or cancellation fees only if agreed in advance."
   }
 ]

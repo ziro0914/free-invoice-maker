@@ -361,3 +361,11 @@
 - Metrics: none.
 - Next: calculator ~Nov 22 (e.g. per-sq-ft price calculator), pipeline/win-rate guide, estimate/quote mode, professions window cleaner, dog groomer.
 - IndexNow: handled by .github/workflows/indexnow.yml on push.
+
+## 2026-11-21 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh GraphQL blocked in sandbox, issues not checked).
+- Research (window cleaner / dog groomer invoices): window: itemize pane counts, interior vs exterior, add-ons (screens, tracks, sills), ladder/high-access separate, PO numbers for commercial; groomer: base fee by breed/size, add-ons (de-matting, teeth, nail grinding) as own lines, each pet separate, late-pickup fee separate, mobile travel separate; sales tax varies (hedged). Prices in samples are examples, not market claims. Sources: https://www.getjobber.com/free-tools/invoice-generator/window-cleaning/ , https://invoicequick.com/invoice-templates/window-cleaning-invoice-template , https://invoicebloom.io/invoice-template-dog-groomer , https://invoicequick.com/invoice-templates/groomer-invoice-template , https://schedulingkit.com/invoicing/pet-groomers
+- Shipped: professions https://sendinvoicefree.com/invoice-template/window-cleaner/ and https://sendinvoicefree.com/invoice-template/dog-groomer/. Sample math: window 24x5=120+24x4=96+8x6=48+40=304; groomer 65+15+10+8+12=110. Build+check pass (97 pages).
+- Metrics: none.
+- Next: calculator ~Nov 22 (per-sq-ft price calculator), pipeline/win-rate guide, estimate/quote mode, new professions (locksmith, tailor, auctioneer, lawn care).
+- IndexNow: handled by .github/workflows/indexnow.yml on push.
