@@ -48,3 +48,4 @@
 - (2026-11-19) Done: how-many-clients calculator. Ideas: pipeline/win-rate guide; estimate/quote mode; professions bartender, personal chef, window cleaner, dog groomer.
 - (2026-11-20) Done: professions bartender, personal-chef. Remaining ideas: window cleaner, dog groomer; per-sq-ft price calculator; pipeline guide; estimate/quote mode.
 - (2026-11-21) Done: professions window-cleaner, dog-groomer. Ideas: per-sq-ft price calculator; pipeline guide; estimate/quote mode; professions locksmith, tailor, lawn care.
+- (2026-11-22) Done: price-per-square-foot calculator. Ideas: guide on pricing by square foot linking it; pipeline guide; estimate/quote mode; professions locksmith, tailor, lawn care.

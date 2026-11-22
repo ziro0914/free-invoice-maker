@@ -513,6 +513,18 @@ return [['Revenue you need per year',m(gross)],['Clients needed (exact)',raw.toF
     faq: [['How many clients do I need to hit my income goal?', 'Add your desired take-home pay to your business costs, gross it up for tax, then divide by what an average client pays you per year and round up. For example, (80,000 + 6,000) / (1 - 25%) = about 114,667 of revenue; at 8,000 per client that is 14.33, so plan for 15 clients.'],
       ['How many proposals do I need to send?', 'Divide the clients you need by your win rate. At a 25% win rate, 15 clients means about 60 proposals a year, roughly 5 a month. The 25% default is a placeholder, not a benchmark; track your own results, since win rates vary widely by niche and lead source. Also plan for clients who leave, so aim a little above the number shown. Tax is an estimate only; check local rules.']],
   },
+  {
+    slug: 'price-per-square-foot-calculator', name: 'Price per square foot calculator',
+    title: 'Price Per Square Foot Calculator for Service Quotes | Free',
+    description: 'Free price per square foot calculator for pressure washing, painting, flooring and cleaning quotes. Enter size, rate, materials and a minimum charge to get a quote and your effective hourly pay.',
+    h1: 'Price Per Square Foot Calculator', intro: 'Quote area-based jobs such as pressure washing, painting, flooring or cleaning. Enter the length and width, your rate per square foot, materials, a minimum charge and your time estimate to see the quote and what you earn per hour.',
+    fields: [['len', 'Length (ft)', 30, '1'], ['wid', 'Width (ft)', 20, '1'], ['rate', 'Your rate per square foot', 0.25, '0.01'], ['mat', 'Materials and supplies for the job', 15, '1'], ['min', 'Minimum charge for any job (labor)', 100, '10'], ['hrs', 'Hours you expect the job to take', 3, '0.5']],
+    compute: `var area=v.len*v.wid,base=area*v.rate,labor=Math.max(base,v.min),total=labor+v.mat,eff=v.hrs>0?labor/v.hrs:0;
+return [['Area (sq ft)',area.toFixed(0)],['Labor at your rate per sq ft',m(base)],['Labor charged (minimum applied)',m(labor)],['Materials',m(v.mat)],['Quote total',m(total),1],['Labor pay per hour',m(eff)]];`,
+    cta: ['Price jobs with your real numbers', 'The Freelance Rate & Pricing Calculator spreadsheet adds a project quote builder, side-by-side scenarios and a raise-your-rates simulator. Excel + Google Sheets.', 'Get it ($7)', 'https://ziroflux4.gumroad.com/l/rate-calculator'],
+    faq: [['How do I calculate a price per square foot quote?', 'Multiply length by width to get the area, multiply the area by your rate per square foot, then add materials. For example, a 30 x 20 ft driveway is 600 sq ft; at 0.25 per sq ft that is 150 of labor, plus 15 of materials, so 165 in total.'],
+      ['Why add a minimum charge?', 'Small jobs still cost you travel, setup and cleanup time, so a per-square-foot rate alone can leave you underpaid. A minimum charge covers that. The default numbers here are placeholders, not market rates; rates vary by region, surface and condition, so check your own costs and local prices.']],
+  },
 ];
 
 function buildCalcs() {

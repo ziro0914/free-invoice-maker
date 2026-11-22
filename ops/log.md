@@ -369,3 +369,11 @@
 - Metrics: none.
 - Next: calculator ~Nov 22 (per-sq-ft price calculator), pipeline/win-rate guide, estimate/quote mode, new professions (locksmith, tailor, auctioneer, lawn care).
 - IndexNow: handled by .github/workflows/indexnow.yml on push.
+
+## 2026-11-22 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh not used).
+- Research (area-based pricing): pressure washing guides use area x rate per sq ft (e.g. 30x20=600 sq ft at $0.20 = $120) or cost-plus / margin formulas; trades vary by surface and condition; search returned nothing usable for painting/flooring, so calculator is generic and defaults are labeled placeholders (no market rate claims). Sources: https://www.getjobber.com/academy/pressure-washing/how-to-price-pressure-washing-jobs/ , https://housecallpro.com/resources/how-to-price-pressure-washing-jobs , https://www.freshbooks.com/hub/pages/estimate-power-washing-jobs , https://www.joist.com/workshop/estimating-pricing/pressure-washing-pricing-guide/
+- Shipped: calculator https://sendinvoicefree.com/tools/price-per-square-foot-calculator/ (cta -> rate-calculator $7, existing wording). Hand check: 30x20=600 sq ft; x0.25=150; minimum 100 not binding -> 150; +15 materials = 165; 150/3h = 50/h. Build+check pass (98 pages).
+- Metrics: none.
+- Next: pipeline/win-rate guide, per-sq-ft guide, estimate/quote mode, professions locksmith, tailor, lawn care.
+- IndexNow: handled by .github/workflows/indexnow.yml on push.
