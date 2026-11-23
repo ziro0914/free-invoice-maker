@@ -377,3 +377,11 @@
 - Metrics: none.
 - Next: pipeline/win-rate guide, per-sq-ft guide, estimate/quote mode, professions locksmith, tailor, lawn care.
 - IndexNow: handled by .github/workflows/indexnow.yml on push.
+
+## 2026-11-23 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh not used).
+- Research (sq-ft pricing vs hourly): sources agree sq ft is a quick ballpark, then check against labor hours, materials, overhead/margin; minimum charge for small jobs; prep/removal/access as separate lines; published ranges (e.g. interior painting, flooring) disagree and come from contractor-software marketing, so not used as claims. Sources: https://getjobber.com/academy/flooring/how-to-price-flooring-jobs , https://www.housecallpro.com/resources/painting-price-guide/ , https://www.housecallpro.com/resources/flooring-price-guide/ , https://getjobber.com/academy/painting/how-to-estimate-a-painting-job/ , https://servicetitan.com/blog/how-to-price-contractor-jobs
+- Shipped: guide https://sendinvoicefree.com/guides/how-to-price-by-the-square-foot/ (~918 words; links to sq-ft calculator, rate calculators, 3 profession templates, 3 guides). Example checked: 30x20=600; x0.25=150; min 100 not binding; +15=165; 150/3h=50/h; 50/200 sq ft per hour=0.25. Build+check pass (99 pages).
+- Metrics: none.
+- Next: pipeline/win-rate guide, estimate/quote mode, professions locksmith, tailor, lawn care; calculator ~Nov 25.
+- IndexNow: handled by .github/workflows/indexnow.yml on push.
