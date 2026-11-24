@@ -385,3 +385,11 @@
 - Metrics: none.
 - Next: pipeline/win-rate guide, estimate/quote mode, professions locksmith, tailor, lawn care; calculator ~Nov 25.
 - IndexNow: handled by .github/workflows/indexnow.yml on push.
+
+## 2026-11-24 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh not used).
+- Research (locksmith / tailor invoices): locksmith: service call/trip fee separate from labor and parts, parts with brand/model, after-hours surcharge and minimum fee as own lines, avoid vague "locksmith work" lines (template-site guidance; quoted price ranges not used as claims). Tailor: itemize by operation not garment, rush fee as separate labeled line with consent, state free-adjustment policy. Sources: https://invoicequick.com/invoice-templates/locksmith-invoice-template , https://invoiceblitz.com/locksmith-invoice-items , https://www.eonebill.ai/invoice-template/locksmith , https://billinghub.online/invoice-template/tailoring-alterations , https://getbilling.co/tailor-invoice-template/ , https://b2kit.com/templates/alterations-and-tailoring-invoice/
+- Shipped: professions https://sendinvoicefree.com/invoice-template/locksmith/ and https://sendinvoicefree.com/invoice-template/tailor/. Sample math: locksmith 60+2x35=70+48+3x4=12+40=230; tailor 2x18=36+35+45+25+20=161. Build+check pass (101 pages).
+- Metrics: none.
+- Next: calculator ~Nov 25, pipeline/win-rate guide, estimate/quote mode, professions lawn care, auctioneer.
+- IndexNow: handled by .github/workflows/indexnow.yml on push.

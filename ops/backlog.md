@@ -50,3 +50,4 @@
 - (2026-11-21) Done: professions window-cleaner, dog-groomer. Ideas: per-sq-ft price calculator; pipeline guide; estimate/quote mode; professions locksmith, tailor, lawn care.
 - (2026-11-22) Done: price-per-square-foot calculator. Ideas: guide on pricing by square foot linking it; pipeline guide; estimate/quote mode; professions locksmith, tailor, lawn care.
 - (2026-11-23) Done: sq-ft pricing guide. Ideas: pipeline/win-rate guide; estimate/quote mode; professions locksmith, tailor, lawn care; calculator ~Nov 25.
+- (2026-11-24) Done: professions locksmith, tailor. Ideas: calculator ~Nov 25; pipeline guide; estimate/quote mode; professions lawn care, auctioneer.

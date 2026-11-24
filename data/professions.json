@@ -3008,5 +3008,127 @@
       }
     ],
     "payment_terms": "Due at pickup, or within 7 days for invoiced clients. Late pickup or cancellation fees only if agreed in advance."
+  },
+  {
+    "slug": "locksmith",
+    "name": "Locksmith",
+    "plural": "Locksmiths",
+    "keyword": "locksmith invoice template",
+    "title": "Free Locksmith Invoice Template | Free Invoice Maker",
+    "description": "Locksmith invoice template with a service call fee, labor, hardware and optional after-hours surcharge as separate lines. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "Locksmith invoice template with a service call fee, labor, hardware and optional after-hours surcharge as separate lines. Customize it, export a free PDF, no account needed.",
+      "Vague lines like \"locksmith work\" invite disputes. Splitting the trip, the labor and the hardware shows customers exactly what they paid for."
+    ],
+    "items": [
+      {
+        "desc": "Service call / trip fee",
+        "qty": 1,
+        "rate": 60
+      },
+      {
+        "desc": "Rekey cylinder, labor",
+        "qty": 2,
+        "rate": 35
+      },
+      {
+        "desc": "Deadbolt, grade 1 (brand/model noted)",
+        "qty": 1,
+        "rate": 48
+      },
+      {
+        "desc": "Extra keys cut",
+        "qty": 3,
+        "rate": 4
+      },
+      {
+        "desc": "After-hours surcharge",
+        "qty": 1,
+        "rate": 40
+      }
+    ],
+    "tips": [
+      "Keep the service call or trip fee on its own line.",
+      "Show labor as time x rate, and list each lock or part separately with brand and model.",
+      "Add an after-hours or emergency surcharge only if you quoted it before starting.",
+      "Write the service address and the date on the invoice.",
+      "Add a short workmanship or hardware warranty note."
+    ],
+    "faq": [
+      {
+        "q": "Should the service call fee be separate from labor?",
+        "a": "Yes. A separate line shows the trip cost clearly and avoids confusion about the labor charge."
+      },
+      {
+        "q": "How do I invoice an emergency lockout?",
+        "a": "Use separate lines for the service call, labor and any after-hours surcharge, and quote the total before starting work."
+      },
+      {
+        "q": "Is sales tax charged on locksmith work?",
+        "a": "It depends on your state or country and on whether the line is parts or labor, so check local rules."
+      }
+    ],
+    "payment_terms": "Due on completion of the job. Warranty on workmanship and hardware as stated on the invoice."
+  },
+  {
+    "slug": "tailor",
+    "name": "Tailor",
+    "plural": "Tailors",
+    "keyword": "tailor alterations invoice template",
+    "title": "Free Tailor & Alterations Invoice Template | Free Invoice Maker",
+    "description": "Tailor and alterations invoice template with each alteration, optional rush fee and pickup date as separate lines. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "Tailor and alterations invoice template with each alteration, optional rush fee and pickup date as separate lines. Customize it, export a free PDF, no account needed.",
+      "Alterations are priced by operation, not by garment, so listing each job on its own line keeps the price easy to explain."
+    ],
+    "items": [
+      {
+        "desc": "Trouser hem",
+        "qty": 2,
+        "rate": 18
+      },
+      {
+        "desc": "Suit jacket sleeve shortening",
+        "qty": 1,
+        "rate": 35
+      },
+      {
+        "desc": "Suit jacket take-in at waist",
+        "qty": 1,
+        "rate": 45
+      },
+      {
+        "desc": "Zipper replacement",
+        "qty": 1,
+        "rate": 25
+      },
+      {
+        "desc": "Rush fee (ready in 48 hours)",
+        "qty": 1,
+        "rate": 20
+      }
+    ],
+    "tips": [
+      "List each alteration as its own line with the garment named.",
+      "Show a rush fee as a separate, clearly labeled line and agree to it first.",
+      "State which adjustments are free within the fitting window.",
+      "Put the pickup date on the invoice.",
+      "Note any fabric or lining supplied by you as its own line."
+    ],
+    "faq": [
+      {
+        "q": "Should I price by garment or by alteration?",
+        "a": "By alteration. A jacket may need several separate jobs, and separate lines make the price easy to explain."
+      },
+      {
+        "q": "How do I charge for rush work?",
+        "a": "Add a labeled rush fee line and get the customer's agreement before you start."
+      },
+      {
+        "q": "Do alterations have sales tax?",
+        "a": "It varies by state or country, so check local rules."
+      }
+    ],
+    "payment_terms": "Due at pickup. Garments not collected within 30 days may be subject to storage terms stated at drop-off."
   }
 ]
