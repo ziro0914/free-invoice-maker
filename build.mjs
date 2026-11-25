@@ -525,6 +525,18 @@ return [['Area (sq ft)',area.toFixed(0)],['Labor at your rate per sq ft',m(base)
     faq: [['How do I calculate a price per square foot quote?', 'Multiply length by width to get the area, multiply the area by your rate per square foot, then add materials. For example, a 30 x 20 ft driveway is 600 sq ft; at 0.25 per sq ft that is 150 of labor, plus 15 of materials, so 165 in total.'],
       ['Why add a minimum charge?', 'Small jobs still cost you travel, setup and cleanup time, so a per-square-foot rate alone can leave you underpaid. A minimum charge covers that. The default numbers here are placeholders, not market rates; rates vary by region, surface and condition, so check your own costs and local prices.']],
   },
+  {
+    slug: 'freelance-emergency-fund-calculator', name: 'Freelance emergency fund calculator',
+    title: 'Freelance Emergency Fund Calculator: How Much to Save | Free',
+    description: 'Free emergency fund calculator for freelancers. Enter your monthly essential costs, target months and current savings to see your target, your runway and how long it takes to get there.',
+    h1: 'Freelance Emergency Fund Calculator', intro: 'Income that swings from month to month needs a bigger cushion. Enter your essential personal and business costs, how many months of cover you want, what you have saved and what you can add each month, and see your target, your current runway and how long it takes to close the gap.',
+    fields: [['pers', 'Essential personal costs per month (rent, food, insurance)', 3000, '50'], ['biz', 'Essential business costs per month (software, insurance, fees)', 500, '50'], ['months', 'Months of cover you want', 6, '1'], ['have', 'Savings you already have set aside', 5000, '100'], ['add', 'Amount you can add each month', 800, '50']],
+    compute: `var ess=v.pers+v.biz,target=ess*v.months,gap=Math.max(0,target-v.have),run=ess>0?v.have/ess:0,mo=gap===0?0:(v.add>0?Math.ceil(gap/v.add-1e-9):-1);
+return [['Essential costs per month',m(ess)],['Target fund',m(target),1],['Current runway (months)',run.toFixed(1)],['Still to save',m(gap)],['Months to reach the target',mo<0?'Add a monthly amount above 0':String(mo),1]];`,
+    cta: ['Plan cash flow month by month', 'The Small Business Budget & Cash-Flow Planner spreadsheet has a 12-month budget by category, budget vs actual every month and low-cash alerts. Excel + Google Sheets.', 'Get it ($12)', 'https://ziroflux4.gumroad.com/l/budget-planner'],
+    faq: [['How much should a freelancer keep in an emergency fund?', 'Many personal finance sources suggest 3 to 6 months of essential expenses, and some freelancer-focused sources suggest 6 to 12 months because income is less predictable. Add your essential personal and business costs, then multiply by the months you want. For example, (3,000 + 500) x 6 = 21,000.'],
+      ['How long will it take to build the fund?', 'Subtract what you have saved from the target, then divide by what you can add each month. With 5,000 saved against 21,000, the gap is 16,000; at 800 a month that is 20 months. Months of cover are a rule of thumb, not a rule, so adjust for other earners, insurance and how steady your clients are. Set tax money aside separately; this is general information, not financial advice.']],
+  },
 ];
 
 function buildCalcs() {

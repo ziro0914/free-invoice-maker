@@ -393,3 +393,11 @@
 - Metrics: none.
 - Next: calculator ~Nov 25, pipeline/win-rate guide, estimate/quote mode, professions lawn care, auctioneer.
 - IndexNow: handled by .github/workflows/indexnow.yml on push.
+
+## 2026-11-25 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh not used).
+- Research (freelancer emergency fund / cash runway): sources say 3-6 months baseline, freelancer-focused blogs lean 6-12; include business costs and irregular/annual costs; runway = cash / monthly burn. Figures like quarterly-tax ranges not used as claims. Sources: https://www.hellobrigit.com/?p=7563 , https://prowess.org.uk/why-freelancers-need-an-emergency-fund/ , https://www.jobbers.io/freelance-emergency-fund-calculator-complete-guide-to-financial-security-2026/ , https://dev.to/evvytools/how-to-calculate-your-real-monthly-expenses-as-a-freelancer-11k4 , https://www.nerdwallet.com/article/small-business/burn-rate , https://corporatefinanceinstitute.com/resources/accounting/cash-runway/
+- Shipped: calculator https://sendinvoicefree.com/tools/freelance-emergency-fund-calculator/ (cta -> budget-planner $12, existing wording). Hand check: (3000+500)=3500; x6=21000; gap 21000-5000=16000; 16000/800=20 months; runway 5000/3500=1.4 months. Build+check pass (102 pages).
+- Metrics: none.
+- Next: emergency-fund guide linking it, pipeline/win-rate guide, estimate/quote mode, professions lawn care, auctioneer.
+- IndexNow: handled by .github/workflows/indexnow.yml on push.
