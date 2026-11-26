@@ -52,3 +52,4 @@
 - (2026-11-23) Done: sq-ft pricing guide. Ideas: pipeline/win-rate guide; estimate/quote mode; professions locksmith, tailor, lawn care; calculator ~Nov 25.
 - (2026-11-24) Done: professions locksmith, tailor. Ideas: calculator ~Nov 25; pipeline guide; estimate/quote mode; professions lawn care, auctioneer.
 - (2026-11-25) Done: freelance emergency fund calculator. Ideas: emergency-fund guide linking it; pipeline guide; estimate/quote mode; professions lawn care, auctioneer.
+- (2026-11-26) Done: emergency-fund guide. Ideas: pipeline/win-rate guide; estimate/quote mode; professions lawn care, auctioneer; calculator ~Nov 28.

@@ -401,3 +401,11 @@
 - Metrics: none.
 - Next: emergency-fund guide linking it, pipeline/win-rate guide, estimate/quote mode, professions lawn care, auctioneer.
 - IndexNow: handled by .github/workflows/indexnow.yml on push.
+
+## 2026-11-26 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh not used).
+- Research (freelancer emergency fund structure): sources agree on separate liquid insured account, keep tax money apart, 3-6 months baseline / 6-12 for variable income, plus a separate 1-3 month income-smoothing buffer; one method sizes from average of weakest 3 months. Mostly small blogs with commercial interests, so no figures used as claims. Sources: https://solofinancehub.com/blog/how-to-build-emergency-fund-irregular-income/ , https://www.moneyframe.app/blog/emergency-fund-for-freelancers , https://moneypatrol.ai/blog/emergency-fund-irregular-income , https://pennybot.io/blog/how-to-manage-irregular-income-freelancer
+- Shipped: guide https://sendinvoicefree.com/guides/freelance-emergency-fund-guide/ (~920 words; links to emergency-fund, tax set-aside, effective-rate calculators + 4 guides). Example checked: (3000+500)x6=21000; gap 16000; /800=20 months; runway 5000/3500=1.4. Build+check pass (103 pages).
+- Metrics: none.
+- Next: pipeline/win-rate guide, estimate/quote mode, professions lawn care, auctioneer; calculator ~Nov 28.
+- IndexNow: handled by .github/workflows/indexnow.yml on push.
