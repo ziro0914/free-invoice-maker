@@ -409,3 +409,11 @@
 - Metrics: none.
 - Next: pipeline/win-rate guide, estimate/quote mode, professions lawn care, auctioneer; calculator ~Nov 28.
 - IndexNow: handled by .github/workflows/indexnow.yml on push.
+
+## 2026-11-27 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh not used).
+- Research (lawn care / auctioneer invoices): lawn: separate lines per service (mow/edge/blow, haul-off, numbered fertilizer round, aeration), show visit dates for recurring customers, property address; sample prices are illustrative. Auctioneer: buyer invoice (hammer + premium + tax) separate from consignor settlement (commission, expenses, net proceeds); premium/commission terms vary by agreement (sample contracts ~10-13% premium), so no rates claimed. Sources: https://invoicefly.com/free-resources/free-templates/free-invoice-templates/lawn-care-invoice-template/ , https://www.invoicefyapp.com/invoice-templates/lawn-care , https://www.paidharbor.com/invoice-template-for/landscapers , https://invoicequick.com/invoice-templates/auction-invoice-template , https://www.invoicesimple.com/invoice-template/auction-invoice/ , https://docstoc.io/document-templates/auction-sale-agreement-template
+- Shipped: professions https://sendinvoicefree.com/invoice-template/lawn-care/ and https://sendinvoicefree.com/invoice-template/auctioneer/. Sample math: lawn 4x45=180+48+90+120=438; auctioneer 4x150=600+400+120+40x3=120-200=1040. Build+check pass (105 pages).
+- Metrics: none.
+- Next: pipeline/win-rate guide, estimate/quote mode, calculator ~Nov 28; new profession ideas (handyman-adjacent: gutter cleaner, appraiser, court reporter).
+- IndexNow: handled by .github/workflows/indexnow.yml on push.

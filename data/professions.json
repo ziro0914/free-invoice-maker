@@ -3130,5 +3130,122 @@
       }
     ],
     "payment_terms": "Due at pickup. Garments not collected within 30 days may be subject to storage terms stated at drop-off."
+  },
+  {
+    "slug": "lawn-care",
+    "name": "Lawn Care Provider",
+    "plural": "Lawn Care Providers",
+    "keyword": "lawn care invoice template",
+    "title": "Free Lawn Care Invoice Template | Free Invoice Maker",
+    "description": "Lawn care invoice template with mowing visits, fertilization rounds, aeration and clipping haul-off as separate lines. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "Lawn care invoice template with mowing visits, fertilization rounds, aeration and clipping haul-off as separate lines. Customize it, export a free PDF, no account needed.",
+      "Recurring lawn work is easiest to bill when each service and visit count sits on its own line, so customers can see exactly what they paid for."
+    ],
+    "items": [
+      {
+        "desc": "Weekly mow, edge and blow (4 visits)",
+        "qty": 4,
+        "rate": 45
+      },
+      {
+        "desc": "Clipping haul-off",
+        "qty": 1,
+        "rate": 48
+      },
+      {
+        "desc": "Fertilizer application, round 2 of 5",
+        "qty": 1,
+        "rate": 90
+      },
+      {
+        "desc": "Core aeration",
+        "qty": 1,
+        "rate": 120
+      }
+    ],
+    "tips": [
+      "List each service (mow, edge, blow) separately and show visit dates for recurring customers.",
+      "Number seasonal treatments, such as fertilizer round 2 of 5, so the plan is clear.",
+      "Bill haul-off, bagging or disposal as its own line.",
+      "Put the property address on the invoice, especially if you serve several properties for one customer.",
+      "Note any weather skips or credits so the visit count matches your records."
+    ],
+    "faq": [
+      {
+        "q": "Should I invoice per visit or monthly?",
+        "a": "Either works. Monthly invoices with the visit dates listed cut down on paperwork; per-visit invoices suit one-off jobs."
+      },
+      {
+        "q": "Do I charge extra for tall or overgrown grass?",
+        "a": "Many providers add a labeled surcharge line and agree it with the customer first."
+      },
+      {
+        "q": "Is lawn care subject to sales tax?",
+        "a": "It varies by state or country, so check local rules."
+      }
+    ],
+    "payment_terms": "Due within 14 days of invoice date. Recurring services are billed monthly in arrears."
+  },
+  {
+    "slug": "auctioneer",
+    "name": "Auctioneer",
+    "plural": "Auctioneers",
+    "keyword": "auctioneer invoice template",
+    "title": "Free Auctioneer Invoice Template | Free Invoice Maker",
+    "description": "Auctioneer invoice template with auction day fee, commission, advertising and lot check-in as separate lines. Customize it, export a free PDF, no account needed.",
+    "intro": [
+      "Auctioneer invoice template with auction day fee, commission, advertising and lot check-in as separate lines. Customize it, export a free PDF, no account needed.",
+      "This sample bills a consignor for auction services; buyer invoices (hammer price plus buyer's premium) and consignor settlements are best kept as separate documents."
+    ],
+    "items": [
+      {
+        "desc": "Auctioneer fee, live auction day (hours)",
+        "qty": 4,
+        "rate": 150
+      },
+      {
+        "desc": "Commission on hammer total of $4,000 (10%)",
+        "qty": 1,
+        "rate": 400
+      },
+      {
+        "desc": "Advertising and catalog",
+        "qty": 1,
+        "rate": 120
+      },
+      {
+        "desc": "Lot check-in and photography (per lot)",
+        "qty": 40,
+        "rate": 3
+      },
+      {
+        "desc": "Less: advance already paid",
+        "qty": 1,
+        "rate": -200
+      }
+    ],
+    "tips": [
+      "Keep buyer invoices and consignor settlements as separate documents.",
+      "Follow the consignment agreement for commission, premium and expense terms; they vary widely.",
+      "Show the auction date and the contract or lot reference on the invoice.",
+      "Itemize advertising, photography and other pass-through expenses as their own lines.",
+      "Add your auctioneer license number if local rules require it."
+    ],
+    "faq": [
+      {
+        "q": "Is the buyer's premium part of my invoice?",
+        "a": "The buyer's premium is usually charged to the buyer on a buyer invoice. Follow your agreement for how it is treated."
+      },
+      {
+        "q": "Should I deduct commission from proceeds or invoice it?",
+        "a": "Both are used. Many auctioneers net commission and expenses from a settlement statement; check your consignment agreement."
+      },
+      {
+        "q": "Do auction sales have sales tax?",
+        "a": "It varies by location and item type, so check local rules."
+      }
+    ],
+    "payment_terms": "Due within 14 days, or netted from sale proceeds per the consignment agreement."
   }
 ]
