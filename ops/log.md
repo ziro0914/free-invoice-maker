@@ -417,3 +417,11 @@
 - Metrics: none.
 - Next: pipeline/win-rate guide, estimate/quote mode, calculator ~Nov 28; new profession ideas (handyman-adjacent: gutter cleaner, appraiser, court reporter).
 - IndexNow: handled by .github/workflows/indexnow.yml on push.
+
+## 2026-11-28 (daily run, cloud)
+- Owner info: OWNER_TODO empty; config.json unchanged (gh not used).
+- Research (freelance rate/non-billable time; late-payment pain points): rate calculators gross up for tax/expenses and divide by billable hours; non-billable share quoted as 20-40% by vendors (estimates, not used as claims). Late payment pain: follow-up gets dropped, awkward reminders, reminders after payment; fixes: fixed reminder cadence, payment button, auto-stop on payment. Vendor stats (e.g. "85% paid late") unverified, not used. Sources: https://www.getharvest.com/calculators/hourly-rate-calculator-for-freelancers , https://www.plutio.com/tools/rate-calculator , https://www.plutio.com/freelancer-magazine/late-invoice-payments , https://www.indiehackers.com/post/validating-a-simple-automated-reminder-tool-for-late-freelance-invoices-1188f8d732 , https://www.zoom.com/en/blog/invoice-problems-and-solutions/
+- Shipped: calculator https://sendinvoicefree.com/tools/late-paying-client-cost-calculator/ (cta -> freelancer-kit $12, existing wording). Hand check: 2000x12%x30/365=19.73; chase 2x50=100; per invoice 119.73; x6=718.36; 5.99% of invoice. Build+check pass (106 pages).
+- Metrics: none.
+- Next: guide on late-paying clients linking this calculator + late-fee calculator, pipeline/win-rate guide, estimate/quote mode, professions gutter cleaner, appraiser, court reporter; calculator ~Nov 30.
+- IndexNow: handled by .github/workflows/indexnow.yml on push.

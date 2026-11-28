@@ -54,3 +54,4 @@
 - (2026-11-25) Done: freelance emergency fund calculator. Ideas: emergency-fund guide linking it; pipeline guide; estimate/quote mode; professions lawn care, auctioneer.
 - (2026-11-26) Done: emergency-fund guide. Ideas: pipeline/win-rate guide; estimate/quote mode; professions lawn care, auctioneer; calculator ~Nov 28.
 - (2026-11-27) Done: professions lawn-care, auctioneer. Ideas: calculator ~Nov 28; pipeline guide; estimate/quote mode; professions gutter cleaner, appraiser, court reporter.
+- (2026-11-28) Done: late-paying client cost calculator. Ideas: late-paying-clients guide linking it (reminder cadence); pipeline guide; estimate/quote mode; professions gutter cleaner, appraiser, court reporter.

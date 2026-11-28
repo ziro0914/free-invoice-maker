@@ -537,6 +537,18 @@ return [['Essential costs per month',m(ess)],['Target fund',m(target),1],['Curre
     faq: [['How much should a freelancer keep in an emergency fund?', 'Many personal finance sources suggest 3 to 6 months of essential expenses, and some freelancer-focused sources suggest 6 to 12 months because income is less predictable. Add your essential personal and business costs, then multiply by the months you want. For example, (3,000 + 500) x 6 = 21,000.'],
       ['How long will it take to build the fund?', 'Subtract what you have saved from the target, then divide by what you can add each month. With 5,000 saved against 21,000, the gap is 16,000; at 800 a month that is 20 months. Months of cover are a rule of thumb, not a rule, so adjust for other earners, insurance and how steady your clients are. Set tax money aside separately; this is general information, not financial advice.']],
   },
+  {
+    slug: 'late-paying-client-cost-calculator', name: 'Late-paying client cost calculator',
+    title: 'Late-Paying Client Cost Calculator: What Slow Payers Cost You | Free',
+    description: 'Free calculator for freelancers: enter an invoice amount, days late, your cost of money and time spent chasing to see what a late-paying client really costs you per invoice and per year.',
+    h1: 'Late-Paying Client Cost Calculator', intro: 'A late invoice costs more than the wait. Enter the invoice amount, how many days late it usually arrives, what your cash is worth to you and how long you spend chasing, and see the real cost per invoice and per year.',
+    fields: [['amt', 'Invoice amount', 2000, '50'], ['days', 'Days late on average', 30, '1'], ['rate', 'Your cost of money % per year (what borrowing or lost interest costs you)', 12, '1'], ['hrs', 'Hours you spend chasing each late invoice', 2, '0.5'], ['hr', 'Your hourly rate', 50, '5'], ['n', 'Late invoices per year', 6, '1']],
+    compute: `var fin=v.amt*v.rate/100*v.days/365,chase=v.hrs*v.hr,per=fin+chase,yr=per*v.n,pct=v.amt>0?per/v.amt*100:0;
+return [['Financing cost of the delay',m(fin)],['Value of your chasing time',m(chase)],['Cost per late invoice',m(per),1],['Cost per year',m(yr),1],['Cost as % of the invoice',pct.toFixed(2)+'%']];`,
+    cta: ['Spot overdue invoices before they get old', 'The Freelancer Invoice & Bookkeeping Kit spreadsheet has an invoice log with overdue alerts, expenses and mileage, a monthly profit dashboard and a tax set-aside. Excel + Google Sheets.', 'Get it ($12)', 'https://ziroflux4.gumroad.com/l/freelancer-kit'],
+    faq: [['How do I calculate what a late-paying client costs me?', 'Add two things: the financing cost of waiting (invoice amount x your yearly cost of money x days late / 365) and the value of the time you spend chasing (hours x your hourly rate). For example, 2,000 at 12% for 30 days is about 19.73, plus 2 hours at 50 is 100, so about 119.73 per late invoice, or about 718.36 a year at 6 late invoices.'],
+      ['Is it worth charging late fees or asking for a deposit?', 'If slow payers cost you around 6% of each invoice in this example, shorter terms, a deposit or a late fee can be easier to justify. The 12% cost of money and the 2 hours of chasing are placeholders, not benchmarks; use your own figures. Late fees and interest are governed by local rules and your contract, so check them before you add one.']],
+  },
 ];
 
 function buildCalcs() {
